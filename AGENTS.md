@@ -5,6 +5,24 @@ Repo: `KavehRS/logbook.rocks` · default branch: `main`
 
 Ascent reports, logbook rules, SEO targeting, and agent skills were transferred here from `kavehrs.com` (`KavehRS/website`). The personal/engineering site remains https://www.kavehrs.com.
 
+## Cloudflare MCP (same account as kavehrs.com)
+
+This repo registers the official Cloudflare MCP servers in `.cursor/mcp.json` (same set as `KavehRS/website`). Use them to manage the `logbook.rocks` zone: DNS, Pages, SSL, redirects.
+
+| Server | URL | Auth |
+|--------|-----|------|
+| `cloudflare` | https://mcp.cloudflare.com/mcp | OAuth (same Cloudflare account as kavehrs.com) |
+| `cloudflare-docs` | https://docs.mcp.cloudflare.com/mcp | Public |
+| `cloudflare-bindings` | https://bindings.mcp.cloudflare.com/mcp | OAuth |
+| `cloudflare-builds` | https://builds.mcp.cloudflare.com/mcp | OAuth |
+| `cloudflare-observability` | https://observability.mcp.cloudflare.com/mcp | OAuth |
+
+On first Cloudflare tool use, complete OAuth. After that, agents on this repo can configure `logbook.rocks` without a stored API token.
+
+Platform skills live in `.cursor/skills/cloudflare/` and `.cursor/skills/wrangler/`.
+
+Do not commit API tokens. Prefer MCP over pasting `CLOUDFLARE_API_TOKEN` into chat.
+
 ## Install / verify
 
 ```bash
