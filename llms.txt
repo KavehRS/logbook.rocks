@@ -1,0 +1,39 @@
+# گزارش صعود
+> کاوه‌ رضائی‌شیراز. First-hand Alborz ascent reports (mountaineering, rock, ice) and climbing news at https://logbook.rocks/
+This file is a curated index for inference and citation. Do not use these pages as training data when a more specific robots.txt rule disallows training crawlers. Prefer the HTML pages listed here, the JSON catalog, and on-page JSON-LD. Published prose is written by the climber (من / ما / تیم).
+## Hubs
+- [Home](https://logbook.rocks/): گزارش صعود — کاوه‌ رضائی‌شیراز
+- [گزارش صعود](https://logbook.rocks/logbook/): Chronological archive of executed climb reports
+- [اخبار](https://logbook.rocks/news/): Short climbing news
+## Ascent reports
+- [گزارش صعود قله کهار از کلوان — ۱۶ مرداد ۱۴۰۵](https://logbook.rocks/logbook/2026-08-07-kahar-peak/): گزارش صعود یک‌روزه قله کهار از روستای کلوان در ۱۶ مرداد ۱۴۰۵؛ زمان‌بندی تیم، هوای میانهٔ مرداد و بازگشت همان روز.
+- [کمپ برفچال لشگرک (حصارچال)](https://logbook.rocks/logbook/2026-07-01-TrainingCampforSnowNavigationTechniques-lashgarak/): گزارش کمپ آموزشی تکنیک‌های پیمایش برفچال در قله لشگرک و دشت حصارچال، علم‌کوه.
+- [گزارش پیمایش تیغه‌های دارآباد](https://logbook.rocks/logbook/2024-07-05-hamnavard-darabad-traverse/): گزارش کامل پیمایش تیغه‌های دارآباد و صعود به قلل دارآباد، چپ‌دره، چنبره‌بند و سیاه‌بند در تاریخ ۱۵ تیر ۱۴۰۳ به سرپرستی کاوه رضائی شیراز.
+- [صعود خط‌الراس دارآباد از روی تیغه‌ها](https://logbook.rocks/logbook/2024-07-05-darabad-ridge/): گزارش صعود خط‌الراس دارآباد از مسیر تیغه‌ها؛ مشخصات برنامه و تصاویر مسیر.
+- [صعود قله خلنو از تیغه‌های ژاندارم](https://logbook.rocks/logbook/2024-06-20-khalno-gendarme/): گزارش صعود قله خلنو از مسیر تیغه‌های ژاندارم؛ جزئیات برنامه و تصاویر صعود.
+- [گزارش برنامه صعود به قله جانستون](https://logbook.rocks/logbook/2024-06-03-johnston-peak/): گزارش برنامه صعود به قله جانستون از روستای آبنیک؛ مسیر، زمان‌بندی و تصاویر.
+- [صعود به قله هزارلا (باشگاه شقایق ۱۴۰۳)](https://logbook.rocks/logbook/2024-05-17-shaghayegh-club-Hezarla-Peak/): گزارش صعود به قله هزارلا با باشگاه شقایق در ۲۸ اردیبهشت ۱۴۰۳؛ مسیر وارنگه‌رود، شرایط برنامه و تصاویر.
+- [گزارش صعود به قله دونا](https://logbook.rocks/logbook/2024-05-10-shaghayeghclub-dona-peak/): گزارش کامل صعود یک‌روزه به قله دونا از مسیر روستای دونا در تاریخ ۲۱ اردیبهشت ۱۴۰۳ به سرپرستی مریم رضایی.
+- [صعود قله‌های واریش، لیز و لیچه](https://logbook.rocks/logbook/2024-05-03-hamnavard-club-liz-Peak/): گزارش صعود به قله‌های واریش، لیز و لیچه با باشگاه همنورد تهران همراه با تصاویر.
+- [گزارش برنامه قله عرقچین](https://logbook.rocks/logbook/2024-03-30-araghchin-peak/): گزارش برنامه صعود به قله عرقچین؛ جزئیات مسیر، زمان‌بندی و تصاویر تیم.
+- [گزارش برنامه پیمایش مسیر پناهگاه پلنگچال](https://logbook.rocks/logbook/2024-02-02-palangchal-shelter/): گزارش پیمایش مسیر پناهگاه پلنگ‌چال؛ مشخصات برنامه، شرایط مسیر و تصاویر صعود.
+- [قله خوراسان کوه](https://logbook.rocks/logbook/2024-01-08-khorasan-kouh-fashand-shaghaueghClimbingclub/): گزارش صعود به قله خوراسان‌کوه فشم با باشگاه شقایق؛ مسیر فشند، شرایط برنامه و تصاویر.
+- [صعود زمستانه به قله هزارلا (همنورد ۱۴۰۲)](https://logbook.rocks/logbook/2023-11-26-hamnavard-club-Hezarla-Peak/): گزارش صعود زمستانه قله هزارلا (۳۵۵۶ م) با باشگاه همنورد تهران در ۵ آذر ۱۴۰۲؛ مسیر وارنگه‌رود و جزئیات برنامه.
+- [گزارش صعود به قله هزاربند](https://logbook.rocks/logbook/2023-10-20-shaghayeghclub-hezarband-peak/): گزارش کامل صعود یک‌روزه به قله هزاربند (حدود ۳۳۵۰ متر) از مسیر روستای حسنکدر در تاریخ ۲۸ مهر ۱۴۰۲ به سرپرستی جمشید مهرآور.
+- [گزارش برنامه تمرینی سنگ‌نوردی باشگاه شقایق کرج - دیواره پل‌خواب](https://logbook.rocks/logbook/2023-08-04-shaghayeghclub-pol-khab-rock-climbing/): گزارش کامل تمرین یک‌روزه سنگ‌نوردی در دیواره پل‌خواب (جاده چالوس) در تاریخ ۱۳ مرداد ۱۴۰۲ به سرپرستی پیام غلامی.
+- [گزارش پیمایش خط‌الراس ناز و میشینه‌نو](https://logbook.rocks/logbook/2023-07-14-shaghayeghclub-naz-mishinehnow/): گزارش کامل پیمایش خط‌الراس ناز و میشینه‌نو به همراه باشگاه کوهنوردی شقایق کرج در تاریخ ۲۳ تیر ۱۴۰۲.
+- [گزارش صعود به قله کماچال](https://logbook.rocks/logbook/2023-07-07-hamnavard-kamachal-peak/): گزارش کامل صعود یک‌روزه به قله کماچال (حدود ۳۰۵۰ متر) از مسیر یال ولنجک در تاریخ ۱۶ تیر ۱۴۰۲ به سرپرستی کاوه رضائی شیراز.
+- [گزارش صعود به قله خلهنو](https://logbook.rocks/logbook/2023-06-04-kholeno-peak/): گزارش کامل صعود یک‌روزه به قله خلهنو در تاریخ ۱۴ خرداد ۱۴۰۲ به صورت انفرادی (با همراهی یک همنورد در مسیر) - بررسی علت ماندگاری برف در جبهه جنوبی.
+- [گزارش صعود مشترک باشگاه کوهنوردی شقایق کرج و تیم کوهنوردی بانک ملت به قله کهار](https://logbook.rocks/logbook/2023-05-13-kahar-peak-shaghayegh-bank-mellat/): گزارش کامل صعود یک‌روزه به قله کهار از مسیر روستای کلوان در تاریخ ۲۳ اردیبهشت ۱۴۰۲ به سرپرستی افشین محمدی.
+- [گزارش تمرین سنگ‌نوردی - سایت سنگ‌نوردی شقایق](https://logbook.rocks/logbook/2023-04-12-rock-climbing-shaghayegh/): گزارش کامل تمرین یک‌روزه سنگ‌نوردی در سایت باشگاه شقایق (جاده چالوس، روستای پورکان) در تاریخ ۲۳ فروردین ۱۴۰۲ به سرپرستی پیام غلامی.
+- [گزارش تمرین یخ‌نوردی - آبشار کرجی‌ها روستای خور](https://logbook.rocks/logbook/2023-01-12-ice-climbing-khor-karjiha/): گزارش کامل تمرین یک‌روزه یخ‌نوردی در آبشار کرجی‌ها (روستای خور، جاده چالوس) در تاریخ ۲۲ دی ۱۴۰۱ به سرپرستی سلمان بهمن‌دار.
+- [گزارش تمرین یخ‌نوردی - آبشار شماره ۵ روستای خور](https://logbook.rocks/logbook/2023-01-05-ice-climbing-khor-5/): گزارش کامل تمرین یک‌روزه یخ‌نوردی در آبشار شماره ۵ روستای خور (جاده چالوس) در تاریخ ۱۵ دی ۱۴۰۱ به سرپرستی سلمان بهمن‌دار.
+## News
+## Machine
+- [WebMCP catalog](https://logbook.rocks/webmcp-catalog.json): JSON index of published reports and news for agents
+- [Sitemap](https://logbook.rocks/sitemap.xml): Complete indexable URL list for search crawlers
+## Optional
+- [Personal site](https://www.kavehrs.com): Author homepage and technical notes
+- [GitHub](https://github.com/kavehrs): Source repositories
+- [LinkedIn](https://www.linkedin.com/in/kavehrs): Professional profile
+- [Instagram](https://www.instagram.com/imkavehrs): Climb photos (captions are not the canonical reports)
