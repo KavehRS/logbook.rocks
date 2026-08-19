@@ -1,0 +1,27 @@
+---
+layout: default
+---
+
+{% assign dir = page.dir_attr | default: 'ltr' %}
+
+<div class="about-page" dir="{{ dir }}">
+  <div class="about-hero">
+    {% if page.profile and page.profile.image %}
+      <img
+        class="about-photo"
+        src="{{ page.profile.image | relative_url }}"
+        alt="{{ page.profile.image_alt | default: page.title | default: site.title | escape }}"
+        loading="eager"
+        decoding="async"
+        width="176"
+        height="176">
+    {% endif %}
+
+    <div class="about-intro">
+      {{ content }}
+    </div>
+  </div>
+  {% if page.url == '/' %}
+    {% include home-latest.html %}
+  {% endif %}
+</div>
