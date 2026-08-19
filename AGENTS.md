@@ -17,7 +17,7 @@ This repo registers the official Cloudflare MCP servers in `.cursor/mcp.json` (s
 | `cloudflare-builds` | https://builds.mcp.cloudflare.com/mcp | OAuth |
 | `cloudflare-observability` | https://observability.mcp.cloudflare.com/mcp | OAuth |
 
-On first Cloudflare tool use, complete OAuth. After that, agents on this repo can configure `logbook.rocks` without a stored API token.
+`.cursor/mcp.json` is for the Cursor IDE. Cloud Agents do **not** load that file. Enable the same HTTP servers in the MCP dropdown at https://cursor.com/agents (personal) or Dashboard → Integrations & MCP (team), then complete OAuth with the **same Cloudflare account as kavehrs.com**. After that, new Cloud Agents on this repo can manage the `logbook.rocks` zone without a stored API token.
 
 Platform skills live in `.cursor/skills/cloudflare/` and `.cursor/skills/wrangler/`.
 
