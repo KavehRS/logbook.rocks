@@ -1,0 +1,255 @@
+/* About / homepage profile layout */
+
+.about-page {
+  margin-top: 0.5rem;
+}
+
+.about-hero {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.75rem;
+}
+
+.about-photo {
+  flex: 0 0 auto;
+  width: 11rem;
+  max-width: 30%;
+  height: auto;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border: 3px solid $brand-color;
+  border-radius: 50%;
+  margin: 0;
+}
+
+.about-intro {
+  flex: 1 1 0;
+  min-width: 0;
+}
+
+.about-intro h1 {
+  font-size: 1.35rem;
+  line-height: 1.45;
+  margin: 0 0 0.85rem;
+}
+
+.about-intro blockquote {
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-family: inherit;
+  font-style: normal;
+  font-size: 1rem;
+}
+
+.about-intro blockquote p {
+  margin: 0 0 0.75rem;
+  font-size: 1rem;
+  line-height: $base-line-height;
+}
+
+.about-intro blockquote p strong {
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+.about-intro ul {
+  margin: 0;
+  padding-inline-start: 1.25rem;
+  font-size: 0.95rem;
+  line-height: $base-line-height;
+}
+
+.about-intro li + li {
+  margin-top: 0.45rem;
+}
+
+.home-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.75rem 2rem;
+  width: 100%;
+  margin-top: 3.4em; /* دو خط: 2 × line-height 1.7 */
+  margin-top: 2lh;
+}
+
+.home-column h2 {
+  font-size: 1.2rem;
+  line-height: 1.45;
+  margin: 0 0 0.5rem;
+}
+
+.home-column h2 a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.home-column h2 a:hover {
+  color: $brand-color;
+}
+
+.post-cover {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  margin: 0.85rem 0 1.25rem;
+  border-radius: 2px;
+}
+
+.post-byline-end {
+  margin-top: 1.5rem;
+}
+
+.hub-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 0.75rem;
+  align-items: center;
+  margin: 0 0 1.25rem;
+}
+
+.hub-filter label {
+  font-size: 0.95rem;
+}
+
+.hub-filter input[type="search"] {
+  flex: 1 1 12rem;
+  min-width: 10rem;
+  padding: 0.35rem 0.5rem;
+}
+
+.hub-filter button {
+  padding: 0.35rem 0.75rem;
+}
+
+.home-column p {
+  margin: 0 0 0.75rem;
+  font-size: 0.95rem;
+  line-height: $base-line-height;
+}
+
+.home-column ul {
+  margin: 0;
+  padding-inline-start: 1.25rem;
+  font-size: 0.95rem;
+  line-height: $base-line-height;
+}
+
+.home-column li + li {
+  margin-top: 0.45rem;
+}
+
+[dir="rtl"] .home-columns,
+[dir="rtl"] .home-column h2,
+[dir="rtl"] .home-column p,
+[dir="rtl"] .home-column ul {
+  text-align: right;
+  text-align-last: right;
+}
+
+[dir="ltr"] .home-columns,
+[dir="ltr"] .home-column h2,
+[dir="ltr"] .home-column p,
+[dir="ltr"] .home-column ul {
+  text-align: left;
+  text-align-last: left;
+}
+
+[dir="rtl"] .about-hero {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .about-intro h1,
+[dir="rtl"] .about-intro blockquote,
+[dir="rtl"] .about-intro blockquote p,
+[dir="rtl"] .about-intro ul {
+  text-align: right;
+  text-align-last: right;
+}
+
+[dir="ltr"] .about-hero {
+  flex-direction: row;
+}
+
+[dir="ltr"] .about-intro h1,
+[dir="ltr"] .about-intro blockquote,
+[dir="ltr"] .about-intro blockquote p,
+[dir="ltr"] .about-intro ul {
+  text-align: left;
+  text-align-last: left;
+}
+
+/* صفحهٔ اول: justify سراسری article را لغو کن */
+html[dir="rtl"] article .about-intro blockquote,
+html[dir="rtl"] article .about-intro p,
+html[dir="rtl"] article .about-intro li {
+  text-align: right;
+  text-align-last: right;
+}
+
+html[dir="ltr"] article .about-intro blockquote,
+html[dir="ltr"] article .about-intro p,
+html[dir="ltr"] article .about-intro li {
+  text-align: left;
+  text-align-last: left;
+}
+
+html[dir="rtl"] article .home-column p,
+html[dir="rtl"] article .home-column li {
+  text-align: right;
+  text-align-last: right;
+}
+
+html[dir="ltr"] article .home-column p,
+html[dir="ltr"] article .home-column li {
+  text-align: left;
+  text-align-last: left;
+}
+
+@include media-query($on-palm) {
+  .about-hero {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.25rem;
+  }
+
+  .about-photo {
+    width: 9.5rem;
+    max-width: 52%;
+  }
+
+  .about-intro {
+    width: 100%;
+  }
+
+  [dir="rtl"] .about-intro,
+  [dir="ltr"] .about-intro {
+    text-align: inherit;
+  }
+
+  .home-columns {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
+
+@include media-query($on-phone) {
+  .about-photo {
+    width: 8.5rem;
+    max-width: 60%;
+  }
+
+  .about-intro h1 {
+    font-size: 1.2rem;
+  }
+
+  .about-intro blockquote p,
+  .about-intro blockquote p strong {
+    font-size: 0.95rem;
+  }
+
+  .about-intro ul {
+    font-size: 0.9rem;
+  }
+}

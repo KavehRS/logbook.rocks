@@ -1,0 +1,27 @@
+---
+description: Short climbing news (اخبار) on logbook.rocks — distinct from ascent reports
+alwaysApply: true
+---
+
+# News posts — اخبار
+
+When the user asks for a news item (`اخبار` / خبر کوهنوردی), apply **all** of the following.
+
+## Create / publish
+
+1. Framework: `_drafts/news-post-template.md` (never republish template prose).
+2. Live file: `_news/YYYY-MM-DD-<slug>.md` with `lang: fa-IR`, `dir_attr: rtl`, unique `description`, `date`, YAML `tags`.
+3. Short: what happened, why it matters. Optional link to an existing `/logbook/` report.
+4. Images: `assets/news/<exact-url-slug>/` matching the news URL. Comment `image:` out until files exist.
+5. Related public UI: only `اخبار مرتبط :` + flat list.
+6. Hub `/news/` is chronological (newest first).
+7. Homepage `/` always shows the اخبار column (`_includes/home-latest.html`).
+8. Visible dates on the site are Jalali via `_includes/jalali-date.html`.
+9. Never invent events, dates, team members, or climb facts.
+10. Never publish agent/implementation notes into live HTML. Write as the climber (من).
+
+## Do not
+
+- Clone a full گزارش صعود into `_news/`
+- Mix news into `_logbook/`
+- Keyword-stuff titles or descriptions

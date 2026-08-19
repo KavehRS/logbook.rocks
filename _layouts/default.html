@@ -1,0 +1,72 @@
+---
+layout: compress
+---
+<!DOCTYPE html>
+{% assign page_lang = page.lang | default: site.lang | default: 'fa-IR' %}
+{% if page.dir_attr %}
+  {% assign page_dir = page.dir_attr %}
+{% elsif page_lang == 'en' or page_lang == 'en-US' %}
+  {% assign page_dir = 'ltr' %}
+{% else %}
+  {% assign page_dir = 'rtl' %}
+{% endif %}
+<html lang="{{ page_lang }}" dir="{{ page_dir }}">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% if page.noindex %}
+    <meta name="robots" content="noindex, follow">
+    {% endif %}
+    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+    {% seo %}
+    <link rel="describedby" href="{{ '/llms.txt' | absolute_url }}">
+    <link rel="alternate" type="application/json" href="{{ '/webmcp-catalog.json' | absolute_url }}" title="WebMCP catalog">
+    {% include structured-data-logbook.html %}
+    {% include favicon.html %}
+
+    <link rel="preconnect" href="https://use.fontawesome.com" crossorigin>
+    <script type="text/javascript">
+        (function() {
+            var css = document.createElement('link');
+            css.href = 'https://use.fontawesome.com/releases/v5.11.0/css/all.css';
+            css.rel = 'stylesheet';
+            css.type = 'text/css';
+            document.getElementsByTagName('head')[0].appendChild(css);
+        })();
+    </script>
+</head>
+
+<body>
+    <header class="site-header" style="display: flex; justify-content: space-between; align-items: center; padding: 10px 20px;">
+        <div>
+            <p class="post-headline site-brand" style="margin: 0;">
+                <a href="{{ '/' | relative_url }}" style="color: inherit; text-decoration: none;">{{ site.title }}</a>
+            </p>
+            {% if site.tagline %}
+            <p class="post-description" style="margin: 0;">{{ site.tagline }}</p>
+            {% endif %}
+        </div>
+        <div>
+            {% include navigation.html %}
+        </div>
+    </header>
+
+    <main>
+        <article>
+            {{ content }}
+        </article>
+    </main>
+
+    <footer>
+        <p class="copy">
+            <small>&copy; {{ site.title }} {{ site.time | date: '%Y' }} | آخرین بروزرسانی: {% include jalali-date.html date=site.time %}</small>
+        </p>
+        {% include social-footer.html %}
+    </footer>
+
+    {% include analytics.html %}
+    <script src="{{ '/assets/js/webmcp.js' | relative_url }}" defer></script>
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+# Activity disciplines for logbook reports (categories).
+# Related reports are SELECTED by shared slugs — not by template/tag similarity.
+# Public related UI is a flat list under «گزارش‌های مرتبط :» (no category headings, no agent notes).
+# Hub /logbook/ is chronological by date, not grouped by these labels.
+# Reader-facing dates on hub/posts/footer use Jalali (_includes/jalali-date.html).
+# Keep this file as the single source of truth; rules/templates/samples must match it.
+#
+# Use rock-climbing / wall-climbing only for true sport/trad rock or multipitch wall routes.
+# Ridge/gendarme/hand-and-foot technical alpine trips → technical-mountaineering.
+
+order:
+  - training-camp
+  - snowfield
+  - glacier
+  - icefall
+  - winter-ascent
+  - high-altitude
+  - technical-mountaineering
+  - hiking
+  - rock-climbing
+  - wall-climbing
+
+labels:
+  training-camp: کمپ‌های آموزشی
+  snowfield: برفچال
+  glacier: یخچال
+  icefall: آبشار یخی
+  winter-ascent: صعود زمستانه
+  high-altitude: کوهنوردی مرتفع (بالای ۴۰۰۰ متر)
+  technical-mountaineering: کوهنوردی فنی
+  hiking: کوهپیمایی
+  rock-climbing: سنگ‌نوردی
+  wall-climbing: دیواره‌نوردی

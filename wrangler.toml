@@ -1,0 +1,4 @@
+# Cloudflare Pages project for https://logbook.rocks
+name = "logbook-rocks"
+compatibility_date = "2026-08-19"
+pages_build_output_dir = "_site"

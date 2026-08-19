@@ -1,0 +1,34 @@
+---
+layout: default
+---
+{% if page.collection == 'logbook' or page.collection == 'news' %}
+<nav class="crumbs" aria-label="مسیر صفحه" style="margin-bottom: 0.75rem;">
+  <small>
+    <a href="{{ '/' | relative_url }}">خانه</a>
+    · <a href="{% if page.collection == 'logbook' %}{{ '/logbook/' | relative_url }}{% else %}{{ '/news/' | relative_url }}{% endif %}">{% if page.collection == 'logbook' %}گزارش صعود{% else %}اخبار{% endif %}</a>
+  </small>
+</nav>
+{% endif %}
+
+<h1 class="post-headline">{{ page.title }}</h1>
+{% if page.date %}
+<p class="meta"><time datetime="{{ page.date | date_to_xmlschema }}"><small>{% include jalali-date.html date=page.date %}</small></time></p>
+{% endif %}
+<p class="meta"><small>نویسنده: <a href="{{ '/' | relative_url }}">کاوه‌ رضائی‌شیراز</a></small></p>
+{% assign default_img = site.logo | default: '/assets/images/logos/1/kavehrs.jpg' %}
+{% if page.image.path %}
+  {% assign cover_src = page.image.path %}
+  {% assign cover_alt = page.image.alt | default: page.title %}
+  {% assign cover_w = page.image.width %}
+  {% assign cover_h = page.image.height %}
+{% else %}
+  {% assign cover_src = page.image %}
+  {% assign cover_alt = page.title %}
+{% endif %}
+{% if cover_src and cover_src != empty and cover_src != default_img %}
+<img class="post-cover" src="{{ cover_src | relative_url }}" alt="{{ cover_alt | escape }}"{% if cover_w %} width="{{ cover_w }}"{% endif %}{% if cover_h %} height="{{ cover_h }}"{% endif %} fetchpriority="high" decoding="async">
+{% endif %}
+
+{{ content }}
+
+{% include related-links.html %}
