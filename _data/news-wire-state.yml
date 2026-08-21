@@ -1,0 +1,8 @@
+# Last successful news-wire agent run (UTC / GMT).
+# Scheduled slots: 00:00, 06:00, 12:00, 18:00 GMT.
+
+last_run_utc: "2026-08-21T07:34:00Z"
+last_run_kind: first-hour
+window_start_utc: "2026-08-21T06:34:00Z"
+published_count: 0
+next_slots_gmt: [0, 6, 12, 18]

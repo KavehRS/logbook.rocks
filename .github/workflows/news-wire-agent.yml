@@ -1,0 +1,81 @@
+# GMT 00:00, 06:00, 12:00, 18:00 (24:00 = 00:00): start a Cursor Cloud Agent
+# to translate + triple-review new items from World Climbing, UIAA,
+# PlanetMountain, and Climbing.com.
+#
+# Prefer native Cursor Automation: .cursor/automations/news-wire-prompt.md
+#
+# Required repo secret:
+#   CURSOR_API_KEY — from https://cursor.com/settings (API keys)
+#
+# If the secret is missing, the workflow no-ops successfully so Actions stays green.
+
+name: International news wire Cloud Agent
+
+on:
+  schedule:
+    - cron: "0 0,6,12,18 * * *"
+  workflow_dispatch:
+
+jobs:
+  start-news-wire-agent:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Start Cursor Cloud Agent (news wire)
+        env:
+          CURSOR_API_KEY: ${{ secrets.CURSOR_API_KEY }}
+        run: |
+          set -euo pipefail
+          if [ -z "${CURSOR_API_KEY:-}" ]; then
+            echo "CURSOR_API_KEY secret not set — skip API trigger."
+            echo "Enable Cursor Automation: .cursor/automations/news-wire-prompt.md"
+            exit 0
+          fi
+
+          python3 <<'PY'
+          import json, os, urllib.request
+          from datetime import datetime, timezone, timedelta
+
+          tehran = timezone(timedelta(hours=3, minutes=30))
+          now = datetime.now(tehran)
+          stamp = now.strftime("%Y%m%d-%H%M")
+
+          prompt = f"""You are the automatic اخبار جهان agent for https://logbook.rocks.
+
+          This run was auto-triggered at {now.isoformat()} (Asia/Tehran). GMT slots are 00:00, 06:00, 12:00, 18:00. Do the work yourself.
+
+          Follow `.cursor/skills/news-wire/SKILL.md` exactly.
+
+          Sources only: https://www.worldclimbing.com , https://www.theuiaa.org , https://www.planetmountain.com , https://www.climbing.com
+
+          Fetch items published since the previous GMT slot (`_data/news-wire-state.yml`). Write short original Persian summaries, triple-review (facts / language / policy), log passes in `_seo/news-wire-log.md`, append URLs to `_data/news-wire-seen.yml`. Always update news-wire-state.yml.
+
+          Skip child-sexual-abuse stories, unverified facts, duplicates, and verbatim English pastes. No photos from those sites. Do not invent live-event results without a source article.
+
+          If new verified items: branch `cursor/news-wire-{stamp}-4b4e`, `bundle exec jekyll build`, open PR; also refresh `published` while GitHub Actions cannot deploy Pages.
+          If nothing new: no PR; log the empty window; still update news-wire-state.yml.
+          Never invent news. Never commit secrets.
+          """
+
+          body = {
+              "name": f"Logbook news wire {stamp}",
+              "prompt": {"text": prompt},
+              "repos": [{
+                  "url": "https://github.com/KavehRS/logbook.rocks",
+                  "startingRef": "main",
+              }],
+              "autoCreatePR": True,
+              "skipReviewerRequest": True,
+          }
+          req = urllib.request.Request(
+              "https://api.cursor.com/v1/agents",
+              data=json.dumps(body).encode(),
+              headers={
+                  "Authorization": f"Bearer {os.environ['CURSOR_API_KEY']}",
+                  "Content-Type": "application/json",
+              },
+              method="POST",
+          )
+          with urllib.request.urlopen(req) as resp:
+              print(resp.read().decode())
+          print("News-wire cloud agent requested.")
+          PY
