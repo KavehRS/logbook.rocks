@@ -1,5 +1,6 @@
-# Every 6 hours: start a Cursor Cloud Agent to translate + triple-review
-# new items from World Climbing, UIAA, PlanetMountain, and Climbing.com.
+# GMT 00:00, 06:00, 12:00, 18:00 (24:00 = 00:00): start a Cursor Cloud Agent
+# to translate + triple-review new items from World Climbing, UIAA,
+# PlanetMountain, and Climbing.com.
 #
 # Prefer native Cursor Automation: .cursor/automations/news-wire-prompt.md
 #
@@ -12,7 +13,7 @@ name: International news wire Cloud Agent
 
 on:
   schedule:
-    - cron: "0 */6 * * *"
+    - cron: "0 0,6,12,18 * * *"
   workflow_dispatch:
 
 jobs:
@@ -38,20 +39,20 @@ jobs:
           now = datetime.now(tehran)
           stamp = now.strftime("%Y%m%d-%H%M")
 
-          prompt = f"""You are the scheduled international news-wire agent for https://logbook.rocks.
+          prompt = f"""You are the automatic اخبار جهان agent for https://logbook.rocks.
 
-          This run was auto-triggered at {now.isoformat()} (Asia/Tehran). Do the work yourself.
+          This run was auto-triggered at {now.isoformat()} (Asia/Tehran). GMT slots are 00:00, 06:00, 12:00, 18:00. Do the work yourself.
 
           Follow `.cursor/skills/news-wire/SKILL.md` exactly.
 
           Sources only: https://www.worldclimbing.com , https://www.theuiaa.org , https://www.planetmountain.com , https://www.climbing.com
 
-          Fetch unseen items, write short original Persian summaries, triple-review (facts / language / policy), log passes in `_seo/news-wire-log.md`, append URLs to `_data/news-wire-seen.yml`.
+          Fetch items published since the previous GMT slot (`_data/news-wire-state.yml`). Write short original Persian summaries, triple-review (facts / language / policy), log passes in `_seo/news-wire-log.md`, append URLs to `_data/news-wire-seen.yml`. Always update news-wire-state.yml.
 
-          Skip child-sexual-abuse stories, unverified facts, duplicates, and verbatim English pastes. No photos from those sites.
+          Skip child-sexual-abuse stories, unverified facts, duplicates, and verbatim English pastes. No photos from those sites. Do not invent live-event results without a source article.
 
           If new verified items: branch `cursor/news-wire-{stamp}-4b4e`, `bundle exec jekyll build`, open PR; also refresh `published` while GitHub Actions cannot deploy Pages.
-          If nothing new: no PR; one-line summary.
+          If nothing new: no PR; log the empty window; still update news-wire-state.yml.
           Never invent news. Never commit secrets.
           """
 

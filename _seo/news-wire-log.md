@@ -43,3 +43,9 @@ Re-fetched UIAA symposium, UIAA Simond recall, IFSC Žilina, Climbing.com Pearce
 - Pearce: send 16 Aug 2026, aborted lead 13 Aug, E9 6c / 5.12d X, Dawes 1986, first female still match.
 
 Language and policy passes unchanged. All five PASS.
+
+## 2026-08-21 07:34 GMT — first agent series (last 1 hour)
+
+Window: 06:34–07:34 UTC. Fetched UIAA RSS, Climbing.com RSS, World Climbing `/news` (latest dated 19 Aug), Ostermundigen event news index (no article), PlanetMountain listings (newest dated 20 Aug).
+
+No source article in the last hour. Qualifications at Ostermundigen started ~07:00 UTC according to the event programme, but World Climbing has not published a news post — omitted. Nothing to review. Next GMT slots: 12:00, 18:00, 00:00, 06:00.

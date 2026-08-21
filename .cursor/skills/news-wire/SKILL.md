@@ -1,11 +1,28 @@
 ---
 name: news-wire
-description: Every 6 hours, fetch new climbing/mountaineering news from World Climbing, UIAA, PlanetMountain, and Climbing.com; translate to Persian; triple-review; publish to _news/
+description: GMT 00/06/12/18 news-wire agent — fetch new climbing news from World Climbing, UIAA, PlanetMountain, and Climbing.com; Persian summary; triple-review; publish to _news/
 ---
 
-# International news wire (اخبار)
+# International news wire agent (اخبار جهان)
 
-Use when the scheduled 6-hour news-wire run fires, or when the user asks to refresh اخبار from the four reference sites.
+Use when the GMT news-wire timer fires, or when the user asks to refresh اخبار جهان from the four reference sites.
+
+This **is** the automatic agent. Do the work yourself; do not wait for another prompt.
+
+## Schedule (GMT / UTC only)
+
+| Slot | Cron |
+|------|------|
+| 00:00 GMT (ساعت ۲۴) | `0 0 * * *` |
+| 06:00 GMT | `0 6 * * *` |
+| 12:00 GMT | `0 12 * * *` |
+| 18:00 GMT | `0 18 * * *` |
+
+Combined: `0 0,6,12,18 * * *` (GitHub Actions and Cursor timer, UTC).
+
+- **First series** (manual kickoff): only items published in the **last 1 hour**.
+- **Later series**: items published **since the previous GMT slot** (about six hours), still skipping URLs in `_data/news-wire-seen.yml`.
+- Window timestamps live in `_data/news-wire-state.yml`. Update `last_run_utc` after every run, even if nothing published.
 
 ## Sources (only these)
 
@@ -23,11 +40,12 @@ Prefer RSS when it exists (`https://www.theuiaa.org/feed/`, `https://www.climbin
 3. `.cursor/skills/news-post/SKILL.md`
 4. `_drafts/news-post-template.md`
 5. `_data/news-wire-seen.yml` — skip `items` and `skipped` URLs already listed
+6. `_data/news-wire-state.yml` — previous run time
 
 ## What to publish
 
 - Short Persian **summary**, not a verbatim translation of the English/Italian article.
-- One new item per source per run when that source has something unseen. Extra UIAA **equipment recalls** may ship in the same run (safety).
+- One new item per source per run when that source has something unseen in the window. Extra UIAA **equipment recalls** may ship in the same run (safety).
 - Link the original article in the body. Do not hotlink or copy their photos.
 - Front matter: `layout: post`, `lang: fa-IR`, `dir_attr: rtl`, unique `description`, Gregorian `date`, YAML `tags`, `source` and `source_url`.
 - File: `_news/YYYY-MM-DD-<slug>.md` using the article’s publication date (not “today”) when the source gives one.
@@ -56,4 +74,5 @@ If any pass fails, fix or drop the item. Do not publish a failing draft.
 1. Branch `cursor/news-wire-<YYYYMMDD-HHMM>-4b4e` on scheduled runs (this repo’s `cursor/*-4b4e` pattern)
 2. `bundle exec jekyll build` — `_news/` pages in `_site/news/`; `_seo/` and `.cursor/` unpublished
 3. Open PR. Until GitHub Actions billing is unlocked, also refresh the `published` static export so https://logbook.rocks/news/ updates (Zaraz reads HTML from GitHub `published`, not jsDelivr directory URLs)
-4. If no unseen items: no PR; one-line summary
+4. If no unseen items in the window: no PR; log the empty window in `_seo/news-wire-log.md`; still update `_data/news-wire-state.yml`
+5. Never invent results for a live event that has no source article yet

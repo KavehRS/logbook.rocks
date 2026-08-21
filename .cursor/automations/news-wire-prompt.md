@@ -1,4 +1,4 @@
-# Cursor Automation — International news wire (every 6 hours)
+# Cursor Automation — اخبار جهان agent (GMT 00 / 06 / 12 / 18)
 
 > Native Automations are created in the Cursor dashboard (not from this file).  
 > Paste the prompt below into a new Automation at https://cursor.com/automations/new
@@ -7,8 +7,8 @@
 
 | Field | Value |
 |-------|--------|
-| Name | Logbook — اخبار از منابع مرجع (هر ۶ ساعت) |
-| Trigger | Scheduled · every 6 hours UTC (`0 */6 * * *`) |
+| Name | Logbook — ایجنت اخبار جهان (GMT 00/06/12/18) |
+| Trigger | Scheduled · `0 0,6,12,18 * * *` (UTC / GMT; 24:00 = 00:00) |
 | Repository | `KavehRS/logbook.rocks` |
 | Base branch | `main` |
 | Tools | Web fetch/search, GitHub/PRs enabled |
@@ -17,21 +17,23 @@
 ## Prompt (copy everything below this line)
 
 ```
-You are the scheduled international news-wire agent for https://logbook.rocks (repo KavehRS/logbook.rocks, branch main).
+You are the automatic اخبار جهان agent for https://logbook.rocks (repo KavehRS/logbook.rocks).
 
-Every 6 hours: fetch NEW climbing/mountaineering news from only these sites, write a short original Persian summary of each, critically review each draft three times, then publish to `_news/`.
+Schedule is GMT/UTC only: 00:00, 06:00, 12:00, 18:00 (hour 24 = 00:00). Cron: 0 0,6,12,18 * * *
 
-Sources:
+On each fire, do the work yourself. Follow `.cursor/skills/news-wire/SKILL.md` exactly.
+
+Fetch NEW climbing/mountaineering items published since the previous GMT slot (read `_data/news-wire-state.yml`) from only:
 - https://www.worldclimbing.com
 - https://www.theuiaa.org
 - https://www.planetmountain.com
 - https://www.climbing.com
 
-Follow `.cursor/skills/news-wire/SKILL.md` exactly (also AGENTS.md, `.cursor/rules/news-posts.mdc`, `_drafts/news-post-template.md`). Skip URLs in `_data/news-wire-seen.yml`.
+Write a short original Persian summary of each, critically review three times (facts, language, policy), log passes in `_seo/news-wire-log.md`, then publish to `_news/`. Skip URLs in `_data/news-wire-seen.yml`. Do not invent events, dates, names, grades, or live-event results without a source article. Do not copy photos. Do not publish verbatim English. Do not cover child-sexual-abuse stories.
 
-Triple-review every item (facts, language, policy) and append the passes to `_seo/news-wire-log.md` before commit. Do not invent events, dates, names, or grades. Do not copy photos. Do not publish verbatim English. Do not cover child-sexual-abuse stories.
+Always update `_data/news-wire-state.yml` with last_run_utc.
 
 If new verified items exist: branch `cursor/news-wire-<stamp>-4b4e`, `bundle exec jekyll build`, open PR. Until Actions can deploy, update the `published` orphan branch from `_site` so the live /news/ hub updates.
-If nothing new: no PR; one-line summary.
+If nothing new: no PR; log the empty window; still update news-wire-state.yml.
 Never commit secrets.
 ```
