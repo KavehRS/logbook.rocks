@@ -45,6 +45,8 @@ Prefer RSS when it exists (`https://www.theuiaa.org/feed/`, `https://www.climbin
 ## What to publish
 
 - Short Persian **summary**, not a verbatim translation of the English/Italian article.
+- Do **not** open with curator asides such as «خبر را اینجا می‌آورم»، «خلاصه می‌کنم»، or «خودم آنجا نبودم». Start with the news.
+- The layout prints **مترجم : کاوه‌ رضائی‌شیراز** at the bottom of news pages. Do not add «نویسنده» on news items.
 - One new item per source per run when that source has something unseen in the window. Extra UIAA **equipment recalls** may ship in the same run (safety).
 - Link the original article in the body. Do not hotlink or copy their photos.
 - Front matter: `layout: post`, `lang: fa-IR`, `dir_attr: rtl`, unique `description`, Gregorian `date`, YAML `tags`, `source` and `source_url`.
