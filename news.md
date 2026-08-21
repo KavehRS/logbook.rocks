@@ -2,15 +2,14 @@
 layout: default
 title: اخبار جهان
 description: >-
-  اخبار جهان کوهنوردی: خلاصهٔ فارسی خبرهای World Climbing، UIAA،
-  PlanetMountain و Climbing.com.
+  اخبار جهان کوهنوردی: خلاصهٔ فارسی خبرهای سایت‌های معتبر.
 permalink: /news/
 lang: fa-IR
 dir_attr: rtl
 ---
 
 <h1>اخبار جهان</h1>
-<p>خبرهای کوهنوردی جهان را از World Climbing، UIAA، PlanetMountain و Climbing.com خلاصه و به فارسی می‌آورم. گزارش کامل صعودهای خودم در <a href="{{ '/logbook/' | relative_url }}">گزارش صعود</a> است.</p>
+<p>خبرهای کوهنوردی جهان را از سایت‌های معتبر خلاصه و به فارسی می‌آورم.</p>
 {% assign news_posts = site.news | sort: "date" | reverse %}
 {% if news_posts.size == 0 %}
 <p>هنوز خبری در این بخش منتشر نشده است.</p>
