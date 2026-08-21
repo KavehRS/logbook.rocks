@@ -27,7 +27,7 @@ USAGE (agent-only — do not copy this comment block into published pages)
 5) Related public UI: «اخبار مرتبط :» + flat list
 6) Hub `/news/` is chronological (newest first). Homepage `/` is about + four latest teasers; the world-news archive is `/news/` (title: اخبار جهان).
 7) Do not open with «این خبر را می‌آورم» / curator asides. Short: what happened, why it matters, optional link
-   to an existing `/logbook/` report — do not clone a climb report into news. News byline is layout-only: مترجم at the bottom.
+   to an existing `/logbook/` report — do not clone a climb report into news. Do not add a مترجم or نویسنده byline.
 8) Do not invent events, dates, or team names the user did not give
 9) Never paste this template prose unchanged into a published post
 -->
