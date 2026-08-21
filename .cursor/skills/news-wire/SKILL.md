@@ -22,7 +22,7 @@ Prefer RSS when it exists (`https://www.theuiaa.org/feed/`, `https://www.climbin
 2. `.cursor/rules/news-posts.mdc`
 3. `.cursor/skills/news-post/SKILL.md`
 4. `_drafts/news-post-template.md`
-5. `_data/news-wire-seen.yml` — skip URLs already listed
+5. `_data/news-wire-seen.yml` — skip `items` and `skipped` URLs already listed
 
 ## What to publish
 
@@ -39,6 +39,7 @@ Prefer RSS when it exists (`https://www.theuiaa.org/feed/`, `https://www.climbin
 - Items you cannot confirm from the source page
 - Duplicates of a story already published from another of the four sites (keep the earlier / closer-to-primary source)
 - Marketing listicles with no new climb/federation/safety fact
+- When skipping, append the URL under `skipped:` in `_data/news-wire-seen.yml` so later runs do not re-open it
 
 ## Triple critical review (required, before commit)
 
