@@ -55,3 +55,9 @@ No source article in the last hour. Qualifications at Ostermundigen started ~07:
 Window: 07:34–09:19 UTC (since `last_run_utc`, not a 1-hour cap). Fetched UIAA RSS, Climbing.com RSS + `/news/`, World Climbing `/news` (latest dated 19 Aug), Ostermundigen event news and results indexes (no article), PlanetMountain latest-news list (newest dated 20 Aug: Messner anniversary, Sieberer Fußstein/Badile).
 
 No source article published after 07:34 UTC. Ostermundigen is underway 21–22 Aug but World Climbing still has no news post and no published results page — omitted (do not invent live scores). Nothing to review. Next GMT slot: 12:00.
+
+## 2026-08-21 12:00 GMT — scheduled slot (all unseen since previous run)
+
+Window: 09:19:53–12:02:13 UTC (since `last_run_utc`, not a 1-hour cap). Fetched UIAA RSS (newest 20 Aug symposium, already published), Climbing.com RSS + `/news/` (newest 19 Aug Pearce, already published), World Climbing `/news` (newest dated 19 Aug: Erik Noya Cardona conversation — outside this window, not opened for publish), Ostermundigen event news and results indexes (nav only; no article, no posted results), PlanetMountain HTML 403; search listings still show 20 Aug Sieberer/Messner items and no 21 Aug news article.
+
+No source article published after 09:19 UTC. Ostermundigen 21–22 Aug is underway; World Climbing still has no news post and no published results — omitted (do not invent live scores). Nothing to review. Next GMT slot: 18:00.
