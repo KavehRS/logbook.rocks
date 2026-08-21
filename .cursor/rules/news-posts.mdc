@@ -19,6 +19,7 @@ When the user asks for a news item (`اخبار` / خبر کوهنوردی), app
 8. Visible dates on the site are Jalali via `_includes/jalali-date.html`.
 9. Never invent events, dates, team members, or climb facts.
 10. Never publish agent/implementation notes into live HTML. Write as the climber (من).
+11. International wire (every 6 hours): follow `.cursor/skills/news-wire/SKILL.md`. Translate only from World Climbing, UIAA, PlanetMountain, and Climbing.com. Triple-review before publish. Skip URLs in `_data/news-wire-seen.yml`.
 
 ## Do not
 

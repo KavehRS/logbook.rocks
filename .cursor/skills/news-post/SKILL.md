@@ -26,6 +26,7 @@ Agent rule: `.cursor/rules/news-posts.mdc`
 6. Homepage `/` is the about page; do not list news items there. Archive is `/news/`
 7. Never publish agent notes in live HTML
 8. Reader-facing UI dates Jalali (`_includes/jalali-date.html`)
+9. International 6-hour wire: `.cursor/skills/news-wire/SKILL.md`
 
 ## Uniqueness
 
