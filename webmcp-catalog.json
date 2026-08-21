@@ -157,5 +157,40 @@
     }
   ],
   "news": [
+    {
+      "title": "ثبت‌نام سومین سمپوزیوم ایمنی کوهستان UIAA در نپال باز شد",
+      "url": "/news/2026-08-20-uiaa-mountain-safety-symposium-nepal/",
+      "date": "2026-08-20",
+      "description": "UIAA ثبت‌نام سمپوزیوم ایمنی کوهستان ۲۷ و ۲۸ اکتبر ۲۰۲۶ در نپال را باز کرده؛ مهلت ۳۰ سپتامبر است.",
+      "tags": ["uiaa","ایمنی","نپال","کوهنوردی"]
+    },
+    {
+      "title": "اولین صعود زنانهٔ Indian Face روی کلاگی در ویلز",
+      "url": "/news/2026-08-19-climbing-rachel-pearce-indian-face/",
+      "date": "2026-08-19",
+      "description": "Climbing.com نوشته ریچل پیرس در ۱۶ اوت ۲۰۲۶ اولین زن صعودکنندهٔ Indian Face (E9 6c) روی Cloggy شد.",
+      "tags": ["climbing.com","سنگ‌نوردی","ترد","ویلز"]
+    },
+    {
+      "title": "لائورا روگورا Bibliographie را در شش روز صعود کرد",
+      "url": "/news/2026-08-17-planetmountain-laura-rogora-bibliographie/",
+      "date": "2026-08-17",
+      "description": "PlanetMountain نوشته لائورا روگورا 9b+ مسیر Bibliographie در سئوز را در شش روز تکرار کرد؛ سومین زن در این درجه.",
+      "tags": ["planetmountain","سنگ‌نوردی","سئوز","9b+"]
+    },
+    {
+      "title": "جوان‌ترین برندهٔ فصل سری اروپا در لید ژیلینا",
+      "url": "/news/2026-08-14-world-climbing-zilina-lead/",
+      "date": "2026-08-14",
+      "description": "World Climbing نوشته در لید ژیلینا جیانلوکا ویگتی ۱۷ساله طلا گرفت؛ در زنان آنیکا دویبلر اول شد.",
+      "tags": ["world-climbing","سنگ‌نوردی","لید","رقابت"]
+    },
+    {
+      "title": "فراخوان جمع‌آوری کوییک‌دراهای Simond Alpinism و Vertika",
+      "url": "/news/2026-08-06-uiaa-simond-quickdraw-recall/",
+      "date": "2026-08-06",
+      "description": "UIAA خبر داده سیمون در پرچ کوییک‌دراهای Alpinism و Vertika نقص مونتاژ یافته؛ خطر شکستن سیم در سقوط.",
+      "tags": ["uiaa","ایمنی","تجهیزات","فراخوان"]
+    }
   ]
 }
