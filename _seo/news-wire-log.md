@@ -61,3 +61,9 @@ No source article published after 07:34 UTC. Ostermundigen is underway 21–22 A
 Window: 09:19:53–12:02:13 UTC (since `last_run_utc`, not a 1-hour cap). Fetched UIAA RSS (newest 20 Aug symposium, already published), Climbing.com RSS + `/news/` (newest 19 Aug Pearce, already published), World Climbing `/news` (newest dated 19 Aug: Erik Noya Cardona conversation — outside this window, not opened for publish), Ostermundigen event news and results indexes (nav only; no article, no posted results), PlanetMountain HTML 403; search listings still show 20 Aug Sieberer/Messner items and no 21 Aug news article.
 
 No source article published after 09:19 UTC. Ostermundigen 21–22 Aug is underway; World Climbing still has no news post and no published results — omitted (do not invent live scores). Nothing to review. Next GMT slot: 18:00.
+
+## 2026-08-21 18:00 GMT — scheduled slot (all unseen since previous run)
+
+Window: 12:02:13–18:00:54 UTC (since `last_run_utc`, not a 1-hour cap). Fetched UIAA RSS + homepage (newest still 20 Aug symposium), Climbing.com RSS (newest still 19 Aug Pearce), World Climbing `/news` (newest still 19 Aug), Ostermundigen event news/results/videos indexes (only `/news/index`; schedule mentions Qualification/Semi-final/Final, no article slug, no athlete result names), PlanetMountain HTML 403; search listings have no 21 Aug news article.
+
+No source article published after 12:02 UTC. Ostermundigen day-1 semis are on the programme (19:00 local) but World Climbing still has no news post and no posted results page — omitted (do not invent live scores). Nothing to review. Next GMT slot: 00:00.
