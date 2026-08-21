@@ -5,7 +5,7 @@ layout: default
 <nav class="crumbs" aria-label="مسیر صفحه" style="margin-bottom: 0.75rem;">
   <small>
     <a href="{{ '/' | relative_url }}">خانه</a>
-    · <a href="{% if page.collection == 'logbook' %}{{ '/logbook/' | relative_url }}{% else %}{{ '/news/' | relative_url }}{% endif %}">{% if page.collection == 'logbook' %}گزارش صعود{% else %}اخبار جهان{% endif %}</a>
+    · <a href="{% if page.collection == 'logbook' %}{{ '/logbook/' | relative_url }}{% else %}{{ '/news/' | relative_url }}{% endif %}">{% if page.collection == 'logbook' %}گزارش صعود{% else %}خبر کوهنوردی{% endif %}</a>
   </small>
 </nav>
 {% endif %}

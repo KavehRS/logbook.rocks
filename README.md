@@ -4,7 +4,7 @@
 
 - سایت: https://logbook.rocks
 - گزارش صعود: https://logbook.rocks/logbook/
-- اخبار: https://logbook.rocks/news/
+- خبر کوهنوردی: https://logbook.rocks/news/
 - سایت شخصی نویسنده: https://www.kavehrs.com
 
 محتوای گزارش صعود، قوانین ایجنت، مهارت‌ها و هدف‌گذاری SEO از ریپوی `KavehRS/website` به اینجا منتقل شده است.
