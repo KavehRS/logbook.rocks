@@ -47,7 +47,7 @@ jobs:
 
           Sources only: https://www.worldclimbing.com , https://www.theuiaa.org , https://www.planetmountain.com , https://www.climbing.com
 
-          Fetch items published since the previous GMT slot (`_data/news-wire-state.yml`). Write short original Persian summaries, triple-review (facts / language / policy), log passes in `_seo/news-wire-log.md`, append URLs to `_data/news-wire-seen.yml`. Always update news-wire-state.yml.
+          First series only: last 1 hour. Later series: all unseen items published since last_run_utc in `_data/news-wire-state.yml` (catch up the full gap; do not use a 1-hour window). Write short original Persian summaries, triple-review (facts / language / policy), log passes in `_seo/news-wire-log.md`, append URLs to `_data/news-wire-seen.yml`. Always update news-wire-state.yml.
 
           Skip child-sexual-abuse stories, unverified facts, duplicates, and verbatim English pastes. No photos from those sites. Do not invent live-event results without a source article.
 

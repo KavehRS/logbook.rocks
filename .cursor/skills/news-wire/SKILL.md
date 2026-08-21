@@ -20,8 +20,9 @@ This **is** the automatic agent. Do the work yourself; do not wait for another p
 
 Combined: `0 0,6,12,18 * * *` (GitHub Actions and Cursor timer, UTC).
 
-- **First series** (manual kickoff): only items published in the **last 1 hour**.
-- **Later series**: items published **since the previous GMT slot** (about six hours), still skipping URLs in `_data/news-wire-seen.yml`.
+- **First series** (manual kickoff only): items published in the **last 1 hour**.
+- **Every later series** (scheduled GMT slots and manual tests after that kickoff): translate **all** unseen items published **since `last_run_utc`** in `_data/news-wire-state.yml`. If a slot was missed, catch up the full gap — do not cap at one hour and do not cap at six hours.
+- Still skip URLs already listed in `_data/news-wire-seen.yml`.
 - Window timestamps live in `_data/news-wire-state.yml`. Update `last_run_utc` after every run, even if nothing published.
 
 ## Sources (only these)
@@ -47,7 +48,7 @@ Prefer RSS when it exists (`https://www.theuiaa.org/feed/`, `https://www.climbin
 - Short Persian **summary**, not a verbatim translation of the English/Italian article.
 - Do **not** open with curator asides such as «خبر را اینجا می‌آورم»، «خلاصه می‌کنم»، or «خودم آنجا نبودم». Start with the news.
 - News pages have no مترجم or نویسنده byline. Do not add either in the post body.
-- One new item per source per run when that source has something unseen in the window. Extra UIAA **equipment recalls** may ship in the same run (safety).
+- Publish **every** unseen item in the window that passes triple review (not one-per-source). Extra UIAA **equipment recalls** may ship in the same run (safety).
 - Link the original article in the body. Do not hotlink or copy their photos.
 - Front matter: `layout: post`, `lang: fa-IR`, `dir_attr: rtl`, unique `description`, Gregorian `date`, YAML `tags`, `source` and `source_url`.
 - File: `_news/YYYY-MM-DD-<slug>.md` using the article’s publication date (not “today”) when the source gives one.
