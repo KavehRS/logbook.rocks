@@ -1,0 +1,16 @@
+{% comment %}
+Homepage about CTAs: where reports and news live.
+Do not list individual posts here — the archive is /logbook/ and /news/.
+{% endcomment %}
+<div class="home-columns" role="navigation" aria-label="بخش‌های سایت">
+  <div class="home-column">
+    <h2><a href="{{ '/logbook/' | relative_url }}">گزارش صعود</a></h2>
+    <p>آرشیو گزارش برنامه‌های اجراشده: مسیر، هوا، تجهیزات و تجربهٔ همان صعود.</p>
+    <p><a href="{{ '/logbook/' | relative_url }}">مشاهدهٔ همهٔ گزارش‌ها</a></p>
+  </div>
+  <div class="home-column">
+    <h2><a href="{{ '/news/' | relative_url }}">اخبار</a></h2>
+    <p>خبرهای کوتاه کوهنوردی: اعلام برنامه، انتشار گزارش، یا نکته‌ای که گزارش کامل نیست.</p>
+    <p><a href="{{ '/news/' | relative_url }}">رفتن به اخبار</a></p>
+  </div>
+</div>

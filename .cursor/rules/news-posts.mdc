@@ -15,7 +15,7 @@ When the user asks for a news item (`اخبار` / خبر کوهنوردی), app
 4. Images: `assets/news/<exact-url-slug>/` matching the news URL. Comment `image:` out until files exist.
 5. Related public UI: only `اخبار مرتبط :` + flat list.
 6. Hub `/news/` is chronological (newest first).
-7. Homepage `/` always shows the اخبار column (`_includes/home-latest.html`).
+7. Homepage `/` is the about page — do not list news items there. The news archive is `/news/`.
 8. Visible dates on the site are Jalali via `_includes/jalali-date.html`.
 9. Never invent events, dates, team members, or climb facts.
 10. Never publish agent/implementation notes into live HTML. Write as the climber (من).

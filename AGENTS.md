@@ -116,7 +116,7 @@ When asked for `اخبار` / a climbing news item / update to `_news/`:
 4. File: `_news/YYYY-MM-DD-<slug>.md` with zero-padded date, `lang: fa-IR`, YAML `tags` array, unique description.
 5. Images for news: `assets/news/<exact-url-slug>/`; comment `image:` out until files exist.
 6. Related UI stays `اخبار مرتبط :` + flat list. Hub `/news/` chronological.
-7. Homepage `/` lists the 4 newest reports and news items automatically; do not hardcode teasers in `index.md`.
+7. Homepage `/` is the about page for this mountaineering logbook (not a post list). Reports live on `/logbook/`; news on `/news/`.
 8. For a Cursor Automation, paste `.cursor/automations/news-post-prompt.md` at https://cursor.com/automations/new
 9. Open a PR on `cursor/<descriptive-name>-4b4e`, verify `bundle exec jekyll build`.
 
