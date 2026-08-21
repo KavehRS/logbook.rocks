@@ -1,0 +1,20 @@
+/* First paint for the GitHub Pages placeholder that Zaraz replaces.
+   Scoped so it does not leak onto the real Jekyll pages after document.write. */
+h1#logbookrocks {
+  display: none !important;
+}
+
+html:has(h1#logbookrocks) .markdown-body {
+  visibility: hidden;
+}
+
+html:has(h1#logbookrocks) body::before {
+  content: "در حال بارگذاری…";
+  display: block;
+  direction: rtl;
+  font-family: Tahoma, sans-serif;
+  text-align: center;
+  padding: 2.5rem 1rem;
+  color: #222;
+  font-size: 1.05rem;
+}
