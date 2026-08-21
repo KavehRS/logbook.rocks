@@ -23,7 +23,7 @@ Schedule is GMT/UTC only: 00:00, 06:00, 12:00, 18:00 (hour 24 = 00:00). Cron: 0 
 
 On each fire, do the work yourself. Follow `.cursor/skills/news-wire/SKILL.md` exactly.
 
-Fetch NEW climbing/mountaineering items published since the previous GMT slot (read `_data/news-wire-state.yml`) from only:
+First series only: last 1 hour. Every later series: all unseen items published since `last_run_utc` in `_data/news-wire-state.yml` (full catch-up if a slot was missed — not a 1-hour window). Fetch from only:
 - https://www.worldclimbing.com
 - https://www.theuiaa.org
 - https://www.planetmountain.com
