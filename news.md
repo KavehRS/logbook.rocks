@@ -1,21 +1,21 @@
 ---
 layout: default
-title: اخبار
+title: اخبار جهان
 description: >-
-  اخبار کوتاه کوهنوردی: اعلام برنامه، انتشار گزارش صعود، و رویدادهای کوهستان
-  از نگاه کاوه‌ رضائی‌شیراز.
+  اخبار جهان کوهنوردی: خلاصهٔ فارسی خبرهای World Climbing، UIAA،
+  PlanetMountain و Climbing.com.
 permalink: /news/
 lang: fa-IR
 dir_attr: rtl
 ---
 
-<h1>اخبار</h1>
-<p>اینجا خبرهای کوتاه کوهنوردی را می‌نویسم: اعلام برنامه، انتشار گزارش صعود، یا نکته‌ای که گزارش کامل صعود نیست.</p>
+<h1>اخبار جهان</h1>
+<p>خبرهای کوهنوردی جهان را از World Climbing، UIAA، PlanetMountain و Climbing.com خلاصه و به فارسی می‌آورم. گزارش کامل صعودهای خودم در <a href="{{ '/logbook/' | relative_url }}">گزارش صعود</a> است.</p>
 {% assign news_posts = site.news | sort: "date" | reverse %}
 {% if news_posts.size == 0 %}
 <p>هنوز خبری در این بخش منتشر نشده است.</p>
 {% else %}
-{% include hub-filter.html toolname="filter_news" tooldescription="Filter the published news items listed on this page by title or summary text." %}
+{% include hub-filter.html toolname="filter_news" tooldescription="Filter the published world news items listed on this page by title or summary text." %}
 <ul data-hub-list>
   {% for post in news_posts %}
   <li style="margin-bottom: 15px; list-style: none; border-bottom: 1px solid #eee; padding-bottom: 10px;">

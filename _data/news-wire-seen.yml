@@ -1,0 +1,34 @@
+# URLs already published as Persian news summaries.
+# Agents must skip these. Append after a successful triple-review + commit.
+
+items:
+  - source: UIAA
+    source_url: https://www.theuiaa.org/registration-open-for-third-uiaa-mountain-safety-symposium/
+    slug: 2026-08-20-uiaa-mountain-safety-symposium-nepal
+  - source: UIAA
+    source_url: https://www.theuiaa.org/recall-of-simond-alpinism-vertika-quickdraws/
+    slug: 2026-08-06-uiaa-simond-quickdraw-recall
+  - source: World Climbing
+    source_url: https://www.ifsc-climbing.org/events/world-climbing-europe-series-zilina-2026/news/europe-lead-series-zilina-2026-has-youngest-season-winner
+    slug: 2026-08-14-world-climbing-zilina-lead
+  - source: PlanetMountain
+    source_url: https://www.planetmountain.com/en/news/climbing/laura-rogora-sends-bibliographie-ceuse-just-6-days.html
+    slug: 2026-08-17-planetmountain-laura-rogora-bibliographie
+  - source: Climbing.com
+    source_url: https://www.climbing.com/news/rachel-pearce-climbs-indian-face-deadly-climbing-route/
+    slug: 2026-08-19-climbing-rachel-pearce-indian-face
+
+# Seen by the wire but not published. Skip on later runs.
+skipped:
+  - source: UIAA
+    source_url: https://www.theuiaa.org/latest-legal-case-youth-camp-french-alps/
+    reason: youth-camp death legal case
+  - source: UIAA
+    source_url: https://www.theuiaa.org/uiaa-and-altezza-travel-extend-partnership/
+    reason: partnership marketing, no new climb or safety fact
+  - source: Climbing.com
+    source_url: https://www.climbing.com/news/laura-rogora-bibliographie/
+    reason: duplicate of the PlanetMountain Rogora item
+  - source: Climbing.com
+    source_url: https://www.climbing.com/news/first-ascent-climbing-gym-chicago-negligence-50-million-child-sexual-abuse-case/
+    reason: policy skip
