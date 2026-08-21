@@ -5,7 +5,7 @@ description: Agent skill for Persian اخبار — short climbing news on logbo
 
 # News post skill
 
-This is the **news agent** skill. Use when the user asks for `اخبار` / `اخبار جهان` / a news item / climbing news on logbook.rocks.
+This is the **news agent** skill. Use when the user asks for `اخبار` / `خبر کوهنوردی` / `اخبار جهان` / a news item / climbing news on logbook.rocks.
 
 Automation prompt (Cursor dashboard): `.cursor/automations/news-post-prompt.md`  
 Agent rule: `.cursor/rules/news-posts.mdc`
@@ -22,11 +22,11 @@ Agent rule: `.cursor/rules/news-posts.mdc`
 2. Short news prose. Do **not** invent events, dates, or people. Do not open with «این خبر را می‌آورم». Do not add a مترجم or نویسنده byline; news pages have none.
 3. Optional link to an existing `/logbook/` report — never clone a full ascent report into news
 4. Images in `assets/news/<exact-url-slug>/` only when real files exist
-5. Hub `/news/` chronological (title: اخبار جهان); related UI = only `اخبار مرتبط :` + flat list
+5. Hub `/news/` chronological (title: خبر کوهنوردی); related UI = only `خبرهای مرتبط :` + flat list
 6. Homepage `/` is about («درباره من») plus four latest teasers; world-news archive is `/news/`
 7. Never publish agent notes in live HTML
 8. Reader-facing UI dates Jalali (`_includes/jalali-date.html`)
-9. اخبار جهان agent (GMT 00/06/12/18): `.cursor/skills/news-wire/SKILL.md`
+9. خبر کوهنوردی agent (GMT 00/06/12/18): `.cursor/skills/news-wire/SKILL.md`
 
 ## Uniqueness
 

@@ -43,7 +43,7 @@ Use `_drafts/samples/kahar-peak-report-framework-sample.md` only as structure �
 6. `assets/mount/logbook/<exact-url-slug>/` for all images
 7. Narrative outline → post-climb completion when user provides details. Program length from user only (Kahar = one-day ۱۶ مرداد ۱۴۰۵ unless changed).
 8. Hub `/logbook/` chronological; related UI = only `گزارش‌های مرتبط :` + flat list
-9. Homepage `/` is about («درباره من») plus four latest teasers. Archive is `/logbook/` (world news is `/news/`, title اخبار جهان)
+9. Homepage `/` is about («درباره من») plus four latest teasers. Archive is `/logbook/` (climbing news is `/news/`, title خبر کوهنوردی)
 10. Never publish agent notes in live HTML
 11. Reader-facing UI dates Jalali (`_includes/jalali-date.html`)
 
