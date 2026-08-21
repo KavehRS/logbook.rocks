@@ -33,6 +33,12 @@
   margin: 0 0 0.85rem;
 }
 
+.about-intro p {
+  margin: 0 0 0.75rem;
+  font-size: 1rem;
+  line-height: $base-line-height;
+}
+
 .about-intro blockquote {
   margin: 0;
   padding: 0;
@@ -161,6 +167,7 @@
 }
 
 [dir="rtl"] .about-intro h1,
+[dir="rtl"] .about-intro p,
 [dir="rtl"] .about-intro blockquote,
 [dir="rtl"] .about-intro blockquote p,
 [dir="rtl"] .about-intro ul {
@@ -173,6 +180,7 @@
 }
 
 [dir="ltr"] .about-intro h1,
+[dir="ltr"] .about-intro p,
 [dir="ltr"] .about-intro blockquote,
 [dir="ltr"] .about-intro blockquote p,
 [dir="ltr"] .about-intro ul {

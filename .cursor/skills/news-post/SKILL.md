@@ -23,7 +23,7 @@ Agent rule: `.cursor/rules/news-posts.mdc`
 3. Optional link to an existing `/logbook/` report — never clone a full ascent report into news
 4. Images in `assets/news/<exact-url-slug>/` only when real files exist
 5. Hub `/news/` chronological; related UI = only `اخبار مرتبط :` + flat list
-6. Homepage `/` always lists the 4 newest news items via `_includes/home-latest.html`
+6. Homepage `/` is the about page; do not list news items there. Archive is `/news/`
 7. Never publish agent notes in live HTML
 8. Reader-facing UI dates Jalali (`_includes/jalali-date.html`)
 
