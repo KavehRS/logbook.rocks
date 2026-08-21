@@ -23,6 +23,33 @@ Platform skills live in `.cursor/skills/cloudflare/` and `.cursor/skills/wrangle
 
 Do not commit API tokens. Prefer MCP over pasting `CLOUDFLARE_API_TOKEN` into chat.
 
+## Live site (GitHub Actions billing lock)
+
+https://logbook.rocks must show the Jekyll 4 Persian blog (`خانه` about + teasers, `/logbook/`, `/news/` as اخبار جهان), not GitHub’s empty Jekyll 3 placeholder titled `logbook.rocks`.
+
+GitHub Actions on the owner account is **billing-locked**, so `.github/workflows/deploy-pages.yml` never deploys. Pages is stuck on the CNAME-only snapshot (`60ffc1e`). Do **not** point DNS at `workers.dev` / jsDelivr / `pages.dev` (Cloudflare error 1014 or TLS 421). Free-plan origin Host override is not available, so Cloudflare cannot fetch GitHub raw server-side.
+
+Until Actions can run, production is:
+
+1. DNS (proxied): apex + `www` CNAME → `kavehrs.github.io`
+2. Cloudflare URL rewrite (`http_request_transform`): every path except `/cdn-cgi/` rewrites to origin `/` so GitHub returns 200 HTML (the tiny placeholder)
+3. Cloudflare Zaraz tool **Logbook Jekyll bootstrap** (`component: html`, `actionType: event`, trigger `Pageview`) fetches **HTML file URLs** from `https://cdn.jsdelivr.net/gh/KavehRS/logbook.rocks@published` (`/` → `/index.html`) and `document.write`s them. Keep in-site `<a href="/…">` on this domain; rewrite asset URLs onto the same jsDelivr prefix. **Do not fetch HTML from `raw.githubusercontent.com`** — browsers in Iran often cannot reach GitHub, so the tab stays blank for a long time. **Do not fetch jsDelivr directory URLs** (they are CDN listings, not `index.html`). Canonical copy of the tool HTML: `scripts/zaraz-logbook-bootstrap.html`.
+4. Orphan branch `published` is the built `_site` (includes `.nojekyll`)
+5. Edge extras: Early Hints on; response `Link` preload for `assets/css/main.css` on jsDelivr
+
+After a content change that should go live **before** GitHub billing is fixed:
+
+```bash
+bundle exec jekyll build
+# replace orphan branch `published` with `_site/`, push, then purge jsDelivr HTML *and* CSS/images:
+#   curl "https://purge.jsdelivr.net/gh/KavehRS/logbook.rocks@published/index.html"
+#   curl "https://purge.jsdelivr.net/gh/KavehRS/logbook.rocks@published/logbook/index.html"
+#   curl "https://purge.jsdelivr.net/gh/KavehRS/logbook.rocks@published/news/index.html"
+#   curl "https://purge.jsdelivr.net/gh/KavehRS/logbook.rocks@published/assets/css/main.css"
+```
+
+Do not remove the Zaraz HTML tool or the catch-all rewrite while Pages is still the placeholder. When `deploy-pages.yml` succeeds on `main`, GitHub Pages will serve `_site` directly — then delete the Zaraz bootstrap, the rewrite, the CSS preload Link, and Early Hints if unused.
+
 ## Install / verify
 
 ```bash
