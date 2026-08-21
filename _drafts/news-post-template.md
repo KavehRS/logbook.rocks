@@ -25,7 +25,7 @@ USAGE (agent-only — do not copy this comment block into published pages)
    image: only a real photo for THIS item; comment out until the file exists
 4) Images: `assets/news/YYYY-MM-DD-<slug>/` matching `/news/YYYY-MM-DD-<slug>/`
 5) Related public UI: «اخبار مرتبط :» + flat list
-6) Hub `/news/` is chronological (newest first). Homepage `/` is the about page; do not list news there.
+6) Hub `/news/` is chronological (newest first). Homepage `/` is about + four latest teasers; the world-news archive is `/news/` (title: اخبار جهان).
 7) Write as the author (من). Short: what happened, why it matters, optional link
    to an existing `/logbook/` report — do not clone a climb report into news
 8) Do not invent events, dates, or team names the user did not give

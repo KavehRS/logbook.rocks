@@ -51,7 +51,7 @@
     {
       "@type": "ListItem",
       "position": 2,
-      "name": "{% if page.collection == 'logbook' %}گزارش صعود{% else %}اخبار{% endif %}",
+      "name": "{% if page.collection == 'logbook' %}گزارش صعود{% else %}اخبار جهان{% endif %}",
       "item": "{% if page.collection == 'logbook' %}{{ '/logbook/' | absolute_url }}{% else %}{{ '/news/' | absolute_url }}{% endif %}"
     },
     {
@@ -203,7 +203,7 @@
     "url": "{{ site.url }}{{ site.baseurl }}/"
   },
   "about": [
-    {"@type": "Thing", "name": "اخبار کوهنوردی"},
+    {"@type": "Thing", "name": "اخبار جهان کوهنوردی"},
     {"@type": "Thing", "name": "گزارش صعود"}
   ],
   "mainEntity": {
