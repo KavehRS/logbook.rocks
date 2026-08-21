@@ -52,8 +52,8 @@ github: "kavehrs"
 highlighter: rouge
 markdown: kramdown
 
-# Tracker (Google Analytics 4 measurement ID)
-analytics: G-X4V1FLGZMH
+# Tracker (Google Analytics 4 web stream for logbook.rocks)
+analytics: G-6LWYK8X41J
 
 #optimization -> compress.html
 compress_html:
