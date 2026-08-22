@@ -17,6 +17,9 @@ items:
   - source: Climbing.com
     source_url: https://www.climbing.com/news/rachel-pearce-climbs-indian-face-deadly-climbing-route/
     slug: 2026-08-19-climbing-rachel-pearce-indian-face
+  - source: World Climbing
+    source_url: https://www.ifsc-climbing.org/news/conversation-with-erik-noya-cardona
+    slug: 2026-08-19-world-climbing-erik-noya-cardona
 
 # Seen by the wire but not published. Skip on later runs.
 skipped:
