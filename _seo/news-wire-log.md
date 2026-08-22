@@ -85,3 +85,9 @@ No source article published after 00:00 UTC. Ostermundigen finals remain on the 
 Window: 06:00:38–12:00:49 UTC (since `last_run_utc`, not a 1-hour cap). Fetched UIAA RSS (newest still 20 Aug symposium), Climbing.com RSS (newest still 19 Aug Pearce), World Climbing `/news` (newest still 19 Aug; Ostermundigen not on the listing), Ostermundigen event overview/news/results indexes (only `/news/index`; no article slug, no athlete names), PlanetMountain HTML 403; search listings have no 21–22 Aug 2026 news article.
 
 No source article published after 06:00 UTC. Ostermundigen finals remain on the 22 Aug evening programme (19:00 local). Nothing to review. Next GMT slot: 18:00.
+
+## 2026-08-22 18:00 GMT — scheduled slot (all unseen since previous run)
+
+Window: 12:00:49–18:00:51 UTC (since `last_run_utc`, not a 1-hour cap). Fetched UIAA RSS (newest still 20 Aug symposium), Climbing.com RSS (newest still 19 Aug Pearce), World Climbing `/news` (newest still 19 Aug; Ostermundigen not on the listing), Ostermundigen event overview/news/results indexes (only `/news/index`; no article slug, no athlete names; “gold medal” is UI copy not a result), PlanetMountain HTML 403; search listings have no 22 Aug 2026 news article.
+
+No source article published after 12:00 UTC. Ostermundigen women’s final is on the 22 Aug 19:00 local programme (17:00 UTC); men’s final 20:15 local. World Climbing still has no news post and no posted results — omitted (do not invent live scores). Nothing to review. Next GMT slot: 00:00.
