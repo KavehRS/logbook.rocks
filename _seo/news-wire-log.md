@@ -73,3 +73,9 @@ No source article published after 12:02 UTC. Ostermundigen day-1 semis are on th
 Window: 18:00:54 UTC 21 Aug – 00:00:53 UTC 22 Aug (since `last_run_utc`, not a 1-hour cap). Fetched UIAA RSS (newest still 20 Aug symposium), Climbing.com RSS (newest still 19 Aug Pearce), World Climbing `/news` (newest still 19 Aug), Ostermundigen event news/results/videos indexes (only `/news/index`; no article slug, no athlete names), PlanetMountain HTML 403; search listings have no 21–22 Aug news article.
 
 No source article published after 18:00 UTC. Ostermundigen day-1 qualification and semis are on the 21 Aug programme; World Climbing still has no news post and no posted results — omitted (do not invent live scores). Finals are on the 22 Aug evening programme. Nothing to review. Next GMT slot: 06:00.
+
+## 2026-08-22 06:00 GMT — scheduled slot (all unseen since previous run)
+
+Window: 00:00:53–06:00:38 UTC (since `last_run_utc`, not a 1-hour cap). Fetched UIAA RSS (newest still 20 Aug symposium), Climbing.com RSS (newest still 19 Aug Pearce), World Climbing `/news` (newest still 19 Aug; Ostermundigen not on the listing), Ostermundigen event news/results indexes (only `/news/index`; no article slug, no athlete names), PlanetMountain HTML 403; search listings have no 21–22 Aug 2026 news article.
+
+No source article published after 00:00 UTC. Ostermundigen finals remain on the 22 Aug evening programme. Nothing to review. Next GMT slot: 12:00.
