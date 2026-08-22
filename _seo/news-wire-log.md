@@ -91,3 +91,11 @@ No source article published after 06:00 UTC. Ostermundigen finals remain on the 
 Window: 12:00:49–18:00:51 UTC (since `last_run_utc`, not a 1-hour cap). Fetched UIAA RSS (newest still 20 Aug symposium), Climbing.com RSS (newest still 19 Aug Pearce), World Climbing `/news` (newest still 19 Aug; Ostermundigen not on the listing), Ostermundigen event overview/news/results indexes (only `/news/index`; no article slug, no athlete names; “gold medal” is UI copy not a result), PlanetMountain HTML 403; search listings have no 22 Aug 2026 news article.
 
 No source article published after 12:00 UTC. Ostermundigen women’s final is on the 22 Aug 19:00 local programme (17:00 UTC); men’s final 20:15 local. World Climbing still has no news post and no posted results — omitted (do not invent live scores). Nothing to review. Next GMT slot: 00:00.
+
+## 2026-08-19 World Climbing Erik Noya Cardona (manual, owner asked)
+
+Source: https://www.ifsc-climbing.org/news/conversation-with-erik-noya-cardona (same text via worldclimbing.com). Dated 19 August 2026. Outside later wire windows; published on owner request.
+
+1. Facts: Spanish from birth + Venezuelan, born/raised Venezuela, father Xavier/Vigo/Galicia, embassy family book, competed for Venezuela until Spain 2017; grandparents Oscar/Consuelo left during Spanish Civil War hunger; mother Irene; swimming ~four years then climbing after traffic/wall and birthday party; Speed used to fund boulder/lead via government results; left after 2014 changes; brother Jordi Barcelona then fisherman Galicia, Erik Madrid then Barcelona; Paz Rodriguez ~1.5 years; Jakarta/Caracas; Lego/cook; tattoos water then jungle; last-word unity/heart. Did not invent race times or medals (none in the interview). Jalali 19 Aug 2026 = 28 Mordad 1405 (21 Aug = 30 Mordad).
+2. Language: original Persian summary of the whole conversation, not an English paste; names Latin where useful (World Climbing, Speed).
+3. Policy: no مترجم/نویسنده; no photo; source linked; owner asked for «متن کامل» — full English transcript not republished (copyright); complete Persian account of what he said. PASS.
