@@ -109,3 +109,17 @@ Owner asked to add Desnivel, UKClimbing news desk, and Alpinist Newswire to the 
 Window: 18:00:51 UTC 22 Aug – 00:01:30 UTC 23 Aug (since `last_run_utc`, not a 1-hour cap). First slot that also fetched the three sources added 22 Aug. Fetched UIAA RSS (newest still 20 Aug symposium, already published), Climbing.com RSS + `/news/` (newest still 19 Aug Pearce, already published), World Climbing / IFSC `/news` (newest dated 19 Aug Erik conversation, already published; Oceania items dated 25 Jul), Ostermundigen event news/results indexes (only `/news/index` and `/results/index`; no article slug, no athlete names, no posted scores), PlanetMountain HTML 403; search listings have no 22–23 Aug 2026 news article. Desnivel category RSS newest 21 Aug (Gietl / Sieberer, before this window). UKClimbing `/news/` HTML 403; search shows MacLeod 20 Aug and Arapiles feature, not 22–23 Aug news. Alpinist `/feed/` newest 19 Aug feature; `/newswire/` has no August 2026 item.
 
 No source article published after 18:00 UTC 22 Aug. Ostermundigen finals were on the 22 Aug evening programme; World Climbing still has no news post and no posted results — omitted (do not invent live scores). Nothing to review. Next GMT slot: 06:00.
+
+## 2026-08-23 06:00 GMT — scheduled slot (all unseen since previous run)
+
+Window: 00:01:30–06:02:12 UTC (since `last_run_utc`, not a 1-hour cap). Fetched UIAA RSS (newest still 20 Aug), Climbing.com RSS (newest still 19 Aug Pearce), World Climbing / IFSC `/news` (newest still 19 Aug Erik), PlanetMountain HTML 403; search has no 23 Aug news article. Desnivel category RSS newest still 21 Aug. UKClimbing `/news/` 403; search newest dated items are 19–20 Aug. Alpinist `/feed/` newest 19 Aug feature; `/newswire/` no August 2026 item.
+
+Ostermundigen overview now has an Event Winners block labelled Ostermundigen 2026: Men’s Lead Jordi POLES FRA; Women’s Lead Iziar MARTÍNEZ ALMENDROS ESP. Those names were absent from the same page at the 00:00 slot. Results index still has no scores or silver/bronze. No `/news/` article.
+
+### 2026-08-22 World Climbing Ostermundigen Lead
+
+Source: https://www.ifsc-climbing.org/events/world-climbing-europe-series-ostermundigen-2026/
+
+1. Facts: winners copied from the Event Winners cards (Poles FRA, Martínez Almendros ESP, Lead, Ostermundigen 2026, event dates 21–22 Aug). Scores, silver, bronze omitted — not on the page. Jalali 21–22 Aug 2026 = 30–31 Mordad 1405 (22 Aug = 31 Mordad; 23 Aug = 1 Shahrivar).
+2. Language: short original Persian; names transliterated; World Climbing / Lead left where useful.
+3. Policy: no مترجم/نویسنده; no photo; source linked; not a live-score invention — official winners widget. PASS.
