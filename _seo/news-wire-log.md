@@ -123,3 +123,9 @@ Source: https://www.ifsc-climbing.org/events/world-climbing-europe-series-osterm
 1. Facts: winners copied from the Event Winners cards (Poles FRA, Martínez Almendros ESP, Lead, Ostermundigen 2026, event dates 21–22 Aug). Scores, silver, bronze omitted — not on the page. Jalali 21–22 Aug 2026 = 30–31 Mordad 1405 (22 Aug = 31 Mordad; 23 Aug = 1 Shahrivar).
 2. Language: short original Persian; names transliterated; World Climbing / Lead left where useful.
 3. Policy: no مترجم/نویسنده; no photo; source linked; not a live-score invention — official winners widget. PASS.
+
+## 2026-08-23 12:00 GMT — scheduled slot (all unseen since previous run)
+
+Window: 06:02:12–12:01:24 UTC (since `last_run_utc`, not a 1-hour cap). Fetched UIAA RSS (newest still 20 Aug symposium), Climbing.com RSS (newest still 19 Aug Pearce), World Climbing / IFSC `/news` (newest still 19 Aug Erik; no Ostermundigen news article), Ostermundigen event news index still empty of article slugs. PlanetMountain HTML 403; search listings have no 23 Aug 2026 news article (festival item is older; Rogora already published). Desnivel category RSS newest still 21 Aug. UKClimbing `/news/` 403; search newest dated items 19–20 Aug. Alpinist `/feed/` newest 19 Aug feature; `/newswire/` no August 2026 item.
+
+No source article published after 06:02 UTC. Ostermundigen winners already published from the 06:00 slot; still no scores or `/news/` recap — omitted extra invention. Nothing to review. Next GMT slot: 18:00.
