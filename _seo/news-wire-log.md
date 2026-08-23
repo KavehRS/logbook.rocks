@@ -103,3 +103,9 @@ Source: https://www.ifsc-climbing.org/news/conversation-with-erik-noya-cardona (
 ## 2026-08-22 — owner added three wire sources
 
 Owner asked to add Desnivel, UKClimbing news desk, and Alpinist Newswire to the listed sources. Skill, automation prompt, Actions workflow, news-posts rule, and AGENTS.md updated. No backfill of older articles from the new sites; next GMT slot (00:00 23 Aug) fetches unseen items on all seven sources since `last_run_utc`. UKC HTML is often Cloudflare-blocked (same fallback as PlanetMountain). Alpinist site RSS is magazine-wide — wire reads `/newswire/` and skips gear reviews. Desnivel bookshop/cultura ads stay skipped.
+
+## 2026-08-23 00:00 GMT — scheduled slot (all unseen since previous run)
+
+Window: 18:00:51 UTC 22 Aug – 00:01:30 UTC 23 Aug (since `last_run_utc`, not a 1-hour cap). First slot that also fetched the three sources added 22 Aug. Fetched UIAA RSS (newest still 20 Aug symposium, already published), Climbing.com RSS + `/news/` (newest still 19 Aug Pearce, already published), World Climbing / IFSC `/news` (newest dated 19 Aug Erik conversation, already published; Oceania items dated 25 Jul), Ostermundigen event news/results indexes (only `/news/index` and `/results/index`; no article slug, no athlete names, no posted scores), PlanetMountain HTML 403; search listings have no 22–23 Aug 2026 news article. Desnivel category RSS newest 21 Aug (Gietl / Sieberer, before this window). UKClimbing `/news/` HTML 403; search shows MacLeod 20 Aug and Arapiles feature, not 22–23 Aug news. Alpinist `/feed/` newest 19 Aug feature; `/newswire/` has no August 2026 item.
+
+No source article published after 18:00 UTC 22 Aug. Ostermundigen finals were on the 22 Aug evening programme; World Climbing still has no news post and no posted results — omitted (do not invent live scores). Nothing to review. Next GMT slot: 06:00.
