@@ -25,6 +25,12 @@ items:
   - source: World Climbing
     source_url: https://www.ifsc-climbing.org/events/world-climbing-europe-series-ostermundigen-2026/
     slug: 2026-08-22-world-climbing-ostermundigen-lead
+  - source: Desnivel
+    source_url: https://www.desnivel.com/escalada-roca/wei-guangguang-y-zhao-chen-repiten-fly-550-m-8c-en-suiza/
+    slug: 2026-08-24-desnivel-wei-zhao-fly-staldenfluh
+  - source: Desnivel
+    source_url: https://www.desnivel.com/competiciones/dificultad-comp/dificultad-comp-inter/dificultad-comp-inter-2026/oro-para-la-espanola-iziar-martinez-en-la-copa-de-europa-de-dificultad-de-ostermundigen/
+    slug: 2026-08-24-desnivel-ostermundigen-lead-scores
 
 # Seen by the wire but not published. Skip on later runs.
 skipped:

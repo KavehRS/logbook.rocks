@@ -147,3 +147,25 @@ No source article published after 18:01 UTC 23 Aug. Ostermundigen winners alread
 Window: 00:01:28–06:01:12 UTC (since `last_run_utc`, not a 1-hour cap). Fetched UIAA RSS (newest still 20 Aug symposium), Climbing.com RSS (newest still 19 Aug Pearce), World Climbing / IFSC `/news` (newest still 19 Aug Erik; no Ostermundigen news article), Ostermundigen event news index still empty of article slugs; overview still Event Winners only (Poles FRA / Martínez Almendros ESP, no scores). PlanetMountain HTML 403; search listings have no 24 Aug 2026 news article (Rogora already published). Desnivel category RSS newest still 21 Aug. UKClimbing `/news/` 403; search newest dated items 19–20 Aug. Alpinist `/feed/` newest 19 Aug feature; `/newswire/` no August 2026 item.
 
 No source article published after 00:01 UTC 24 Aug. Ostermundigen winners already published; still no scores or `/news/` recap — omitted extra invention. Nothing to review. Next GMT slot: 12:00.
+
+## 2026-08-24 12:00 GMT — scheduled slot (all unseen since previous run)
+
+Window: 06:01:12–12:02:46 UTC (since `last_run_utc`, not a 1-hour cap). Fetched UIAA RSS (newest still 20 Aug symposium), Climbing.com RSS (newest still 19 Aug Pearce), World Climbing / IFSC `/news` (newest still 19 Aug Erik; no Ostermundigen news article), Ostermundigen overview still Event Winners only (no scores). PlanetMountain HTML 403; search has no 24 Aug news article. UKClimbing `/news/` 403; search newest dated 19–20 Aug. Alpinist `/feed/` newest 19 Aug feature; `/newswire/` no August 2026 item. Desnivel category RSS: two items in-window.
+
+### 2026-08-24 Desnivel Wei / Zhao Fly Staldenfluh
+
+Source: https://www.desnivel.com/escalada-roca/wei-guangguang-y-zhao-chen-repiten-fly-550-m-8c-en-suiza/
+
+1. Facts: names Wei Guangguang / Zhao Chen; Fly 550 m, 20 pitches, Staldenfluh, Lauterbrunnen, Bernese Alps; 8c as they agree with Megos; Schäli 2006–2009; Megos FFA 2014 four days with Schäli and Hefti; hard pitches 8b L17 / 8c L19 / 8b+ L20; Lachat 2019 first repeat 8c; Vanhee/Berthe June 2021 said 8b+ for the crux; fifth known repeat as source’s «que sepamos»; three-day rope-team free of all pitches, not consecutive (pitch 20 day 2, pitch 19 day 3). Did not invent a calendar send date (not in the article). Did not copy photos.
+2. Language: short original Persian; route/place names Latin (Fly, Staldenfluh); names transliterated.
+3. Policy: no مترجم/نویسنده; no photo; source linked; unique description. PASS.
+
+### 2026-08-24 Desnivel Ostermundigen Lead scores
+
+Source: https://www.desnivel.com/competiciones/dificultad-comp/dificultad-comp-inter/dificultad-comp-inter-2026/oro-para-la-espanola-iziar-martinez-en-la-copa-de-europa-de-dificultad-de-ostermundigen/
+
+1. Facts: women’s +37 Martínez / 35+ Deubler / 33 Bridgens; Vila fifth; Martínez first in semi; men’s Poles 45 / Etchar 39+ / Uteli 38; dates 21–22 Aug; next Laval 28–29 Aug Lead+Speed+Para. Names spelled as Desnivel (Iziar Martínez, Akyan Etchar, Jonas Uteli, Connie Bridgens). Jalali 21–22 Aug = 30–31 Mordad; 24 Aug = 2 Shahrivar; 28–29 Aug = 6–7 Shahrivar. Not a duplicate of the 22 Aug World Climbing winners widget: that page still has no scores; this is the first listed-source recap with podium scores.
+2. Language: short original Persian; scores kept in source notation (+37 vs 35+).
+3. Policy: no مترجم/نویسنده; no photo; source linked; related to the earlier winners post; unique description. PASS.
+
+Next GMT slot: 18:00.
