@@ -217,3 +217,10 @@ Source: https://www.desnivel.com/escalada-roca/xavi-sabater-primera-repeticion-e
 3. Policy: no مترجم/نویسنده; no photo; source linked; unique description; not a child-sexual-abuse story. PASS.
 
 Next GMT slot: 18:00.
+
+## 2026-08-25 18:00 GMT — scheduled slot (all unseen since previous run)
+
+Window: 12:04:45–18:02:01 UTC (since `last_run_utc`, not a 1-hour cap). Fetched UIAA RSS (newest still 20 Aug symposium). Climbing.com RSS newest still Mont Blanc / Peillex (`pubDate` 16:01:06 +0000 24 Aug; already published). World Climbing / IFSC `/news` newest still the 24 Aug Ostermundigen recap (already published). Desnivel `escalada-roca` newest still Donec perficiam (09:31 UTC 25 Aug, already published); other categories unchanged. PlanetMountain HTML 403; search has no 25 Aug 2026 article. UKClimbing `/news/` 403; search newest dated 19–20 Aug. Alpinist `/feed/` newest 19 Aug Dean Potter feature; `/newswire/` listing still has no August 2026 item (top item remains Heavy is the Hand, April 2026).
+
+Guiyang Asia Youth Championship (21–25 Aug) event page has some Event Winners cards (e.g. Taesung PARK KOR) but no `/news/` article and no widget timestamp; omitted rather than invent a full youth-podium recap. Laval Europe championship remains on the 28–30 Aug programme — no result. Nothing to review. Next GMT slot: 00:00.
+
