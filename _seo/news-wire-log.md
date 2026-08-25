@@ -203,3 +203,17 @@ No source article published after 18:02 UTC 24 Aug. Nothing to review. Next GMT 
 Window: 00:04:12–06:01:22 UTC (since `last_run_utc`, not a 1-hour cap). Fetched UIAA RSS (newest still 20 Aug symposium). Climbing.com RSS newest still Mont Blanc / Peillex (`pubDate` 16:01:06 +0000 24 Aug; already published). World Climbing / IFSC `/news` newest still the 24 Aug Ostermundigen recap (already published). Desnivel: `escalada-roca` newest still Fly (11:57 UTC 24 Aug, already published); `competiciones` newest still Ostermundigen scores (08:29 UTC 24 Aug, already published); `alpinismo` newest still 21 Aug; `expediciones` newest still 1–2 Aug; `escalada-hielo` newest March 2026; `bulder` newest 24 Jul. PlanetMountain HTML 403; search has no 25 Aug 2026 article. UKClimbing `/news/` 403; search newest dated 19–20 Aug (MacLeod King of the Rest 20 Aug). Alpinist `/feed/` newest 19 Aug Dean Potter feature; `/newswire/` listing still has no August 2026 item (top item remains Heavy is the Hand, April 2026).
 
 No source article published after 00:04 UTC 25 Aug. Laval Europe championship is on the 28–30 Aug programme; no listed source has a 25 Aug preview or result — omitted invention. Nothing to review. Next GMT slot: 12:00.
+
+## 2026-08-25 12:00 GMT — scheduled slot (all unseen since previous run)
+
+Window: 06:01:22–12:04:45 UTC (since `last_run_utc`, not a 1-hour cap). Fetched UIAA RSS (newest still 20 Aug symposium). Climbing.com RSS newest still Mont Blanc / Peillex (`pubDate` 16:01:06 +0000 24 Aug; already published). World Climbing / IFSC `/news` newest still the 24 Aug Ostermundigen recap (already published). Desnivel `escalada-roca`: new 25 Aug 09:31 UTC Xavi Sabater / Donec perficiam. Other Desnivel categories unchanged (competiciones still Ostermundigen 24 Aug; alpinismo 21 Aug). PlanetMountain HTML 403; search has no 25 Aug 2026 article. UKClimbing `/news/` 403; search newest dated 19–20 Aug. Alpinist `/feed/` newest 19 Aug Dean Potter feature; `/newswire/` listing still has no August 2026 item.
+
+### 2026-08-25 Desnivel Xavi Sabater Donec perficiam
+
+Source: https://www.desnivel.com/escalada-roca/xavi-sabater-primera-repeticion-en-libre-de-donec-perficiam-una-de-las-rutas-mas-duras-de-montrebei/
+
+1. Facts: Xavi Sabater, Catalan; Donec perficiam, Pared de Aragón, congosto de Montrebei; 350 m, nine pitches, sustained 7th–8th; first free repeat / second fully free ascent after Edu Marín 2025. Opening Brascó / Cortés 2012–2018. Repeat in May 2026; wall stay from 22 May (1 Khordad) four days with unnamed partner; both led all nine pitches. Edu proposed 8b+/c for pitch 4; Sabater does not consider it harder than Mentre Hi Hagi Lum 8b+. Edu calendar day omitted (dek says June 2025; body says 28 May after April 2025). Did not invent an end-of-push calendar day. Did not copy Jaime Merino photos. Jalali 25 Aug = 3 Shahrivar; 22 May 2026 = 1 Khordad.
+2. Language: short original Persian; route/place names Latin (Donec perficiam, Montrebei, Pared de Aragón, Mentre Hi Hagi Lum); شاوی ساباتر / ادو مارین.
+3. Policy: no مترجم/نویسنده; no photo; source linked; unique description; not a child-sexual-abuse story. PASS.
+
+Next GMT slot: 18:00.
