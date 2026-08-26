@@ -1,5 +1,5 @@
 ---
-description: Short climbing news (اخبار) on logbook.rocks — distinct from ascent reports
+description: Climbing news (اخبار) on logbook.rocks — complete translation, distinct from ascent reports
 alwaysApply: true
 ---
 
@@ -11,7 +11,7 @@ When the user asks for a news item (`اخبار` / خبر کوهنوردی), app
 
 1. Framework: `_drafts/news-post-template.md` (never republish template prose).
 2. Live file: `_news/YYYY-MM-DD-<slug>.md` with `lang: fa-IR`, `dir_attr: rtl`, unique `description`, `date`, YAML `tags`.
-3. Short: what happened, why it matters. Optional link to an existing `/logbook/` report.
+3. Complete Persian translation of the source (every narrative paragraph and fact). Owner never asked for a summary. Optional link to an existing `/logbook/` report.
 4. Images: `assets/news/<exact-url-slug>/` matching the news URL. Comment `image:` out until files exist.
 5. Related public UI: only `اخبار مرتبط :` + flat list.
 6. Hub `/news/` is chronological (newest first).
@@ -19,7 +19,7 @@ When the user asks for a news item (`اخبار` / خبر کوهنوردی), app
 8. Visible dates on the site are Jalali via `_includes/jalali-date.html`.
 9. Never invent events, dates, team members, or climb facts.
 10. Never publish agent/implementation notes into live HTML. News pages have no opening «این خبر را می‌آورم» line and no مترجم/نویسنده byline.
-11. International wire agent (GMT 00:00, 06:00, 12:00, 18:00): follow `.cursor/skills/news-wire/SKILL.md`. First series: last 1 hour. Later series: all unseen items since `last_run_utc`. Translate only from World Climbing, UIAA, PlanetMountain, Climbing.com, Desnivel, UKClimbing `/news/`, Alpinist Newswire, ExplorersWeb (climb/expedition/8000er), DAV/CAI expedition reports, and the American Alpine Journal (2026 Climbs and Expeditions, complete translation, oldest first; kickoff one, then two per GMT slot). Triple-review before publish. Skip URLs in `_data/news-wire-seen.yml`.
+11. International wire agent (GMT 00:00, 06:00, 12:00, 18:00): follow `.cursor/skills/news-wire/SKILL.md`. First series: last 1 hour. Later series: all unseen items since `last_run_utc`. Complete Persian translation (never a summary) from World Climbing, UIAA, PlanetMountain, Climbing.com, Desnivel, UKClimbing `/news/`, Alpinist Newswire, ExplorersWeb (climb/expedition/8000er), DAV/CAI expedition reports, and the American Alpine Journal (2026 Climbs and Expeditions, oldest first; kickoff one, then two per GMT slot). Triple-review before publish. Skip URLs in `_data/news-wire-seen.yml`.
 
 ## Do not
 

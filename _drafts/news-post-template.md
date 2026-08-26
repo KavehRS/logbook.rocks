@@ -1,6 +1,6 @@
 ---
 # DRAFT TEMPLATE — not published
-# چهارچوب خبر کوتاه کوهنوردی
+# چهارچوب خبر کوهنوردی
 # هنگام ساخت خبر جدید: این سکشن‌ها را نگه دار، متن را از نو بنویس.
 layout: null
 title: "قالب خبر — درفت"
@@ -26,14 +26,15 @@ USAGE (agent-only — do not copy this comment block into published pages)
 4) Images: `assets/news/YYYY-MM-DD-<slug>/` matching `/news/YYYY-MM-DD-<slug>/`
 5) Related public UI: «اخبار مرتبط :» + flat list
 6) Hub `/news/` is chronological (newest first). Homepage `/` is about + four latest teasers; the climbing-news archive is `/news/` (title: خبر کوهنوردی).
-7) Do not open with «این خبر را می‌آورم» / curator asides. Short: what happened, why it matters, optional link
-   to an existing `/logbook/` report — do not clone a climb report into news. Do not add a مترجم or نویسنده byline.
+7) Do not open with «این خبر را می‌آورم» / curator asides. Complete translation of the source (every
+   narrative paragraph and fact). Optional link to an existing `/logbook/` report — do not clone a
+   climb report into news. Do not add a مترجم or نویسنده byline. Owner never asked for a summary.
 8) Do not invent events, dates, or team names the user did not give
 9) Never paste this template prose unchanged into a published post
 -->
 
 {{یک پاراگراف: این خبر چیست و چرا الان نوشته شده}}
 
-{{جزئیات کوتاه — فقط واقعیت‌هایی که کاربر داده}}
+{{ترجمهٔ کامل منبع — هر بند روایی و هر واقعیت صعود/مسابقه/ایمنی}}
 
 <!-- optional: لینک به گزارش صعود موجود -->

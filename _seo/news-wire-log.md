@@ -752,7 +752,9 @@ The other 435 items used the same three passes against their own article HTML. C
 
 ## 2026-08-26 evening — owner pace + complete 2026 AAJ (kickoff)
 
-Retracted the 441 summary stubs (2025+2026). Queue rebuilt oldest-first in `_data/aaj-backfill.yml`: 226 notes in publication year 2026; kickoff published 1; **225 remaining**. `last_run_utc` unchanged (`2026-08-26T18:01:42Z`). Next GMT slot 00:00 27 Aug publishes the next two remaining only: Chuchepo (`13201217321`) then Jiongmudazhi (`13201217322`). Regular nine-source wire still publishes every unseen in-window item as a short summary.
+Retracted the 441 summary stubs (2025+2026). Queue rebuilt oldest-first in `_data/aaj-backfill.yml`: 226 notes in publication year 2026; kickoff published 1; **225 remaining**. `last_run_utc` unchanged (`2026-08-26T18:01:42Z`). Next GMT slot 00:00 27 Aug publishes the next two remaining only: Chuchepo (`13201217321`) then Jiongmudazhi (`13201217322`).
+
+**SUPERSEDED (same evening):** the sentence that other nine sources stay short summaries was **not** an owner instruction. Owner: never asked to summarize any source. Going forward every wire item is a complete Persian translation. AAJ pace (two per GMT slot) is unchanged.
 
 ### AAJ 13201217320 Sir Duk, Southwest Ridge to West Shoulder (complete translation)
 
@@ -761,3 +763,7 @@ Source: https://publications.americanalpineclub.org/articles/13201217320 — Xia
 1. Facts: Golden Dragon Peak 6614 m Desheng map; 30°18′13.50″N 90°28′44.11″E Langbu Qu; third valley SW of Nyanchen Thanglha I (7162 m), ~95 km NW of Lhasa; FA 2000 Austrian south ridge Erich Gatt + Hansjörg Pfaundler then Christian Hass (source spelling Hass) alone a day or two later; Tibetan name Sir Duk given by them, original thought Arjionggalabu; quoted height 6653 m; 2009 Guy McKinnon / Bruce Normand / Yan Dongdong couloir south-southwest face finishing left of Gatt–Pfaundler, descent NW ridge; no further new ascents before 2024; unclimbed 6000 m peaks remain. 6 Nov 2024 Feng Yupeng, Tong Zhanghao, Xu Hong from Yangbajing to 4750 m village then BC 5700 m moraine lake SW of Sir Duk. 8 Nov 5 a.m.; 1.5 h to glacier; 1.5 h below west face; 100 m 40° snow to SW ridge ~6100 m; Tong mostly leading; 13 pitches ~30 m, max M4; ~6500 m terrain steepened 17:30; no bivy, push for summit; next three pitches to west shoulder crux M5 snow-covered granite; 55° snow to west shoulder 6591 m GPS; summit ridge 1 m unstable powder; retreat 19:45; downclimb one pitch then three rappels from snow anchors to rock, four more to glacier; BC midnight; 800 m to shoulder TD M5. Footnote Mi Desheng maps in Immortal Mountains in the Snow Region 1995. Did not copy Fan Rui photo. Did not claim a summit. PASS.
 2. Language: complete original Persian of every narrative paragraph; peak/route/people Latin as in the journal; Jalali 16/18 Aban 1403 for 6/8 Nov 2024. No مترجم/نویسنده. PASS.
 3. Policy: complete translation not a stub; no photo; source linked; unique description; URL in seen.yml; 2026 only; oldest first. PASS.
+
+## 2026-08-26 evening — owner: never summarize
+
+The “short summary for the other nine sources” line in the previous kickoff note was agent-invented, not an owner rule. Owner asked where anyone said to summarize. Corrected: **every** wire source is a complete Persian translation. Do not re-introduce a summary rule. AAJ 2026 pace (oldest first; two per GMT slot after Sir Duk) is unchanged. Hub copy on `/` and `/news/` no longer says «به‌صورت خلاصه».

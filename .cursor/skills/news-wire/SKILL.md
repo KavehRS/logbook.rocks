@@ -1,6 +1,6 @@
 ---
 name: news-wire
-description: GMT 00/06/12/18 news-wire agent — fetch new climbing news from World Climbing, UIAA, PlanetMountain, Climbing.com, Desnivel, UKClimbing news, Alpinist Newswire, ExplorersWeb, DAV/CAI expedition reports, and AAJ 2026 (complete translation, oldest first, two per GMT slot); Persian; triple-review; publish to _news/
+description: GMT 00/06/12/18 news-wire agent — fetch climbing news from World Climbing, UIAA, PlanetMountain, Climbing.com, Desnivel, UKClimbing news, Alpinist Newswire, ExplorersWeb, DAV/CAI expedition reports, and AAJ 2026; complete Persian translation (owner: never summarize); AAJ oldest-first two per GMT slot; triple-review; publish to _news/
 ---
 
 # International news wire agent (خبر کوهنوردی)
@@ -52,11 +52,11 @@ Prefer RSS when it exists (`https://www.theuiaa.org/feed/`, `https://www.climbin
 
 ## What to publish
 
-- For World Climbing, UIAA, PlanetMountain, Climbing.com, Desnivel, UKClimbing, Alpinist, ExplorersWeb, and DAV/CAI: short Persian **summary**, not a verbatim paste of the source article.
-- For **AAJ 2026** (backfill queue and new 2026 listing items): a **complete** Persian translation of that journal note — every climb fact and narrative paragraph from the source page. Still original Persian (not an English dump). Route and peak names may stay Latin. Still no photos. Oldest remaining first. After the kickoff article, **two per GMT slot** (`_data/aaj-backfill.yml`).
+- **Owner: never summarize.** Do not invent a short-summary rule for any source. Every listed source gets a **complete** Persian translation of that article — every narrative paragraph and climb/competition/safety fact on the source page. Original Persian (not an English dump). Route and peak names may stay Latin. No photos.
+- **AAJ 2026** is paced, not shortened: oldest remaining first; kickoff one (Sir Duk, 2026-08-26); then **two per GMT slot** (`_data/aaj-backfill.yml`). Still a complete translation of each note.
 - Do **not** open with curator asides such as «خبر را اینجا می‌آورم»، «خلاصه می‌کنم», or «خودم آنجا نبودم». Start with the news.
 - News pages have no مترجم or نویسنده byline. Do not add either in the post body.
-- For the nine short-summary sources: publish **every** unseen item in the window that passes triple review (not one-per-source). Extra UIAA **equipment recalls** may ship in the same run (safety).
+- For World Climbing, UIAA, PlanetMountain, Climbing.com, Desnivel, UKClimbing, Alpinist, ExplorersWeb, and DAV/CAI: publish **every** unseen item in the window that passes triple review (not one-per-source), each as a complete translation. Extra UIAA **equipment recalls** may ship in the same run (safety).
 - For the AAJ 2026 queue: **never** dump remaining notes in one run. Kickoff was one article (Sir Duk, 2026-08-26). Every later GMT slot publishes the next **two** of `remaining` only. A missed slot still ships two, not the missed backlog.
 - Link the original article in the body. Do not hotlink or copy their photos.
 - Front matter: `layout: post`, `lang: fa-IR`, `dir_attr: rtl`, unique `description`, Gregorian `date`, YAML `tags`, `source` and `source_url`.
@@ -86,7 +86,7 @@ For **each** draft, run three passes and record them in `_seo/news-wire-log.md` 
 
 1. **Facts** — names, dates, places, grades, scores match the source; disagreements omitted or quoted as the source’s claim
 2. **Language** — natural Persian; route names may stay Latin; no machine-translation calques; no agent notes in the live HTML
-3. **Policy** — climber voice (من as curator, not as witness); for the nine short-summary sources an original summary not a paste; for AAJ 2026 a complete translation not a two-sentence stub; unique description; no photos we do not have; `source_url` appended to `_data/news-wire-seen.yml`
+3. **Policy** — climber voice (من as curator, not as witness); complete translation not a summary and not an English paste; unique description; no photos we do not have; `source_url` appended to `_data/news-wire-seen.yml`
 
 If any pass fails, fix or drop the item. Do not publish a failing draft.
 
