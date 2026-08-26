@@ -26,7 +26,7 @@ Agent rule: `.cursor/rules/news-posts.mdc`
 6. Homepage `/` is about («درباره من») plus four latest teasers; world-news archive is `/news/`
 7. Never publish agent notes in live HTML
 8. Reader-facing UI dates Jalali (`_includes/jalali-date.html`)
-9. خبر کوهنوردی agent (GMT 00/06/12/18): `.cursor/skills/news-wire/SKILL.md`
+9. خبر کوهنوردی agent (GMT 00/06/12/18): `.cursor/skills/news-wire/SKILL.md` — new items, two AAJ notes, re-check translations, whole-site SEO, publish
 
 ## Uniqueness
 

@@ -1,6 +1,6 @@
 ---
 name: news-wire
-description: GMT 00/06/12/18 news-wire agent — fetch climbing news from World Climbing, UIAA, PlanetMountain, Climbing.com, Desnivel, UKClimbing news, Alpinist Newswire, ExplorersWeb, DAV/CAI expedition reports, and AAJ 2026; complete Persian translation (owner: never summarize); AAJ oldest-first two per GMT slot; triple-review; publish to _news/
+description: GMT 00/06/12/18 cycle — new non-duplicate items from all listed sources (complete translation), next two AAJ 2026 queue notes, re-check published translations, whole-site SEO, then ship live
 ---
 
 # International news wire agent (خبر کوهنوردی)
@@ -20,10 +20,20 @@ This **is** the automatic agent. Do the work yourself; do not wait for another p
 
 Combined: `0 0,6,12,18 * * *` (GitHub Actions and Cursor timer, UTC).
 
+## Each GMT slot (mandatory, in this order)
+
+Owner: this is the six-hour job. Do all five. Do not drop a step because the wire window was empty.
+
+1. **New items from every listed source** — complete Persian translation of every unseen, non-duplicate article since `last_run_utc` (first series: last 1 hour). Never summarize.
+2. **AAJ 2026 queue** — the next **two** remaining notes (`_data/aaj-backfill.yml`), complete translation, oldest first. Missed slot = still two, not the backlog.
+3. **Re-check previous translations** — every live `_news/` post against its `source_url`. Fix wrong names/dates/grades/places, missing paragraphs, and leftover short items that omit source facts. Log the re-check in `_seo/news-wire-log.md`.
+4. **Whole-site SEO** — run `.cursor/skills/daily-seo-audit/SKILL.md` for the **entire** site (`/`, `/logbook/`, `/news/`, sitemap, robots, every indexed URL). Stay on this slot’s news-wire branch (do not open a second SEO-only PR). Log in `_seo/daily-log.md`. SEO must not undo translation fixes and must not invent climb facts.
+5. **Publish** — `jekyll build`, PR, overlay this run’s changed HTML onto `published` **without** `--delete`, confirm GitHub `published` raw HTML has the new/updated pages, purge Cloudflare for those URLs. The cycle is not done until the live export has the work.
+
 - **First series** (manual kickoff only): items published in the **last 1 hour**.
-- **Every later series** (scheduled GMT slots and manual tests after that kickoff): translate **all** unseen items published **since `last_run_utc`** in `_data/news-wire-state.yml`. If a slot was missed, catch up the full gap — do not cap at one hour and do not cap at six hours.
-- Still skip URLs already listed in `_data/news-wire-seen.yml`.
-- Window timestamps live in `_data/news-wire-state.yml`. Update `last_run_utc` after every run, even if nothing published.
+- **Every later series** (scheduled GMT slots and manual tests after that kickoff): translate **all** unseen items published **since `last_run_utc`** in `_data/news-wire-state.yml`. If a slot was missed, catch up the full gap for sources 1–9 — do not cap at one hour and do not cap at six hours. AAJ stays two notes (no catch-up dump).
+- Still skip URLs already listed in `_data/news-wire-seen.yml` (except when job 3 is re-checking a URL already published).
+- Window timestamps live in `_data/news-wire-state.yml`. Update `last_run_utc` after every run, even if the wire window was empty.
 
 ## Sources (only these)
 
@@ -46,9 +56,10 @@ Prefer RSS when it exists (`https://www.theuiaa.org/feed/`, `https://www.climbin
 2. `.cursor/rules/news-posts.mdc`
 3. `.cursor/skills/news-post/SKILL.md`
 4. `_drafts/news-post-template.md`
-5. `_data/news-wire-seen.yml` — skip `items` and `skipped` URLs already listed
+5. `_data/news-wire-seen.yml` — skip `items` and `skipped` URLs already listed (job 3 still re-opens published URLs to re-check)
 6. `_data/news-wire-state.yml` — previous run time
-7. `_data/aaj-backfill.yml` — AAJ 2026 complete-translation queue (oldest first; kickoff one, then two per GMT slot)
+7. `_data/aaj-backfill.yml` — AAJ 2026 complete-translation queue (oldest first; two per GMT slot)
+8. `.cursor/skills/daily-seo-audit/SKILL.md` — whole-site SEO is job 4 of every GMT slot
 
 ## What to publish
 
@@ -80,6 +91,17 @@ Prefer RSS when it exists (`https://www.theuiaa.org/feed/`, `https://www.climbin
 - Marketing listicles with no new climb/federation/safety fact
 - When skipping, append the URL under `skipped:` in `_data/news-wire-seen.yml` so later runs do not re-open it
 
+## Re-check previous translations (each GMT slot)
+
+After new items and the two AAJ notes are drafted, open every file in `_news/` that has a `source_url`. Fetch the source. Compare. Fix:
+
+- Wrong or omitted names, dates, places, grades, scores
+- Missing narrative paragraphs (a short leftover from the old invented summary rule is an error — complete it)
+- Unnatural Persian / English paste
+- Agent asides, مترجم/نویسنده bylines, copied photos
+
+Do not invent facts to “improve” a translation. If the source page cannot be fetched, say so in the log and leave unverified sentences unchanged. Record pass/fail per slug in `_seo/news-wire-log.md`.
+
 ## Triple critical review (required, before commit)
 
 For **each** draft, run three passes and record them in `_seo/news-wire-log.md` (unpublished):
@@ -94,6 +116,7 @@ If any pass fails, fix or drop the item. Do not publish a failing draft.
 
 1. Branch `cursor/news-wire-<YYYYMMDD-HHMM>-4b4e` on scheduled runs (this repo’s `cursor/*-4b4e` pattern)
 2. `bundle exec jekyll build` — `_news/` pages in `_site/news/`; `_seo/` and `.cursor/` unpublished
-3. Open PR. Until GitHub Actions billing is unlocked, also refresh the `published` static export so https://logbook.rocks/news/ updates (Zaraz reads HTML from GitHub `published`, not jsDelivr directory URLs). Overlay `_site` onto `published` **without** `--delete` (this branch’s build is not the whole live tree). Copy only the news/home/sitemap files this run changed. Do **not** mention unrelated logbook pages in `_seo/news-wire-log.md` or the PR body.
-4. If no unseen items in the window: no PR; log the empty window in `_seo/news-wire-log.md`; still update `_data/news-wire-state.yml`
-5. Never invent results for a live event that has no source article yet
+3. Open (or update) the PR whenever jobs 1–4 changed anything. A slot with no new source-1–9 items still PRs if job 2 shipped AAJ notes, job 3 fixed a translation, or job 4 changed SEO.
+4. Until GitHub Actions billing is unlocked, overlay this run’s changed HTML onto `published` **without** `--delete` (this branch’s build is not the whole live tree). Copy the news/home/sitemap (and any SEO-touched templates) this run changed. Confirm `https://raw.githubusercontent.com/KavehRS/logbook.rocks/published/...` has those pages. Purge Cloudflare for the changed URLs. The cycle is unfinished if the live export is missing the work.
+5. If jobs 1–4 truly changed nothing: no PR; log the empty wire window plus the re-check and SEO pass in `_seo/news-wire-log.md` and `_seo/daily-log.md`; still update `_data/news-wire-state.yml`.
+6. Never invent results for a live event that has no source article yet.

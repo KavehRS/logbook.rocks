@@ -767,3 +767,7 @@ Source: https://publications.americanalpineclub.org/articles/13201217320 — Xia
 ## 2026-08-26 evening — owner: never summarize
 
 The “short summary for the other nine sources” line in the previous kickoff note was agent-invented, not an owner rule. Owner asked where anyone said to summarize. Corrected: **every** wire source is a complete Persian translation. Do not re-introduce a summary rule. AAJ 2026 pace (oldest first; two per GMT slot after Sir Duk) is unchanged. Hub copy on `/` and `/news/` no longer says «به‌صورت خلاصه».
+
+## 2026-08-26 evening — owner: six-hour cycle jobs
+
+Owner restated the GMT 00/06/12/18 slot. Each cycle, in order: (1) complete translation of every new non-duplicate item from all listed sources; (2) next two AAJ 2026 queue notes; (3) re-check live `_news/` translations against sources and fix errors; (4) whole-site SEO; (5) ship until the live `published` export has the work. Next slot 00:00 GMT 27 Aug.

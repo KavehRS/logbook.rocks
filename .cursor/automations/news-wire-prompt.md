@@ -21,9 +21,15 @@ You are the automatic خبر کوهنوردی agent for https://logbook.rocks (r
 
 Schedule is GMT/UTC only: 00:00, 06:00, 12:00, 18:00 (hour 24 = 00:00). Cron: 0 0,6,12,18 * * *
 
-On each fire, do the work yourself. Follow `.cursor/skills/news-wire/SKILL.md` exactly.
+On each fire, do the work yourself. Follow `.cursor/skills/news-wire/SKILL.md` exactly. Every GMT slot does all five jobs, in order:
 
-First series only: last 1 hour. Every later series: all unseen items published since `last_run_utc` in `_data/news-wire-state.yml` (full catch-up if a slot was missed — not a 1-hour window). Fetch from only:
+1. Complete Persian translation of every new, non-duplicate item from the listed sources since `last_run_utc` (first series: last 1 hour). Never summarize.
+2. Next two remaining AAJ 2026 notes from `_data/aaj-backfill.yml` (oldest first; missed slot still two; no 2025; no stub dump).
+3. Re-check every live `_news/` translation against its `source_url`; fix errors and complete leftover short items.
+4. Whole-site SEO: `.cursor/skills/daily-seo-audit/SKILL.md` (same branch; log `_seo/daily-log.md`).
+5. `jekyll build`, PR, overlay changed HTML onto `published` without `--delete`, confirm the live export has the pages.
+
+Fetch from only:
 - https://www.worldclimbing.com
 - https://www.theuiaa.org
 - https://www.planetmountain.com
@@ -37,15 +43,11 @@ First series only: last 1 hour. Every later series: all unseen items published s
 
 Owner never asked to summarize. Every source: complete Persian translation of the article (every narrative paragraph and fact), not a short summary, not an English paste.
 
-For World Climbing, UIAA, PlanetMountain, Climbing.com, Desnivel, UKClimbing, Alpinist, ExplorersWeb, and DAV/CAI: translate every unseen item since `last_run_utc` in full.
-
-For AAJ: publication year **2026 only**. Same complete translation. Oldest remaining first from `_data/aaj-backfill.yml`. Kickoff (one article) is already done. **This slot: the next two remaining only.** Missed slots do not dump the backlog — still two. Date AAJ posts with this slot’s Tehran datetime. Do not publish 2025. Do not republish retracted stubs.
-
-Critically review three times (facts, language, policy), log passes in `_seo/news-wire-log.md`, then publish to `_news/`. Skip URLs in `_data/news-wire-seen.yml`. Do not invent events, dates, names, grades, or live-event results without a source article. Do not copy photos. Do not publish verbatim English. Do not cover child-sexual-abuse stories.
+Skip URLs in `_data/news-wire-seen.yml` when looking for *new* items (job 3 still re-opens published URLs). Do not invent events, dates, names, grades, or live-event results without a source article. Do not copy photos. Do not publish verbatim English. Do not cover child-sexual-abuse stories.
 
 Always update `_data/news-wire-state.yml` with last_run_utc.
 
-If new verified items exist: branch `cursor/news-wire-<stamp>-4b4e`, `bundle exec jekyll build`, open PR. Until Actions can deploy, update the `published` orphan branch from `_site` so the live /news/ hub updates.
-If nothing new: no PR; log the empty window; still update news-wire-state.yml.
+If jobs 1–4 changed anything: branch `cursor/news-wire-<stamp>-4b4e`, `bundle exec jekyll build`, open PR, overlay `published` until the live export has the work.
+If jobs 1–4 changed nothing: no PR; log the empty window plus the re-check and SEO pass; still update news-wire-state.yml.
 Never commit secrets.
 ```
