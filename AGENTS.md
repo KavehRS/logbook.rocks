@@ -33,7 +33,7 @@ Until Actions can run, production is:
 
 1. DNS (proxied): apex + `www` CNAME → `kavehrs.github.io`
 2. Cloudflare URL rewrite (`http_request_transform`): every path except `/cdn-cgi/` rewrites to origin `/` so GitHub returns 200 HTML
-3. Cloudflare Zaraz tool **Logbook Jekyll bootstrap** (`component: html`, `actionType: event`, trigger `Pageview`) fetches **HTML** from `https://raw.githubusercontent.com/KavehRS/logbook.rocks/published` + path (`/` → `/index.html`) and `document.write`s it. Keep in-site `<a href="/…">` on this domain; only rewrite asset URLs (`src`, CSS, favicons) onto `https://cdn.jsdelivr.net/gh/KavehRS/logbook.rocks@published`. jsDelivr’s `@published` branch alias can lag; do not fetch HTML from jsDelivr directory URLs (they are CDN listings, not `index.html`).
+3. Cloudflare Zaraz tool **Logbook Jekyll bootstrap** (`component: html`, `actionType: event`, trigger `Pageview`) fetches **HTML** from `https://raw.githubusercontent.com/KavehRS/logbook.rocks/published` + path (`/` → `/index.html`) and `document.write`s it. Keep in-site `<a href="/…">` on this domain; only rewrite asset URLs (`src`, CSS, favicons) onto `https://cdn.jsdelivr.net/gh/KavehRS/logbook.rocks@published`. **Never pin a jsDelivr commit SHA in Zaraz** — that freezes the live site on an old export. jsDelivr’s `@published` branch alias can lag; do not fetch HTML from jsDelivr directory URLs (they are CDN listings, not `index.html`).
 4. Orphan branch `published` is the built `_site` (includes `.nojekyll`)
 
 After a content change that should go live **before** GitHub billing is fixed:
