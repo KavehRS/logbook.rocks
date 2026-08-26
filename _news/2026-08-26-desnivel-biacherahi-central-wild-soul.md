@@ -13,7 +13,7 @@ source_url: https://www.desnivel.com/alpinismo/thomas-huber-miquel-mas-y-victor-
 image:
   path: https://www.desnivel.com/images/2026/08/img-20260814-wa0021.jpg
   alt: گشایش Wild Soul در قراقروم
-  caption: گشایش «Wild Soul»، قراقروم. عکس: مجموعهٔ M.Mas / T.Huber / V.Sans.
+  caption: "گشایش «Wild Soul»، قراقروم. عکس: مجموعهٔ M.Mas / T.Huber / V.Sans."
 ---
 
 خبر ۴ شهریور ۱۴۰۵ (۲۶ اوت ۲۰۲۶) می‌گوید توماس هوبر، میکل ماس و ویکتور سانس مسیر Wild Soul را روی Biacherahi Central در یخچال Choktoi، تودهٔ Latok، قراقروم پاکستان گشوده‌اند: ارتفاع قله را ۵۷۰۰ متر نوشته، دیواره ۶۰۰ متر، ۲۱ طول، 7a و A2+. مقدمهٔ همان خبر صعود را پنج روز شدید از ۱۰ تا ۱۳ مرداد (۱ تا ۴ اوت) دانسته؛ متن هم پنج روز پنجرهٔ هوای پایدار گفته. کمپ پیش‌رفته حدود ۵۰۵۰ متر. هوا روزها برف و بد بود تا همان پنجره رسید؛ برگشت به کمپ را هم داخل همان پنجره نوشته‌اند.

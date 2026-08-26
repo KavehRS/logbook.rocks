@@ -13,7 +13,7 @@ source_url: https://www.desnivel.com/escalada-roca/xavi-sabater-primera-repetici
 image:
   path: https://www.desnivel.com/images/2026/08/whatsapp-image-2026-08-20-at-19.36.29.jpeg
   alt: شاوی ساباتر در Donec Perficiam
-  caption: شاوی ساباتر در «Donec Perficiam». عکس: Jaime Merino.
+  caption: "شاوی ساباتر در «Donec Perficiam». عکس: Jaime Merino."
 ---
 
 خبر ۳ شهریور ۱۴۰۵ (۲۵ اوت ۲۰۲۶) می‌گوید شاوی ساباتر از کاتالونیا مسیر Donec perficiam روی Pared de Aragón در تنگهٔ Montrebei را آزاد تکرار کرده: ۳۵۰ متر، نه طول، درجهٔ پایدار بین هفتم و هشتم. منبع این را اولین تکرار آزاد و دومین صعود کاملاً آزاد دانسته؛ اولی را از ادو مارین در ۲۰۲۵ نوشته. صعود ساباتر در مه ۲۰۲۶ بوده؛ از ۱ خرداد (۲۲ مه) با همطنابی که نامش در خبر نیست چهار روز روی دیوار ماندند و هر دو هر نه طول را به‌عنوان سرطناب آزاد کرده‌اند. روز پایان آن چهار روز در خبر نیست.

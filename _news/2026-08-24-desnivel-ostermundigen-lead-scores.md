@@ -16,7 +16,7 @@ related:
 image:
   path: https://www.desnivel.com/images/2026/08/ichi2-copia.jpg
   alt: ایزیار مارتینس در سری اروپا اوسترموندیگن ۲۰۲۶
-  caption: ایزیار مارتینس در World Climbing Europe Series Ostermundigen ۲۰۲۶. عکس: FEDME.
+  caption: "ایزیار مارتینس در World Climbing Europe Series Ostermundigen ۲۰۲۶. عکس: FEDME."
 ---
 
 طبق گزارش ۲ شهریور ۱۴۰۵ (۲۴ اوت ۲۰۲۶)، در فینال زنان لید سری اروپا اوسترموندیگن ایزیار مارتینس از اسپانیا با +۳۷ طلا گرفت؛ نقره آنیکا دویبلر از اتریش (۳۵+) و برنز کانی بریجنز از بریتانیا (۳۳). آینا ویلا پنجم شد. منبع نوشته مارتینس در نیمه‌نهایی هم اول شده بود.
