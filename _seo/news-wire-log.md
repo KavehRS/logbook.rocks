@@ -266,4 +266,10 @@ Source: https://www.desnivel.com/alpinismo/fay-manners-y-roger-schaeli-abren-sol
 
 Next GMT slot: 18:00.
 
+## 2026-08-26 18:00 GMT — scheduled slot (all unseen since previous run)
+
+Window: 12:02:20–18:01:42 UTC (since `last_run_utc`, not a 1-hour cap). Fetched UIAA RSS (newest still 20 Aug symposium). Climbing.com RSS newest still Rumney 25 Aug 21:49 UTC (already published). World Climbing / IFSC `/news` newest still the 24 Aug Ostermundigen recap (already published). Desnivel `alpinismo` newest still Solar Eclipse (13:42 UTC 25 Aug) and Biacherahi (06:00 UTC 26 Aug), both already published; other categories unchanged. PlanetMountain HTML 403; search shows a 26 Aug Biacherahi / Wild Soul page (same Huber/Mas/Sans first-ascent claim as the 06:00 Desnivel item) — skipped as duplicate. UKClimbing `/news/` 403; search newest dated 19 Aug (Glen Lyon). Alpinist `/feed/` newest 19 Aug Dean Potter feature; `/newswire/` listing still has no August 2026 item (top item remains Heavy is the Hand, April 2026). Laval remains 28–30 Aug — no result. Guiyang still has no `/news/` article.
+
+No unseen article to publish after 12:02 UTC 26 Aug. Nothing to review. Next GMT slot: 00:00.
+
 

@@ -67,3 +67,6 @@ skipped:
   - source: UKClimbing
     source_url: https://www.ukclimbing.com/news/2026/08/what_if_everything_were_possible_fay_manners_on_her_new_route_on_the_eigers_north_face-74202
     reason: duplicate of the Desnivel Solar Eclipse Eiger item; HTML 403, no visible pubDate
+  - source: PlanetMountain
+    source_url: https://www.planetmountain.com/en/news/alpinism/biacherahi-central-climbed-latok-massif-thomas-huber-miquel-mas-victor-sans.html
+    reason: duplicate of the Desnivel Biacherahi Central / Wild Soul item
