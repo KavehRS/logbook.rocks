@@ -32,8 +32,8 @@ Mission: create or update Persian اخبار in `_news/` as complete translation
 
 1. Confirm facts from the user only: what happened, Jalali date, optional link to an existing logbook report.
 2. Create `_news/YYYY-MM-DD-<slug>.md` with lang: fa-IR, dir_attr: rtl, unique description, date, tags.
-3. Write as the climber (من). Complete translation of the source, not a summary. Optional link to `/logbook/<slug>/`.
-4. Images go in assets/news/<exact-url-slug>/ only when real files exist.
+3. Write as the climber (من). Body = only the source, in Persian. Complete translation, not a two-sentence stub, not agent process notes. Optional link to `/logbook/<slug>/`.
+4. Photos: local files in assets/news/<exact-url-slug>/ when they exist; otherwise image: and in-body figures from the source article’s own photo URLs.
 5. Hub /news/ is chronological. Related UI is ONLY «اخبار مرتبط :» + flat list.
 6. Reader-facing UI dates are Jalali via _includes/jalali-date.html.
 

@@ -22,13 +22,14 @@ USAGE (agent-only — do not copy this comment block into published pages)
    date: YYYY-MM-DD (Gregorian for machines; UI shows Jalali)
    tags: [YAML array]
 3) Optional related: [{ title, url }] only to other news items when they exist
-   image: only a real photo for THIS item; comment out until the file exists
-4) Images: `assets/news/YYYY-MM-DD-<slug>/` matching `/news/YYYY-MM-DD-<slug>/`
+   image: local file in assets/news/<slug>/ when it exists; otherwise the source article’s own photo URL
+4) Images: `assets/news/YYYY-MM-DD-<slug>/` when files exist; otherwise `image:` + in-body figures from the source photo URLs
 5) Related public UI: «اخبار مرتبط :» + flat list
 6) Hub `/news/` is chronological (newest first). Homepage `/` is about + four latest teasers; the climbing-news archive is `/news/` (title: خبر کوهنوردی).
-7) Do not open with «این خبر را می‌آورم» / curator asides. Complete translation of the source (every
-   narrative paragraph and fact). Optional link to an existing `/logbook/` report — do not clone a
-   climb report into news. Do not add a مترجم or نویسنده byline. Owner never asked for a summary.
+7) Do not open with «این خبر را می‌آورم» / curator asides. Body = only the source, in Persian
+   (complete translation of every narrative paragraph and fact — not a two-sentence stub, not
+   «چکار کردی یا نکردی»). Optional link to an existing `/logbook/` report — do not clone a
+   climb report into news. Do not add a مترجم or نویسنده byline.
 8) Do not invent events, dates, or team names the user did not give
 9) Never paste this template prose unchanged into a published post
 -->

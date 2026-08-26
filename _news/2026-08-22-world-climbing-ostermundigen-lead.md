@@ -10,7 +10,9 @@ date: 2026-08-22
 tags: [world-climbing, سنگ‌نوردی, لید, رقابت]
 source: World Climbing
 source_url: https://www.ifsc-climbing.org/events/world-climbing-europe-series-ostermundigen-2026/
-# image:
+image:
+  path: https://d1n1qj9geboqnb.cloudfront.net/ifsc/public/lt6tuunpjtufakub0ewn3dx8uig6
+  alt: ایزیار مارتینس آلمندروس
 ---
 
 طبق صفحهٔ رویداد World Climbing، در لید سری اروپا اوسترموندیگن سوئیس طلای مردان به جوردی پولس از فرانسه و طلای زنان به ایزیار مارتینس آلمندروس از اسپانیا رسید. مسابقه ۳۰ و ۳۱ مرداد ۱۴۰۵ (۲۱ و ۲۲ اوت ۲۰۲۶) بود.

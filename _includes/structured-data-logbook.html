@@ -6,6 +6,11 @@
 {% endif %}
 {% if page_img and page_img != empty and page_img != default_img %}
   {% assign article_image = page_img %}
+  {% if article_image contains '://' %}
+    {% assign article_image_abs = article_image %}
+  {% else %}
+    {% assign article_image_abs = article_image | absolute_url %}
+  {% endif %}
 {% else %}
   {% assign article_image = nil %}
 {% endif %}
@@ -91,7 +96,7 @@
     "name": {{ site.author.name | jsonify }},
     "url": "{{ site.author.url }}"
   }{% if article_image %},
-  "image": {{ article_image | absolute_url | jsonify }}{% endif %},
+  "image": {{ article_image_abs | jsonify }}{% endif %},
   "about": {
     "@type": "Mountain",
     "name": {{ peak.name | jsonify }}{% if peak.elevation_m %},
@@ -139,7 +144,7 @@
     "name": {{ site.author.name | jsonify }},
     "url": "{{ site.author.url }}"
   }{% if article_image %},
-  "image": {{ article_image | absolute_url | jsonify }}{% endif %}{% if page.tags %},
+  "image": {{ article_image_abs | jsonify }}{% endif %}{% if page.tags %},
   "keywords": {{ page.tags | join: ', ' | jsonify }}{% endif %}
 }
 </script>

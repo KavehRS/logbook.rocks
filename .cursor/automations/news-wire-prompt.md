@@ -41,9 +41,9 @@ Fetch from only:
 - DAV Expedkader and CAI Lo Scarpone / spedizioni (federation expedition reports — not club admin)
 - https://publications.americanalpineclub.org/ (American Alpine Journal Climbs and Expeditions — not book reviews, obituaries, or ANAC)
 
-Owner never asked to summarize. Every source: complete Persian translation of the article (every narrative paragraph and fact), not a short summary, not an English paste.
+Every source: complete Persian translation of the article (every narrative paragraph and fact), not a two-sentence stub, not an English paste. Body = only the source text. Do not write what you did or didn’t do.
 
-Skip URLs in `_data/news-wire-seen.yml` when looking for *new* items (job 3 still re-opens published URLs). Do not invent events, dates, names, grades, or live-event results without a source article. Do not copy photos. Do not publish verbatim English. Do not cover child-sexual-abuse stories.
+Skip URLs in `_data/news-wire-seen.yml` when looking for *new* items (job 3 still re-opens published URLs). Do not invent events, dates, names, grades, or live-event results without a source article. If there is no local photo, use the source article’s own photo URLs. Do not publish verbatim English. Do not cover child-sexual-abuse stories.
 
 Always update `_data/news-wire-state.yml` with last_run_utc.
 

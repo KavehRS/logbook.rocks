@@ -136,7 +136,7 @@ When asked for `اخبار` / a climbing news item / update to `_news/`:
 2. Obey `.cursor/rules/news-posts.mdc`.
 3. Use `_drafts/news-post-template.md` (structure only — never publish placeholders).
 4. File: `_news/YYYY-MM-DD-<slug>.md` with zero-padded date, `lang: fa-IR`, YAML `tags` array, unique description.
-5. Images for news: `assets/news/<exact-url-slug>/`; comment `image:` out until files exist.
+5. Images for news: local files in `assets/news/<exact-url-slug>/` when they exist; otherwise `image:` and in-body figures use the source article’s own photo URLs. Do not write what the agent did or didn’t do in the article body.
 6. Related UI stays `اخبار مرتبط :` + flat list. Hub `/news/` chronological.
 7. Homepage `/` is the about page («درباره من») plus four latest teasers from گزارش صعود and خبر کوهنوردی. Full reports live on `/logbook/`; climbing news on `/news/`.
 8. For a Cursor Automation, paste `.cursor/automations/news-post-prompt.md` at https://cursor.com/automations/new

@@ -771,3 +771,9 @@ The “short summary for the other nine sources” line in the previous kickoff 
 ## 2026-08-26 evening — owner: six-hour cycle jobs
 
 Owner restated the GMT 00/06/12/18 slot. Each cycle, in order: (1) complete translation of every new non-duplicate item from all listed sources; (2) next two AAJ 2026 queue notes; (3) re-check live `_news/` translations against sources and fix errors; (4) whole-site SEO; (5) ship until the live `published` export has the work. Next slot 00:00 GMT 27 Aug.
+
+## 2026-08-26 evening — body is only the source; photos from source URLs
+
+Owner: do not put what the agent did or didn’t do in the article («عکسی کپی نکردم»). «فقط متن رو خلاصه کنی» = only the source text in the body, not agent process notes, not a two-sentence stub. If there is no local file, use the source article’s own photo URLs.
+
+Applied to all live `_news/` posts: stripped process asides; set `image:` and in-body figures from each `source_url` (AAJ S3, Desnivel `/images/`, Climbing.com CDN, IFSC/World Climbing, UIAA wp-content). PlanetMountain HTML still 403 — no photo URL confirmed, so that item still has no `image:`. Rules/skills/automations/workflow match. `last_run_utc` unchanged.

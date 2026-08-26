@@ -63,22 +63,23 @@ Prefer RSS when it exists (`https://www.theuiaa.org/feed/`, `https://www.climbin
 
 ## What to publish
 
-- **Owner: never summarize.** Do not invent a short-summary rule for any source. Every listed source gets a **complete** Persian translation of that article — every narrative paragraph and climb/competition/safety fact on the source page. Original Persian (not an English dump). Route and peak names may stay Latin. No photos.
+- **Owner: never invent a two-sentence stub.** Every listed source gets a **complete** Persian translation of that article — every narrative paragraph and climb/competition/safety fact on the source page. Original Persian (not an English dump). Route and peak names may stay Latin. «فقط متن رو خلاصه کنی» means the live body is only that source text — no agent process notes.
 - **AAJ 2026** is paced, not shortened: oldest remaining first; kickoff one (Sir Duk, 2026-08-26); then **two per GMT slot** (`_data/aaj-backfill.yml`). Still a complete translation of each note.
 - Do **not** open with curator asides such as «خبر را اینجا می‌آورم»، «خلاصه می‌کنم», or «خودم آنجا نبودم». Start with the news.
+- Do not write what the agent did or didn’t do («عکسی کپی نکردم», fetch/CORS notes, «قله را ادعا نکردم»).
 - News pages have no مترجم or نویسنده byline. Do not add either in the post body.
 - For World Climbing, UIAA, PlanetMountain, Climbing.com, Desnivel, UKClimbing, Alpinist, ExplorersWeb, and DAV/CAI: publish **every** unseen item in the window that passes triple review (not one-per-source), each as a complete translation. Extra UIAA **equipment recalls** may ship in the same run (safety).
 - For the AAJ 2026 queue: **never** dump remaining notes in one run. Kickoff was one article (Sir Duk, 2026-08-26). Every later GMT slot publishes the next **two** of `remaining` only. A missed slot still ships two, not the missed backlog.
-- Link the original article in the body. Do not hotlink or copy their photos.
+- Link the original article in the body. Photos: local files in `assets/news/<slug>/` when they exist; otherwise set `image:` and in-body figures to the source article’s own photo URLs (`og:image`, article `<figure>`, article `<img>`). Translate captions. Skip ads, logos, placeholders, and related-story thumbs.
 - Front matter: `layout: post`, `lang: fa-IR`, `dir_attr: rtl`, unique `description`, Gregorian `date`, YAML `tags`, `source` and `source_url`.
 - File: `_news/YYYY-MM-DD-<slug>.md` using the article’s publication date (not “today”) when the source gives one. **Exception — AAJ 2026 backfill:** date with **this GMT slot’s** Asia/Tehran datetime so the new translation appears at the top of `/news/` (do not date by climb year or volume year).
-- Comment `image:` out. No guessed dates, names, grades, or scores.
+- Set `image:` from a local file or from a source photo URL. No guessed dates, names, grades, or scores.
 
 ## AAJ 2026 backfill procedure (each GMT slot)
 
 1. Read `_data/aaj-backfill.yml`. Queue is oldest remaining first.
 2. Take the first two `remaining` entries (or however many are left if fewer than two).
-3. Fetch each article page. Write a complete Persian translation of the journal note (every narrative paragraph and climb fact; names, grades, places from the source; peak/route names may stay Latin). No photos. No مترجم/نویسنده.
+3. Fetch each article page. Write a complete Persian translation of the journal note (every narrative paragraph and climb fact; names, grades, places from the source; peak/route names may stay Latin). Use the journal’s own photo URLs when there is no local file. No مترجم/نویسنده. No agent process notes in the body.
 4. Move those two into `published`, drop them from `remaining`, set `remaining_count`, refresh `next_ids` and `next_slot_utc`. Append each `source_url` to `_data/news-wire-seen.yml`.
 5. Stop at two. Do not publish publication year 2025. Do not re-publish retracted summary stubs.
 6. New 2026 listing items that appear after `last_run_utc` append to the **end** of `remaining` (they are newer). They are not inserted at the front and they do not add extra publishes in the same slot.
@@ -98,7 +99,7 @@ After new items and the two AAJ notes are drafted, open every file in `_news/` t
 - Wrong or omitted names, dates, places, grades, scores
 - Missing narrative paragraphs (a short leftover from the old invented summary rule is an error — complete it)
 - Unnatural Persian / English paste
-- Agent asides, مترجم/نویسنده bylines, copied photos
+- Agent asides, مترجم/نویسنده bylines, leftover «عکسی کپی نکردم» lines, missing source photo URLs when the source has photos
 
 Do not invent facts to “improve” a translation. If the source page cannot be fetched, say so in the log and leave unverified sentences unchanged. Record pass/fail per slug in `_seo/news-wire-log.md`.
 
@@ -108,7 +109,7 @@ For **each** draft, run three passes and record them in `_seo/news-wire-log.md` 
 
 1. **Facts** — names, dates, places, grades, scores match the source; disagreements omitted or quoted as the source’s claim
 2. **Language** — natural Persian; route names may stay Latin; no machine-translation calques; no agent notes in the live HTML
-3. **Policy** — climber voice (من as curator, not as witness); complete translation not a summary and not an English paste; unique description; no photos we do not have; `source_url` appended to `_data/news-wire-seen.yml`
+3. **Policy** — climber voice (من as curator, not as witness); complete translation of the source text, not a two-sentence stub and not an English paste; unique description; body has no agent process notes; photos from local files or the source article’s own URLs; `source_url` appended to `_data/news-wire-seen.yml`
 
 If any pass fails, fix or drop the item. Do not publish a failing draft.
 

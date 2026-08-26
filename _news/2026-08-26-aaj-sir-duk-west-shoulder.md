@@ -11,7 +11,13 @@ date: 2026-08-26 19:30:00 +0330
 tags: [aaj, آلپینیسم, تبت, چین]
 source: American Alpine Journal
 source_url: https://publications.americanalpineclub.org/articles/13201217320
-# image:
+image:
+  path: https://aac-publications.s3.amazonaws.com/articles/aaj-13201217320-1760729454.jpg
+  alt: Sir Duk از جنوب‌شرق؛ مسیرهای ۲۰۰۰ و ۲۰۲۴
+  caption: >-
+    Sir Duk از جنوب‌شرق. (۱) صعود ۲۰۲۴ تا شانهٔ غربی. (۲) صعود ۲۰۰۰ از یال جنوبی،
+    اولین صعود کوه ۶۶۱۴ متری. مسیر قلهٔ ۲۰۰۹ از رخ جنوب‌جنوب‌غربی پشت مسیر ۲ پنهان است.
+    عکس: Fan Rui.
 ---
 
 جلد ۲۰۲۶ آمریکن آلپاین ژورنال از زبان شیا ژونگمینگ (Xia Zhongming، آلمان) گزارش صعود Sir Duk را آورده؛ نام انگلیسی قله را Golden Dragon Peak نوشته و ارتفاع را روی نقشهٔ Desheng ۶۶۱۴ متر. مختصات: ۳۰°۱۸′۱۳.۵۰″ شمالی، ۹۰°۲۸′۴۴.۱۱″ شرقی، در درهٔ Langbu Qu. این دره را سومین دره به‌سمت جنوب‌غرب Nyanchen Thanglha I (اصلی، ۷۱۶۲ متر) دانسته، حدود ۹۵ کیلومتر شمال‌غرب لهاسا.
@@ -24,4 +30,29 @@ source_url: https://publications.americanalpineclub.org/articles/13201217320
 
 لنگر درست پیدا نکردند؛ یک طول را سنگ‌به‌سنگ پایین آمدند، بعد سه فرود از لنگر برفی تا بخش سنگی، و چهار فرود دیگر تا یخچال. نیمه‌شب به کمپ پایه برگشتند. مسیر ۸۰۰ متری تا شانه را TD M5 درجه‌بندی کرده‌اند.
 
-پاورقی مجله: نقشه‌های قطعی Mi Desheng از کوه‌های تبت در کتاب Immortal Mountains in the Snow Region چاپ ۱۹۹۵ آمده. عکسی از مجله کپی نکردم. اصل: [American Alpine Journal](https://publications.americanalpineclub.org/articles/13201217320).
+<figure class="source-photo">
+<img src="https://aac-publications.s3.amazonaws.com/articles/aaj-13201217320-1760729424.jpg" alt="Sir Duk از غرب؛ مسیرهای ۲۰۰۰، ۲۰۰۹ و ۲۰۲۴" loading="lazy" decoding="async">
+<figcaption>Sir Duk (۶۶۱۴ متر) از غرب. (۱) فرود ۲۰۲۴ از یال شمال‌غربی و رخ غربی؛ همین یال را بعد از صعود رخ جنوب‌جنوب‌غربی در ۲۰۰۹ از قله پایین آمدند. (۲) یال جنوب‌غربی تا شانهٔ غربی (۲۰۲۴). (۳) رخ جنوب‌جنوب‌غربی (۲۰۰۹). (۴) یال جنوبی (۲۰۰۰). هرم سمت راست Chorten Garpo (۶۴۳۲ متر) است که اولین‌بار در ۲۰۰۰ صعود شد. پشت و چپ، تودهٔ Nyanchen Tanglha با قلهٔ اصلی Nyanchen Tanglha I (۷۱۶۲ متر) در چپ. عکس: Fan Rui.</figcaption>
+</figure>
+
+<figure class="source-photo">
+<img src="https://aac-publications.s3.amazonaws.com/articles/aaj-13201217320-1760729485.jpg" alt="سنگ‌نوردی مخلوط روی یال جنوب‌غربی Sir Duk" loading="lazy" decoding="async">
+<figcaption>سنگ‌نوردی مخلوط روی یال جنوب‌غربی Sir Duk. یخچال نزدیک‌شدن درست زیر سنگ‌نورد است.</figcaption>
+</figure>
+
+<figure class="source-photo">
+<img src="https://aac-publications.s3.amazonaws.com/articles/aaj-13201217320-1760729506.jpg" alt="گرانیت قطعه‌قطعهٔ یال جنوب‌غربی Sir Duk" loading="lazy" decoding="async">
+<figcaption>روی گرانیت قطعه‌قطعهٔ یال جنوب‌غربی Sir Duk.</figcaption>
+</figure>
+
+<figure class="source-photo">
+<img src="https://aac-publications.s3.amazonaws.com/articles/aaj-13201217320-1760729540.jpg" alt="رسیدن به یال پایانی شانهٔ غربی Sir Duk" loading="lazy" decoding="async">
+<figcaption>رسیدن به یال پایانی منتهی به شانهٔ غربی Sir Duk.</figcaption>
+</figure>
+
+<figure class="source-photo">
+<img src="https://aac-publications.s3.amazonaws.com/articles/aaj-13201217320-1760729579.jpg" alt="به‌سوی شانهٔ غربی Sir Duk در نوامبر ۲۰۲۴" loading="lazy" decoding="async">
+<figcaption>اواخر روز نوامبر ۲۰۲۴ به‌سوی شانهٔ غربی Sir Duk، با دامنهٔ جنوب‌غربی قله‌های Nyachen Tanglha در پس‌زمینه (قلهٔ اصلی در چپ).</figcaption>
+</figure>
+
+پاورقی مجله: نقشه‌های قطعی Mi Desheng از کوه‌های تبت در کتاب Immortal Mountains in the Snow Region چاپ ۱۹۹۵ آمده. اصل: [American Alpine Journal](https://publications.americanalpineclub.org/articles/13201217320).
