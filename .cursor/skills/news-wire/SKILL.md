@@ -1,6 +1,6 @@
 ---
 name: news-wire
-description: GMT 00/06/12/18 news-wire agent — fetch new climbing news from World Climbing, UIAA, PlanetMountain, Climbing.com, Desnivel, UKClimbing news, and Alpinist Newswire; Persian summary; triple-review; publish to _news/
+description: GMT 00/06/12/18 news-wire agent — fetch new climbing news from World Climbing, UIAA, PlanetMountain, Climbing.com, Desnivel, UKClimbing news, Alpinist Newswire, ExplorersWeb, DAV/CAI expedition reports, and the American Alpine Journal; Persian summary; triple-review; publish to _news/
 ---
 
 # International news wire agent (خبر کوهنوردی)
@@ -34,8 +34,11 @@ Combined: `0 0,6,12,18 * * *` (GitHub Actions and Cursor timer, UTC).
 5. https://www.desnivel.com — climbs, alpinism, competitions, expeditions. Prefer category RSS: `/category/alpinismo/feed/`, `/category/escalada-roca/feed/`, `/category/competiciones/feed/`, `/category/expediciones/feed/`, `/category/escalada-hielo/feed/`, `/category/bulder/feed/`. Skip bookshop, cultura-only ads, and generic gear shopping.
 6. https://www.ukclimbing.com/news/ — **news desk only**. Do not fetch forums, jobs, classifieds, photo galleries, or gear listings. UKC has no public news RSS. If Cloudflare blocks HTML, use a search snippet only for facts visible on the article page; **omit** the rest.
 7. https://alpinist.com/newswire/ — Newswire climb/alpinism news. Site RSS `https://alpinist.com/feed/` is magazine-wide and often gear or features; do **not** treat Mountain Standards reviews, Escape Route lists, shop, or staff HR as wire news. A Newswire or feature with a new climb, federation, or safety fact may be published.
+8. https://explorersweb.com — climbing, expeditions, and 8000er news. Prefer category RSS: `/category/climbing/feed/`, `/category/expeditions/feed/`, `/category/8000ers/feed/`. Skip ocean rowing, cycling, kite-buggy travel, weekly link roundups, generic adventure explainers with no climb, and running ultras that are not alpine link-ups.
+9. DAV and CAI **expedition reports** only — German and Italian alpine-club teams, Expedkader, Eagle Team, spedizioni, new routes. DAV: `https://www.alpenverein.de/thema/expeditionskader` and press `https://www.alpenverein.de/verband/presse/pressemeldungen/`. CAI: `https://www.loscarpone.cai.it/` and expedition pages on `https://www.cai.it/`. No public expedition RSS; fetch HTML. Skip membership, courses, insurance, jobs, phone-support notices, and sport-prize roundups with no climb.
+10. American Alpine Journal at `https://publications.americanalpineclub.org/` — **Climbs and Expeditions** and climb Feature Articles. Listing `/articles` is newest-first; each page has Climb Year and Publication Year. No RSS. Skip Book Reviews, In Memoriam, Club Activities, editorials, AAC shop, and Accidents in North American Climbing (ANAC/ANAM).
 
-Prefer RSS when it exists (`https://www.theuiaa.org/feed/`, `https://www.climbing.com/news/feed/`, the Desnivel category feeds above, `https://alpinist.com/feed/` filtered as above). World Climbing often links through to `ifsc-climbing.org`. If PlanetMountain or UKClimbing is bot-blocked, use a search snippet only for facts that are visible on the article page; **omit** anything you cannot confirm.
+Prefer RSS when it exists (`https://www.theuiaa.org/feed/`, `https://www.climbing.com/news/feed/`, the Desnivel category feeds above, `https://alpinist.com/feed/` filtered as above, the ExplorersWeb category feeds above). World Climbing often links through to `ifsc-climbing.org`. If PlanetMountain or UKClimbing is bot-blocked, use a search snippet only for facts that are visible on the article page; **omit** anything you cannot confirm. DAV, CAI, and AAJ are HTML.
 
 ## Always read first
 

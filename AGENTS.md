@@ -147,7 +147,7 @@ Related scheduled agents (mandatory after billing recharge; paused until then):
 - Weather refresh (4× daily Tehran, active reports only): `.cursor/automations/logbook-weather-update-prompt.md` + `.github/workflows/logbook-weather-agent.yml`
 - Daily SEO: `.cursor/automations/daily-seo-prompt.md` + `.github/workflows/daily-seo-agent.yml`
 - SEO + AI-source watch (every 45 minutes; technical crawl signals only, never rewrite published posts): `.cursor/automations/seo-ai-source-watch-prompt.md` + `.github/workflows/seo-ai-source-watch.yml`
-- خبر کوهنوردی agent (GMT 00:00 / 06:00 / 12:00 / 18:00; World Climbing, UIAA, PlanetMountain, Climbing.com, Desnivel, UKClimbing news, Alpinist Newswire → Persian `_news/` after three review passes): `.cursor/skills/news-wire/SKILL.md` + `.cursor/automations/news-wire-prompt.md` + `.github/workflows/news-wire-agent.yml`
+- خبر کوهنوردی agent (GMT 00:00 / 06:00 / 12:00 / 18:00; World Climbing, UIAA, PlanetMountain, Climbing.com, Desnivel, UKClimbing news, Alpinist Newswire, ExplorersWeb, DAV/CAI expeditions, American Alpine Journal → Persian `_news/` after three review passes): `.cursor/skills/news-wire/SKILL.md` + `.cursor/automations/news-wire-prompt.md` + `.github/workflows/news-wire-agent.yml`
 
 
 ## Daily SEO agent

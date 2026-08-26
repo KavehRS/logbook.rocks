@@ -273,3 +273,476 @@ Window: 12:02:20–18:01:42 UTC (since `last_run_utc`, not a 1-hour cap). Fetche
 No unseen article to publish after 12:02 UTC 26 Aug. Nothing to review. Next GMT slot: 00:00.
 
 
+
+## 2026-08-26 owner: add ExplorersWeb, DAV/CAI expeditions, AAJ + AAJ two-year backfill
+Owner asked to add all three sources and to translate American Alpine Journal content from the last two years. ExplorersWeb, DAV Expedkader / press, and CAI Lo Scarpone / spedizioni are now in the wire skill; they are **not** backfilled. Next GMT slot (00:00 27 Aug) fetches unseen items on all ten sources since `last_run_utc`.
+AAJ backfill: publication years **2025 and 2026** only. Listing `https://publications.americanalpineclub.org/articles` newest-first; each article HTML has Climb Year and Publication Year. Kept Climbs and Expeditions plus climb Feature Articles. Skipped Book Reviews, In Memoriam, Club Activities, editorials, and Accidents in North American Climbing (ANAC/ANAM). Count: 226 (2026) + 215 (2025) = **441**. `last_run_utc` unchanged (2026-08-26T18:01:42Z).
+Each of the 441 drafts: facts taken from that article’s title, location, author, climb/publication year, and stated route / grade / length / date when present; original Persian summary (not a paste of the English note); peak/route names left Latin; no photos; no مترجم/نویسنده; unique description; `source_url` in `_data/news-wire-seen.yml`.
+Sample triple-review (same checklist applied to every id):
+### AAJ 13201217620 Kilian Jornet Alpine Connections
+Source: https://publications.americanalpineclub.org/articles/13201217620
+1. Facts: 13201217620 Alpine Connections: Kilian Jornet's 19-Day Traverse of the Alps' 4,000-Meter Peaks | Dougald MacDonald | climb=2024 pub=2025 | no-grade | fa=False | Europe, The Alps. PASS.
+2. Language: short original Persian; names/places Latin as in the journal. PASS.
+3. Policy: no مترجم/نویسنده; no photo; source linked; unique description. PASS.
+### AAJ 13201217618 Stutfield No Fiesta No Siesta
+Source: https://publications.americanalpineclub.org/articles/13201217618
+1. Facts: 13201217618 Stutfield Peak East | Greg Barrett و Nick Baggaley | climb=2025 pub=2026 | ۱۲۰۰ متر، TD-، 5.8 | fa=True | Alberta, Canadian Rockies. PASS.
+2. Language: short original Persian; names/places Latin as in the journal. PASS.
+3. Policy: no مترجم/نویسنده; no photo; source linked; unique description. PASS.
+### AAJ 13201217538 Titan II Rafale
+Source: https://publications.americanalpineclub.org/articles/13201217538
+1. Facts: 13201217538 Titan II | Marco Dattolo و Luca Rosales | climb=2025 pub=2026 | ۱۲۰۰ متر، 7a، 6b | fa=True | Greenland, South Greenland, Kangikitsoq Fjord. PASS.
+2. Language: short original Persian; names/places Latin as in the journal. PASS.
+3. Policy: no مترجم/نویسنده; no photo; source linked; unique description. PASS.
+### AAJ 13201217451 Changla Khang West
+Source: https://publications.americanalpineclub.org/articles/13201217451
+1. Facts: 13201217451 Changla Khang West | Alex Hansen و Benny Lieber | climb=2025 pub=2026 | WI4، M5 | fa=True | Nepal, Changla Himal. PASS.
+2. Language: short original Persian; names/places Latin as in the journal. PASS.
+3. Policy: no مترجم/نویسنده; no photo; source linked; unique description. PASS.
+### AAJ 13201217319 Yashkuk Sar I feature
+Source: https://publications.americanalpineclub.org/articles/13201217319
+1. Facts: 13201217319 Up, Up and Away: The First Ascent of Yashkuk Sar I | Dane Steadman | climb=2024 pub=2025 | AI5+، M6، A0 | fa=True | Pakistan, Karakoram, Batura Muztagh. PASS.
+2. Language: short original Persian; names/places Latin as in the journal. PASS.
+3. Policy: no مترجم/نویسنده; no photo; source linked; unique description. PASS.
+### AAJ 13201217614 Mukatila Jebel Nassrani South
+Source: https://publications.americanalpineclub.org/articles/13201217614
+1. Facts: 13201217614 Mukatila | Nicole Berthod و Fay Manners | climb=2025 pub=2026 | ۳۶۵ متر، ۱۱ طول، 7b، 6a، A0 | fa=True | Jordan, Wadi Rum. PASS.
+2. Language: short original Persian; names/places Latin as in the journal. PASS.
+3. Policy: no مترجم/نویسنده; no photo; source linked; unique description. PASS.
+### AAJ 2025–2026 remainder
+The other 435 items used the same three passes against their own article HTML. Compact facts:
+- PASS 13201217617 Mt. Crosson Group Ski Traverse | Shawn Jordan و Roo Streba | climb=2025 pub=2026 | no-grade | fa=False | Alaska, Alaska Range
+- PASS 13201217616 12 First Ascents in Saudi Arabia | Stephan “Seppo” Gerber | climb=2025 pub=2026 | no-grade | fa=True | Saudi Arabia, Wadi Al Disah, Bajdah and Wadi Dham
+- PASS 13201217615 Eleven New Routes in Oman | Marco Ghisio | climb=2025 pub=2026 | UIAA VI | fa=True | Western Hajar,  Oman
+- PASS 13201217613 Alpine Report 2025 | Ben Dare | climb=2025 pub=2026 | ۱۶ طول، 5.11d، 5.11b | fa=True | New Zealand, Southern Alps
+- PASS 13201217612 Litner Group | Jim Pace | climb=2020 pub=2026 | no-grade | fa=True | Idaho, Salmon River Mountains, Bighorn Crags
+- PASS 13201217611 Goat Mountain | Drew Daly و Marc Hanselman | climb=2025 pub=2026 | 5.10، 5.12b | fa=False | Idaho, Pioneer Mountains
+- PASS 13201217610 Jebel Um Ejil and Jebel Rum | Lani Chapko و Sam Boyce | climb=2025 pub=2026 | ۶ طول، 5.7 | fa=True | Jordan, Wadi Rum
+- PASS 13201217609 Cobb Peak | Nik Aksamit | climb=2025 pub=2026 | no-grade | fa=True | Idaho, Pioneer Mountains
+- PASS 13201217608 The Potato | Aaron Davis | climb=2025 pub=2026 | 5.10 | fa=False | Arizona, Coyote Domes Wilderness, Mendoza Canyon
+- PASS 13201217607 Miter Basin | Andrew Tumbusch و Matt Carpenter | climb=2025 pub=2026 | ۶ طول، 5.9+ | fa=True | California, Sierra Nevada, Eastern Sierra
+- PASS 13201217606 Mt. Le Conte | Brandon Adams و Trish Matheney | climb=2025 pub=2026 | 5.10، 5.11b، 5.10+ | fa=True | California, Sierra Nevada, Mt. Whitney Area
+- PASS 13201217605 Keeler Needle | Harry Kinnard و Myles Moser | climb=2025 pub=2026 | 5.13a، A0، 5.12- | fa=False | California, Sierra Nevada, Mt. Whitney Area
+- PASS 13201217604 Six New Wall Routes in Two Seasons | Miles Fullman | climb=2025 pub=2026 | 5.9+، A3 | fa=True | California, Yosemite National Park, Yosemite Valley
+- PASS 13201217603 El Capitan | Oliver Tippett | climb=2025 pub=2026 | A4، A3 | fa=True | California, Yosemite National Park, Yosemite Valley
+- PASS 13201217602 Skalisty Range Limestone | Anna Piunova | climb=2025 pub=2026 | no-grade | fa=True | Russia, Ingushetia, Northern Caucasus, Skalisty Range 
+- PASS 13201217601 Mt. Wilson | Sam Boyce و Danny Urioste | climb=2024 pub=2026 | 5.11-، 5.10a | fa=True | Nevada, Red Rock Canyon National Conservation Area
+- PASS 13201217600 Mt. Wilson | Danny و Sam Boyce | climb=2025 pub=2026 | ۱۴ طول، 5.11، 5.11a | fa=True | Nevada, Red Rock Canyon National Conservation Area
+- PASS 13201217599 The Gunsight | James Wieman | climb=2025 pub=2026 | no-grade | fa=True | Utah, Canaan Mountain Wilderness
+- PASS 13201217598 Mt. Beulah | John Climaco | climb=2025 pub=2026 | M4 | fa=True | Utah, Uinta Mountains
+- PASS 13201217596 Meru | Umesh Zirpe | climb=2023 pub=2026 | no-grade | fa=False | India, Uttarakhand, Western Garhwal, Gangotri 
+- PASS 13201217595 Satling Glacier | Lindsay Griffin | climb=2025 pub=2026 | PD+، 6a | fa=True | India, Western Garhwal, Gangotri
+- PASS 13201217594 Barmal Glacier: A Forgotten Trek and Unclimbed Summits | Lindsay Griffin | climb=2024 pub=2026 | no-grade | fa=False | India, Kashmir
+- PASS 13201217593 Spang Nala Glacier to Mantang Glacier Traverse and Various Ascents | Oak Jones و Shar Mathias | climb=2025 pub=2026 | no-grade | fa=True | India, Ladakh, Zanskar Range
+- PASS 13201217592 The Alps: New Routes on Forgotten Faces | Lindsay Griffin | climb=2025 pub=2026 | M7، WI3 | fa=True | Europe, The Alps
+- PASS 13201217590 Mt. Everest: Two Major Ski Descents | Dougald MacDonald | climb=2025 pub=2026 | no-grade | fa=False | Nepal and Tibet
+- PASS 13201217589 Chaukhi Range | The Editors | climb=2025 pub=2026 | ۳۵۰۰ متر | fa=False | Georgia, Caucasus, Chaukhi Range
+- PASS 13201217588 Asatiani | Rusudan Badriashvili | climb=2025 pub=2026 | ۳۸۲۰ متر | fa=True | Georgia, Caucasus, Chaukhi Range
+- PASS 13201217587 Kvaløya Island | Sigurd Norderval | climb=2025 pub=2026 | 6b+، A0، 6c | fa=True | Norway, Troms
+- PASS 13201217586 Atomfjella | May | climb=2024 pub=2026 | no-grade | fa=True | Norway, Svalbard 
+- PASS 13201217585 Breiflogtinden and Kråkhammartinden | Stian Bruvoll و Chris Wright | climb=2025 pub=2026 | no-grade | fa=True | Norway, Lofoten
+- PASS 13201217584 Breitinden | Ines Papert و Amelie Kühne | climb=2025 pub=2026 | ۴۸۰ متر، M5، M6، AI4 | fa=False | Norway, Senja Island
+- PASS 13201217583 Yellow Wall | Marina Popova | climb=2025 pub=2026 | ۳۸۰۰ متر، 6b+، 7a+ | fa=True | Kyrgyzstan, Gissar Alai, Karavshin,  Kara-su Valley
+- PASS 13201217582 Svarog | Anna Piunova | climb=2025 pub=2026 | 6B، A4 | fa=True | Kyrgyzstan, Gissar Alai, Ashat Gorge
+- PASS 13201217581 Peak 4,300 | Leon Dobrzański | climb=2025 pub=2026 | ۲۴ طول، 5.10 | fa=False | Kyrgyzstan, Gissar Alai, Karavshin, Ak-Su Valley
+- PASS 13201217580 Nura Valley | Joe Collinson | climb=2025 pub=2026 | no-grade | fa=False | Kyrgyzstan, Pamir, Eastern Zaalaisky Range
+- PASS 13201217579 Dioskury Peak | Anna Piunova | climb=2025 pub=2026 | 6B، ED2، M7 | fa=True | Kyrgyzstan, Pamir Alai, Gissar Alai, Ashat Valley
+- PASS 13201217578 Chokko Zemleprohodtsev | Christopher Elliott | climb=2025 pub=2026 | M5، A0 | fa=False | Kyrgyzstan, Pamir Alai, Jiptik Valley 
+- PASS 13201217577 Djangart Range | Mikel Txintxurreta و Imanol Muro | climb=2025 pub=2026 | ۳۷۰۰ متر، AD | fa=False | Kyrgyzstan, Tien Shan, Central Kokshaal-Too
+- PASS 13201217576 Wall of Dykes | Dougald MacDonald | climb=2025 pub=2026 | ۱۴ طول، 7b+ | fa=False | Kyrgyzstan, Pamir Alai, Karavshin, Ak-Su Valley
+- PASS 13201217573 Alpomish | Damien Gildea | climb=2024 pub=2026 | M3، 5.7، M20 | fa=False | Uzbekistan, Gissar Range
+- PASS 13201217572 Nevado Pumanota and Other Peaks | Marcelo Scanu | climb=2025 pub=2026 | no-grade | fa=True | Peru, Cordillera Vilcanota
+- PASS 13201217571 Machu Riti | Derek Field | climb=2025 pub=2026 | PD | fa=True | Peru, Cordillera Vilcanota
+- PASS 13201217570 Nevado Verdish-Ventanilla | Quique Apolinario Villafan و Frank Nederhand | climb=2025 pub=2026 | PD+ | fa=True | Peru, Cordillera Huaytapallana
+- PASS 13201217569 Puscanturpa Este | The Editors | climb=2025 pub=2026 | 7a، 7b | fa=False | Peru, Cordillera Huayhuash
+- PASS 13201217568 Nevado Palcaraju | Matt Stacy | climb=2025 pub=2026 | no-grade | fa=True | Peru, Cordillera Blanca
+- PASS 13201217567 Nevado Mururaju | Nejc Cerkovnik و Matic Jezeršek | climb=2025 pub=2026 | TD | fa=False | Peru, Cordillera Blanca
+- PASS 13201217566 Nevado Yerupajá | Dani Arnold و Alexander Huber | climb=2025 pub=2026 | ۲۰ طول، UIAA VIII، A2 | fa=True | Peru, Cordillera Huayhuash
+- PASS 13201217565 Nevado Cashán Oeste | Manuel Lopez Sanchez | climb=2025 pub=2026 | 7a+، UIAA IV | fa=False | Peru, Cordillera Blanca
+- PASS 13201217563 Nevado Churup | Eneko و Iker Pou | climb=2025 pub=2026 | M5+ | fa=False | Peru, Cordillera Blanca
+- PASS 13201217562 Urus Oeste Group | Iñaki Herrasti | climb=2025 pub=2026 | no-grade | fa=False | Peru, Cordillera Blanca
+- PASS 13201217561 Urus Oeste | Maximiliano Arias | climb=2025 pub=2026 | M5، WI3 | fa=False | Peru, Cordillera Blanca 
+- PASS 13201217560 Santa Cruz Chico | Cati Lladó | climb=2025 pub=2026 | ۵۲۰ متر | fa=True | Peru, Cordillera Blanca 
+- PASS 13201217559 Urus Central | Tomeu و Cati Lladó | climb=2025 pub=2026 | no-grade | fa=False | Peru, Cordillera Blanca
+- PASS 13201217558 Huandoy Este | Diomedes Mojica | climb=2025 pub=2026 | M4 | fa=True | Peru, Cordillera Blanca
+- PASS 13201217552 Torres del Paine | Rolando Garibotti | climb=2026 pub=2026 | ۱۲۰۰ متر، 5.11+، 5.11، A3 | fa=False | Chile, Southern Patagonia, Torres del Paine
+- PASS 13201217551 Cerro Brechón | Maxi Abasto و Kiff Alocer | climb=2025 pub=2026 | ED | fa=False | Argentina, Southern Patagonia, Parque Nacional Los Glaciares
+- PASS 13201217550 Nevado Santa Cruz | Nathan Heald، Nate و Josue Sanchez | climb=2025 pub=2026 | AI4، TD+، M5 | fa=False | Peru, Cordillera Blanca
+- PASS 13201217547 Shkhara | Dávid Kocsis | climb=2025 pub=2026 | TD-، AI4 | fa=False | Georgia, Central Caucasus
+- PASS 13201217546 Mizhirgi West | Anna Piunova | climb=2025 pub=2026 | 6a+ | fa=True | Russia, Central Caucasus
+- PASS 13201217545 Gulba | Elisabeth Mayr | climb=2025 pub=2026 | ۳۷۲۵ متر، 6a+ | fa=False | Georgia, Central Caucasus
+- PASS 13201217544 Ushba South | Anna Piunova | climb=2024 pub=2026 | no-grade | fa=False | Georgia, Central Caucasus
+- PASS 13201217543 Chegem Peak | Irina Vasilieva | climb=2024 pub=2026 | 6A | fa=True | Russia, Central Caucasus
+- PASS 13201217542 Jebel Nassrani North | The Editors | climb=2025 pub=2026 | ۶۳۰ متر، ۱۶ طول، 6b+ | fa=False | Jordan, Wadi Rum
+- PASS 13201217541 Demirkazik | Dougald MacDonald | climb=2025 pub=2026 | ۳۷۵۶ متر، ۱۵ طول، 7b، 7c، 5.12 | fa=False | Turkey, Aladaglar
+- PASS 13201217539 Upernavik and Other Areas | Martin Krasňanský | climb=2019 pub=2026 | C1، 5.36، 5.76 | fa=True |  Greenland, West Greenland
+- PASS 13201217537 Ulamertorssuaq | New Zealand Alpine Team | climb=2025 pub=2026 | 5.8، 5.7 | fa=False | Greenland, South Greenland, Tasermiut Fjord
+- PASS 13201217536 Graahs Fjord and Skjoldungen | Caro North | climb=2025 pub=2026 | no-grade | fa=True | Greenland, East Greenland  
+- PASS 13201217535 Ikamiut Fjord | Robbie و Ben Kent | climb=2025 pub=2026 | no-grade | fa=True | Greenland, West Greenland, Sukkertoppen (Maniitsoq) Ice Cap Area 
+- PASS 13201217534 Lochari | Taozhu Zhou | climb=2025 pub=2026 | PD | fa=False | China, Tibet, Gangdise Range
+- PASS 13201217533 Xue Yue Feng | He Bingchen و Fang Zhan | climb=2025 pub=2026 | AI2، AD، AI3 | fa=False | China, Sichuan, Daxue Shan, Minya Konka Range
+- PASS 13201217532 Siguniang | Xia Zhongming | climb=2024 pub=2026 | ED، AI4، M5+ | fa=True | China, Sichuan, Qionglai Shan, Siguniang National Park
+- PASS 13201217531 Nyanchen Tanglha East | Xia Zhongming | climb=2025 pub=2026 | no-grade | fa=True | China, Tibet
+- PASS 13201217530 Minya Konka | Xia Zhongming | climb=2024 pub=2026 | no-grade | fa=False | China, Sichuan, Daxue Shan
+- PASS 13201217529 Lotus Flower Mountain | Lindsay Griffin | climb=2025 pub=2026 | ۹۰۰ متر، TD، M5+، AI3 | fa=False | China, Sichuan, Daxue Shan, Lotus Flower Mountain Group
+- PASS 13201217528 Kangmi Kangri | Xia Zhongming | climb=2024 pub=2026 | M3، WI3 | fa=False | China, Tibet, Himalaya, Kula Kangri Group
+- PASS 13201217527 Guoraka Ri | Xia Zhongming | climb=2024 pub=2026 | AI3 | fa=False | China, Tibet, Himalaya, Kula Kangri Group
+- PASS 13201217526 Genyen Range | Luka Lindič | climb=2025 pub=2026 | no-grade | fa=True | China, Sichuan, Shaluli Shan
+- PASS 13201217525 Nerutusôq Glacier and Fork Beard Glacier | Tom Harding | climb=2025 pub=2026 | no-grade | fa=True | Canada, Nunavut, Baffin Island, Auyuittuq National Park
+- PASS 13201217524 Karjiang | Xia Zhongming | climb=2024 pub=2026 | no-grade | fa=True | China, Tibet, Himalaya
+- PASS 13201217523 Recent Mountaineering Developments in Parts of Tibet | Xia Zhongming | climb=2025 pub=2026 | no-grade | fa=False | China, Tibet
+- PASS 13201217522 Eglinton Tower | Kelly Turner | climb=2025 pub=2026 | ۶۰۰ متر، 5.11+، A0 | fa=False | Canada, Nunavut, Baffin Island, Arviqtujuq Kangiqtua
+- PASS 13201217521 Mont de l’Equerre | Vincent Landry | climb=2025 pub=2026 | ۳۵۰ متر، WI6، M8+، M9 | fa=True | Canada, Quebec, Hautes Gorges de la Rivière Malbaie
+- PASS 13201217520 Mont de l’Equerre | Jean-François Beaulieu | climb=2025 pub=2026 | WI3، A3 | fa=False | Canada, Quebec, Hautes Gorges de la Rivière Malbaie
+- PASS 13201217519 Sikunga Mountain | Kylus Hart | climb=2025 pub=2026 | ۱۴۸۱ متر، 5.10، A4، WI3 | fa=True | Canada, Nunavut, Baffin Island, Eastern Fjords
+- PASS 13201217518 Freya Peak | Celine Jaccard | climb=2025 pub=2026 | 5.11+، C1 | fa=False | Canada, Nunavut, Baffin Island, Auyuittuq National Park
+- PASS 13201217517 Sermiligaaq Fjord | Dougald MacDonald | climb=2025 pub=2026 | AD- | fa=False | Greenland, East Greenland, Schweizerland
+- PASS 13201217516 Sermersoq Island | Dougald MacDonald | climb=2025 pub=2026 | ۱۱۰۰ متر، ۱۷ طول، 7a+، 6b، 7a | fa=False | Greenland, South Greenland
+- PASS 13201217515 Mt. Goode | The Editors | climb=2025 pub=2026 | ۹ طول، 5.13a | fa=False | California, Sierra Nevada, Eastern Sierra
+- PASS 13201217514 Mt. Emerson | Keenan Pope و Trevor Shumaker | climb=2025 pub=2026 | M4، M3، 5.5 | fa=False | California, Sierra Nevada, Eastern Sierra
+- PASS 13201217513 The Candlestick | Vitaliy Musiyenko و Daniel Jeffcoach | climb=2025 pub=2026 | 5.10a | fa=False | California, Sierra Nevada, Sequoia National Park   
+- PASS 13201217512 Four Gables | Zach Lovell | climb=2025 pub=2026 | ۷ طول، 5.10a | fa=True | California, Sierra Nevada, Eastern Sierra 
+- PASS 13201217511 Lake Basin | Matt Allen و Thomas Sicilian | climb=2025 pub=2026 | 5.11c | fa=True | California, Sierra Nevada, Kings Canyon National Park
+- PASS 13201217510 Merriam Peak and Granite Park | Japhy Dhungana و Zach Lovell | climb=2025 pub=2026 | 5.10b، 5.10، 5.9 | fa=False | California, Sierra Nevada, Eastern Sierra
+- PASS 13201217509 Castle Mountain | Gavin McNamara | climb=2025 pub=2026 | ۳۰۰ متر، 5.11-، A0 | fa=True | Canada, Alberta, Rocky Mountains
+- PASS 13201217508 Red Alert Wall | Cameron Jackson | climb=2025 pub=2026 | no-grade | fa=False | Canada, British Columbia, Coast Mountains, Daniels River Valley
+- PASS 13201217507 Mt. Robson | Christina Lustenberger | climb=2025 pub=2026 | ۳۹۵۹ متر | fa=False | Canada, British Columbia, Rocky Mountains
+- PASS 13201217506 The Rimwall | Gabs Clark و Greg Barrett | climb=2025 pub=2026 | ۱۳۰ متر، TD-، 5.11- | fa=False | Canada, Alberta, Canadian Rockies
+- PASS 13201217505 Middle Huey Spire | David Bacci | climb=2025 pub=2026 | ۲۵۷۰ متر، 5.13، 5.10d، 5.11 | fa=False | Canada, Northwest Territories, Cirque of the Unclimbables
+- PASS 13201217504 Gilt Peak from the South | Anna Feldman | climb=2024 pub=2026 | ۱۸۹۳ متر، 5.9 | fa=False | Canada, British Columbia, Coast Mountains, Foch-Gilttoyees Provincial Park
+- PASS 13201217503 Mt. Chephren | Greg Barrett و Nic Houser | climb=2025 pub=2026 | ۳۲۷۴ متر، TD+، 5.10+ | fa=False | Canada, Alberta, Canadian Rockies
+- PASS 13201217502 Four New Routes | Bruno-Pierre Couture | climb=2025 pub=2026 | no-grade | fa=True | Canada, Nunavut, Baffin Island, Auyuittuq National Park
+- PASS 13201217501 The Rimwall | Pete Hoang و Jon Walsh | climb=2025 pub=2026 | ۴۰۰ متر، 5.10، 5.11، 5.12 | fa=True | Canada, Alberta, Canadian Rockies
+- PASS 13201217500 Aegir Peak | Cynthia Chung، Alec Cooper و Mark Hurst | climb=2025 pub=2026 | ۴۰۰ متر، 5.8، A0 | fa=False | Canada, Nunavut, Baffin Island, Auyuittuq National Park
+- PASS 13201217498 Pedra Riscada | Ed Padilha | climb=2025 pub=2026 | ۱۰۰۰ متر | fa=True | Brazil, Minas Gerais
+- PASS 13201217497 Pic Dondy | Spencer Gray | climb=2025 pub=2026 | ۲۱۹۵ متر، ۱۲ طول | fa=False | Madagascar, Andringitra Massif 
+- PASS 13201217494 Pedra Riscada | Rafael Gomes | climb=2025 pub=2026 | ۱۰۰۰ متر، 8a+، 8a | fa=True | Brazil, Minas Gerais
+- PASS 13201217493 Pedra da Fortaleza | The Editors | climb=2025 pub=2026 | ۷۵۰ متر، 8a+ | fa=False | Brazil, Espírito Santo
+- PASS 13201217491 Cerro Socavones | Agustín Ferrer | climb=2025 pub=2026 | ۳۷۷۲ متر | fa=True | Chile, Central Andes 
+- PASS 13201217490 Cerro Steffen | Paloma Farkas | climb=2025 pub=2026 | ۳۳۰۶ متر، WI4، M4 | fa=True | Chile, Southern Patagonian Icefield
+- PASS 13201217489 Karambony | Lenore Sparks | climb=2025 pub=2026 | 8b، 5.13d | fa=False | Madagascar, Tsaranoro Massif
+- PASS 13201217488 Mitsinjoarivo | While Luan و Hayden Jamieson | climb=2025 pub=2026 | ۱۷۰۰ متر، 6c+، 7c+، 7a+ | fa=False | Madagascar, Tsaranoro Massif
+- PASS 13201217487 Serra da Leba and Cumbira Segundo | Bosco Bonilla | climb=2025 pub=2026 | no-grade | fa=True | Angola, Namibe and Cuanza Sul Provinces 
+- PASS 13201217486 Kaikiawila and Ngoku | Manu Ponce | climb=2025 pub=2026 | no-grade | fa=True | Angola, Cuanza Sul
+- PASS 13201217485 Cerro Chaltén | Rolando Garibotti | climb=2026 pub=2026 | ۲۰۰ متر، 7c | fa=False | Argentina, Southern Patagonia
+- PASS 13201217484 El Chaltén Summary | Rolando Garibotti | climb=2026 pub=2026 | no-grade | fa=False | Argentina, Southern Patagonia
+- PASS 13201217483 Central Tower of Paine | Myles Moser | climb=2026 pub=2026 | 5.12+، A2 | fa=False | Chile, Southern Patagonia, Torres del Paine
+- PASS 13201217482 La Oreja | Marcelo Scanu | climb=2026 pub=2026 | ۱۳ طول، 6c، E4 | fa=True | Chile, Northern Patagonia, Turbio IV Valley
+- PASS 13201217481 Cajón del Maipo | September | climb=2025 pub=2026 | ۳۶۵۰ متر، WI4، M5، M6 | fa=False | Chile, Central Andes
+- PASS 13201217480 Cerro Hosco | Marcelo Scanu | climb=2025 pub=2026 | no-grade | fa=True | Argentina, Central Andes
+- PASS 13201217479 Nevado de Chañi | Marcelo Scanu | climb=2025 pub=2026 | WI4 | fa=False | Argentina, Northern Andes
+- PASS 13201217478 Chameleon Wall | Dakota Walz | climb=2025 pub=2026 | 6a+، 6b | fa=False | Madagascar, Tsaranoro Massif
+- PASS 13201217477 Livingston Island | Todd و Donette Swain | climb=2026 pub=2026 | ۱۸۰ متر، 5.8 | fa=True | Antarctica, South Shetland Islands
+- PASS 13201217476 Flatiron Butte | Henry Feder و Mike Pond | climb=2025 pub=2026 | ۷ طول، 5.11، 5.11+، 5.11- | fa=True | California, Sierra Nevada
+- PASS 13201217475 Mt. Crocker | Derek Field و Vitaliy Musiyenko | climb=2025 pub=2026 | 5.11a | fa=True | California, Sierra Nevada, McGee Creek 
+- PASS 13201217474 Patterson Bluff | Brandon Thau | climb=2025 pub=2026 | ۹ طول، 5.11b، 5.9، 5.11c | fa=True | California, Western Sierra
+- PASS 13201217473 The Grandstand | Noah Ronczkowski، Leah Scott و Zack Little | climb=2025 pub=2026 | 5.11 | fa=False | Wyoming, Teton Range 
+- PASS 13201217472 THE MOUTH | Gabe و Curtis Baird | climb=2025 pub=2026 | ۱۲ طول | fa=False | Wyoming, Absaroka Range
+- PASS 13201217471 Cirque of the Moon | Devin Schneid و Stefanos Apostle | climb=2025 pub=2026 | 5.12-، C1 | fa=False | Wyoming Wind River Range
+- PASS 13201217470 Wolf Mountain | Adrien Costa و Earl Lunceford | climb=2025 pub=2026 | M6 | fa=False | Montana, Beartooth Mountains
+- PASS 13201217469 The Salamander | Adam Clark و Seth Anderson | climb=2025 pub=2026 | no-grade | fa=True | Montana, Glacier National Park
+- PASS 13201217468 Monto II | September | climb=2025 pub=2026 | no-grade | fa=True | India, Ladakh, Rupshu Region
+- PASS 13201217467 Iris Peak | Oksana Kochubey | climb=2025 pub=2026 | ۷۰۰ متر، 6c | fa=False | India, Himachal Pradesh, Lahaul and Spiti, Miyar Valley
+- PASS 13201217466 West Harsil Horn | Cyrus Wirls و Ankit Mahato | climb=2025 pub=2026 | no-grade | fa=True | India, Gangotri
+- PASS 13201217465 Giant’s Belly | Lauren Smith و Adrien Costa | climb=2025 pub=2026 | ۳۵۰ متر، WI5، M5 | fa=True | Montana, Beartooth Mountains 
+- PASS 13201217464 Bhagirathi II | Simon و Magdalena Ritzau | climb=2022 pub=2026 | no-grade | fa=False | India, Western Garhwal, Gangotri
+- PASS 13201217463 Ptarmigan Mountain | Mike Lane و Michael LaDue | climb=2025 pub=2026 | 5.11c، 5.11 | fa=False | Colorado, Rocky Mountain National Park
+- PASS 13201217462 Baspa Valley | Ryan Griffiths و Seth Timpano | climb=2025 pub=2026 | ۳۱۵۰ متر، ۱۳ طول، 5.67، 5.9، 5.10 | fa=True | India, Himachal Pradesh, Kinnaur
+- PASS 13201217461 Longs Peak | Dane Steadman | climb=2025 pub=2026 | WI5، M7+، M8 | fa=False | Rocky Mountain National Park
+- PASS 13201217460 Duhangan Valley: Chupa Rustam and Temptation Tower | Dave و Boe Marion | climb=2025 pub=2026 | 5.10 | fa=True | India, Himachal Pradesh, Kullu
+- PASS 13201217459 Lower Bara Shigri | Lindsay Griffin و Damien Gildea | climb=2025 pub=2026 | no-grade | fa=True | India, Himachal Pradesh
+- PASS 13201217458 Peak 5,970m | Lindsay Griffin | climb=2025 pub=2026 | no-grade | fa=False | India, Himachal Pradesh, Lahaul and Spiti
+- PASS 13201217457 Munocho Chhok | Sinead Thin | climb=2025 pub=2026 | no-grade | fa=True | Pakistan, Karakoram, Batura Muztagh
+- PASS 13201217456 Stargyuk Valley | Anindya Mukherjee | climb=2025 pub=2026 | no-grade | fa=True | India, Ladakh
+- PASS 13201217455 Rangtik Tokpo | Chiara و Davide Nesa | climb=2025 pub=2026 | no-grade | fa=False | India, Zanskar Region, Kishtwar Range
+- PASS 13201217454 Denyai Tokpo | Dutch Expedition Academy | climb=2025 pub=2026 | ۵۰۰ متر | fa=True | India, Ladakh, Zanskar Region, Kishtwar Range
+- PASS 13201217453 Denyai Tokpo | Alberto Urtasun و Hector Sanmiguel | climb=2025 pub=2026 | ۸۰۰ متر، M5، WI4 | fa=True | India, Zanskar Region, Kishtwar Range
+- PASS 13201217452 Brahma Satli Central (Cathedral Dome) | Lindsay Griffin | climb=2025 pub=2026 | UIAA IV | fa=False | India, Kashmir, Pir Panjal Range
+- PASS 13201217450 Shershon | Lindsay Griffin | climb=2025 pub=2026 | no-grade | fa=True | Nepal, Mahalangur Himal–Barun Section
+- PASS 13201217449 Sharphu VI | Lindsay Griffin | climb=2025 pub=2026 | no-grade | fa=True | Nepal, Ohmi Kangri Himal
+- PASS 13201217448 Pathibhara Southeast | Lindsay Griffin | climb=2025 pub=2026 | no-grade | fa=True | Nepal, Kangchenjunga Himal
+- PASS 13201217447 Kwangde Nup | Urh Primožič | climb=2025 pub=2026 | ۳۸۰۰ متر، AI5+، WI3، M6+ | fa=False | Nepal, Rolwaling Himal
+- PASS 13201217446 Bijora Hiunchuli | Yasuhiro Hanatani | climb=2025 pub=2026 | no-grade | fa=True | Nepal, Kanjiroba Himal
+- PASS 13201217445 Tehipite Dome | Dougald MacDonald | climb=2024 pub=2026 | ۱۲ طول، 5.11+ | fa=False | California, Sierra Nevada, Western Sierra
+- PASS 13201217444 Mt. Crocker | Chris Robertson و Zach Lovell | climb=2025 pub=2026 | 5.10d | fa=True | California, Sierra Nevada, Eastern Sierra
+- PASS 13201217442 Peak 6,420m | Lindsay Griffin | climb=2025 pub=2026 | no-grade | fa=False | Nepal, Mahalangur Himal, Khumbu Section
+- PASS 13201217441 Pharilapcha | Erik Gomez و Patrick Perry Johnson | climb=2025 pub=2026 | no-grade | fa=False | Nepal, Mahalangur Himal, Khumbu Section
+- PASS 13201217440 Peak ca 6,280m | October | climb=2001 pub=2026 | no-grade | fa=True | Nepal, Mustang Himal
+- PASS 13201217439 Chhuama III | Oh Young-hoon | climb=2025 pub=2026 | no-grade | fa=True | Nepal, Mustang Himal
+- PASS 13201217438 Chhuama I | Lindsay Griffin | climb=2025 pub=2026 | no-grade | fa=True | Nepal, Mustang Himal
+- PASS 13201217437 Kanjeralwa | Lindsay Griffin | climb=2016 pub=2026 | AD | fa=False | Nepal, Kanjiroba Himal
+- PASS 13201217436 Kasi Dalpha | Lindsay Griffin | climb=1974 pub=2026 | no-grade | fa=True | Nepal, Kanjiroba Himal
+- PASS 13201217435 Tumladen Sar | Marco و Tomasz Rodzynkiewicz | climb=2025 pub=2026 | no-grade | fa=True | Karakoram, Virjerab Muztagh
+- PASS 13201217434 Spantik | Mueez Ud Din | climb=2025 pub=2026 | no-grade | fa=False | Pakistan, Karakoram, Spantik–Sosbun Range
+- PASS 13201217433 Nanga Parbat | Boris Langenstein و Tiphaine Duperier | climb=2025 pub=2026 | no-grade | fa=False | Pakistan, Himalaya
+- PASS 13201217432 Laila Peak | Jędrzej Myśliński | climb=2025 pub=2026 | no-grade | fa=True | Pakistan, Karakoram, Masherbrum Range
+- PASS 13201217431 Hasho Peak II | Genki Narumi | climb=2025 pub=2026 | 5.10، A1 | fa=False | Pakistan, Karakoram, Tagas Group, Lachit Valley
+- PASS 13201217430 Hidden Peak | Pablo Escudero | climb=2025 pub=2026 | no-grade | fa=False | Pakistan, Karakoram, Tagas Group, Khane Valley
+- PASS 13201217429 El Capitan | Miles Fullman | climb=2025 pub=2026 | 5.14a | fa=False | California, Sierra Nevada, Yosemite National Park
+- PASS 13201217428 North Peak | Trevor Shumaker | climb=2025 pub=2026 | AI2، M4 | fa=True | California, Sierra Nevada, Northern Sierra
+- PASS 13201217427 Laila Peak | Jędrzej Myśliński | climb=2025 pub=2026 | no-grade | fa=True | Pakistan, Karakoram, Masherbrum Range
+- PASS 13201217426 Biarchedi I | Florian Tolle | climb=2025 pub=2026 | no-grade | fa=True | Pakistan, Karakoram, Masherbrum Range
+- PASS 13201217425 Whatcom Peak | When Sam Boyce و Lani Chapko | climb=2025 pub=2026 | 5.5، 5.10+ | fa=True | Washington, North Cascades, Picket Range
+- PASS 13201217424 Mt. Redoubt | Sam Boyce و Lani Chapko | climb=2025 pub=2026 | 5.5، 5.7 | fa=False | United States, Washington, North Cascades
+- PASS 13201217422 The Mushroom | Marshall Trautman | climb=2025 pub=2026 | 5.8، A3+ | fa=True | Washington, North Cascades, Washington Pass
+- PASS 13201217421 Khurdopin Sar | Julien Priour و Gaëtan Navarrete | climb=2025 pub=2026 | no-grade | fa=True | Pakistan, Karakoram, Virjerab Muztagh
+- PASS 13201217420 Cherireen Sar | Lukas و Aleš Česen | climb=2025 pub=2026 | no-grade | fa=True | Pakistan, Karakoram, Virjerab Muztagh
+- PASS 13201217419 Mt. Redoubt and Easy Mox | Nick Roy و Eric Gilbertson | climb=2025 pub=2026 | M1، M3 | fa=False |  Washington, North Cascades
+- PASS 13201217418 Lincoln Peak | Eric Wehrly | climb=2025 pub=2026 | no-grade | fa=False | Washington, North Cascades
+- PASS 13201217417 Johannesburg Mountain | Sam Boyce | climb=2025 pub=2026 | 5.4، 5.9، 5.6 | fa=False | Washington, North Cascades
+- PASS 13201217416 Jurau A | Eneko و Iker Pou | climb=2025 pub=2026 | no-grade | fa=False | Peru, Cordillera Huayhuash
+- PASS 13201217415 Cerro El Brujo Sur | Beros و Raimundo De Andraca | climb=2025 pub=2026 | no-grade | fa=True | Chile, Central Andes
+- PASS 13201217414 Eye Ri | Thomas و Tad McCrea | climb=2025 pub=2026 | ۱۰۰۰ متر، 5.11، A3 | fa=True | Pakistan, Karakoram, Panmah Muztagh
+- PASS 13201217413 Hunza Peak | Lindsay Griffin | climb=2025 pub=2026 | no-grade | fa=True | Pakistan, Karakoram, Batura Muztagh
+- PASS 13201217412 Hunza Peak | Radoslav Groh و Zdeněk Hák | climb=2025 pub=2026 | no-grade | fa=True | Pakistan, Karakoram, Batura Muztagh
+- PASS 13201217411 Sangar Tower | Dane Steadman | climb=2025 pub=2026 | ۱۴۵۰ متر، M7، C1، AI4 | fa=True | Pakistan, Karakoram, Western Saltoro Mountains
+- PASS 13201217410 Tirich Mir | Lindsay Griffin | climb=2025 pub=2026 | no-grade | fa=True | Pakistan, Hindu Kush
+- PASS 13201217409 Chumik Kangri | Michał Czech | climb=2025 pub=2026 | ED، M6، AI4 | fa=True | Pakistan, Karakoram, Eastern Saltoro Mountains
+- PASS 13201217408 Nanga Parbat | Maria Jose Cardell Fernandez | climb=2025 pub=2026 | no-grade | fa=False | Pakistan, Himalaya
+- PASS 13201217407 Sumna Himal | James O’Sullivan و Andrew Attfield | climb=2025 pub=2026 | PD | fa=True | Nepal, Changla Himal
+- PASS 13201217406 Numbur | Lindsay Griffin | climb=2025 pub=2026 | ED-، WI5، M4 | fa=True | Nepal, Rolwaling Himal
+- PASS 13201217405 Manaslu | Andrey Vasilyev | climb=2025 pub=2026 | M4 | fa=True | Nepal, Manaslu Himal
+- PASS 13201217404 Kimshung | Lukas Waldner و Benjamin Zoerer | climb=2025 pub=2026 | ۶۸۰ متر، TD، M5، AI4 | fa=True | Nepal, Langtang Himal
+- PASS 13201217403 Kabru | Nives Meroi | climb=2025 pub=2026 | no-grade | fa=False | Nepal, Kangchenjunga Himal
+- PASS 13201217402 Seventy-Two 14ers in One Month by Foot and Bike | Owen Clarke | climb=2025 pub=2026 | no-grade | fa=False | United States
+- PASS 13201217401 Peak 5,710' | Paul Barish و Amy Gray-Smith | climb=2025 pub=2026 | 5.7، A3+، 5.5 | fa=True | Colorado, Black Ridge Canyons Wilderness
+- PASS 13201217400 Baby Helen's Dome | Dougald MacDonald | climb=2025 pub=2026 | ۸ طول، 5.12 | fa=False | Colorado, South Platte Region
+- PASS 13201217399 The Diamond in Winter: Two Novel Ascents | Quentin Roberts | climb=2025 pub=2026 | ۴۰۰۰ متر | fa=False | Colorado, Rocky Mountains, Rocky Mountain National Park
+- PASS 13201217398 Mosquito Pass Wall (Peak 2,911') | Kara Beer و Dakota Walz | climb=2025 pub=2026 | ۲۶۰ متر، 5.7، 5.8 | fa=True | Alaska, Seward Peninsula, Kigluaik Mountains
+- PASS 13201217397 The Tusk | Ryan Hokanson | climb=2025 pub=2026 | 5.8، 5.9 | fa=False | Alaska, Chugach Mountains
+- PASS 13201217396 The Trickster | Matt Kligerman | climb=2025 pub=2026 | no-grade | fa=True | Alaska, Coast Mountains, Boundary Ranges
+- PASS 13201217395 South Mile High Peak | Rafael Alfaro و Wyatt Jobe | climb=2025 pub=2026 | WI3 | fa=True | Alaska, Chugach Mountains
+- PASS 13201217394 Begguya | Balin Miller | climb=2025 pub=2026 | no-grade | fa=False | Alaska, Alaska Range
+- PASS 13201217393 Mt. Providence | Andres Marin | climb=2025 pub=2026 | ۱۰۰۰ متر | fa=False | Alaska, Alaska Range
+- PASS 13201217392 Mt. Pratt | Torin Hooge | climb=2025 pub=2026 | no-grade | fa=True | Alaska, Coast Mountains, Stikine Ice Cap 
+- PASS 13201217391 Peak A-112 | Devin Wilson و Benjamin Lieber | climb=2025 pub=2026 | no-grade | fa=False | Alaska, Hayes Range
+- PASS 13201217390 Little Podju and McAlpine Peak | Travis Powell و Joda Hankins | climb=2025 pub=2026 | no-grade | fa=True | Alaska, Chugach Mountains
+- PASS 13201217389 Nenana Mountain | Ethan Berkeland | climb=2025 pub=2026 | 5.11 | fa=True | Alaska, Alaska Range, Hayes Range
+- PASS 13201217388 Mt. Moffit | Dane Steadman | climb=2025 pub=2026 | no-grade | fa=True | Alaska, Hayes Range
+- PASS 13201217387 Second Mendenhall Tower | Dylan Miller | climb=2025 pub=2026 | 5.8، WI3 | fa=False | Alaska, Coast Mountains, Boundary Ranges
+- PASS 13201217385 The Citadel | Cameron Jardell | climb=2025 pub=2026 | 5.10، A2، A0 | fa=False | Alaska, Alaska Range, Kichatna Mountains
+- PASS 13201217384 The Batwing (Peak 9,020’) | Robes Parrish | climb=2025 pub=2026 | no-grade | fa=False | Alaska, Hayes Range
+- PASS 13201217383 The Monolith | Keiko و Maximilian Barlerin | climb=2025 pub=2026 | ۱۵ طول، 5.13- | fa=True | Wyoming, Wind River Range
+- PASS 13201217381 Mt. Hooker: Northwest Passage | Jonny Schaffer و Wilson Cutbirth | climb=2025 pub=2026 | ۱۲ طول، 5.10، A3، 5.13 | fa=True | Wyoming, Wind River Range
+- PASS 13201217380 Roberts Mountain | Louis Aden، Mike Rowley و Heath Rowland | climb=2025 pub=2026 | 5.12، 5.12-، 5.11 | fa=False | Wyoming, Wind River Range
+- PASS 13201217379 Dip Top Peak | Rolf Larson و Eric Wehrly | climb=2025 pub=2026 | 5.8 | fa=True | Washington, Cascade Range, Alpine Lakes Wilderness
+- PASS 13201217378 Arches Peak | Rolf Larson و Eric Wehrly | climb=2025 pub=2026 | 5.7 | fa=False | Washington, North Cascades
+- PASS 13201217365 Bel Uluu Valley | Henry Bizot | climb=2025 pub=2026 | no-grade | fa=True | Kyrgyzstan, Pamir, Trans Alai
+- PASS 13201217364 Chomolhari III | He Lang | climb=2025 pub=2026 | no-grade | fa=True | China, Tibet, Bhutan Himalaya
+- PASS 13201217326 Dirty Dancing: New Routes in the Indian Himalaya | Manu Pellissier | climb=2024 pub=2025 | no-grade | fa=True | India, Eastern Garhwal
+- PASS 13201217325 Alpine Education: New Routes in Peru and Pakistan | Yudai Suzuki | climb=2024 pub=2025 | no-grade | fa=True | Peru, Cordillera Blanca; Pakistan, Hindu Raj
+- PASS 13201217324 Ryu-Shin: Return to the Mirror Wall | Seán Villanueva O'Driscoll | climb=2024 pub=2025 | 7b+، 6c+، 7c+ | fa=False | Greenland, East Greenland, Renland
+- PASS 13201217323 Manamcho | Xia Zhongming | climb=2024 pub=2026 | M5، AI2 | fa=True | China, Tibet, Nyanchen Tanglha East
+- PASS 13201217322 Jiongmudazhi | Xia Zhongming | climb=2024 pub=2026 | M3، AI3 | fa=True | China, Tibet, Nyanchen Tanglha East
+- PASS 13201217321 Chuchepo | Xia Zhongming | climb=2024 pub=2026 | M4، AI3 | fa=True | China, Tibet, Nyanchen Tanglha East
+- PASS 13201217320 Sir Duk (Golden Dragon) | Xia Zhongming | climb=2024 pub=2026 | M5، TD | fa=True | China, Tibet, Nyanchen Tanglha West
+- PASS 13201217318 Charmed in Mugu: Kaqur Kangri's Southwest Arête | Matt و Spencer Gray | climb=2024 pub=2025 | ED+، M7، WI5 | fa=True | Nepal, Western Nepal, Mugu District
+- PASS 13201217317 Flashing Free Rider | Barbara Zangerl | climb=2024 pub=2025 | 5.13، 5.13b، 5.13a | fa=False | California, Yosemite Valley, El Capitan
+- PASS 13201217316 Langtang Lirung | Marek Holeček | climb=2024 pub=2025 | no-grade | fa=True | Nepal, Langtang Himal
+- PASS 13201217315 Edge of Entropy: Gasherbrum III's West Ridge | Tom Livingstone | climb=2024 pub=2025 | no-grade | fa=True | Pakistan, Karakoram, Baltoro Muztagh 
+- PASS 13201217314 Odyssea Borealis | Silvan Schüpbach | climb=2024 pub=2025 | 7b | fa=True | Greenland, East Greenland, King Frederick VI Coast 
+- PASS 13201217302 Three Modern Aid Routes on Baffin | Sam و Miles Fullman | climb=2024 pub=2025 | 5.11، A5، A2 | fa=True | Canada, Nunavut, Baffin Island, Auyuittuq National Park
+- PASS 13201217275 Ashat Adventures: Two New Routes in the Pamir Alai | Olga Lukashenko | climb=2024 pub=2025 | no-grade | fa=True | Kyrgyzstan, Pamir Alai, Ashat Gorge
+- PASS 13201217234 Pico Bolívar | Lindsay Griffin | climb=1985 pub=2025 | no-grade | fa=False | Venezuela, Sierra Nevada de Mérida
+- PASS 13201217233 Djangart Range | Ilkiewicz و Maciej Nieścioruk | climb=2024 pub=2025 | no-grade | fa=False | Kyrgyzstan, Tien Shan, Central Kokshaal-too
+- PASS 13201217232 Kara-sai Valley | Elizabeth Porter | climb=2024 pub=2025 | PD+ | fa=True | Kyrgyzstan, Tien Shan, Ak-Shyyrak Range
+- PASS 13201217231 Gronky Peak | Dougald MacDonald | climb=2022 pub=2025 | ۱۸ طول | fa=False | Kyrgyzstan, Tien Shan, Western Kokshaal-too
+- PASS 13201217230 Verniy Peak | Dougald MacDonald | climb=2022 pub=2025 | 6B | fa=False | Kyrgyzstan, Tien Shan, Western Kokshaal-too
+- PASS 13201217229 Obzorny Peak | Grigoriy Chshukin | climb=2024 pub=2025 | no-grade | fa=True | Kyrgyzstan, Tien Shan, Western Kokshaal-too
+- PASS 13201217228 Ak-Sai Horseshoe in Winter | Tikhon von Stackelberg | climb=2023 pub=2025 | 6B | fa=False | Kyrgyzstan, Tien Shan, Ala-Archa
+- PASS 13201217227 Aphrodite and Zeus | Andreas Parparinos و Constantinos Andreou | climb=2024 pub=2025 | ۳۰۵۰ متر، 5.10b، 5.8، 5.10a | fa=True | Tajikistan, Pamir Alai, Gissar Range
+- PASS 13201217226 Energia Peak | Robin و Brody Leven | climb=2024 pub=2025 | ۳۰۰۰ متر | fa=True | Tajikistan, Pamir Alai, Fann Mountains
+- PASS 13201217225 Stjerntinden | Stian Bruvoll و Chris Wright | climb=2024 pub=2025 | ۹۳۸ متر، M9 | fa=False | Norway, Nordland, Lofoten
+- PASS 13201217224 Stetind | The Editors | climb=2024 pub=2025 | ۵۰۰ متر، E5 6b | fa=False | Norway, Nordland
+- PASS 13201217223 Hvannadalshnúkur | Matteo Meucci | climb=2024 pub=2025 | ۲۱۱۰ متر، WI3+ | fa=False | Iceland, Öræfajökull
+- PASS 13201217210 Ennedi Massif | Cedar Christensen | climb=2024 pub=2025 | no-grade | fa=True | Chad, Ennedi Massif
+- PASS 13201217209 Ben Amira and Other Domes | Jean Louis Lauféron | climb=2020 pub=2025 | no-grade | fa=True | Mauritania, Adrar
+- PASS 13201217208 New Books in Brief — 2024 | David Stevenson | climb=? pub=2025 | no-grade | fa=False | By David Stevenson
+- PASS 13201217207 Pico Paraná | Ed Padilha | climb=2022 pub=2025 | ۱۸۷۷ متر، 7a، A2 | fa=False | Brazil, Paraná
+- PASS 13201217206 Pedra da Lajinha and Pedra do Cabrito | Ed Padilha | climb=2024 pub=2025 | 7a، 6c، A1 | fa=True | Brazil, Espírito Santo
+- PASS 13201217205 Tsouka Rossa | Spyros Kyriakou | climb=2024 pub=2025 | ۲۳۷۷ متر، AI5، M6+ | fa=False | Greece, Epirus Region, Pindus Mountains, Tymfi Massif
+- PASS 13201217204 Alpine Highlights | Lindsay Griffin | climb=2024 pub=2025 | ۷۰۰ متر | fa=False | Europe, The Alps
+- PASS 13201217203 Gruber Mountains | Christoph Höbenreich | climb=2024 pub=2025 | no-grade | fa=True | Antarctica, Queen Maud Land, Eastern Wohlthat Mountains
+- PASS 13201217202 Torre Norte del Paine | Ibon Mendia و Tasio Martin Ellorieta | climb=2024 pub=2025 | ۱۰ طول، 7a | fa=True | Chile, Southern Patagonia, Torres del Paine
+- PASS 13201217201 Cerro Trono Blanco | Sebastian Pelletti | climb=2024 pub=2025 | ۷۰۰ متر، AI3، M4 | fa=True | Chile, Southern Patagonia, Torres del Paine
+- PASS 13201217200 La Mascara | Sebastian Pelletti | climb=2024 pub=2025 | 5.10، A3، 5.11+ | fa=False | Chile, Southern Patagonia, Torres del Paine
+- PASS 13201217199 Torres del Paine | Rolando Garibotti | climb=2025 pub=2025 | ۶۵۰ متر، ۲۴ طول، 5.11-، 5.11+ | fa=False | Chile, Southern Patagonia, Torres del Paine
+- PASS 13201217198 Cerro Pier Giorgio | Rolando Garibotti | climb=2025 pub=2025 | ۸۰۰ متر، ۲۱ طول، 7b، 5.12b، A3 | fa=False | Argentina, Southern Patagonia, Chaltén Massif
+- PASS 13201217197 Chaltén Massif 2024-25 Season Summary | Rolando Garibotti | climb=2025 pub=2025 | 7a، A0، A1 | fa=False | Argentina, Southern Patagonia, Chaltén Massif
+- PASS 13201217196 El Mocho | Rolando Garibotti | climb=2025 pub=2025 | ۴۵۰ متر | fa=False | Argentina, Southern Patagonia, Chaltén Massif
+- PASS 13201217194 Cerro Ambrosio Este | Agustín Ferrer | climb=2024 pub=2025 | ۲۳۶۴ متر | fa=True | Chile, Southern Patagonian Icefield
+- PASS 13201217193 Cerro Ambrosio Oeste | Matthew Tufts | climb=2024 pub=2025 | no-grade | fa=True | Chile, Southern Patagonian Icefield
+- PASS 13201217192 Monte San Lorenzo | Raimundo De Andraca | climb=2024 pub=2025 | ۳۱۳۴ متر، M4 | fa=False | Chile, Central Andes
+- PASS 13201217191 Cerro Tres Negros | The Editors | climb=2023 pub=2025 | ۱۵۰ متر، ۹ طول، 5.11d، A1، 7b+ | fa=False | Argentina, Northern Patagonia, Turbio IV Valley
+- PASS 13201217190 El Cohete | Caro North | climb=2025 pub=2025 | 7b+ | fa=True | Argentina, Northern Patagonia, Turbio IV Valley
+- PASS 13201217189 Impassable Canyon | Matt Ward | climb=2024 pub=2025 | 5.10، A3 | fa=False | Idaho, Salmon River Mountains
+- PASS 13201217171 Pirita Central | Flavie Cardinal | climb=2025 pub=2025 | 5.11، A0 | fa=False | Argentina, Northern Patagonia, Turbio IV Valley
+- PASS 13201217170 Cerro Trinidad Central | Leo Gheza | climb=2024 pub=2025 | ۸۰۰ متر، 5.12+، A1 | fa=False | Chile, Northern Patagonia, Cochamó
+- PASS 13201217169 Cerro Tronco | Marcelo Scanu | climb=2024 pub=2025 | M4، WI6، M6 | fa=False | Chile, Central Andes
+- PASS 13201217168 Cerro Mono Negro | Álvaro Zerené | climb=2020 pub=2025 | 5.7، 5.8، 5.6 | fa=True | Chile, Central Andes
+- PASS 13201217167 Cerro de la Iglesia | Federico و Álvaro Zerené | climb=2024 pub=2025 | 5.8، 5.9 | fa=False | Chile, Central Andes
+- PASS 13201217166 Pico Simón Bolívar | Eric Gilbertson | climb=2024 pub=2025 | 5.6، M2 | fa=False | Colombia, Sierra Nevada de Santa Marta
+- PASS 13201217165 Pico Simón Bolívar | Ricardo Rubio | climb=2024 pub=2025 | M5 | fa=False | Colombia, Sierra Nevada de Santa Marta
+- PASS 13201217164 Pico Cristóbal Colón and Pico Simmonds | Alex Torres | climb=2023 pub=2025 | no-grade | fa=True | Colombia, Sierra Nevada de Santa Marta
+- PASS 13201217163 Hooker Range: High-Level Ski Traverse | Anna Keeling | climb=2024 pub=2025 | ۱۹۹۲ متر | fa=True | New Zealand, Southern Alps
+- PASS 13201217162 2024 Alpine Summary | Ben Dare | climb=2024 pub=2025 | ۲۲۹۳ متر، 5.12a | fa=True | New Zealand, Southern Alps
+- PASS 13201217161 Dapu Mountains | Haoyu و Xueer Yu | climb=2024 pub=2025 | no-grade | fa=True | China, Sichuan, Shaluli Shan
+- PASS 13201217160 Chola Range | Haoyu Wen و Xueer Yu | climb=2023 pub=2025 | PD+، 5.6، AD | fa=False | China, Sichuan, Shaluli Shan
+- PASS 13201217159 Zhuqing | Qiyun Fu و Zhan Fang | climb=2024 pub=2025 | 5.9، AI2، M4 | fa=False | China, Sichuan, Shaluli Shan
+- PASS 13201217158 Oierlizuoke (Khan Yalik) | Ed Hannam | climb=2024 pub=2025 | no-grade | fa=False | China, Xinjiang, Kun Lun, Aksai Chin
+- PASS 13201217157 Paradise Lake | Deng Tao و Li Bo | climb=2024 pub=2025 | ۱۱۰۰ متر، 5.6، AI2+ | fa=False | China, Xinjiang, Tien Shan
+- PASS 13201217156 Paradise Lake | Zhiming Wang | climb=2024 pub=2025 | ۳۰۵۰ متر، 5.9، 5.12 | fa=True | China, Xinjiang, Tien Shan
+- PASS 13201217155 Ao Nang | Dave Hood و Dakota Walz | climb=2024 pub=2025 | ۱۵۰ متر، 5.10، 5.12a | fa=False | Thailand, Krabi Province
+- PASS 13201217154 Mukumbarí Integral Link-up | Lindsay Griffin | climb=2025 pub=2025 | no-grade | fa=False | Venezuela, Sierra Nevada de Mérida
+- PASS 13201217153 San Isidro Canyon | Patrick Hill | climb=2023 pub=2025 | ۴۰۰ متر، 5.11، E5 5c | fa=False | Mexico, Nuevo León, El Salto Area
+- PASS 13201217152 Fox Jaw Cirque: Three-Peak Traverse and Partial New Route on Cavity Ridge | Thomas Triboli | climb=2024 pub=2025 | no-grade | fa=False | Greenland, East Greenland, Schweizerland
+- PASS 13201217151 Maujit Qaqarssuasia Massif | Tim Miller | climb=2024 pub=2025 | ۳۱ طول | fa=True | Greenland, South Greenland, Torsukattak Fjord
+- PASS 13201217150 Sermersuut Island | July | climb=2024 pub=2025 | E1 5b، E5 6b، E5 6a | fa=True | Greenland, West Greenland
+- PASS 13201217149 Four First Ascents During Southeast-Northwest Crossing | Eric Gilbertson و Branden Joy | climb=2024 pub=2025 | no-grade | fa=True | Greenland, West Greenland
+- PASS 13201217148 El Gran Trono Blanco | Luis Carlos García Ayala | climb=2024 pub=2025 | ۴۲۰ متر، 5.10+ | fa=False | Mexico, Baja California, Cañón del Tajo
+- PASS 13201217147 Karjiang | Xia Zhongming | climb=2024 pub=2025 | no-grade | fa=True | China, Tibet, Himalaya
+- PASS 13201217146 Sundardhunga Khal: A Famous Pass Reached from the South | Anindya Mukherjee و Abhishek Das | climb=2024 pub=2025 | no-grade | fa=False | India, Uttarakhand, Eastern Garhwal 
+- PASS 13201217145 Chandra Bhaga Range | Juraj Koreň | climb=2024 pub=2025 | WI3 | fa=True | India, Himachal Pradesh, Lahaul
+- PASS 13201217144 Shingo South | Subajit Banerjee | climb=2024 pub=2025 | AD | fa=True | India, Himachal Pradesh, Lahaul
+- PASS 13201217143 Chhogo Tokpo: Skarma Mindruk Ri | Matic Jošt | climb=2024 pub=2025 | ۵۰۰ متر | fa=True | India, Ladakh, Zanskar
+- PASS 13201217142 Mt. Northumbria | Owen Lunz و Darin Berdinka | climb=2024 pub=2025 | no-grade | fa=True | Canada, Nunavut, Baffin Island, Auyuittuq National Park
+- PASS 13201217141 Sirmilik National Park | Philippe Gauthier و Charles Gauvin | climb=2023 pub=2025 | no-grade | fa=True | Canada, Nunavut, Baffin Island
+- PASS 13201217140 Chanrasrik Ri | Lea Goldberger و David Schneider | climb=2024 pub=2025 | ۴۰۰ متر، ۱۱ طول، UIAA VII، A2 | fa=True | India, Ladakh, Zanskar, Rangtik Tokpo
+- PASS 13201217139 Vajrayogni | Yuri Koshelenko | climb=2024 pub=2025 | no-grade | fa=True | India, Ladakh, Zanskar, Rangtik Tokpo
+- PASS 13201217138 Starikatchan | Alan Goldbetter | climb=2024 pub=2025 | 5.7، A1 | fa=True | India, Ladakh, Zanskar
+- PASS 13201217137 Chiling II | October و Michael Hutchins | climb=2024 pub=2025 | ۱۴۰۰ متر | fa=False | India, Ladakh, Zanskar
+- PASS 13201217136 Rupshu Region: Thongmeth Kangri | Lindsay Griffin | climb=2023 pub=2025 | no-grade | fa=True | India, Ladakh
+- PASS 13201217135 Khyam Lungpa: Peak 6,044 | Raja و Gerry Galligan | climb=2024 pub=2025 | AD | fa=True | India, Ladakh
+- PASS 13201217134 Khyam Lungpa: Peak 6,050 | Anindya Mukherjee | climb=2024 pub=2025 | AD، 5.43 | fa=True | India, Ladakh
+- PASS 13201217123 Peak 6,124 | Rajesh Gadgil | climb=2024 pub=2025 | no-grade | fa=False | India, Ladakh
+- PASS 13201217122 Hemar Ri | Hartmut Bielefeldt | climb=2024 pub=2025 | no-grade | fa=False | India, Ladakh
+- PASS 13201217121 Nya Kangri | Kintis و Nikolaos Kroupis | climb=2024 pub=2025 | no-grade | fa=True | India, Ladakh, Eastern Karakoram
+- PASS 13201217120 Laknak Kangri | Divyesh Muni | climb=2024 pub=2025 | no-grade | fa=True | India, Ladakh, Eastern Karakoram, Saser Muztagh
+- PASS 13201217119 Snowpatch Spire | Jennifer Olson | climb=2024 pub=2025 | 5.7، 5.8 | fa=False | Canada, British Columbia, Purcell Mountains, Bugaboos
+- PASS 13201217118 North Howser Tower | Seba Pelletti | climb=2024 pub=2025 | ۳۴۱۱ متر، 5.11+، A1 | fa=True | Canada, British Columbia, Purcell Mountains, Bugaboos
+- PASS 13201217117 Mt. Sir Sandford | Dougald MacDonald | climb=2024 pub=2025 | ۳۵۱۹ متر | fa=False | Canada, British Columbia, Selkirk Mountains
+- PASS 13201217116 Combatant Mountain | Will Stanhope | climb=2024 pub=2025 | ED2، 5.12+ | fa=False | Canada, British Columbia, Coast Mountains, Waddington Range
+- PASS 13201217115 Pantheon Range: Sedna Peak | Francis Bailey و Andrea Tate | climb=2024 pub=2025 | 5.8 | fa=True | Canada, British Columbia, Coast Mountains
+- PASS 13201217114 Tsini Tsini Peak | Katie Beringer و Andrew Councell | climb=2024 pub=2025 | ۲۸۱۶ متر، ۱۲ طول، 5.7، 5.8، 5.10 | fa=True | Canada, British Columbia, Coast Mountains
+- PASS 13201217113 Queen Peak | Popeo و Ryan Driscoll | climb=2024 pub=2025 | ۸۰۰ متر | fa=True | Canada, Yukon Territory, St. Elias Mountains
+- PASS 13201217112 Eastern Vilcanota Exploration | Nathan Heald | climb=2024 pub=2025 | PD | fa=False | Peru, Cordillera Vilcanota
+- PASS 13201217111 Cerro Amparay | Lukas Steffen | climb=2024 pub=2025 | no-grade | fa=False | Peru, Cordillera Vilcabamba
+- PASS 13201217110 Chaupi Huanca | John Ebers و Josh Wharton | climb=2024 pub=2025 | ۷۵۰ متر، ۱۹ طول، 7a+، A1 | fa=False | Peru, Cordillera Blanca
+- PASS 13201217109 Cashan Oeste | Mike Bowyer و Tom Schindfessel | climb=2024 pub=2025 | TD+، 6b، C1 | fa=True | Peru, Cordillera Blanca
+- PASS 13201217108 Brammah I | Lindsay Griffin | climb=2024 pub=2025 | no-grade | fa=False | India, Jammu and Kashmir, Kishtwar Himalaya
+- PASS 13201217107 Harmukh | Lindsay Griffin | climb=2023 pub=2025 | 6a | fa=False | India, Jammu and Kashmir, Kashmir Himalaya
+- PASS 13201217106 Umbrella Peak | Lindsay Griffin | climb=2024 pub=2025 | no-grade | fa=True | India, Jammu and Kashmir, Kashmir Himalaya
+- PASS 13201217105 Ice Climbing in Gilgit-Baltistan | Rafa Vadillo | climb=2024 pub=2025 | WI4+ | fa=False | Pakistan, Karakoram
+- PASS 13201217104 Torre Tauar | Pete Takeda | climb=2024 pub=2025 | TD+، WI5، M7 | fa=True | Peru, Cordillera Blanca
+- PASS 13201217103 Nevado Copa | Pete Takeda | climb=2024 pub=2025 | ED | fa=False | Peru, Cordillera Blanca
+- PASS 13201217102 Nevado Copa | Martin de Truchis | climb=2024 pub=2025 | ED، WI5+، M6 | fa=True | Peru, Cordillera Blanca
+- PASS 13201217101 Taulliraju Sur | Jonathan Sage | climb=2023 pub=2025 | ED1، AI5، M5 | fa=False | Peru, Cordillera Blanca
+- PASS 13201217100 Sckem Brakk | Chiara Gusmeroli و Matteo De Zaiacomo | climb=2024 pub=2025 | ۹۰۰ متر، ۲۶ طول، 7a، A3 | fa=False | Pakistan, Karakoram, Tagas Mountains
+- PASS 13201217099 Great Trango Tower | Dougald MacDonald | climb=2024 pub=2025 | no-grade | fa=False | Pakistan, Karakoram, Baltoro Muztagh 
+- PASS 13201217098 Tanpa Lungma and Kuru Lungma | Grzegorz Chwola و Voytek Walas | climb=2024 pub=2025 | ۲۴۰۰ متر | fa=False | Pakistan, Karakoram, Shimshak Mountains
+- PASS 13201217097 Mnich and Other Ascents | Janusz Majer | climb=2011 pub=2025 | ۴۰۰۰ متر، A1 | fa=True | Pakistan, Karakoram, Spantik-Sosbun Range
+- PASS 13201217096 Sosbun Spire III (Mun Brakk II) | Ekaitz Maiz | climb=2024 pub=2025 | A1، 6b، A4 | fa=False | Pakistan, Karakoram, Spantik-Sosbun Range
+- PASS 13201217095 Virjerab Sar | Lindsay Griffin | climb=2024 pub=2025 | no-grade | fa=True | Pakistan, Karakoram, Virjerab Muztagh
+- PASS 13201217094 Yazpurs Sar | Murilo Lessa و Lee Harrison | climb=2024 pub=2025 | no-grade | fa=True | Pakistan, Karakoram, Ghujerab Mountains
+- PASS 13201217086 Peak 132 | Robert Cholewa | climb=2024 pub=2025 | ۲۷۳۵ متر | fa=False | Pakistan, Karakoram, Ghujerab Mountains, Karun Koh Group
+- PASS 13201217085 Mashallah Sar | Masha Gordon | climb=2024 pub=2025 | no-grade | fa=True | Pakistan, Karakoram, Ghujerab Mountains, Karun Koh Group
+- PASS 13201217084 Yawash Sar I | Victor Saunders و Mick Fowler | climb=2024 pub=2025 | no-grade | fa=True | Pakistan, Karakoram, Ghujerab Mountains, Khunjerab Group
+- PASS 13201217083 Muchu Chhish | Zdeněk Hák | climb=2024 pub=2025 | no-grade | fa=True | Pakistan, Karakoram, Batura Muztagh
+- PASS 13201217082 Koz Sar Group: Sachban Sar | Jumbo و Genki Narumi | climb=2024 pub=2025 | no-grade | fa=False | Karakoram, Batura Muztagh
+- PASS 13201217081 Pamir Pyramid | Alex Manoliu و Ionu | climb=2024 pub=2025 | ۳۷۰۰ متر، 7b، 7c+ | fa=True | Kyrgyzstan, Pamir Alai, Karavshin, Ak-Su Valley
+- PASS 13201217080 Angels Landing | Nathan Brown | climb=2024 pub=2025 | ۱۰ طول، 5.8، A3+، A2+ | fa=True | Utah, Zion National Park
+- PASS 13201217079 Provo Canyon | Jon Jugenheimer و Sean McLane | climb=2024 pub=2025 | ۳۵۰ متر، ۹ طول، M8+، M9 | fa=False | Utah, Wasatch Range
+- PASS 13201217078 Ptarmigan Mountain | Michael LaDue | climb=2024 pub=2025 | 5.10+، 5.12- | fa=False | Colorado, Rocky Mountains, Rocky Mountain National Park
+- PASS 13201217077 Limbo | Luc Aurand | climb=2024 pub=2025 | 5.10، 5.10d | fa=False | Colorado, Rocky Mountains, Indian Peaks Wilderness, Lone Eagle Cirque
+- PASS 13201217076 Cirque of the Moon | Mitchell Steinman و Stefanos Apostle | climb=2024 pub=2025 | ۹ طول، 5.11-، C1، 5.11+ | fa=True | Wyoming, Wind River Range
+- PASS 13201217075 Chitistone Valley | Jonathan Koenig و Ethan Berkeland | climb=2024 pub=2025 | WI5، WI6، M7 | fa=True | Alaska, Wrangell Mountains
+- PASS 13201217074 Cold Wars: Winter New Route on the South Face of Mooses Tooth | Marcin Tomaszewski | climb=2024 pub=2025 | 5.8، WI4 | fa=False | Alaska, Central Alaska Range, Ruth Gorge
+- PASS 13201217073 Mt. Bradley | Eli Spitulnik | climb=2024 pub=2025 | 5.10، A1، AI4 | fa=False | Alaska, Central Alaska Range, Ruth Gorge
+- PASS 13201217072 Mt. Dickey | Pintar و Tom Livingstone | climb=2024 pub=2025 | no-grade | fa=False | Alaska, Central Alaska Range, Ruth Gorge
+- PASS 13201217071 Grand Teton | Renny Jackson و Vic Zeilman | climb=2024 pub=2025 | 5.10- | fa=True | Wyoming, Teton Range
+- PASS 13201217065 Storm Point | Chase Krumholz و Brandon Wanthal | climb=2024 pub=2025 | 5.10- | fa=False | Wyoming, Teton Range
+- PASS 13201217064 Hallelujah (Peak 12,594) | Chris Hirsch و Matt Scherer | climb=2024 pub=2025 | 5.11 | fa=False | Wyoming, Bighorn Mountains
+- PASS 13201217063 Cody | David Gauvin | climb=2024 pub=2025 | 5.10c، 5.11، 5.12- | fa=False | Wyoming, Absaroka Range
+- PASS 13201217062 Storm Dome | Duncan و Michal Matyjaskik | climb=2024 pub=2025 | 5.13b | fa=False | Idaho, Salmon River Mountains
+- PASS 13201217061 Sinopah Mountain | Seth Anderson | climb=2024 pub=2025 | 5.9 | fa=False | Montana, Lewis Range, Glacier National Park
+- PASS 13201217060 Flinsch Peak | Adam و David Steele | climb=2024 pub=2025 | 5.8، 5.7 | fa=False | Montana, Lewis Range, Glacier National Park
+- PASS 13201217059 Tokositna Glacier Area | Chris و Ben Dewey | climb=2024 pub=2025 | WI5، M5 | fa=True | Alaska, Central Alaska Range
+- PASS 13201217058 Shipnoor | Samiran Kolhe | climb=2025 pub=2025 | ۶۰۰ متر، 6b+ | fa=False | India, Maharashtra, Sahyadri Range
+- PASS 13201217057 Lalung I | Patricija و Anja Petek | climb=2024 pub=2025 | M6+، AI5+ | fa=True | India, Zanskar
+- PASS 13201217056 Peak 3,850 | Camilla Reggio و Alessandra Prato | climb=2024 pub=2025 | ۵۰۰ متر، 7b، 7a | fa=False | Kyrgyzstan, Pamir Alai, Karavshin, Ak-Su Valley
+- PASS 13201217055 Peak 4,810 | Anna Piunova | climb=2024 pub=2025 | 6B، A3 | fa=False | Kyrgyzstan, Pamir Alai, Turkestan Range, Karavshin, Kara-Su Valley
+- PASS 13201217054 Ashat Valley | Patrick Hill | climb=2024 pub=2025 | ۸۰۰ متر، ۹ طول، 5.12-، E3 5c | fa=False | Kyrgystan, Pamir Alai, Turkestan Range
+- PASS 13201217053 Sky Blue Lake Basin | Zach Lovell | climb=2024 pub=2025 | no-grade | fa=True | California, Sierra Nevada, Sequoia National Park
+- PASS 13201217052 Mt. Hitchcock | Honz Mikhalek و Shaun Reed | climb=2024 pub=2025 | 5.10 | fa=True | California, Sierra Nevada, Sequoia National Park
+- PASS 13201217051 Keeler Needle | Andy Puhvel | climb=2024 pub=2025 | ۵ طول، 5.12a، 5.10، 5.13c | fa=True | California, Sierra Nevada, Eastern Sierra
+- PASS 13201217050 Mt. Hunter | Sam Hennessey | climb=2024 pub=2025 | WI6، M6+ | fa=True | Alaska, Central Alaska Range
+- PASS 13201217049 Begguya | Cody Winckler و Dane Steadman | climb=2024 pub=2025 | ۱۰۰ متر | fa=False | Alaska, Central Alaska Range
+- PASS 13201217048 Naseer Baig I and II | Louis Rousseau | climb=2024 pub=2025 | no-grade | fa=True | Pakistan, Karakoram, Hispar Muztagh
+- PASS 13201217047 Denali | Subaru Takeda | climb=2024 pub=2025 | no-grade | fa=True | Alaska, Alaska Range, Denali National Park
+- PASS 13201217046 Mt. Russell | Sam و Mark Westman | climb=2024 pub=2025 | no-grade | fa=True | Alaska, Alaska Range, Dall Glacier Area
+- PASS 13201217045 Phole | Hiroki Yamamoto و Hidesuke Taneishi | climb=2024 pub=2025 | ED+ | fa=True | Nepal, Kangchenjunga Himal
+- PASS 13201217044 Pandra | Akhiro Oishi | climb=2024 pub=2025 | M6 | fa=True | Nepal, Janak Himal
+- PASS 13201217043 Sharphu III | Oh Young-hoon | climb=2024 pub=2025 | no-grade | fa=True | Nepal, Ohmi Kangri Himal
+- PASS 13201217042 Ama Dablam | Nikita Balabanov و Mikhail Fomin | climb=2024 pub=2025 | ED، M5، AI4 | fa=False | Nepal, Mahalangur Himal, Khumbu Section
+- PASS 13201217041 Khangri Shar | Oh Young-hoon | climb=2024 pub=2025 | no-grade | fa=False | Nepal, Mahalangur Himal, Khumbu Section
+- PASS 13201217040 Hungchi | Charles Dubouloz و Symon Welfringer | climb=2024 pub=2025 | ED | fa=False | Nepal, Mahalangur Himal, Khumbu Section
+- PASS 13201217039 Kyajo Ri | Michał Król | climb=2024 pub=2025 | 6b، M6 | fa=False | Nepal, Mahalangur Himal, Khumbu Section
+- PASS 13201217038 Cho-oyu | Lindsay Griffin و Rodolphe Popier | climb=2024 pub=2025 | no-grade | fa=True | Nepal, Mahalangur Himal, Khumbu Section
+- PASS 13201217037 Langdak | Jérémy Fino | climb=2024 pub=2025 | AI4+، M5، A1 | fa=False | Nepal, Rolwaling Himal
+- PASS 13201217036 Tengkangpoche | Pat Perry Johnson و Patrick Gephart | climb=2024 pub=2025 | ۲۰۰ متر، WI3+، M3 | fa=False | Nepal, Rolwaling Himal
+- PASS 13201217035 Linkhu Chuli II | Lindsay Griffin | climb=2024 pub=2025 | no-grade | fa=False | Nepal, Rolwaling Himal
+- PASS 13201217034 Chobutse | Maciej Kimel و Wadim Jabłoński | climb=2023 pub=2025 | no-grade | fa=True | Nepal, Rolwaling Himal
+- PASS 13201217033 Mt. Langley | Emma Kluge و Damien Nicodemi | climb=2024 pub=2025 | 5.8 | fa=False | California, Sierra Nevada, Southern Sierra
+- PASS 13201217031 Arctic Lake Wall | Matt Carpenter | climb=2024 pub=2025 | ۵ طول، 5.11c، 5.11- | fa=False | California, Sierra Nevada, Sequoia National Park
+- PASS 13201217030 Mt. Barnard | Jake Terry و Ian McEleney | climb=2024 pub=2025 | 5.10a | fa=True | California, Sierra Nevada, Sequoia National Park
+- PASS 13201217029 Homers Nose | Brian Prince | climb=2024 pub=2025 | ۶ طول، 5.12a، 5.11b | fa=True | California, Sierra Nevada, Sequoia National Park
+- PASS 13201217028 Spring Lake Wall | Jack Schlinkert و Thomas Sicilian | climb=2024 pub=2025 | 5.9، 5.6، 5.10 | fa=True | California, Sierra Nevada, Sequoia National Park
+- PASS 13201217027 Overlook Dome | Brian Prince | climb=2024 pub=2025 | 5.10a | fa=False | California, Sierra Nevada, Golden Trout Wilderness
+- PASS 13201217026 Castle Rocks Area: The Fortress | Dave Meyer و Sam Fearer | climb=2024 pub=2025 | 5.10c | fa=False | California, Sierra Nevada, Sequoia National Park
+- PASS 13201217025 Oyster Peak | David Stone و Daniel Jeffcoach | climb=2024 pub=2025 | ۷ طول، 5.7 | fa=False | California, Sierra Nevada, Western Sierra
+- PASS 13201217024 Kings River North Fork | Dave Nettle | climb=2024 pub=2025 | ۶ طول، 5.11- | fa=True | California, Sierra Nevada, Western Sierra
+- PASS 13201217023 Mt. Goode | Crystal Dunbar و Cole Taylor | climb=2024 pub=2025 | 5.11-، 5.9، 5.10 | fa=False | California, Sierra Nevada, Eastern Sierra
+- PASS 13201217022 Merriam Peak | Brien و Matt Carpenter | climb=2024 pub=2025 | 5.10d، A0، 5.11- | fa=True | California, Sierra Nevada, Eastern Sierra
+- PASS 13201217021 Beding Go | Pasang Kidar Sherpa و Danika Gilbert | climb=2024 pub=2025 | TD، AI3+ | fa=True | Nepal, Rolwaling Himal
+- PASS 13201217020 Peak 5,805 | Lindsay Griffin | climb=2023 pub=2025 | no-grade | fa=True | Nepal, Rolwaling Himal
+- PASS 13201217019 Chhopa Bamare | Hiroyoshi Manome | climb=2024 pub=2025 | no-grade | fa=True | Nepal, Rolwaling Himal
+- PASS 13201217018 Phurbi Chhyachu | Rosa Morotti و Tito Arosio | climb=2024 pub=2025 | no-grade | fa=False | Nepal, Jugal Himal
+- PASS 13201217017 Jugal I | Oh Young-hoon | climb=2024 pub=2025 | no-grade | fa=True | Nepal, Jugal Himal
+- PASS 13201217016 Ganchempo | David Goettler | climb=2024 pub=2025 | no-grade | fa=False | Nepal, Jugal Himal
+- PASS 13201217015 Kimshung Sar | Lindsay Griffin | climb=2024 pub=2025 | no-grade | fa=False | Nepal, Langtang Himal
+- PASS 13201217014 Phungi | Fumiya Yokomichi | climb=2024 pub=2025 | no-grade | fa=True | Nepal, Peri Himal
+- PASS 13201217013 Kajin Sara | Lindsay Griffin | climb=2024 pub=2025 | PD- | fa=False | Nepal, Annapurna Himal
+- PASS 13201217012 Nilgiri North | Tatsuya Aoki و Takuya Mitoro | climb=2024 pub=2025 | no-grade | fa=False | Nepal, Annapurna Himal
+- PASS 13201217011 Patrasi I | Lindsay Griffin | climb=2024 pub=2025 | no-grade | fa=True | Nepal, Kanjiroba Himal
+- PASS 13201217010 Nepal: New Peaks Opened in 2024 | Lindsay Griffin | climb=2024 pub=2025 | no-grade | fa=True | 
+- PASS 13201216993 Pine Creek Pass and Granite Park Areas | Zach Lovell | climb=2024 pub=2025 | no-grade | fa=True | California, Sierra Nevada, Eastern Sierra
+- PASS 13201216992 Royce Lakes Basin | Brien و Matt Carpenter | climb=2024 pub=2025 | ۶ طول، 5.10، 5.6 | fa=True | California, Sierra Nevada, Eastern Sierra
+- PASS 13201216991 Mt. Abbot | Trevor Shumaker | climb=2024 pub=2025 | AI2، 5.5 | fa=True | California, Sierra Nevada, Eastern Sierra
+- PASS 13201216990 Shrinking Summits on Rainier and Other High Peaks in Washington | Between August و October | climb=2024 pub=2025 | no-grade | fa=False | Washington, Cascades
+- PASS 13201216989 Jabberwocky Tower | Wayne Wallace | climb=2024 pub=2025 | 5.7+، 5.9، 5.10b | fa=False | Washington, Cascades, Stuart Range
+- PASS 13201216988 Choral Peak | Nick Roy و Eric Gilbertson | climb=2024 pub=2025 | WI3، M3 | fa=False | Washington, North Cascades
+- PASS 13201216987 Boston Peak | Nick Roy و Eric Gilbertson | climb=2024 pub=2025 | no-grade | fa=False | Washington, North Cascades
+- PASS 13201216986 Castle Peak | Sean Reckert و Spencer Gray | climb=2024 pub=2025 | ۱۱ طول، 5.12a، 5.7، A0 | fa=False | Washington, North Cascades
+- PASS 13201216985 Khumjungar | Prakash Gurung | climb=2023 pub=2025 | no-grade | fa=True | Nepal, Damodar Himal
+- PASS 13201216984 Sanctuary Peak | Yasuhiro Hanatani | climb=2024 pub=2025 | no-grade | fa=True | Nepal, Kanjiroba Himal
+- PASS 13201216961 Angsi Glacier Basin | Alexander Sternfeld | climb=2024 pub=2025 | no-grade | fa=True | Nepal, Chandi Himal
+- PASS 13201216960 Sloan Peak | Michael Telstad | climb=2025 pub=2025 | WI5، M7 | fa=True | Washington, North Cascades
+- PASS 13201216959 Mt. Fury | Moline و Emilio Taiveaho Peláez | climb=2024 pub=2025 | 5.8، 5.9 | fa=True | Washington, North Cascades, Pickett Range
+- PASS 13201216958 Organa Pipette (Peak 5,660') | Cameron Jardell | climb=2024 pub=2025 | ۳۰۰ متر، 5.7 | fa=True | Alaska, Coast Mountains, Boundary Ranges, Juneau Icefield
+- PASS 13201216957 Mendenhall Towers | Sam Cohen | climb=2024 pub=2025 | no-grade | fa=True | Alaska, Coast Mountains, Boundary Ranges, Juneau Icefield
+- PASS 13201216950 Mantok I | Joseph Hobby | climb=2024 pub=2025 | no-grade | fa=True | Alaska, Alaska Range, Yentna Glacier
+- PASS 13201216948 Middle Cathedral Rock | Americans Nik Berry و Will Sharp | climb=2024 pub=2025 | 5.13+، 5.13 | fa=False | California, Sierra Nevada, Yosemite National Park
+- PASS 13201216947 Middle Cathedral Rock | Brandon Adams و Lance Colley | climb=2024 pub=2025 | A3+، 5.10، 5.12c | fa=False | California, Sierra Nevada, Yosemite National Park
+- PASS 13201216946 The Incredible Hulk | Jeremy Collins | climb=2024 pub=2025 | 5.11d | fa=False | California, Sierra Nevada, Eastern Sierra, Little Slide Canyon
+- PASS 13201216945 The Incredible Hulk | Abel Jones | climb=2024 pub=2025 | 5.13-، 5.13a، 5.11 | fa=False | California, Sierra Nevada, Eastern Sierra, Little Slide Canyon
+- PASS 13201216944 Seerdengpu | Ma Fang | climb=2024 pub=2025 | 5.9+، C2 | fa=True | China, Sichuan, Qionglai Shan, Siguniang National Park
+- PASS 13201216943 Big Chief Buttress | Damien Nicodemi و Ryan Evans | climb=2024 pub=2025 | ۱۲ طول، 5.11، C1 | fa=False | Wyoming, Wind River Range, Washakie Lake Cirque
+- PASS 13201216936 The Enduro Traverse: Skiing the Teton Skyline in a Day | Adam Fabrikant | climb=2024 pub=2025 | no-grade | fa=False | Wyoming, Teton Range
+- PASS 13201216929 Jati Khollu Massif | Juan Gabriel و Alexander von Ungern | climb=2024 pub=2025 | 6b+، A1 | fa=True | Bolivia, Cordillera Real, Hampaturi Group
+- PASS 13201216928 Nevado Sajama: Complete Ski Descent | Erik Olerud و Josh Fischel | climb=2024 pub=2025 | no-grade | fa=False | Bolivia, Cordillera Occidental
+- PASS 13201216926 Conda Area | Manu Ponce | climb=2024 pub=2025 | no-grade | fa=True | Angola, Cuanza Sul
+- PASS 13201216907 The Wala Collections | Jerzy Wala و Janusz Majer | climb=? pub=2025 | PD | fa=False | 
+- PASS 13201216906 Mt. Andrew | Joseph Hobby و Zach Lovell | climb=2024 pub=2025 | no-grade | fa=True | Alaska, Alaska Range, Dall Glacier Area
+- PASS 13201216900 Dean | Cameron Jardell | climb=2024 pub=2025 | WI3، M5+ | fa=False | Alaska, Coast Mountains, Boundary Ranges
+- PASS 13201216899 Nieras and Kungsfallen | Rafa Vadillo | climb=? pub=2025 | WI5 | fa=False | Sweden, Stora Sjöfallet National Park
+- PASS 13201216885 Cerro Evelio | Agustín Ferrer | climb=2023 pub=2025 | ۲۶۰۰ متر | fa=False | Chile, Central Andes
