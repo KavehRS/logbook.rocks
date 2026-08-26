@@ -94,6 +94,6 @@ If any pass fails, fix or drop the item. Do not publish a failing draft.
 
 1. Branch `cursor/news-wire-<YYYYMMDD-HHMM>-4b4e` on scheduled runs (this repo’s `cursor/*-4b4e` pattern)
 2. `bundle exec jekyll build` — `_news/` pages in `_site/news/`; `_seo/` and `.cursor/` unpublished
-3. Open PR. Until GitHub Actions billing is unlocked, also refresh the `published` static export so https://logbook.rocks/news/ updates (Zaraz reads HTML from GitHub `published`, not jsDelivr directory URLs)
+3. Open PR. Until GitHub Actions billing is unlocked, also refresh the `published` static export so https://logbook.rocks/news/ updates (Zaraz reads HTML from GitHub `published`, not jsDelivr directory URLs). Overlay `_site` onto `published` **without** `--delete` (this branch’s build is not the whole live tree). Copy only the news/home/sitemap files this run changed. Do **not** mention unrelated logbook pages in `_seo/news-wire-log.md` or the PR body.
 4. If no unseen items in the window: no PR; log the empty window in `_seo/news-wire-log.md`; still update `_data/news-wire-state.yml`
 5. Never invent results for a live event that has no source article yet
