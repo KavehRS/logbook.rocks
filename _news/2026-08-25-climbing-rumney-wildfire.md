@@ -6,7 +6,7 @@ dir_attr: rtl
 description: >-
   Climbing.com نوشته آتش ۱۴ اوت نزدیک Rumney حدود ۱۴ ایکر سوخت؛
   صخره‌ها از ۲۱ اوت باز شدند و آسیب قطعی گزارش نشده.
-date: 2026-08-25 21:49:15 +0000
+date: 2026-08-25 21:49:15 +0330
 tags: [climbing.com, سنگ‌نوردی, ایمنی, آمریکا]
 source: Climbing.com
 source_url: https://www.climbing.com/news/rumney-close-call-wildfire-other-climbing-crags-not-so-lucky/
