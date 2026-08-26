@@ -40,6 +40,9 @@ items:
   - source: Desnivel
     source_url: https://www.desnivel.com/escalada-roca/xavi-sabater-primera-repeticion-en-libre-de-donec-perficiam-una-de-las-rutas-mas-duras-de-montrebei/
     slug: 2026-08-25-desnivel-xavi-sabater-donec-perficiam
+  - source: Climbing.com
+    source_url: https://www.climbing.com/news/rumney-close-call-wildfire-other-climbing-crags-not-so-lucky/
+    slug: 2026-08-25-climbing-rumney-wildfire
 
 # Seen by the wire but not published. Skip on later runs.
 skipped:

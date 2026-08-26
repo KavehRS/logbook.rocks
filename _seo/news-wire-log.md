@@ -224,3 +224,18 @@ Window: 12:04:45–18:02:01 UTC (since `last_run_utc`, not a 1-hour cap). Fetche
 
 Guiyang Asia Youth Championship (21–25 Aug) event page has some Event Winners cards (e.g. Taesung PARK KOR) but no `/news/` article and no widget timestamp; omitted rather than invent a full youth-podium recap. Laval Europe championship remains on the 28–30 Aug programme — no result. Nothing to review. Next GMT slot: 00:00.
 
+## 2026-08-26 00:00 GMT — scheduled slot (all unseen since previous run)
+
+Window: 18:02:01 UTC 25 Aug – 00:02:19 UTC 26 Aug (since `last_run_utc`, not a 1-hour cap). Fetched UIAA RSS (newest still 20 Aug symposium). Climbing.com RSS: new 25 Aug 21:49 UTC Rumney wildfire close-call. World Climbing / IFSC `/news` newest still the 24 Aug Ostermundigen recap (already published). Desnivel `escalada-roca` newest still Donec perficiam (09:31 UTC 25 Aug, already published); other categories unchanged. PlanetMountain HTML 403; search has no new 25–26 Aug 2026 article (Lara Neumeier End of Silence snippet is a 2025/undated page, omitted). UKClimbing `/news/` 403; search newest dated 19 Aug (Glen Lyon / Arapiles). Alpinist `/feed/` newest 19 Aug Dean Potter feature; `/newswire/` listing still has no August 2026 item (top item remains Heavy is the Hand, April 2026). Guiyang youth winners still have no `/news/` article — omitted. Laval remains 28–30 Aug — no result.
+
+### 2026-08-25 Climbing.com Rumney wildfire close call
+
+Source: https://www.climbing.com/news/rumney-close-call-wildfire-other-climbing-crags-not-so-lucky/
+
+1. Facts: Rumney / Rattlesnake Mountain, NH; Friday 14 Aug 2026 fire; cause not confirmed; ~14 acres from near the summit; climbers/hikers ordered off for a week; reopened 21 Aug. Ladd Raine, RCA president: northwest higher crags (Prudential, Hinterlands) typically where fires occur; most cliffs e.g. Orange Crush lower, not affected. No confirmed damage. Alex Teixeira, Mooney Mountain Guides: watch dead timber; if ash/scorch on a route consider climbing elsewhere. Other 2026 fires in the same article: Fontainebleau 12 Jul arson, 1000+ evacuated, forest reopened 22 Aug, >5000 acres including several climbing zones, community awaiting which areas stay closed; Ouray Gold Mountain late June, ~40,000 acres, 87% contained, still active, Ice Park and hundreds of rock/ice/alpine routes threatened; Indian Creek Babylon Fire July, >100,000 acres, 100% contained a few days before the 25 Aug article (no invented calendar day); Reno Hawk Fire “this past weekend”, 15,000 acres, 27% contained, 42,000 evacuated, 45,000 ready. Did not copy Gavin Veasey or Getty photos. Did not invent Guiyang/Laval results. Jalali 14 Aug = 23 Mordad, 21 Aug = 30 Mordad, 22 Aug = 31 Mordad, 12 Jul = 21 Tir, 25 Aug = 3 Shahrivar.
+2. Language: short original Persian; place/route names Latin (Rumney, Rattlesnake, Prudential, Hinterlands, Orange Crush, Fontainebleau, Ouray, Indian Creek, Reno); لد رین / الکس تکسیرا.
+3. Policy: no مترجم/نویسنده; no photo; source linked; unique description; climbing access/safety, not a child-sexual-abuse story. PASS.
+
+Next GMT slot: 06:00.
+
+
