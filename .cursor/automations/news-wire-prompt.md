@@ -35,7 +35,11 @@ First series only: last 1 hour. Every later series: all unseen items published s
 - DAV Expedkader and CAI Lo Scarpone / spedizioni (federation expedition reports — not club admin)
 - https://publications.americanalpineclub.org/ (American Alpine Journal Climbs and Expeditions — not book reviews, obituaries, or ANAC)
 
-Write a short original Persian summary of each, critically review three times (facts, language, policy), log passes in `_seo/news-wire-log.md`, then publish to `_news/`. Skip URLs in `_data/news-wire-seen.yml`. Do not invent events, dates, names, grades, or live-event results without a source article. Do not copy photos. Do not publish verbatim English. Do not cover child-sexual-abuse stories.
+For World Climbing, UIAA, PlanetMountain, Climbing.com, Desnivel, UKClimbing, Alpinist, ExplorersWeb, and DAV/CAI: write a short original Persian summary of each unseen item since `last_run_utc`.
+
+For AAJ: publication year **2026 only**. Complete Persian translation of the journal note (not a summary). Oldest remaining first from `_data/aaj-backfill.yml`. Kickoff (one article) is already done. **This slot: the next two remaining only.** Missed slots do not dump the backlog — still two. Date AAJ posts with this slot’s Tehran datetime. Do not publish 2025. Do not republish retracted stubs.
+
+Critically review three times (facts, language, policy), log passes in `_seo/news-wire-log.md`, then publish to `_news/`. Skip URLs in `_data/news-wire-seen.yml`. Do not invent events, dates, names, grades, or live-event results without a source article. Do not copy photos. Do not publish verbatim English. Do not cover child-sexual-abuse stories.
 
 Always update `_data/news-wire-state.yml` with last_run_utc.
 

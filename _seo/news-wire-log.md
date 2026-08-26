@@ -275,6 +275,9 @@ No unseen article to publish after 12:02 UTC 26 Aug. Nothing to review. Next GMT
 
 
 ## 2026-08-26 owner: add ExplorersWeb, DAV/CAI expeditions, AAJ + AAJ two-year backfill
+
+**SUPERSEDED 2026-08-26 evening.** Owner corrections after this dump: (1) AAJ **2026 only** — drop 2025. (2) **Complete** translations, not two-sentence summaries. (3) Oldest → newest, not listing order. (4) Publish the oldest article now; then **two per GMT slot** (00/06/12/18), no catch-up dump. The 441 stub posts were deleted from `_news/` and must be deleted from the live `published` HTML. Compact PASS list below is a record of that rejected dump, not a live publish.
+
 Owner asked to add all three sources and to translate American Alpine Journal content from the last two years. ExplorersWeb, DAV Expedkader / press, and CAI Lo Scarpone / spedizioni are now in the wire skill; they are **not** backfilled. Next GMT slot (00:00 27 Aug) fetches unseen items on all ten sources since `last_run_utc`.
 AAJ backfill: publication years **2025 and 2026** only. Listing `https://publications.americanalpineclub.org/articles` newest-first; each article HTML has Climb Year and Publication Year. Kept Climbs and Expeditions plus climb Feature Articles. Skipped Book Reviews, In Memoriam, Club Activities, editorials, and Accidents in North American Climbing (ANAC/ANAM). Count: 226 (2026) + 215 (2025) = **441**. `last_run_utc` unchanged (2026-08-26T18:01:42Z).
 Each of the 441 drafts: facts taken from that article’s title, location, author, climb/publication year, and stated route / grade / length / date when present; original Persian summary (not a paste of the English note); peak/route names left Latin; no photos; no مترجم/نویسنده; unique description; `source_url` in `_data/news-wire-seen.yml`.
@@ -746,3 +749,15 @@ The other 435 items used the same three passes against their own article HTML. C
 - PASS 13201216900 Dean | Cameron Jardell | climb=2024 pub=2025 | WI3، M5+ | fa=False | Alaska, Coast Mountains, Boundary Ranges
 - PASS 13201216899 Nieras and Kungsfallen | Rafa Vadillo | climb=? pub=2025 | WI5 | fa=False | Sweden, Stora Sjöfallet National Park
 - PASS 13201216885 Cerro Evelio | Agustín Ferrer | climb=2023 pub=2025 | ۲۶۰۰ متر | fa=False | Chile, Central Andes
+
+## 2026-08-26 evening — owner pace + complete 2026 AAJ (kickoff)
+
+Retracted the 441 summary stubs (2025+2026). Queue rebuilt oldest-first in `_data/aaj-backfill.yml`: 226 notes in publication year 2026; kickoff published 1; **225 remaining**. `last_run_utc` unchanged (`2026-08-26T18:01:42Z`). Next GMT slot 00:00 27 Aug publishes the next two remaining only: Chuchepo (`13201217321`) then Jiongmudazhi (`13201217322`). Regular nine-source wire still publishes every unseen in-window item as a short summary.
+
+### AAJ 13201217320 Sir Duk, Southwest Ridge to West Shoulder (complete translation)
+
+Source: https://publications.americanalpineclub.org/articles/13201217320 — Xia Zhongming, Germany; China, Tibet, Nyanchen Tanglha West; Climb Year 2024; Publication Year 2026. File: `_news/2026-08-26-aaj-sir-duk-west-shoulder.md` dated 2026-08-26 19:30 +0330 so it sorts at the top of `/news/`.
+
+1. Facts: Golden Dragon Peak 6614 m Desheng map; 30°18′13.50″N 90°28′44.11″E Langbu Qu; third valley SW of Nyanchen Thanglha I (7162 m), ~95 km NW of Lhasa; FA 2000 Austrian south ridge Erich Gatt + Hansjörg Pfaundler then Christian Hass (source spelling Hass) alone a day or two later; Tibetan name Sir Duk given by them, original thought Arjionggalabu; quoted height 6653 m; 2009 Guy McKinnon / Bruce Normand / Yan Dongdong couloir south-southwest face finishing left of Gatt–Pfaundler, descent NW ridge; no further new ascents before 2024; unclimbed 6000 m peaks remain. 6 Nov 2024 Feng Yupeng, Tong Zhanghao, Xu Hong from Yangbajing to 4750 m village then BC 5700 m moraine lake SW of Sir Duk. 8 Nov 5 a.m.; 1.5 h to glacier; 1.5 h below west face; 100 m 40° snow to SW ridge ~6100 m; Tong mostly leading; 13 pitches ~30 m, max M4; ~6500 m terrain steepened 17:30; no bivy, push for summit; next three pitches to west shoulder crux M5 snow-covered granite; 55° snow to west shoulder 6591 m GPS; summit ridge 1 m unstable powder; retreat 19:45; downclimb one pitch then three rappels from snow anchors to rock, four more to glacier; BC midnight; 800 m to shoulder TD M5. Footnote Mi Desheng maps in Immortal Mountains in the Snow Region 1995. Did not copy Fan Rui photo. Did not claim a summit. PASS.
+2. Language: complete original Persian of every narrative paragraph; peak/route/people Latin as in the journal; Jalali 16/18 Aban 1403 for 6/8 Nov 2024. No مترجم/نویسنده. PASS.
+3. Policy: complete translation not a stub; no photo; source linked; unique description; URL in seen.yml; 2026 only; oldest first. PASS.

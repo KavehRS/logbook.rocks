@@ -1,0 +1,698 @@
+# AAJ 2026 complete-translation queue.
+# Owner: publication year 2026 only (not 2025). Oldest remaining first.
+# Kickoff (done): one article — Sir Duk 13201217320 on 2026-08-26.
+# Every later GMT slot (00:00 / 06:00 / 12:00 / 18:00 UTC): publish the next TWO
+# remaining notes as complete Persian translations. Missed slot = still only two
+# (no catch-up dump). New 2026 listing items append to the END of remaining.
+publication_year: 2026
+per_slot: 2
+timezone: UTC
+slots_gmt: [0, 6, 12, 18]
+kickoff_count: 1
+next_slot_utc: "2026-08-27T00:00:00Z"
+last_publish_date: "2026-08-26"
+published_on_last_date: 1
+remaining_count: 225
+next_ids:
+  - "13201217321"  # Chuchepo, First Ascent, via Northeast Face
+  - "13201217322"  # Jiongmudazhi, First Ascent, via Northwest Face
+published:
+  - id: "13201217320"
+    slug: 2026-08-26-aaj-sir-duk-west-shoulder
+    date: "2026-08-26"
+remaining:
+  - id: "13201217321"
+    url: https://publications.americanalpineclub.org/articles/13201217321
+    title: "Chuchepo, First Ascent, via Northeast Face"
+  - id: "13201217322"
+    url: https://publications.americanalpineclub.org/articles/13201217322
+    title: "Jiongmudazhi, First Ascent, via Northwest Face"
+  - id: "13201217323"
+    url: https://publications.americanalpineclub.org/articles/13201217323
+    title: "Manamcho, Southwest Ridge and Face"
+  - id: "13201217364"
+    url: https://publications.americanalpineclub.org/articles/13201217364
+    title: "Chomolhari III, First Ascent, via North Spur"
+  - id: "13201217365"
+    url: https://publications.americanalpineclub.org/articles/13201217365
+    title: "Bel Uluu Valley, Cédric and Sophie (Point 5,090)"
+  - id: "13201217378"
+    url: https://publications.americanalpineclub.org/articles/13201217378
+    title: "Arches Peak, North Face, Central Buttress"
+  - id: "13201217379"
+    url: https://publications.americanalpineclub.org/articles/13201217379
+    title: "Dip Top Peak, South Face"
+  - id: "13201217380"
+    url: https://publications.americanalpineclub.org/articles/13201217380
+    title: "Roberts Mountain, Northeast Face, Crowheart"
+  - id: "13201217381"
+    url: https://publications.americanalpineclub.org/articles/13201217381
+    title: "Mt. Hooker: Northwest Passage, First Free Ascent; The Living Stone, First Ascent"
+  - id: "13201217383"
+    url: https://publications.americanalpineclub.org/articles/13201217383
+    title: "The Monolith, Northeast Face, Children of the Sun"
+  - id: "13201217384"
+    url: https://publications.americanalpineclub.org/articles/13201217384
+    title: "The Batwing (Peak 9,020’), Southeast Face, and Other Climbs"
+  - id: "13201217385"
+    url: https://publications.americanalpineclub.org/articles/13201217385
+    title: "The Citadel, East Buttress, Babies’ First Big Wall"
+  - id: "13201217387"
+    url: https://publications.americanalpineclub.org/articles/13201217387
+    title: "Second Mendenhall Tower, First Winter Ascent"
+  - id: "13201217388"
+    url: https://publications.americanalpineclub.org/articles/13201217388
+    title: "Mt. Moffit, Enthalpy Ridge (Northeast Ridge)"
+  - id: "13201217389"
+    url: https://publications.americanalpineclub.org/articles/13201217389
+    title: "Nenana Mountain, Ketamine Arête and No Guides Allowed"
+  - id: "13201217390"
+    url: https://publications.americanalpineclub.org/articles/13201217390
+    title: "Little Podju and McAlpine Peak, First Ascents"
+  - id: "13201217391"
+    url: https://publications.americanalpineclub.org/articles/13201217391
+    title: "Peak A-112, North Ridge"
+  - id: "13201217392"
+    url: https://publications.americanalpineclub.org/articles/13201217392
+    title: "Mt. Pratt, First Recorded Ascent, via Northwest Glacier; Castle Mountain, North Face"
+  - id: "13201217393"
+    url: https://publications.americanalpineclub.org/articles/13201217393
+    title: "Mt. Providence, South Face, Journey Through the Castle of Providence"
+  - id: "13201217394"
+    url: https://publications.americanalpineclub.org/articles/13201217394
+    title: "Begguya, North Buttress, French Connection Solo; Denali, Slovak Direct, Solo Ascent "
+  - id: "13201217395"
+    url: https://publications.americanalpineclub.org/articles/13201217395
+    title: "South Mile High Peak, East Face, Blood and Sand"
+  - id: "13201217396"
+    url: https://publications.americanalpineclub.org/articles/13201217396
+    title: "The Trickster, The Raven-Wolf Route"
+  - id: "13201217397"
+    url: https://publications.americanalpineclub.org/articles/13201217397
+    title: "The Tusk, Complete South Ridge"
+  - id: "13201217398"
+    url: https://publications.americanalpineclub.org/articles/13201217398
+    title: "Mosquito Pass Wall (Peak 2,911'), Unikkiga Aklunaaq\t"
+  - id: "13201217399"
+    url: https://publications.americanalpineclub.org/articles/13201217399
+    title: "The Diamond in Winter: Two Novel Ascents"
+  - id: "13201217400"
+    url: https://publications.americanalpineclub.org/articles/13201217400
+    title: "Baby Helen's Dome, Ends of a Dream, and Various Huge Link-Ups"
+  - id: "13201217401"
+    url: https://publications.americanalpineclub.org/articles/13201217401
+    title: "Peak 5,710', First Ascent"
+  - id: "13201217402"
+    url: https://publications.americanalpineclub.org/articles/13201217402
+    title: "Seventy-Two 14ers in One Month by Foot and Bike"
+  - id: "13201217403"
+    url: https://publications.americanalpineclub.org/articles/13201217403
+    title: "Kabru, northwest face and north ridge"
+  - id: "13201217404"
+    url: https://publications.americanalpineclub.org/articles/13201217404
+    title: "Kimshung, first ascent, via east couloir and south-southeast ridge"
+  - id: "13201217405"
+    url: https://publications.americanalpineclub.org/articles/13201217405
+    title: "Manaslu, South-Southwest Face, New Route"
+  - id: "13201217406"
+    url: https://publications.americanalpineclub.org/articles/13201217406
+    title: "Numbur, southeast face, Nepali Ice Spa"
+  - id: "13201217407"
+    url: https://publications.americanalpineclub.org/articles/13201217407
+    title: "Sumna Himal, first ascent, via the north ridge, north face, and west ridge"
+  - id: "13201217408"
+    url: https://publications.americanalpineclub.org/articles/13201217408
+    title: "Nanga Parbat, Northwest Face, Nezabudka"
+  - id: "13201217409"
+    url: https://publications.americanalpineclub.org/articles/13201217409
+    title: "Chumik Kangri, first ascent, via south face\t"
+  - id: "13201217410"
+    url: https://publications.americanalpineclub.org/articles/13201217410
+    title: "Tirich Mir, West Face, Significant New Variation"
+  - id: "13201217411"
+    url: https://publications.americanalpineclub.org/articles/13201217411
+    title: "Sangar Tower, southwest face; Billee Kangri, northwest face"
+  - id: "13201217412"
+    url: https://publications.americanalpineclub.org/articles/13201217412
+    title: "Hunza Peak, southeast face"
+  - id: "13201217413"
+    url: https://publications.americanalpineclub.org/articles/13201217413
+    title: "Hunza Peak, Historical Ascent of Southeast Face and Southwest Ridge"
+  - id: "13201217414"
+    url: https://publications.americanalpineclub.org/articles/13201217414
+    title: "Eye Ri, first ascent, via northwest face and west ridge; Latok III, southeast ridge, attempt"
+  - id: "13201217415"
+    url: https://publications.americanalpineclub.org/articles/13201217415
+    title: "Cerro El Brujo Sur, South Ridge"
+  - id: "13201217416"
+    url: https://publications.americanalpineclub.org/articles/13201217416
+    title: "Jurau A, Northeast Face, Kuntur"
+  - id: "13201217417"
+    url: https://publications.americanalpineclub.org/articles/13201217417
+    title: "Johannesburg Mountain, Northeast Face, Route 66"
+  - id: "13201217418"
+    url: https://publications.americanalpineclub.org/articles/13201217418
+    title: "Lincoln Peak, X Couloir, First Complete Ski Descent"
+  - id: "13201217419"
+    url: https://publications.americanalpineclub.org/articles/13201217419
+    title: "Mt. Redoubt and Easy Mox, Winter Ascents"
+  - id: "13201217420"
+    url: https://publications.americanalpineclub.org/articles/13201217420
+    title: "Cherireen Sar, first ascent, via west ridge"
+  - id: "13201217421"
+    url: https://publications.americanalpineclub.org/articles/13201217421
+    title: "Khurdopin Sar, First Ascent, Via South Couloir and North Ridge"
+  - id: "13201217422"
+    url: https://publications.americanalpineclub.org/articles/13201217422
+    title: "The Mushroom, Southeast Face, Mother of Exiles"
+  - id: "13201217424"
+    url: https://publications.americanalpineclub.org/articles/13201217424
+    title: "Mt. Redoubt, North Ridge, Calcifer’s Ridge"
+  - id: "13201217425"
+    url: https://publications.americanalpineclub.org/articles/13201217425
+    title: "Whatcom Peak, Southwest Ridge, Imperfect Bypass"
+  - id: "13201217426"
+    url: https://publications.americanalpineclub.org/articles/13201217426
+    title: "Biarchedi I, Southwest Face and South Ridge, Attempt"
+  - id: "13201217427"
+    url: https://publications.americanalpineclub.org/articles/13201217427
+    title: "Laila Peak, Southeast Face"
+  - id: "13201217428"
+    url: https://publications.americanalpineclub.org/articles/13201217428
+    title: "North Peak, North Face, Two New Routes"
+  - id: "13201217429"
+    url: https://publications.americanalpineclub.org/articles/13201217429
+    title: "El Capitan, Free Rider, One-Day Flash Ascent"
+  - id: "13201217430"
+    url: https://publications.americanalpineclub.org/articles/13201217430
+    title: "Hidden Peak, Northwest and South Faces, Nearly to Summit, and Trident South Face Attempt"
+  - id: "13201217431"
+    url: https://publications.americanalpineclub.org/articles/13201217431
+    title: "Hasho Peak II, east pillar and south-southeast ridge"
+  - id: "13201217432"
+    url: https://publications.americanalpineclub.org/articles/13201217432
+    title: "Laila Peak, southeast face, Top-R-oute in the Rock"
+  - id: "13201217433"
+    url: https://publications.americanalpineclub.org/articles/13201217433
+    title: "Nanga Parbat, Schell Route, First Alpine-Style Ascent, and First Ski Descent from Summit"
+  - id: "13201217434"
+    url: https://publications.americanalpineclub.org/articles/13201217434
+    title: "Spantik, east ridge to just below summit "
+  - id: "13201217435"
+    url: https://publications.americanalpineclub.org/articles/13201217435
+    title: "Tumladen Sar, first ascent, via northwest face"
+  - id: "13201217436"
+    url: https://publications.americanalpineclub.org/articles/13201217436
+    title: "Kasi Dalpha, Historical First Ascent"
+  - id: "13201217437"
+    url: https://publications.americanalpineclub.org/articles/13201217437
+    title: "Kanjeralwa, Historical Ascent of South Top"
+  - id: "13201217438"
+    url: https://publications.americanalpineclub.org/articles/13201217438
+    title: "Chhuama I, first ascent, via east-northeast ridge from Chhuama II"
+  - id: "13201217439"
+    url: https://publications.americanalpineclub.org/articles/13201217439
+    title: "Chhuama III, first ascent of a southeasterly top, via the east face"
+  - id: "13201217440"
+    url: https://publications.americanalpineclub.org/articles/13201217440
+    title: "Peak ca 6,280m, historical first ascent, via south face"
+  - id: "13201217441"
+    url: https://publications.americanalpineclub.org/articles/13201217441
+    title: "Pharilapcha, southeast face, Stone(d) Yeti"
+  - id: "13201217442"
+    url: https://publications.americanalpineclub.org/articles/13201217442
+    title: "Peak 6,420m, North-Northeast Ridge"
+  - id: "13201217444"
+    url: https://publications.americanalpineclub.org/articles/13201217444
+    title: "Mt. Crocker, West Pillar, The Crockerdile Tooth"
+  - id: "13201217445"
+    url: https://publications.americanalpineclub.org/articles/13201217445
+    title: "Tehipite Dome, There and Back Again"
+  - id: "13201217446"
+    url: https://publications.americanalpineclub.org/articles/13201217446
+    title: "Bijora Hiunchuli, first ascent, via northeast ridge"
+  - id: "13201217447"
+    url: https://publications.americanalpineclub.org/articles/13201217447
+    title: "Kwangde Nup, northwest face to west ridge, Slovo od Mladosti"
+  - id: "13201217448"
+    url: https://publications.americanalpineclub.org/articles/13201217448
+    title: "Pathibhara Southeast, First Ascent, via Southwest Ridge"
+  - id: "13201217449"
+    url: https://publications.americanalpineclub.org/articles/13201217449
+    title: "Sharphu VI, First Ascent, via East Flank"
+  - id: "13201217450"
+    url: https://publications.americanalpineclub.org/articles/13201217450
+    title: "Shershon, northwest face, new variation"
+  - id: "13201217451"
+    url: https://publications.americanalpineclub.org/articles/13201217451
+    title: "Changla Khang West, first ascent, via southwest ridge"
+  - id: "13201217452"
+    url: https://publications.americanalpineclub.org/articles/13201217452
+    title: "Brahma Satli Central (Cathedral Dome), east flank and southeast ridge"
+  - id: "13201217453"
+    url: https://publications.americanalpineclub.org/articles/13201217453
+    title: "Denyai Tokpo, Two Ascents and One Attempt"
+  - id: "13201217454"
+    url: https://publications.americanalpineclub.org/articles/13201217454
+    title: "Denyai Tokpo, Many First Ascents"
+  - id: "13201217455"
+    url: https://publications.americanalpineclub.org/articles/13201217455
+    title: "Rangtik Tokpo, Shawa Kangri, northwest face, Less is More"
+  - id: "13201217456"
+    url: https://publications.americanalpineclub.org/articles/13201217456
+    title: "Stargyuk Valley, Two First Ascents"
+  - id: "13201217457"
+    url: https://publications.americanalpineclub.org/articles/13201217457
+    title: "Munocho Chhok, southeast face and northeast ridge, attempt"
+  - id: "13201217458"
+    url: https://publications.americanalpineclub.org/articles/13201217458
+    title: "Peak 5,970m, Southeast Face and East Ridge"
+  - id: "13201217459"
+    url: https://publications.americanalpineclub.org/articles/13201217459
+    title: "Lower Bara Shigri, Mapping Irrregularities"
+  - id: "13201217460"
+    url: https://publications.americanalpineclub.org/articles/13201217460
+    title: "Duhangan Valley: Chupa Rustam and Temptation Tower"
+  - id: "13201217461"
+    url: https://publications.americanalpineclub.org/articles/13201217461
+    title: "Longs Peak, Wobbly Baknn Strips"
+  - id: "13201217462"
+    url: https://publications.americanalpineclub.org/articles/13201217462
+    title: "Baspa Valley, Rakcham Plateau: Peak 5,400, northwest face; Ray Peak Fourth Pillar"
+  - id: "13201217463"
+    url: https://publications.americanalpineclub.org/articles/13201217463
+    title: "Ptarmigan Mountain, Towers 2 and 4, Southeast Faces"
+  - id: "13201217464"
+    url: https://publications.americanalpineclub.org/articles/13201217464
+    title: "Bhagirathi II, complete northeast ridge"
+  - id: "13201217465"
+    url: https://publications.americanalpineclub.org/articles/13201217465
+    title: "Giant’s Belly, Lightning and Chunder"
+  - id: "13201217466"
+    url: https://publications.americanalpineclub.org/articles/13201217466
+    title: "West Harsil Horn, Alpine-style second ascent"
+  - id: "13201217467"
+    url: https://publications.americanalpineclub.org/articles/13201217467
+    title: "Iris Peak, southwest face, Karma"
+  - id: "13201217468"
+    url: https://publications.americanalpineclub.org/articles/13201217468
+    title: "Monto II, III, and IV"
+  - id: "13201217469"
+    url: https://publications.americanalpineclub.org/articles/13201217469
+    title: " The Salamander, Baring Point, and Cataract Mountain, New Routes"
+  - id: "13201217470"
+    url: https://publications.americanalpineclub.org/articles/13201217470
+    title: "Wolf Mountain, Northeast Face, Petrified Songs"
+  - id: "13201217471"
+    url: https://publications.americanalpineclub.org/articles/13201217471
+    title: "Cirque of the Moon, Holding Out for a Hero and Other Routes "
+  - id: "13201217472"
+    url: https://publications.americanalpineclub.org/articles/13201217472
+    title: "THE MOUTH, HIGH PLAINS HOEDOWN AND THE EAST FACE"
+  - id: "13201217473"
+    url: https://publications.americanalpineclub.org/articles/13201217473
+    title: "The Grandstand, The Rainbow Bridge"
+  - id: "13201217474"
+    url: https://publications.americanalpineclub.org/articles/13201217474
+    title: "Patterson Bluff, Wedding Wall/Altar, Tying the Knot"
+  - id: "13201217475"
+    url: https://publications.americanalpineclub.org/articles/13201217475
+    title: "Mt. Crocker, North Pillar, Giselle’s Big Advencha"
+  - id: "13201217476"
+    url: https://publications.americanalpineclub.org/articles/13201217476
+    title: "Flatiron Butte, Two New Routes"
+  - id: "13201217477"
+    url: https://publications.americanalpineclub.org/articles/13201217477
+    title: "Livingston Island, Edinburgh Hill"
+  - id: "13201217478"
+    url: https://publications.americanalpineclub.org/articles/13201217478
+    title: "Chameleon Wall, Mercury Miners"
+  - id: "13201217479"
+    url: https://publications.americanalpineclub.org/articles/13201217479
+    title: "Nevado de Chañi, South Face, El Vuelo del Pichón"
+  - id: "13201217480"
+    url: https://publications.americanalpineclub.org/articles/13201217480
+    title: "Cerro Hosco, First Ascent, via East Face"
+  - id: "13201217481"
+    url: https://publications.americanalpineclub.org/articles/13201217481
+    title: "Cajón del Maipo, New Winter Routes"
+  - id: "13201217482"
+    url: https://publications.americanalpineclub.org/articles/13201217482
+    title: "La Oreja, Vía de los Marpla"
+  - id: "13201217483"
+    url: https://publications.americanalpineclub.org/articles/13201217483
+    title: "Central Tower of Paine, Paradigm Shift"
+  - id: "13201217484"
+    url: https://publications.americanalpineclub.org/articles/13201217484
+    title: "El Chaltén Summary, 2025–2026"
+  - id: "13201217485"
+    url: https://publications.americanalpineclub.org/articles/13201217485
+    title: "Cerro Chaltén, East Pillar, First Free Ascent"
+  - id: "13201217486"
+    url: https://publications.americanalpineclub.org/articles/13201217486
+    title: "Kaikiawila and Ngoku, First Ascents"
+  - id: "13201217487"
+    url: https://publications.americanalpineclub.org/articles/13201217487
+    title: "Serra da Leba and Cumbira Segundo, New Routes"
+  - id: "13201217488"
+    url: https://publications.americanalpineclub.org/articles/13201217488
+    title: "Mitsinjoarivo, East Face, Famadihana"
+  - id: "13201217489"
+    url: https://publications.americanalpineclub.org/articles/13201217489
+    title: "Karambony, Tsofa Dombo"
+  - id: "13201217490"
+    url: https://publications.americanalpineclub.org/articles/13201217490
+    title: "Cerro Steffen, West Face"
+  - id: "13201217491"
+    url: https://publications.americanalpineclub.org/articles/13201217491
+    title: "Cerro Socavones, First Ascent, via West Face and Northwest Ridge"
+  - id: "13201217493"
+    url: https://publications.americanalpineclub.org/articles/13201217493
+    title: "Pedra da Fortaleza, A Resistência, Free Ascent"
+  - id: "13201217494"
+    url: https://publications.americanalpineclub.org/articles/13201217494
+    title: "Pedra Riscada, East Face, Brasiliana"
+  - id: "13201217497"
+    url: https://publications.americanalpineclub.org/articles/13201217497
+    title: "Pic Dondy, East Face, Regicide"
+  - id: "13201217498"
+    url: https://publications.americanalpineclub.org/articles/13201217498
+    title: "Pedra Riscada, Northwest Face, Folia do Divino"
+  - id: "13201217500"
+    url: https://publications.americanalpineclub.org/articles/13201217500
+    title: "Aegir Peak, Aegir Sanction"
+  - id: "13201217501"
+    url: https://publications.americanalpineclub.org/articles/13201217501
+    title: "The Rimwall, On the Wings of Maybe"
+  - id: "13201217502"
+    url: https://publications.americanalpineclub.org/articles/13201217502
+    title: "Four New Routes"
+  - id: "13201217503"
+    url: https://publications.americanalpineclub.org/articles/13201217503
+    title: "Mt. Chephren, East Face, Snafflehound Spine"
+  - id: "13201217504"
+    url: https://publications.americanalpineclub.org/articles/13201217504
+    title: "Gilt Peak from the South, The Cedar Room"
+  - id: "13201217505"
+    url: https://publications.americanalpineclub.org/articles/13201217505
+    title: "Middle Huey Spire, L’oro dello Yukon"
+  - id: "13201217506"
+    url: https://publications.americanalpineclub.org/articles/13201217506
+    title: "The Rimwall, Iron Tears"
+  - id: "13201217507"
+    url: https://publications.americanalpineclub.org/articles/13201217507
+    title: "Mt. Robson, South Face, Ski Descent"
+  - id: "13201217508"
+    url: https://publications.americanalpineclub.org/articles/13201217508
+    title: "Red Alert Wall, Time "
+  - id: "13201217509"
+    url: https://publications.americanalpineclub.org/articles/13201217509
+    title: "Castle Mountain, Northwest Headwall, Confessions of a Choss Gobbler"
+  - id: "13201217510"
+    url: https://publications.americanalpineclub.org/articles/13201217510
+    title: "Merriam Peak and Granite Park, Dr. Bear Love Free and Other Routes"
+  - id: "13201217511"
+    url: https://publications.americanalpineclub.org/articles/13201217511
+    title: "Lake Basin, Hershey’s Kiss, Three New Routes"
+  - id: "13201217512"
+    url: https://publications.americanalpineclub.org/articles/13201217512
+    title: "Four Gables, Southeast Face, Shits and Glitters"
+  - id: "13201217513"
+    url: https://publications.americanalpineclub.org/articles/13201217513
+    title: "The Candlestick, West Face"
+  - id: "13201217514"
+    url: https://publications.americanalpineclub.org/articles/13201217514
+    title: "Mt. Emerson, North Face, Lost and Found"
+  - id: "13201217515"
+    url: https://publications.americanalpineclub.org/articles/13201217515
+    title: "Mt. Goode, East Face, The Goode, the Grateful, and the Ganja!"
+  - id: "13201217516"
+    url: https://publications.americanalpineclub.org/articles/13201217516
+    title: "Sermersoq Island, Glacier Peak, Le Sang du Cri"
+  - id: "13201217517"
+    url: https://publications.americanalpineclub.org/articles/13201217517
+    title: "Sermiligaaq Fjord, Various Routes"
+  - id: "13201217518"
+    url: https://publications.americanalpineclub.org/articles/13201217518
+    title: "Freya Peak, Northwest Face; Mini-Asgard, La Casa de las Diosas"
+  - id: "13201217519"
+    url: https://publications.americanalpineclub.org/articles/13201217519
+    title: "Sikunga Mountain, West Face, Sikunga Express "
+  - id: "13201217520"
+    url: https://publications.americanalpineclub.org/articles/13201217520
+    title: "Mont de l’Equerre, Les Chercheurs d’Or"
+  - id: "13201217521"
+    url: https://publications.americanalpineclub.org/articles/13201217521
+    title: "Mont de l’Equerre, La Pomme d’Adam"
+  - id: "13201217522"
+    url: https://publications.americanalpineclub.org/articles/13201217522
+    title: "Eglinton Tower, Northwest Buttress, Lemnos in the Clouds"
+  - id: "13201217523"
+    url: https://publications.americanalpineclub.org/articles/13201217523
+    title: "Recent Mountaineering Developments in Parts of Tibet"
+  - id: "13201217524"
+    url: https://publications.americanalpineclub.org/articles/13201217524
+    title: "Karjiang, Second Ascent"
+  - id: "13201217525"
+    url: https://publications.americanalpineclub.org/articles/13201217525
+    title: "Nerutusôq Glacier and Fork Beard Glacier, Seven First Ascents"
+  - id: "13201217526"
+    url: https://publications.americanalpineclub.org/articles/13201217526
+    title: "Genyen Range, Two First Ascents"
+  - id: "13201217527"
+    url: https://publications.americanalpineclub.org/articles/13201217527
+    title: "Guoraka Ri, north top, north face"
+  - id: "13201217528"
+    url: https://publications.americanalpineclub.org/articles/13201217528
+    title: "Kangmi Kangri, northwest ridge and northwest face"
+  - id: "13201217529"
+    url: https://publications.americanalpineclub.org/articles/13201217529
+    title: "Lotus Flower Mountain, north face"
+  - id: "13201217530"
+    url: https://publications.americanalpineclub.org/articles/13201217530
+    title: "Minya Konka, north spur and northeast ridge, ascent to highest point"
+  - id: "13201217531"
+    url: https://publications.americanalpineclub.org/articles/13201217531
+    title: "Nyanchen Tanglha East, Sendho, first ascent, via east face"
+  - id: "13201217532"
+    url: https://publications.americanalpineclub.org/articles/13201217532
+    title: "Siguniang, north ridge"
+  - id: "13201217533"
+    url: https://publications.americanalpineclub.org/articles/13201217533
+    title: "Xue Yue Feng, climbs from the west "
+  - id: "13201217534"
+    url: https://publications.americanalpineclub.org/articles/13201217534
+    title: "Lochari, north ridge; Rimuza, north face"
+  - id: "13201217535"
+    url: https://publications.americanalpineclub.org/articles/13201217535
+    title: "Ikamiut Fjord, Three New Routes "
+  - id: "13201217536"
+    url: https://publications.americanalpineclub.org/articles/13201217536
+    title: "Graahs Fjord and Skjoldungen, Various Ascents"
+  - id: "13201217537"
+    url: https://publications.americanalpineclub.org/articles/13201217537
+    title: "Ulamertorssuaq, Northwest Face, Big Kumura; Honey Buttress, Manuka"
+  - id: "13201217538"
+    url: https://publications.americanalpineclub.org/articles/13201217538
+    title: "Titan II, Southwest Face"
+  - id: "13201217539"
+    url: https://publications.americanalpineclub.org/articles/13201217539
+    title: "Upernavik and Other Areas, Six Historical Ascents"
+  - id: "13201217541"
+    url: https://publications.americanalpineclub.org/articles/13201217541
+    title: "Demirkazik, North Face, Close to Heaven"
+  - id: "13201217542"
+    url: https://publications.americanalpineclub.org/articles/13201217542
+    title: "Jebel Nassrani North, Land and Freedom"
+  - id: "13201217543"
+    url: https://publications.americanalpineclub.org/articles/13201217543
+    title: "Chegem Peak, Forostyan Route, All-Female Ascent"
+  - id: "13201217544"
+    url: https://publications.americanalpineclub.org/articles/13201217544
+    title: "Ushba South, Myshlyaev Route, All-Women’s Ascent "
+  - id: "13201217545"
+    url: https://publications.americanalpineclub.org/articles/13201217545
+    title: "Gulba, Southwest Pillar, Pferderennen02"
+  - id: "13201217546"
+    url: https://publications.americanalpineclub.org/articles/13201217546
+    title: "Mizhirgi West, Southwest Buttress "
+  - id: "13201217547"
+    url: https://publications.americanalpineclub.org/articles/13201217547
+    title: "Shkhara, South Face, Winter attempt and new variation to south-southeast ridge"
+  - id: "13201217550"
+    url: https://publications.americanalpineclub.org/articles/13201217550
+    title: "Nevado Santa Cruz, South Face, Illegal"
+  - id: "13201217551"
+    url: https://publications.americanalpineclub.org/articles/13201217551
+    title: "Cerro Brechón, Northeast Ridge, Filo del Huemul"
+  - id: "13201217552"
+    url: https://publications.americanalpineclub.org/articles/13201217552
+    title: "Torres del Paine, 2025–2026 Summary"
+  - id: "13201217558"
+    url: https://publications.americanalpineclub.org/articles/13201217558
+    title: "Huandoy Este, Northeast Face, Sudor Peruano"
+  - id: "13201217559"
+    url: https://publications.americanalpineclub.org/articles/13201217559
+    title: "Urus Central, Southwest Face, Variation"
+  - id: "13201217560"
+    url: https://publications.americanalpineclub.org/articles/13201217560
+    title: "Santa Cruz Chico, West Face"
+  - id: "13201217561"
+    url: https://publications.americanalpineclub.org/articles/13201217561
+    title: "Urus Oeste, Vuelta Austral"
+  - id: "13201217562"
+    url: https://publications.americanalpineclub.org/articles/13201217562
+    title: "Urus Oeste Group, Mi Carnal and Suspiro del Quenual  "
+  - id: "13201217563"
+    url: https://publications.americanalpineclub.org/articles/13201217563
+    title: "Nevado Churup, Hacia Rutas Salvajes"
+  - id: "13201217565"
+    url: https://publications.americanalpineclub.org/articles/13201217565
+    title: "Nevado Cashán Oeste, Northeast Face, Carlos Suarez "
+  - id: "13201217566"
+    url: https://publications.americanalpineclub.org/articles/13201217566
+    title: "Nevado Yerupajá, East Face, Attempt; Jirishanca, Southeast Face, Kolibri"
+  - id: "13201217567"
+    url: https://publications.americanalpineclub.org/articles/13201217567
+    title: "Nevado Mururaju, South Face, Con Mucha Lechuga "
+  - id: "13201217568"
+    url: https://publications.americanalpineclub.org/articles/13201217568
+    title: "Nevado Palcaraju, South Face"
+  - id: "13201217569"
+    url: https://publications.americanalpineclub.org/articles/13201217569
+    title: "Puscanturpa Este, Galdu Eta Irabazi"
+  - id: "13201217570"
+    url: https://publications.americanalpineclub.org/articles/13201217570
+    title: "Nevado Verdish-Ventanilla, Aychana"
+  - id: "13201217571"
+    url: https://publications.americanalpineclub.org/articles/13201217571
+    title: "Machu Riti, South Face"
+  - id: "13201217572"
+    url: https://publications.americanalpineclub.org/articles/13201217572
+    title: "Nevado Pumanota and Other Peaks"
+  - id: "13201217573"
+    url: https://publications.americanalpineclub.org/articles/13201217573
+    title: "Alpomish, Northwest Face"
+  - id: "13201217576"
+    url: https://publications.americanalpineclub.org/articles/13201217576
+    title: "Wall of Dykes, The Game of Forty"
+  - id: "13201217577"
+    url: https://publications.americanalpineclub.org/articles/13201217577
+    title: "Djangart Range, Four Ascents "
+  - id: "13201217578"
+    url: https://publications.americanalpineclub.org/articles/13201217578
+    title: "Chokko Zemleprohodtsev, Northeast Face"
+  - id: "13201217579"
+    url: https://publications.americanalpineclub.org/articles/13201217579
+    title: "Dioskury Peak, North Face, Direct Route "
+  - id: "13201217580"
+    url: https://publications.americanalpineclub.org/articles/13201217580
+    title: "Nura Valley, Climbs and Attempts"
+  - id: "13201217581"
+    url: https://publications.americanalpineclub.org/articles/13201217581
+    title: "Peak 4,300, Phillar of Experience"
+  - id: "13201217582"
+    url: https://publications.americanalpineclub.org/articles/13201217582
+    title: "Svarog, North Face, New Route"
+  - id: "13201217583"
+    url: https://publications.americanalpineclub.org/articles/13201217583
+    title: "Yellow Wall, East Face"
+  - id: "13201217584"
+    url: https://publications.americanalpineclub.org/articles/13201217584
+    title: "Breitinden, North Face, Rainborn"
+  - id: "13201217585"
+    url: https://publications.americanalpineclub.org/articles/13201217585
+    title: "Breiflogtinden and Kråkhammartinden, New Routes"
+  - id: "13201217586"
+    url: https://publications.americanalpineclub.org/articles/13201217586
+    title: "Atomfjella, Extended Ski Tour and Various Ascents"
+  - id: "13201217587"
+    url: https://publications.americanalpineclub.org/articles/13201217587
+    title: "Kvaløya Island, Tromma, En tare for Mikaelsso and Other Routes"
+  - id: "13201217588"
+    url: https://publications.americanalpineclub.org/articles/13201217588
+    title: "Asatiani, East Face, Imnaishvili, and Archil Peak, First Ascent"
+  - id: "13201217589"
+    url: https://publications.americanalpineclub.org/articles/13201217589
+    title: "Chaukhi Range, Second Traverse"
+  - id: "13201217590"
+    url: https://publications.americanalpineclub.org/articles/13201217590
+    title: "Mt. Everest: Two Major Ski Descents"
+  - id: "13201217592"
+    url: https://publications.americanalpineclub.org/articles/13201217592
+    title: "The Alps: New Routes on Forgotten Faces"
+  - id: "13201217593"
+    url: https://publications.americanalpineclub.org/articles/13201217593
+    title: "Spang Nala Glacier to Mantang Glacier Traverse and Various Ascents"
+  - id: "13201217594"
+    url: https://publications.americanalpineclub.org/articles/13201217594
+    title: "Barmal Glacier: A Forgotten Trek and Unclimbed Summits"
+  - id: "13201217595"
+    url: https://publications.americanalpineclub.org/articles/13201217595
+    title: "Satling Glacier, Brahmasar Attempt and Point Walkers, West Ridge"
+  - id: "13201217596"
+    url: https://publications.americanalpineclub.org/articles/13201217596
+    title: "Meru, West Face, Variations and Historical Notes"
+  - id: "13201217598"
+    url: https://publications.americanalpineclub.org/articles/13201217598
+    title: "Mt. Beulah, Southeast Face, Particle Accelerator Couloir"
+  - id: "13201217599"
+    url: https://publications.americanalpineclub.org/articles/13201217599
+    title: "The Gunsight, Time"
+  - id: "13201217600"
+    url: https://publications.americanalpineclub.org/articles/13201217600
+    title: "Mt. Wilson, Aeolian Wall, Wind God Tower"
+  - id: "13201217601"
+    url: https://publications.americanalpineclub.org/articles/13201217601
+    title: "Mt. Wilson, Horseshoe Wall, Fin Baggin' Society"
+  - id: "13201217602"
+    url: https://publications.americanalpineclub.org/articles/13201217602
+    title: "Skalisty Range Limestone, Overview and Recent Ascents"
+  - id: "13201217603"
+    url: https://publications.americanalpineclub.org/articles/13201217603
+    title: "El Capitan, Cardiac Arrest, Solo First Ascent"
+  - id: "13201217604"
+    url: https://publications.americanalpineclub.org/articles/13201217604
+    title: "Six New Wall Routes in Two Seasons"
+  - id: "13201217605"
+    url: https://publications.americanalpineclub.org/articles/13201217605
+    title: "Keeler Needle, Stoned Ape Hypothesis"
+  - id: "13201217606"
+    url: https://publications.americanalpineclub.org/articles/13201217606
+    title: "Mt. Le Conte, Iridescent Wall, Buns of Steel"
+  - id: "13201217607"
+    url: https://publications.americanalpineclub.org/articles/13201217607
+    title: "Miter Basin, Six New Routes"
+  - id: "13201217608"
+    url: https://publications.americanalpineclub.org/articles/13201217608
+    title: "The Potato, Northwest Face, Baked and Loaded"
+  - id: "13201217609"
+    url: https://publications.americanalpineclub.org/articles/13201217609
+    title: "Cobb Peak, South Ridge"
+  - id: "13201217610"
+    url: https://publications.americanalpineclub.org/articles/13201217610
+    title: "Jebel Um Ejil and Jebel Rum, Many New Routes"
+  - id: "13201217611"
+    url: https://publications.americanalpineclub.org/articles/13201217611
+    title: "Goat Mountain, East Face"
+  - id: "13201217612"
+    url: https://publications.americanalpineclub.org/articles/13201217612
+    title: "Litner Group, Many First Ascents"
+  - id: "13201217613"
+    url: https://publications.americanalpineclub.org/articles/13201217613
+    title: "Alpine Report 2025"
+  - id: "13201217614"
+    url: https://publications.americanalpineclub.org/articles/13201217614
+    title: "Mukatila, Jebel Nassrani South"
+  - id: "13201217615"
+    url: https://publications.americanalpineclub.org/articles/13201217615
+    title: "Eleven New Routes in Oman"
+  - id: "13201217616"
+    url: https://publications.americanalpineclub.org/articles/13201217616
+    title: "12 First Ascents in Saudi Arabia"
+  - id: "13201217617"
+    url: https://publications.americanalpineclub.org/articles/13201217617
+    title: "Mt. Crosson Group Ski Traverse"
+  - id: "13201217618"
+    url: https://publications.americanalpineclub.org/articles/13201217618
+    title: "Stutfield Peak East, East Ridge, No Fiesta, No Siesta"

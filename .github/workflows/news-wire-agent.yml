@@ -48,7 +48,7 @@ jobs:
 
           Sources only: https://www.worldclimbing.com , https://www.theuiaa.org , https://www.planetmountain.com , https://www.climbing.com , https://www.desnivel.com , https://www.ukclimbing.com/news/ , https://alpinist.com/newswire/ , https://explorersweb.com (climbing/expeditions/8000ers) , DAV Expedkader + CAI Lo Scarpone expedition reports , https://publications.americanalpineclub.org/ (AAJ Climbs and Expeditions)
 
-          First series only: last 1 hour. Later series: all unseen items published since last_run_utc in `_data/news-wire-state.yml` (catch up the full gap; do not use a 1-hour window). Write short original Persian summaries, triple-review (facts / language / policy), log passes in `_seo/news-wire-log.md`, append URLs to `_data/news-wire-seen.yml`. Always update news-wire-state.yml.
+          First series only: last 1 hour. Later series: all unseen items published since last_run_utc in `_data/news-wire-state.yml` (catch up the full gap; do not use a 1-hour window). For the nine short-summary sources: short original Persian summaries. For AAJ 2026 only: complete translations, oldest remaining first, **two per GMT slot** from `_data/aaj-backfill.yml` (no catch-up dump; no 2025). Triple-review (facts / language / policy), log passes in `_seo/news-wire-log.md`, append URLs to `_data/news-wire-seen.yml`. Always update news-wire-state.yml.
 
           Skip child-sexual-abuse stories, unverified facts, duplicates, and verbatim English pastes. No photos from those sites. Do not invent live-event results without a source article.
 
