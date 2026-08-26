@@ -43,6 +43,9 @@ items:
   - source: Climbing.com
     source_url: https://www.climbing.com/news/rumney-close-call-wildfire-other-climbing-crags-not-so-lucky/
     slug: 2026-08-25-climbing-rumney-wildfire
+  - source: Desnivel
+    source_url: https://www.desnivel.com/alpinismo/thomas-huber-miquel-mas-y-victor-sans-primera-ascension-a-la-biacherahi-central-5700-m-karakorum/
+    slug: 2026-08-26-desnivel-biacherahi-central-wild-soul
 
 # Seen by the wire but not published. Skip on later runs.
 skipped:
