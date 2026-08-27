@@ -127,4 +127,11 @@ Owner follow-up left: Cloudflare Email Routing MX is present but routing is unco
 - This slot adds two unique news URLs (Chuchepo, Jiongmudazhi) with remote AAJ covers; `_pages/llms.txt` and `_pages/webmcp-catalog.json` are collection-driven so the build lists them. No logbook/news body rewrite for keywords.
 - No template/CSS SEO edit. Ship with the news-wire PR + `published` overlay.
 
+## 2026-08-27 06:00 GMT — news-wire slot SEO (job 4)
+
+- Sources consulted: same Google Search Central starter pattern as the 00:00 slot; no material change to crawl signals.
+- Live origin still the GitHub Pages placeholder; audit uses `published` raw HTML.
+- This slot adds two unique news URLs (Manamcho, Chomolhari III) with remote AAJ covers, unique titles/descriptions, `lang=fa-IR`/`dir=rtl`. `llms.txt` / sitemap / webmcp catalog are collection-driven.
+- Logbook hub still has two H1s (pre-existing) — not churned. No logbook/news body rewrite for keywords. No template/CSS SEO edit.
+
 

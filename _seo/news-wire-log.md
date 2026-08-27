@@ -815,3 +815,41 @@ Fetched every `source_url` except PlanetMountain (403). No process-note leftover
 ### Job 4 — SEO
 
 See `_seo/daily-log.md` 2026-08-27 00:00 GMT. No template change. New AAJ notes have unique title/description; `llms.txt` and webmcp catalog are collection-driven and pick them up at build.
+
+## 2026-08-27 06:00 GMT — scheduled slot (since previous run)
+
+Window: `2026-08-27T00:11:00Z` → this run. Fetched UIAA RSS, Climbing.com RSS, Desnivel category RSS (competiciones feed returned HTTP 202 empty; others 200), ExplorersWeb climbing/expeditions/8000ers, Alpinist `/feed/`, World Climbing / IFSC `/news`, PlanetMountain 403, UKClimbing `/news/` 403, DAV press + Expedkader, CAI Lo Scarpone, AAJ `/articles`, Laval event page (no results article).
+
+Job 1 — no in-window non-duplicate item to publish.
+
+Logged-but-skip:
+- ExplorersWeb Dolomites hanging-climber still `2026-08-26T18:00:06Z` (before this window and before previous `last_run_utc`).
+- CAI Lo Scarpone 27.08.2026 Cedegolo section note «Ai piedi del Pi…» — local section, not a spedizioni report.
+- DAV press newest still 26.08 Klimakrise — not Expedkader.
+- PlanetMountain / UKC 403. Search snippets: Pearce/Rogora already covered; UKC Glen Lyon 19 Aug and older Friday-night vids — outside window.
+- Laval Europe Championship event page has i18n «Event Winners» copy and `/news/index` only. No athlete names, no scores. Event is **28–30 Aug 2026** — do not invent live results.
+- AAJ listing newest still `13201217620` (Published 2024, not 2026). `13201217618` already at end of remaining.
+
+### AAJ 13201217323 Manamcho, Southwest Ridge and Face (complete translation)
+
+Source: https://publications.americanalpineclub.org/articles/13201217323 — Xia Zhongming, Germany; China, Tibet, Nyanchen Tanglha East; Climb Year 2024; Publication Year 2026. File: `_news/2026-08-27-aaj-manamcho-southwest-ridge.md` dated 2026-08-27 09:30 +0330 (5 Shahrivar 1405).
+
+1. Facts: Kajaqiao 6447 m FA 2005 Fowler–Watts; Manamcho 6264 m 30°29′45.42″N 93°27′41.10″E; Amos–Thomas 2005 to 5880 m GPS NW ridge; FA 2007 Fowler–Ramsden NW ridge. Liu Junfu + Wang Shuai 2024. 4 Sep Lhasa, 7 Sep Lhari County; village 30°37′7.67″N 93°24′12.48″E; no yaks/porters; drone on glacier to south face; BC 5600 m; Liu recon col at foot of SW ridge. 10 Sep 5 a.m.; snow then cleared; glacier AI2; three pitches above col including verglassed slab; left onto face, slabby corner 10 m no pro; rockfall back to ridge; 6100 m compact 4–5 m slab, ice tool thrown as hook after >10 tries; 14 pitches; summit then descent; BC 9 p.m.; 11 Sep glacier to road, Lhasa evening. 700 m M5 AI2. Jalali 4/7/10/11 Sep 2024 = 14/17/20/21 Shahrivar 1403. Cover + five S3 photos (Lai Xingzhu / Liu–Wang). PASS.
+2. Language: complete original Persian; peak/route/people Latin; no مترجم/نویسنده. PASS.
+3. Policy: complete translation; journal photo URLs; source linked; unique description; URL in seen.yml; 2026 only. PASS.
+
+### AAJ 13201217364 Chomolhari III, First Ascent, via North Spur (complete translation)
+
+Source: https://publications.americanalpineclub.org/articles/13201217364 — He Lang, China; China, Tibet, Bhutan Himalaya; Climb Year 2025; Publication Year 2026. File: `_news/2026-08-27-aaj-chomolhari-iii-north-spur.md` dated 2026-08-27 09:32 +0330.
+
+1. Facts: 6706 m 27°51′11.73″N 89°18′2.24″E China–Bhutan border. Feb 2025 Fu Youngpeng (source spelling) + Liu Yang to 6000 m north spur, strong cold wind. July return: Liu, Song Yuancheng, He Lang. Start 23 Jul night, simul lower half (avalanche exposure); dawn past February high point; three rock-band cruxes; 3 p.m. first band after 19 h; early bivy 6200 m sitting, spindrift, no sleep. 25th second band M4/M5; cave bivy 6450 m in third band. Summit day deep collapsing snow; He three lines fail; Liu firmer line, final crux; cornice right; summit just after midday. Down to top bivy one more night; 27th down to top of second band then rappels, abandoned cams; Liu HACE symptoms; rappels continue below 6000 m; BC morning 28th. 1400 m The Shining Wall AI2 M5 70° snow; each member free-climbed every pitch. Notes on group: Chomolhari 7326 m FA 1937 Chapman + Pasang Dawa Sherpa SE spur/S ridge Bhutan, no crampons; Chomolhari II / Tserimkang 6972 m west top unclimbed, east top ca 6922 m Slovenian 2006 NW face. Jalali 23–28 Jul 2025 = 1–6 Mordad 1404. Cover + six extra S3 photos. PASS.
+2. Language: first person kept as the journal author’s voice after «از زبان هی لانگ»; names Latin; HACE as ادم مغزی ارتفاع (HACE). PASS.
+3. Policy: complete translation including the Chomolhari-group notes; no process notes; journal URLs; URL in seen.yml. Queue: remaining **221**; next ids 13201217365 Bel Uluu Valley, 13201217378 Arches Peak; next_slot_utc 2026-08-27T12:00:00Z. PASS.
+
+### Job 3 — re-check live `_news/` (20 files after this slot’s two drafts)
+
+No `کپی نکردم` / مترجم / «خبر را اینجا» in `_news/`. PlanetMountain Rogora still 403 — left unchanged. Laval still has no posted results. Sampled last slot’s AAJ Chuchepo/Jiong facts against saved HTML; no body edits to prior posts this slot.
+
+### Job 4 — SEO
+
+See `_seo/daily-log.md` 2026-08-27 06:00 GMT. No template change.
