@@ -9,24 +9,24 @@ per_slot: 2
 timezone: UTC
 slots_gmt: [0, 6, 12, 18]
 kickoff_count: 1
-next_slot_utc: "2026-08-27T00:00:00Z"
-last_publish_date: "2026-08-26"
-published_on_last_date: 1
-remaining_count: 225
+next_slot_utc: "2026-08-27T06:00:00Z"
+last_publish_date: "2026-08-27"
+published_on_last_date: 2
+remaining_count: 223
 next_ids:
-  - "13201217321"  # Chuchepo, First Ascent, via Northeast Face
-  - "13201217322"  # Jiongmudazhi, First Ascent, via Northwest Face
+  - "13201217323"  # Manamcho, Southwest Ridge and Face
+  - "13201217364"  # Chomolhari III, First Ascent, via North Spur
 published:
   - id: "13201217320"
     slug: 2026-08-26-aaj-sir-duk-west-shoulder
     date: "2026-08-26"
-remaining:
   - id: "13201217321"
-    url: https://publications.americanalpineclub.org/articles/13201217321
-    title: "Chuchepo, First Ascent, via Northeast Face"
+    slug: 2026-08-27-aaj-chuchepo-northeast-face
+    date: "2026-08-27"
   - id: "13201217322"
-    url: https://publications.americanalpineclub.org/articles/13201217322
-    title: "Jiongmudazhi, First Ascent, via Northwest Face"
+    slug: 2026-08-27-aaj-jiongmudazhi-northwest-face
+    date: "2026-08-27"
+remaining:
   - id: "13201217323"
     url: https://publications.americanalpineclub.org/articles/13201217323
     title: "Manamcho, Southwest Ridge and Face"

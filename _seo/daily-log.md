@@ -118,4 +118,13 @@ Owner follow-up left: Cloudflare Email Routing MX is present but routing is unco
 - `_news/` and `_logbook/` files were not edited in this run.
 - Loop stays paused until Cursor billing + Automation / `CURSOR_API_KEY`.
 
+## 2026-08-27 00:00 GMT — news-wire slot SEO (job 4)
+
+- Sources consulted: Google Search Central SEO starter (`developers.google.com/search/docs/fundamentals/seo-starter-guide`); no material change vs last published-branch snapshot for this site’s tags/canonical/JSON-LD pattern.
+- Live origin `https://logbook.rocks/*` is still the GitHub Pages placeholder (~1.7 KB) — expected while Actions billing is locked. Audit used `https://raw.githubusercontent.com/KavehRS/logbook.rocks/published/` HTML.
+- Published snapshot: home/news/logbook each have unique title + meta description, `lang=fa-IR` `dir=rtl`, canonical on this domain, single H1 on home and news. Logbook hub still has **two H1s** (pre-existing collection heading + page title) — not churned this slot.
+- `robots.txt` still points at sitemap + llms.txt; sitemap 41 URLs (17 news / 23 logbook) before this slot’s two AAJ notes.
+- This slot adds two unique news URLs (Chuchepo, Jiongmudazhi) with remote AAJ covers; `_pages/llms.txt` and `_pages/webmcp-catalog.json` are collection-driven so the build lists them. No logbook/news body rewrite for keywords.
+- No template/CSS SEO edit. Ship with the news-wire PR + `published` overlay.
+
 

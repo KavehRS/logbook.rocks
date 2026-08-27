@@ -777,3 +777,41 @@ Owner restated the GMT 00/06/12/18 slot. Each cycle, in order: (1) complete tran
 Owner: do not put what the agent did or didn’t do in the article («عکسی کپی نکردم»). «فقط متن رو خلاصه کنی» = only the source text in the body, not agent process notes, not a two-sentence stub. If there is no local file, use the source article’s own photo URLs.
 
 Applied to all live `_news/` posts: stripped process asides; set `image:` and in-body figures from each `source_url` (AAJ S3, Desnivel `/images/`, Climbing.com CDN, IFSC/World Climbing, UIAA wp-content). PlanetMountain HTML still 403 — no photo URL confirmed, so that item still has no `image:`. Rules/skills/automations/workflow match. `last_run_utc` unchanged.
+
+## 2026-08-27 00:00 GMT — scheduled slot (since previous run)
+
+Window: `2026-08-26T18:01:42Z` → this run. Fetched UIAA RSS, Climbing.com RSS, Desnivel category RSS (alpinismo/roca/competiciones/expediciones/hielo/búlder), ExplorersWeb climbing/expeditions/8000ers RSS, Alpinist `/feed/`, World Climbing / IFSC `/news`, PlanetMountain HTML 403, UKClimbing `/news/` 403, DAV press + Expedkader HTML, CAI Lo Scarpone HTML, AAJ `/articles` listing.
+
+Job 1 — no in-window non-duplicate item to publish.
+
+Logged-but-skip:
+- ExplorersWeb «Climber Stuck Hanging From Dolomites Spire» pubDate `Wed, 26 Aug 2026 18:00:06 +0000` — 96 seconds **before** `last_run_utc`. Strict window. URL `https://explorersweb.com/climber-stuck-hanging-from-dolomites-spire/` not in seen.yml and not added to skipped (so it is not a policy skip).
+- DAV press 26.08.2026 «Klimakrise am Berg» — not an Expedkader / expedition report.
+- CAI Lo Scarpone 26.08.2026 Piolets d’Or / Habeler prize roundup — not a CAI spedizioni report.
+- PlanetMountain 403; UKC 403. Search listings show no new 26–27 Aug article beyond already-seen Biacherahi.
+- World Climbing newest still Ostermundigen 24 Aug recap (already published). Laval Europe Championship is **28–30 Aug 2026** on that recap — do not invent live results.
+- AAJ listing newest `13201217620` Kilian Jornet Alps traverse, listing **Published 2024** — not publication year 2026; not appended to remaining. `13201217618` already in remaining.
+
+### AAJ 13201217321 Chuchepo, Northeast Face (complete translation)
+
+Source: https://publications.americanalpineclub.org/articles/13201217321 — Xia Zhongming, Germany; China, Tibet, Nyanchen Tanglha East; Climb Year 2024; Publication Year 2026. File: `_news/2026-08-27-aaj-chuchepo-northeast-face.md` dated 2026-08-27 03:30 +0330 (5 Shahrivar 1405).
+
+1. Facts: Nenang 6870 m unclimbed, second-highest in the east / highest unclimbed; Sepu Kangri 6956 m FA 2002 American; 2007 Anglo-American to 6570 m SE ridge from south. Chuchepo 6613 or 6650 m, 30°17′45.84″N 93°32′47.46″E; sister peak spelled **Jiongmudashi** in this note (6590 m, 30°17′36.74″N 93°46′50.55″E). Both in AAJ 2007; NZ permit refused years earlier; no known attempts until Aug 2024. Tong Haijun + Wang Yongpeng, direct NE face. 16 Aug from Niwu north, ~3900 m end of Aigagon (Yiga) Glacier; seracs right; steep broken rock; ABC 5300 m after 11 h. Next day 7 h glacier to 5900 m camp. 18 Aug 3 a.m.; bergschrund 1 h later (loose snow + 4–5 m vertical ice); 6230 m before sunrise; Wang thin-ice/compact-rock pitch; Tong run-out snow-covered compact rock; Tong tunneled cornice, left to stable high point. 700 m D+ M4 AI3 75°. Buried axe first rappel; 5900 m camp 2 p.m.; 19 Aug four rappels on rock, Yiga 6:30 p.m. Jalali 16/18/19 Aug 2024 = 26/28/29 Mordad 1403 (corrected from an off-by-one draft). In-article slab caption photographer kept as printed **Tang Haijun**. Cover + six S3 photos from the journal. PASS.
+2. Language: complete original Persian of every narrative paragraph; peak/route/people Latin; no مترجم/نویسنده. PASS.
+3. Policy: complete translation not a stub; source photos via journal URLs; source linked; unique description; URL in seen.yml; 2026 only; oldest remaining first. PASS.
+
+### AAJ 13201217322 Jiongmudazhi, Northwest Face (complete translation)
+
+Source: https://publications.americanalpineclub.org/articles/13201217322 — same author/years/range. File: `_news/2026-08-27-aaj-jiongmudazhi-northwest-face.md` dated 2026-08-27 03:32 +0330.
+
+1. Facts: less than a month after Chuchepo; 6590 m, same coords as the sister peak in the Chuchepo note; 35 km NNW of Basong Lake; head of western Lamayalung branch; AAJ 2007 photo, no known attempts. Approach Niwu / Yiga 3900 m / Biyong Glacier north. 7 Sep from 4300 m cow shed; 3 h to **800-meter-wide** icefall (width, not height) in steep cliffs; 100 m powder-fine scree to woods/meadow 5000 m camp; woods like 5.9, >2 h for <200 m. 8 Sep left of glacier, scree, icy slopes to top of icefall; camp 2 at 5855 m. Next morning 3 a.m.; poor vis, heavy snow; NW face left of fall-line. Tong 5 m vertical ice then deep snow; Wang pitches 2–3 slanting right; simul then 20 m vertical no pro. Sofa-size ice block from serac <50 m at dawn; mist cleared, true summit right. Summit 11 a.m., 20 min rest, Abalakov descent; first camp 5 p.m.; Yiga next day. 800 m NW face D+ M3 AI3 75°. Jalali 7–9 Sep 2024 = 17–19 Shahrivar 1403. Three S3 photos. Body links the Chuchepo translation for the journal’s “see report here”. PASS.
+2. Language: complete original Persian; understatement of the glacial approach kept as کم‌گویی. PASS.
+3. Policy: same as Chuchepo. Queue: remaining 223; next ids 13201217323 Manamcho, 13201217364 Chomolhari III; next_slot_utc 2026-08-27T06:00:00Z. PASS.
+
+### Job 3 — re-check live `_news/` (18 files)
+
+Fetched every `source_url` except PlanetMountain (403). No process-note leftovers (`کپی نکردم` / CORS / «خبر را اینجا»). Cover `image:` present on all except Rogora (still 403, no confirmed photo URL). Sampled facts still match: Simond SKUs 4051175/4051176/4171656/5499689/5500194 and sales window; Ostermundigen recap 37+ / 35+ / 33 and 45 / 39+ / Utelli 38, Laval **28–30 Aug** (not invented as results); Sir Duk heights/grades/retreat. Erik «نویسندهٔ مجموعه» is the source interviewer, not a site byline. Unverified sentences on Rogora left unchanged. No other body edits this slot besides the two new AAJ notes.
+
+### Job 4 — SEO
+
+See `_seo/daily-log.md` 2026-08-27 00:00 GMT. No template change. New AAJ notes have unique title/description; `llms.txt` and webmcp catalog are collection-driven and pick them up at build.
