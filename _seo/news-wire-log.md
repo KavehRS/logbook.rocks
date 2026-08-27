@@ -853,3 +853,10 @@ No `کپی نکردم` / مترجم / «خبر را اینجا» in `_news/`. Pl
 ### Job 4 — SEO
 
 See `_seo/daily-log.md` 2026-08-27 06:00 GMT. No template change.
+
+## 2026-08-27 06:31 UTC — off-slot timer (not 00/06/12/18)
+
+Fired 26 minutes after the completed 06:00 GMT slot. Not a scheduled GMT hour. Did **not** publish extra AAJ notes (pace remains two per 00/06/12/18 slot; next pair still Bel Uluu `13201217365` then Arches Peak `13201217378` at 12:00 GMT).
+
+Window: `2026-08-27T06:05:00Z` → this check. Re-fetched UIAA, Climbing.com, Desnivel alpinismo/roca/competiciones, ExplorersWeb climbing, Alpinist, IFSC `/news`, Laval event page, PlanetMountain/UKC 403. No in-window item. Laval still has no athlete names or scores (event 28–30 Aug). No new `_news/` files. No `published` overlay. No new PR.
+
