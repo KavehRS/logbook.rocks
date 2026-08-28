@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="fa-IR">
+  <title type="text">کاوه‌ رضائی‌شیراز — گزارش صعود</title>
+  <subtitle type="text">گزارش برنامه‌های صعود اجراشده: کوهنوردی، سنگ‌نوردی و یخ‌نوردی</subtitle>
+  <id>https://logbook.rocks/logbook/feed.xml</id>
+  <link href="https://logbook.rocks/logbook/feed.xml" rel="self" type="application/atom+xml"/>
+  <link href="https://logbook.rocks/logbook/" rel="alternate" type="text/html"/>
+  <updated>2026-08-07T00:00:00+03:30</updated>
+  <author><name>کاوه‌ رضائی‌شیراز</name><uri>https://www.kavehrs.com/</uri></author>
+
+  <entry>
+    <title type="html">گزارش صعود قله کهار از کلوان — ۱۶ مرداد ۱۴۰۵</title>
+    <link href="https://logbook.rocks/logbook/2026-08-07-kahar-peak/" rel="alternate" type="text/html"/>
+    <id>https://logbook.rocks/logbook/2026-08-07-kahar-peak/</id>
+    <published>2026-08-07T00:00:00+03:30</published>
+    <updated>2026-08-07T00:00:00+03:30</updated>
+    <author><name>کاوه‌ رضائی‌شیراز</name></author>
+    <summary type="html">گزارش صعود یک‌روزه قله کهار از روستای کلوان در ۱۶ مرداد ۱۴۰۵؛ زمان‌بندی تیم، هوای میانهٔ مرداد و بازگشت همان روز.</summary>
+    <category term="کهار"/>
+    <category term="البرز"/>
+    <category term="کلوان"/>
+    <category term="آسارا"/>
+    <category term="طالقان"/>
+    <category term="کوهنوردی"/>
+    <category term="گزارش صعود"/>
+    <category term="کوهنوردی مرتفع"/>
+    <category term="کوهپیمایی"/>
+    <category term="high-altitude"/>
+    <category term="hiking"/>
+  </entry>
+  <entry>
+    <title type="html">کمپ برفچال لشگرک (حصارچال)</title>
+    <link href="https://logbook.rocks/logbook/2026-07-01-TrainingCampforSnowNavigationTechniques-lashgarak/" rel="alternate" type="text/html"/>
+    <id>https://logbook.rocks/logbook/2026-07-01-TrainingCampforSnowNavigationTechniques-lashgarak/</id>
+    <published>2026-07-05T00:00:00+03:30</published>
+    <updated>2026-07-05T00:00:00+03:30</updated>
+    <author><name>کاوه‌ رضائی‌شیراز</name></author>
+    <summary type="html">گزارش کمپ آموزشی تکنیک‌های پیمایش برفچال در قله لشگرک و دشت حصارچال، علم‌کوه.</summary>
+    <category term="یخنوردی"/>
+    <category term="البرز"/>
+    <category term="لشگرک"/>
+    <category term="حصارچال"/>
+    <category term="علم‌کوه"/>
+    <category term="برفچال"/>
+    <category term="training-camp"/>
+    <category term="snowfield"/>
+    <category term="high-altitude"/>
+  </entry>
+  <entry>
+    <title type="html">گزارش پیمایش تیغه‌های دارآباد</title>
+    <link href="https://logbook.rocks/logbook/2024-07-05-hamnavard-darabad-traverse/" rel="alternate" type="text/html"/>
+    <id>https://logbook.rocks/logbook/2024-07-05-hamnavard-darabad-traverse/</id>
+    <published>2024-07-05T00:00:00+03:30</published>
+    <updated>2024-07-05T00:00:00+03:30</updated>
+    <author><name>کاوه‌ رضائی‌شیراز</name></author>
+    <summary type="html">گزارش کامل پیمایش تیغه‌های دارآباد و صعود به قلل دارآباد، چپ‌دره، چنبره‌بند و سیاه‌بند در تاریخ ۱۵ تیر ۱۴۰۳ به سرپرستی کاوه رضائی شیراز.</summary>
+    <category term="دارآباد"/>
+    <category term="سیاه‌بند"/>
+    <category term="چنبره‌بند"/>
+    <category term="تهران"/>
+    <category term="البرز"/>
+    <category term="کوهنوردی"/>
+    <category term="پیمایش"/>
+    <category term="باشگاه همنورد"/>
+    <category term="technical-mountaineering"/>
+  </entry>
+  <entry>
+    <title type="html">صعود خط‌الراس دارآباد از روی تیغه‌ها</title>
+    <link href="https://logbook.rocks/logbook/2024-07-05-darabad-ridge/" rel="alternate" type="text/html"/>
+    <id>https://logbook.rocks/logbook/2024-07-05-darabad-ridge/</id>
+    <published>2024-07-05T00:00:00+03:30</published>
+    <updated>2024-07-05T00:00:00+03:30</updated>
+    <author><name>کاوه‌ رضائی‌شیراز</name></author>
+    <summary type="html">گزارش صعود خط‌الراس دارآباد از مسیر تیغه‌ها؛ مشخصات برنامه و تصاویر مسیر.</summary>
+    <category term="technical-mountaineering"/>
+  </entry>
+  <entry>
+    <title type="html">صعود قله خلنو از تیغه‌های ژاندارم</title>
+    <link href="https://logbook.rocks/logbook/2024-06-20-khalno-gendarme/" rel="alternate" type="text/html"/>
+    <id>https://logbook.rocks/logbook/2024-06-20-khalno-gendarme/</id>
+    <published>2024-06-20T00:00:00+03:30</published>
+    <updated>2024-06-20T00:00:00+03:30</updated>
+    <author><name>کاوه‌ رضائی‌شیراز</name></author>
+    <summary type="html">گزارش صعود قله خلنو از مسیر تیغه‌های ژاندارم؛ جزئیات برنامه و تصاویر صعود.</summary>
+    <category term="high-altitude"/>
+    <category term="technical-mountaineering"/>
+  </entry>
+  <entry>
+    <title type="html">گزارش برنامه صعود به قله جانستون</title>
+    <link href="https://logbook.rocks/logbook/2024-06-03-johnston-peak/" rel="alternate" type="text/html"/>
+    <id>https://logbook.rocks/logbook/2024-06-03-johnston-peak/</id>
+    <published>2024-06-03T00:00:00+03:30</published>
+    <updated>2024-06-03T00:00:00+03:30</updated>
+    <author><name>کاوه‌ رضائی‌شیراز</name></author>
+    <summary type="html">گزارش برنامه صعود به قله جانستون از روستای آبنیک؛ مسیر، زمان‌بندی و تصاویر.</summary>
+    <category term="hiking"/>
+    <category term="technical-mountaineering"/>
+  </entry>
+  <entry>
+    <title type="html">صعود به قله هزارلا (باشگاه شقایق ۱۴۰۳)</title>
+    <link href="https://logbook.rocks/logbook/2024-05-17-shaghayegh-club-Hezarla-Peak/" rel="alternate" type="text/html"/>
+    <id>https://logbook.rocks/logbook/2024-05-17-shaghayegh-club-Hezarla-Peak/</id>
+    <published>2024-05-17T00:00:00+03:30</published>
+    <updated>2024-05-17T00:00:00+03:30</updated>
+    <author><name>کاوه‌ رضائی‌شیراز</name></author>
+    <summary type="html">گزارش صعود به قله هزارلا با باشگاه شقایق در ۲۸ اردیبهشت ۱۴۰۳؛ مسیر وارنگه‌رود، شرایط برنامه و تصاویر.</summary>
+    <category term="hiking"/>
+  </entry>
+  <entry>
+    <title type="html">گزارش صعود به قله دونا</title>
+    <link href="https://logbook.rocks/logbook/2024-05-10-shaghayeghclub-dona-peak/" rel="alternate" type="text/html"/>
+    <id>https://logbook.rocks/logbook/2024-05-10-shaghayeghclub-dona-peak/</id>
+    <published>2024-05-10T00:00:00+03:30</published>
+    <updated>2024-05-10T00:00:00+03:30</updated>
+    <author><name>کاوه‌ رضائی‌شیراز</name></author>
+    <summary type="html">گزارش کامل صعود یک‌روزه به قله دونا از مسیر روستای دونا در تاریخ ۲۱ اردیبهشت ۱۴۰۳ به سرپرستی مریم رضایی.</summary>
+    <category term="دونا"/>
+    <category term="البرز"/>
+    <category term="یوش"/>
+    <category term="بلده"/>
+    <category term="کوهنوردی"/>
+    <category term="گزارش صعود"/>
+    <category term="صعود گروهی"/>
+    <category term="باشگاه شقایق"/>
+    <category term="hiking"/>
+  </entry>
+  <entry>
+    <title type="html">صعود قله‌های واریش، لیز و لیچه</title>
+    <link href="https://logbook.rocks/logbook/2024-05-03-hamnavard-club-liz-Peak/" rel="alternate" type="text/html"/>
+    <id>https://logbook.rocks/logbook/2024-05-03-hamnavard-club-liz-Peak/</id>
+    <published>2024-05-06T00:00:00+03:30</published>
+    <updated>2024-05-06T00:00:00+03:30</updated>
+    <author><name>کاوه‌ رضائی‌شیراز</name></author>
+    <summary type="html">گزارش صعود به قله‌های واریش، لیز و لیچه با باشگاه همنورد تهران همراه با تصاویر.</summary>
+    <category term="hiking"/>
+  </entry>
+  <entry>
+    <title type="html">گزارش برنامه قله عرقچین</title>
+    <link href="https://logbook.rocks/logbook/2024-03-30-araghchin-peak/" rel="alternate" type="text/html"/>
+    <id>https://logbook.rocks/logbook/2024-03-30-araghchin-peak/</id>
+    <published>2024-03-30T00:00:00+03:30</published>
+    <updated>2024-03-30T00:00:00+03:30</updated>
+    <author><name>کاوه‌ رضائی‌شیراز</name></author>
+    <summary type="html">گزارش برنامه صعود به قله عرقچین؛ جزئیات مسیر، زمان‌بندی و تصاویر تیم.</summary>
+    <category term="hiking"/>
+  </entry>
+  <entry>
+    <title type="html">گزارش برنامه پیمایش مسیر پناهگاه پلنگچال</title>
+    <link href="https://logbook.rocks/logbook/2024-02-02-palangchal-shelter/" rel="alternate" type="text/html"/>
+    <id>https://logbook.rocks/logbook/2024-02-02-palangchal-shelter/</id>
+    <published>2024-02-02T00:00:00+03:30</published>
+    <updated>2024-02-02T00:00:00+03:30</updated>
+    <author><name>کاوه‌ رضائی‌شیراز</name></author>
+    <summary type="html">گزارش پیمایش مسیر پناهگاه پلنگ‌چال؛ مشخصات برنامه، شرایط مسیر و تصاویر صعود.</summary>
+    <category term="winter-ascent"/>
+    <category term="hiking"/>
+  </entry>
+  <entry>
+    <title type="html">قله خوراسان کوه</title>
+    <link href="https://logbook.rocks/logbook/2024-01-08-khorasan-kouh-fashand-shaghaueghClimbingclub/" rel="alternate" type="text/html"/>
+    <id>https://logbook.rocks/logbook/2024-01-08-khorasan-kouh-fashand-shaghaueghClimbingclub/</id>
+    <published>2024-01-08T00:00:00+03:30</published>
+    <updated>2024-01-08T00:00:00+03:30</updated>
+    <author><name>کاوه‌ رضائی‌شیراز</name></author>
+    <summary type="html">گزارش صعود به قله خوراسان‌کوه فشم با باشگاه شقایق؛ مسیر فشند، شرایط برنامه و تصاویر.</summary>
+    <category term="winter-ascent"/>
+    <category term="hiking"/>
+  </entry>
+  <entry>
+    <title type="html">صعود زمستانه به قله هزارلا (همنورد ۱۴۰۲)</title>
+    <link href="https://logbook.rocks/logbook/2023-11-26-hamnavard-club-Hezarla-Peak/" rel="alternate" type="text/html"/>
+    <id>https://logbook.rocks/logbook/2023-11-26-hamnavard-club-Hezarla-Peak/</id>
+    <published>2023-11-26T00:00:00+03:30</published>
+    <updated>2023-11-26T00:00:00+03:30</updated>
+    <author><name>کاوه‌ رضائی‌شیراز</name></author>
+    <summary type="html">گزارش صعود زمستانه قله هزارلا (۳۵۵۶ م) با باشگاه همنورد تهران در ۵ آذر ۱۴۰۲؛ مسیر وارنگه‌رود و جزئیات برنامه.</summary>
+    <category term="winter-ascent"/>
+    <category term="hiking"/>
+  </entry>
+  <entry>
+    <title type="html">گزارش صعود به قله هزاربند</title>
+    <link href="https://logbook.rocks/logbook/2023-10-20-shaghayeghclub-hezarband-peak/" rel="alternate" type="text/html"/>
+    <id>https://logbook.rocks/logbook/2023-10-20-shaghayeghclub-hezarband-peak/</id>
+    <published>2023-10-20T00:00:00+03:30</published>
+    <updated>2023-10-20T00:00:00+03:30</updated>
+    <author><name>کاوه‌ رضائی‌شیراز</name></author>
+    <summary type="html">گزارش کامل صعود یک‌روزه به قله هزاربند (حدود ۳۳۵۰ متر) از مسیر روستای حسنکدر در تاریخ ۲۸ مهر ۱۴۰۲ به سرپرستی جمشید مهرآور.</summary>
+    <category term="هزاربند"/>
+    <category term="البرز"/>
+    <category term="حسنکدر"/>
+    <category term="کرج"/>
+    <category term="کوهنوردی"/>
+    <category term="گزارش صعود"/>
+    <category term="صعود گروهی"/>
+    <category term="باشگاه شقایق"/>
+    <category term="hiking"/>
+  </entry>
+  <entry>
+    <title type="html">گزارش برنامه تمرینی سنگ‌نوردی باشگاه شقایق کرج - دیواره پل‌خواب</title>
+    <link href="https://logbook.rocks/logbook/2023-08-04-shaghayeghclub-pol-khab-rock-climbing/" rel="alternate" type="text/html"/>
+    <id>https://logbook.rocks/logbook/2023-08-04-shaghayeghclub-pol-khab-rock-climbing/</id>
+    <published>2023-08-04T00:00:00+03:30</published>
+    <updated>2023-08-04T00:00:00+03:30</updated>
+    <author><name>کاوه‌ رضائی‌شیراز</name></author>
+    <summary type="html">گزارش کامل تمرین یک‌روزه سنگ‌نوردی در دیواره پل‌خواب (جاده چالوس) در تاریخ ۱۳ مرداد ۱۴۰۲ به سرپرستی پیام غلامی.</summary>
+    <category term="سنگ‌نوردی"/>
+    <category term="آموزش"/>
+    <category term="کرج"/>
+    <category term="چالوس"/>
+    <category term="پل‌خواب"/>
+    <category term="باشگاه شقایق"/>
+    <category term="دیواره"/>
+    <category term="کارگاه"/>
+    <category term="rock-climbing"/>
+    <category term="training-camp"/>
+  </entry>
+  <entry>
+    <title type="html">گزارش پیمایش خط‌الراس ناز و میشینه‌نو</title>
+    <link href="https://logbook.rocks/logbook/2023-07-14-shaghayeghclub-naz-mishinehnow/" rel="alternate" type="text/html"/>
+    <id>https://logbook.rocks/logbook/2023-07-14-shaghayeghclub-naz-mishinehnow/</id>
+    <published>2023-07-14T00:00:00+03:30</published>
+    <updated>2023-07-14T00:00:00+03:30</updated>
+    <author><name>کاوه‌ رضائی‌شیراز</name></author>
+    <summary type="html">گزارش کامل پیمایش خط‌الراس ناز و میشینه‌نو به همراه باشگاه کوهنوردی شقایق کرج در تاریخ ۲۳ تیر ۱۴۰۲.</summary>
+    <category term="ناز"/>
+    <category term="میشینه‌نو"/>
+    <category term="کهار"/>
+    <category term="البرز"/>
+    <category term="کلوان"/>
+    <category term="پیمایش"/>
+    <category term="خط‌الراس"/>
+    <category term="باشگاه شقایق"/>
+    <category term="high-altitude"/>
+    <category term="technical-mountaineering"/>
+  </entry>
+  <entry>
+    <title type="html">گزارش صعود به قله کماچال</title>
+    <link href="https://logbook.rocks/logbook/2023-07-07-hamnavard-kamachal-peak/" rel="alternate" type="text/html"/>
+    <id>https://logbook.rocks/logbook/2023-07-07-hamnavard-kamachal-peak/</id>
+    <published>2023-07-07T00:00:00+03:30</published>
+    <updated>2023-07-07T00:00:00+03:30</updated>
+    <author><name>کاوه‌ رضائی‌شیراز</name></author>
+    <summary type="html">گزارش کامل صعود یک‌روزه به قله کماچال (حدود ۳۰۵۰ متر) از مسیر یال ولنجک در تاریخ ۱۶ تیر ۱۴۰۲ به سرپرستی کاوه رضائی شیراز.</summary>
+    <category term="کماچال"/>
+    <category term="توچال"/>
+    <category term="ولنجک"/>
+    <category term="تهران"/>
+    <category term="کوهنوردی"/>
+    <category term="گزارش صعود"/>
+    <category term="باشگاه همنورد"/>
+    <category term="hiking"/>
+  </entry>
+  <entry>
+    <title type="html">گزارش صعود به قله خلهنو</title>
+    <link href="https://logbook.rocks/logbook/2023-06-04-kholeno-peak/" rel="alternate" type="text/html"/>
+    <id>https://logbook.rocks/logbook/2023-06-04-kholeno-peak/</id>
+    <published>2023-06-04T00:00:00+03:30</published>
+    <updated>2023-06-04T00:00:00+03:30</updated>
+    <author><name>کاوه‌ رضائی‌شیراز</name></author>
+    <summary type="html">گزارش کامل صعود یک‌روزه به قله خلهنو در تاریخ ۱۴ خرداد ۱۴۰۲ به صورت انفرادی (با همراهی یک همنورد در مسیر) - بررسی علت ماندگاری برف در جبهه جنوبی.</summary>
+    <category term="خلهنو"/>
+    <category term="خلنو"/>
+    <category term="تهران"/>
+    <category term="البرز"/>
+    <category term="کوهنوردی"/>
+    <category term="گزارش صعود"/>
+    <category term="انفرادی"/>
+    <category term="برف"/>
+    <category term="جبهه جنوبی"/>
+    <category term="high-altitude"/>
+  </entry>
+  <entry>
+    <title type="html">گزارش صعود مشترک باشگاه کوهنوردی شقایق کرج و تیم کوهنوردی بانک ملت به قله کهار</title>
+    <link href="https://logbook.rocks/logbook/2023-05-13-kahar-peak-shaghayegh-bank-mellat/" rel="alternate" type="text/html"/>
+    <id>https://logbook.rocks/logbook/2023-05-13-kahar-peak-shaghayegh-bank-mellat/</id>
+    <published>2023-05-13T00:00:00+03:30</published>
+    <updated>2023-05-13T00:00:00+03:30</updated>
+    <author><name>کاوه‌ رضائی‌شیراز</name></author>
+    <summary type="html">گزارش کامل صعود یک‌روزه به قله کهار از مسیر روستای کلوان در تاریخ ۲۳ اردیبهشت ۱۴۰۲ به سرپرستی افشین محمدی.</summary>
+    <category term="کهار"/>
+    <category term="البرز"/>
+    <category term="کلوان"/>
+    <category term="آسارا"/>
+    <category term="کوهنوردی"/>
+    <category term="گزارش صعود"/>
+    <category term="صعود گروهی"/>
+    <category term="باشگاه شقایق"/>
+    <category term="بانک ملت"/>
+    <category term="کوهپیمایی"/>
+    <category term="high-altitude"/>
+    <category term="hiking"/>
+  </entry>
+  <entry>
+    <title type="html">گزارش تمرین سنگ‌نوردی - سایت سنگ‌نوردی شقایق</title>
+    <link href="https://logbook.rocks/logbook/2023-04-12-rock-climbing-shaghayegh/" rel="alternate" type="text/html"/>
+    <id>https://logbook.rocks/logbook/2023-04-12-rock-climbing-shaghayegh/</id>
+    <published>2023-04-12T00:00:00+03:30</published>
+    <updated>2023-04-12T00:00:00+03:30</updated>
+    <author><name>کاوه‌ رضائی‌شیراز</name></author>
+    <summary type="html">گزارش کامل تمرین یک‌روزه سنگ‌نوردی در سایت باشگاه شقایق (جاده چالوس، روستای پورکان) در تاریخ ۲۳ فروردین ۱۴۰۲ به سرپرستی پیام غلامی.</summary>
+    <category term="سنگ‌نوردی"/>
+    <category term="آموزش"/>
+    <category term="کرج"/>
+    <category term="چالوس"/>
+    <category term="پورکان"/>
+    <category term="باشگاه شقایق"/>
+    <category term="دیواره"/>
+    <category term="کارگاه"/>
+    <category term="rock-climbing"/>
+    <category term="training-camp"/>
+  </entry>
+  <entry>
+    <title type="html">گزارش تمرین یخ‌نوردی - آبشار کرجی‌ها روستای خور</title>
+    <link href="https://logbook.rocks/logbook/2023-01-12-ice-climbing-khor-karjiha/" rel="alternate" type="text/html"/>
+    <id>https://logbook.rocks/logbook/2023-01-12-ice-climbing-khor-karjiha/</id>
+    <published>2023-01-12T00:00:00+03:30</published>
+    <updated>2023-01-12T00:00:00+03:30</updated>
+    <author><name>کاوه‌ رضائی‌شیراز</name></author>
+    <summary type="html">گزارش کامل تمرین یک‌روزه یخ‌نوردی در آبشار کرجی‌ها (روستای خور، جاده چالوس) در تاریخ ۲۲ دی ۱۴۰۱ به سرپرستی سلمان بهمن‌دار.</summary>
+    <category term="خور"/>
+    <category term="یخ‌نوردی"/>
+    <category term="آبشار یخی"/>
+    <category term="آموزش"/>
+    <category term="البرز"/>
+    <category term="چالوس"/>
+    <category term="زمستان"/>
+    <category term="کارگاه"/>
+    <category term="کرجی‌ها"/>
+    <category term="icefall"/>
+    <category term="training-camp"/>
+    <category term="winter-ascent"/>
+  </entry>
+  <entry>
+    <title type="html">گزارش تمرین یخ‌نوردی - آبشار شماره ۵ روستای خور</title>
+    <link href="https://logbook.rocks/logbook/2023-01-05-ice-climbing-khor-5/" rel="alternate" type="text/html"/>
+    <id>https://logbook.rocks/logbook/2023-01-05-ice-climbing-khor-5/</id>
+    <published>2023-01-05T00:00:00+03:30</published>
+    <updated>2023-01-05T00:00:00+03:30</updated>
+    <author><name>کاوه‌ رضائی‌شیراز</name></author>
+    <summary type="html">گزارش کامل تمرین یک‌روزه یخ‌نوردی در آبشار شماره ۵ روستای خور (جاده چالوس) در تاریخ ۱۵ دی ۱۴۰۱ به سرپرستی سلمان بهمن‌دار.</summary>
+    <category term="خور"/>
+    <category term="یخ‌نوردی"/>
+    <category term="آبشار یخی"/>
+    <category term="آموزش"/>
+    <category term="البرز"/>
+    <category term="چالوس"/>
+    <category term="زمستان"/>
+    <category term="کارگاه"/>
+    <category term="icefall"/>
+    <category term="training-camp"/>
+    <category term="winter-ascent"/>
+  </entry>
+
+</feed>

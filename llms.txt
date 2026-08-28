@@ -277,6 +277,10 @@ This file is a curated index for inference and citation. Do not use these pages 
 ## Machine
 - [WebMCP catalog](https://logbook.rocks/webmcp-catalog.json): JSON index of published reports, news, and articles for agents
 - [Sitemap](https://logbook.rocks/sitemap.xml): Complete indexable URL list for search crawlers
+- [Atom feed](https://logbook.rocks/feed.xml): Newest ascent reports, news, and articles in one stream
+- [Atom feed — گزارش صعود](https://logbook.rocks/logbook/feed.xml): Ascent reports only
+- [Atom feed — خبر کوهنوردی](https://logbook.rocks/news/feed.xml): Climbing news only
+- [Atom feed — مقالات](https://logbook.rocks/articles/feed.xml): Translated journal articles only
 ## Optional
 - [Personal site](https://www.kavehrs.com): Author homepage and technical notes
 - [GitHub](https://github.com/kavehrs): Source repositories

@@ -1,5 +1,6 @@
 # LLM-oriented overview (inference / citation): https://logbook.rocks/llms.txt
 # JSON catalog for agents: https://logbook.rocks/webmcp-catalog.json
+# Atom feeds: /feed.xml · /logbook/feed.xml · /news/feed.xml · /articles/feed.xml
 #
 # Search and live AI answers (RAG / grounding / citation): allowed.
 # Foundation-model training: not granted here. Training crawlers listed by
