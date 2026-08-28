@@ -169,10 +169,21 @@ Changed (technical only — no published prose touched):
 6. **`preconnect` to `cdn.jsdelivr.net`** — live pages are assembled by Zaraz and every asset, including the LCP image, comes from jsDelivr, so the connection was opening cold.
 7. **`_headers`** — immutable one-year cache for `/assets/*` and correct `application/atom+xml` content type for the feeds.
 
+**Biggest find — the non-HTML files were never actually served.** On the live domain `/robots.txt`, `/sitemap.xml`, `/llms.txt`, `/webmcp-catalog.json` and the IndexNow key all answered `200 text/html` with GitHub's 2 KB placeholder page. The zone-wide rewrite sends every path to the origin root and Zaraz only rebuilds *pages*, so robots.txt was unparseable, the sitemap was undiscoverable, and IndexNow rejected submissions with `SiteVerificationNotCompleted`.
+
+Fixed with `script/cloudflare/deploy-seo-files.py`:
+
+- Nine Cloudflare redirect rules (302) send those paths to the same file on the `published` branch. Redirect rules evaluate against the original path, so they fire ahead of the rewrite — verified with a throwaway probe path before deploying. Target is raw.githubusercontent.com, not jsDelivr: jsDelivr labels XML correctly but caches a branch alias for hours, and a stale sitemap is worse than one labelled `text/plain`.
+- Cloudflare's **managed robots.txt** was answering `/robots.txt` at the edge ahead of any rule, and its file has **no `Sitemap:` directive** — that is how search engines find a sitemap without anyone submitting it. Turned it off and moved its training-crawler block list (Amazonbot, Applebot-Extended, Bytespider, CCBot, ClaudeBot, CloudflareBrowserRenderingCrawler, Google-Extended, GPTBot, meta-externalagent) into the repo's `robots.txt`, which also keeps `ai-input=yes` and the explicit allows for OAI-SearchBot / Claude-SearchBot / PerplexityBot. Trade-off: the block list no longer updates itself, so a new training crawler has to be added by hand. `--revert` hands it back to Cloudflare.
+- Edge compute would have been cleaner (a Snippet returning each file with its own content type) but the zone is Free plan and this repo's API token has neither Snippets nor Workers permission.
+
+Verified live: all nine files 200 `text/plain`, robots.txt is the repo's own with the Sitemap line, `/sitemap.xml` parses as XML with 269 URLs, and IndexNow now returns 202. Submitted all 269 URLs once — none had ever been submitted.
+
 Noted, deliberately not changed:
 
 - 217 article `<title>`s run past ~70 characters. They are the visible Persian headlines naming climbers, peak, and route; trimming them would be a content edit and Google rewrites overlong titles anyway.
 - No `srcset`/WebP derivatives. Live photos are already capped near 1080–1600px and generating variants would multiply the asset tree.
+- Pages themselves are still JS-dependent: `https://logbook.rocks/<anything>` returns the placeholder and Zaraz swaps in the real HTML. Googlebot renders JS, most other crawlers do not. Only unlocking GitHub Actions billing fixes that; nothing in this repo can.
 
 Sources: Google Search Central (SEO starter, sitemaps, structured data / image rich results, Core Web Vitals / CLS), Bing Webmaster Guidelines + IndexNow, schema.org `Article` / `ImageObject` / `CollectionPage`, RFC 4287 (Atom), llmstxt.org.
 
