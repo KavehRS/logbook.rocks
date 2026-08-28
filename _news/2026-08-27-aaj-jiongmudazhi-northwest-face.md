@@ -15,7 +15,7 @@ related:
   - title: تونگ های‌جون و وانگ یونگ‌پنگ اولین صعود Chuchepo را از رخ شمال‌شرقی گرفتند
     url: /news/2026-08-27-aaj-chuchepo-northeast-face/
 image:
-  path: https://aac-publications.s3.amazonaws.com/articles/aaj-13201217322-1760987921.jpg
+  path: /assets/news/aaj-13201217322-1760987921.jpg
   alt: رخ شمال‌غربی Jiongmudazhi و خط اولین صعود
   caption: "رخ شمال‌غربی Jiongmudazhi (۶۵۹۰ متر) و خط اولین صعود در سپتامبر ۲۰۲۴. عکس: Tong Haijun / Wang Yongpeng."
 ---
@@ -41,11 +41,11 @@ Jiongmudazhi ۳۵ کیلومتر شمال‌شمال‌غرب دریاچهٔ Bas
 مسیر ۸۰۰ متری رخ شمال‌غربی را D+ M3 AI3 ۷۵ درجه درجه‌بندی کرده‌اند.
 
 <figure class="source-photo">
-<img src="https://aac-publications.s3.amazonaws.com/articles/aaj-13201217322-1760987901.jpg" alt="دو سوم بالایی رخ شمال‌غربی Jiongmudazhi" loading="lazy" decoding="async">
+<img src="/assets/news/aaj-13201217322-1760987901.jpg" alt="دو سوم بالایی رخ شمال‌غربی Jiongmudazhi" loading="lazy" decoding="async">
 <figcaption>دو سوم بالایی رخ شمال‌غربی Jiongmudazhi (۶۵۹۰ متر)، صعودشده در سپتامبر ۲۰۲۴. عکس: Tong Haijun / Wang Yongpeng.</figcaption>
 </figure>
 <figure class="source-photo">
-<img src="https://aac-publications.s3.amazonaws.com/articles/aaj-13201217322-1760987981.jpg" alt="وانگ یونگ‌پنگ روی رخ شمال‌غربی بالایی Jiongmudazhi" loading="lazy" decoding="async">
+<img src="/assets/news/aaj-13201217322-1760987981.jpg" alt="وانگ یونگ‌پنگ روی رخ شمال‌غربی بالایی Jiongmudazhi" loading="lazy" decoding="async">
 <figcaption>وانگ یونگ‌پنگ روی رخ شمال‌غربی بالایی Jiongmudazhi. عکس: Tong Haijun.</figcaption>
 </figure>
 

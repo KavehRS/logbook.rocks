@@ -16,7 +16,7 @@ related:
   - title: امتیاز فینال لید اوسترموندیگن؛ مارتینس +۳۷ و پولس ۴۵
     url: /news/2026-08-24-desnivel-ostermundigen-lead-scores/
 image:
-  path: https://images.ifsc-climbing.org/ifsc/image/private/t_ratio1_1-size60-f_webp-c_fill/v1787572107/prd/cjlztxcebqwsxo5wwnuy
+  path: /assets/news/ifsc-cjlztxcebqwsxo5wwnuy.webp
   alt: از چپ آنیکا دویبلر، ایزیار مارتینس آلمندروس و کانی بریجنز
   caption: "از چپ آنیکا دویبلر از اتریش، ایزیار مارتینس آلمندروس از اسپانیا و کانی بریجنز از بریتانیا."
 ---
@@ -26,7 +26,7 @@ image:
 در مردان جوردی پولس از فرانسه ۴۵ — نسبت به برنز ژیلینا یک پله بالاتر. نقره هم‌تیمی‌اش آکیان اتچار (۳۹+) که در نیمه‌نهایی بالاتر از پولس بود، و برنز یوناس اوتلی از سوئیس (۳۸) در خانه.
 
 <figure class="source-photo">
-<img src="https://images.ifsc-climbing.org/ifsc/image/private/t_ratio16_9-size60-f_webp-c_fill/prd/dfhgamdyt6wbm1t222jw" alt="از چپ آکیان اتچار، جوردی پولس و یوناس اوتلی" loading="lazy" decoding="async">
+<img src="/assets/news/ifsc-dfhgamdyt6wbm1t222jw.webp" alt="از چپ آکیان اتچار، جوردی پولس و یوناس اوتلی" loading="lazy" decoding="async">
 <figcaption>از چپ آکیان اتچار از فرانسه، جوردی پولس از فرانسه و یوناس اوتلی از سوئیس.</figcaption>
 </figure>
 

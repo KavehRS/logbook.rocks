@@ -15,7 +15,7 @@ related:
   - title: تونگ های‌جون و وانگ یونگ‌پنگ Jiongmudazhi را از رخ شمال‌غربی گشودند
     url: /news/2026-08-27-aaj-jiongmudazhi-northwest-face/
 image:
-  path: https://aac-publications.s3.amazonaws.com/articles/aaj-13201217321-1760986743.jpg
+  path: /assets/news/aaj-13201217321-1760986743.jpg
   alt: رخ شمال‌شرقی Chuchepo در سایه
   caption: "Chuchepo (۶۶۱۳ یا ۶۶۵۰ متر) با رخ شمال‌شرقی، صعودشده در اوت ۲۰۲۴، در سایه. عکس: Tong Haijun / Wang Yongpeng."
 ---
@@ -39,27 +39,27 @@ image:
 برای اولین فرود تبر یخ دفن‌شده لنگر شد. همان مسیر را پایین آمدند و ساعت ۱۴ به کمپ ۵۹۰۰ متری رسیدند، پیش از آن‌که ریزش سنگ جدی شود. ۲۹ مرداد (۱۹ اوت) یخچال را ادامه دادند؛ در انتها بیشتر روی سنگ ماندند و چهار فرود از رخ تندش زدند. ساعت ۱۸:۳۰ به روستای Yiga رسیدند.
 
 <figure class="source-photo">
-<img src="https://aac-publications.s3.amazonaws.com/articles/aaj-13201217321-1760986703.jpg" alt="مسیر صعود رخ شمال‌شرقی ۷۰۰ متری Chuchepo" loading="lazy" decoding="async">
+<img src="/assets/news/aaj-13201217321-1760986703.jpg" alt="مسیر صعود رخ شمال‌شرقی ۷۰۰ متری Chuchepo" loading="lazy" decoding="async">
 <figcaption>Chuchepo (۶۶۱۳ یا ۶۶۵۰ متر) و مسیر صعود رخ شمال‌شرقی ۷۰۰ متری در اوت ۲۰۲۴. عکس: Tong Haijun / Wang Yongpeng.</figcaption>
 </figure>
 <figure class="source-photo">
-<img src="https://aac-publications.s3.amazonaws.com/articles/aaj-13201217321-1760986789.jpg" alt="یخچال پایین Aigagon و قلهٔ بکر ۶۴۳۴ متر" loading="lazy" decoding="async">
+<img src="/assets/news/aaj-13201217321-1760986789.jpg" alt="یخچال پایین Aigagon و قلهٔ بکر ۶۴۳۴ متر" loading="lazy" decoding="async">
 <figcaption>روی یخچال پایین Aigagon، نگاه به شمال به قلهٔ بکر ۶۴۳۴ متری، شمال درهٔ Niwu. عکس: Tong Haijun / Wang Yongpeng.</figcaption>
 </figure>
 <figure class="source-photo">
-<img src="https://aac-publications.s3.amazonaws.com/articles/aaj-13201217321-1760986823.jpg" alt="وانگ یونگ‌پنگ روی رخ شمال‌شرقی بالایی Chuchepo" loading="lazy" decoding="async">
+<img src="/assets/news/aaj-13201217321-1760986823.jpg" alt="وانگ یونگ‌پنگ روی رخ شمال‌شرقی بالایی Chuchepo" loading="lazy" decoding="async">
 <figcaption>وانگ یونگ‌پنگ روی رخ شمال‌شرقی بالایی Chuchepo؛ پشت سر Sendho (۶۶۴۳ متر GPS) که در ۲۰۲۵ صعود شد. عکس: Tong Haijun.</figcaption>
 </figure>
 <figure class="source-photo">
-<img src="https://aac-publications.s3.amazonaws.com/articles/aaj-13201217321-1760986851.jpg" alt="وانگ یونگ‌پنگ روی اسلب‌های نازک‌برف رخ شمال‌شرقی Chuchepo" loading="lazy" decoding="async">
+<img src="/assets/news/aaj-13201217321-1760986851.jpg" alt="وانگ یونگ‌پنگ روی اسلب‌های نازک‌برف رخ شمال‌شرقی Chuchepo" loading="lazy" decoding="async">
 <figcaption>وانگ یونگ‌پنگ در سرطناب سخت روی اسلب‌های پوشیده از برف نازک به‌سوی بالای رخ شمال‌شرقی Chuchepo. عکس: Tang Haijun.</figcaption>
 </figure>
 <figure class="source-photo">
-<img src="https://aac-publications.s3.amazonaws.com/articles/aaj-13201217321-1760986894.jpg" alt="پشت‌بند سنگی فرود از Chuchepo" loading="lazy" decoding="async">
+<img src="/assets/news/aaj-13201217321-1760986894.jpg" alt="پشت‌بند سنگی فرود از Chuchepo" loading="lazy" decoding="async">
 <figcaption>پشت‌بند سنگی که در فرود از Chuchepo برای دور زدن یخشار تقریباً غیرقابل‌عبور یخچال Aigagon (همان Yiga) از آن فرود آمدند. عکس: Tong Haijun / Wang Yongpeng.</figcaption>
 </figure>
 <figure class="source-photo">
-<img src="https://aac-publications.s3.amazonaws.com/articles/aaj-13201217321-1760986924.jpg" alt="فرود حوضهٔ بالایی یخچال Aigagon با Nenang در شرق" loading="lazy" decoding="async">
+<img src="/assets/news/aaj-13201217321-1760986924.jpg" alt="فرود حوضهٔ بالایی یخچال Aigagon با Nenang در شرق" loading="lazy" decoding="async">
 <figcaption>فرود حوضهٔ بالایی یخچال Aigagon. به شرق، قلهٔ تیز و بلند Nenang بکر (۶۸۷۰ متر) است. عکس: Tong Haijun / Wang Yongpeng.</figcaption>
 </figure>
 

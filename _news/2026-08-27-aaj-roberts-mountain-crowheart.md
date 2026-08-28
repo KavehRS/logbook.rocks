@@ -15,7 +15,7 @@ related:
   - title: رولف لارسون و اریک وهرلی رخ جنوبی Dip Top Peak را گشودند
     url: /news/2026-08-27-aaj-dip-top-south-face/
 image:
-  path: https://aac-publications.s3.amazonaws.com/articles/aaj-13201217380-1779644304.jpeg
+  path: /assets/news/aaj-13201217380-1779644304.jpg
   alt: خط ۱۳۰۰ فوتی Crowheart روی Roberts Mountain
   caption: "خط ۱۳۰۰ فوتی Crowheart (IV 5.12) روی رخ شمال‌شرقی Roberts Mountain. عکس: Heath Rowland."
 ---
@@ -29,10 +29,10 @@ image:
 مسیر را Crowheart نامیدند، اشاره به نبرد تن‌به‌تن رئیس واساکی (Chief Washakie) و رئیس کروهارت (Chief Crowheart) برای پایان جنگ بر سر شکارگاه مورد اختلاف، نه چندان دور از Wind River Range. گرچه لوئیس و او مسیر را آزاد کردند، تلاش‌های قبلی برایان میلر (Bryan Miller)، مایک رالی و پت گودمن (Pat Goodman) را داشته. نوشته بدون کار آن‌ها Crowheart (۱۳۰۰ فوت، IV 5.12) تمام نمی‌شد.
 
 <figure class="source-photo">
-<img src="https://aac-publications.s3.amazonaws.com/articles/aaj-13201217380-1779644281.jpeg" alt="لوئیس ادن روی طول چهارم 5.12 Crowheart" loading="lazy" decoding="async">
+<img src="/assets/news/aaj-13201217380-1779644281.jpg" alt="لوئیس ادن روی طول چهارم 5.12 Crowheart" loading="lazy" decoding="async">
 <figcaption>لوئیس ادن روی طول چهارم 5.12 Crowheart روی رخ شمال‌شرقی Roberts Mountain. عکس: Heath Rowland.</figcaption>
 </figure>
 <figure class="source-photo">
-<img src="https://aac-publications.s3.amazonaws.com/articles/aaj-13201217380-1779644304.jpeg" alt="خط ۱۳۰۰ فوتی Crowheart روی Roberts Mountain" loading="lazy" decoding="async">
+<img src="/assets/news/aaj-13201217380-1779644304.jpg" alt="خط ۱۳۰۰ فوتی Crowheart روی Roberts Mountain" loading="lazy" decoding="async">
 <figcaption>خط ۱۳۰۰ فوتی Crowheart (IV 5.12) روی رخ شمال‌شرقی Roberts Mountain. عکس: Heath Rowland.</figcaption>
 </figure>

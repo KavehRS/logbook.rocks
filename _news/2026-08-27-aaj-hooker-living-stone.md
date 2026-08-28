@@ -16,7 +16,7 @@ related:
   - title: ماکسیمیلیان بارلرین Children of the Sun را روی رخ شمال‌شرقی The Monolith آزاد کرد
     url: /news/2026-08-27-aaj-monolith-children-of-the-sun/
 image:
-  path: https://aac-publications.s3.amazonaws.com/articles/aaj-13201217381-1779654146.jpeg
+  path: /assets/news/aaj-13201217381-1779654146.jpg
   alt: ویلسون کاتبرث سرطناب طول پنج The Living Stone
   caption: "ویلسون کاتبرث سرطناب طول پنج The Living Stone روی رخ شمال‌شرقی Mt. Hooker. سه سفر عمیق به Wind River Range طول کشید تا مسیر ده‌طوله گشوده و آزاد شود. عکس: Leo Houlding."
 ---
@@ -34,14 +34,14 @@ image:
 سال ۲۰۲۵ دو بار برگشتند. سفر اول چهار روز روی آزاد کردن باقی‌ماندهٔ طول‌های کراکس کار کردند و خط را تا دو طول پایانی به بالا بردند. سرانجام ۴ شهریور ۱۴۰۴ (۲۶ اوت ۲۰۲۵) برس و چکش را گذاشتند و کفش ارسال و رک سبک برداشتند. بعد از چند روز خیس، پنجرهٔ کوتاه هوا رسید. آزاد کردن کل مسیر یک‌نفس مثل کندن جلیقهٔ وزنه بود: آسان‌ترین روز کل فرآیند. The Living Stone (۱۸۰۰ فوت، ۱۰ طول، 5.13 R) را افزودنی آزاد خوبی به یکی از دیواره‌های دورافتادهٔ شاخص آمریکا دانسته.
 
 <figure class="source-photo">
-<img src="https://aac-publications.s3.amazonaws.com/articles/aaj-13201217381-1779654121.jpeg" alt="ویلسون کاتبرث روی سقف کراکس The Living Stone" loading="lazy" decoding="async">
+<img src="/assets/news/aaj-13201217381-1779654121.jpg" alt="ویلسون کاتبرث روی سقف کراکس The Living Stone" loading="lazy" decoding="async">
 <figcaption>ویلسون کاتبرث از سقف کراکس The Living Stone روی Mt. Hooker بالا می‌کشد. عکس: Leo Houlding.</figcaption>
 </figure>
 <figure class="source-photo">
-<img src="https://aac-publications.s3.amazonaws.com/articles/aaj-13201217381-1779654146.jpeg" alt="ویلسون کاتبرث سرطناب طول پنج The Living Stone" loading="lazy" decoding="async">
+<img src="/assets/news/aaj-13201217381-1779654146.jpg" alt="ویلسون کاتبرث سرطناب طول پنج The Living Stone" loading="lazy" decoding="async">
 <figcaption>ویلسون کاتبرث سرطناب طول پنج The Living Stone روی رخ شمال‌شرقی Mt. Hooker. سه سفر عمیق به Wind River Range طول کشید تا مسیر ده‌طوله گشوده و آزاد شود. عکس: Leo Houlding.</figcaption>
 </figure>
 <figure class="source-photo">
-<img src="https://aac-publications.s3.amazonaws.com/articles/aaj-13201217381-1779654176.jpeg" alt="رخ شمال‌شرقی Mt. Hooker با The Living Stone و مسیرهای مجاور" loading="lazy" decoding="async">
+<img src="/assets/news/aaj-13201217381-1779654176.jpg" alt="رخ شمال‌شرقی Mt. Hooker با The Living Stone و مسیرهای مجاور" loading="lazy" decoding="async">
 <figcaption>رخ شمال‌شرقی Mt. Hooker، مسیر جدید The Living Stone نسبت به دو مسیر تازهٔ The Optimist و Gambling in the Winds. مسیرهای دیگر نشان داده نشده. عکس: مجموعهٔ Wilson Cutbirth.</figcaption>
 </figure>

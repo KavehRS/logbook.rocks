@@ -15,7 +15,7 @@ related:
   - title: جانی شافر و ویلسون کاتبرث Northwest Passage را آزاد کردند و The Living Stone را گشودند
     url: /news/2026-08-27-aaj-hooker-living-stone/
 image:
-  path: https://aac-publications.s3.amazonaws.com/articles/aaj-13201217383-1779797954.jpg
+  path: /assets/news/aaj-13201217383-1779797954.jpg
   alt: خط Children of the Sun روی رخ شمال‌شرقی The Monolith
   caption: "خط Children of the Sun (۱۴ طول، VI 5.13-) روی رخ شمال‌شرقی The Monolith. مسیر سال ۲۰۲۲ به‌صورت امدادی گشوده شد و دو سال بعد همهٔ طول‌ها آزاد شد. عکس: Maximilian Barlerin."
 ---
@@ -43,18 +43,18 @@ image:
 منبع حس سبک شدن از تمام شدن قطعهٔ آخر پازل Children of the Sun را نوشته (۱۴ طول، VI 5.13-)، نسخهٔ آزاد ۱۹۸۸. اسم ادای دین به دخترش آنیا اینس بارلرین (Anya Ines Barlerin) است که انقلاب تابستانی ۲۰۲۴ به دنیا آمد. یک صعود آزاد یکپارچهٔ مسیر هنوز برای گرفتن مانده.
 
 <figure class="source-photo">
-<img src="https://aac-publications.s3.amazonaws.com/articles/aaj-13201217383-1779797923.JPG" alt="خط تقریبی Children of the Sun روی The Monolith" loading="lazy" decoding="async">
+<img src="/assets/news/aaj-13201217383-1779797923.jpg" alt="خط تقریبی Children of the Sun روی The Monolith" loading="lazy" decoding="async">
 <figcaption>خط تقریبی Children of the Sun روی The Monolith. مسیر اصلی رخ (Gran-Hudson-Tompkins، ۱۹۶۳) دودکش مشخص چپ را گرفته. عکس: Maximilian Barlerin.</figcaption>
 </figure>
 <figure class="source-photo">
-<img src="https://aac-publications.s3.amazonaws.com/articles/aaj-13201217383-1779797954.jpg" alt="خط Children of the Sun روی رخ شمال‌شرقی The Monolith" loading="lazy" decoding="async">
+<img src="/assets/news/aaj-13201217383-1779797954.jpg" alt="خط Children of the Sun روی رخ شمال‌شرقی The Monolith" loading="lazy" decoding="async">
 <figcaption>خط Children of the Sun (۱۴ طول، VI 5.13-) روی رخ شمال‌شرقی The Monolith. مسیر سال ۲۰۲۲ به‌صورت امدادی گشوده شد و دو سال بعد همهٔ طول‌ها آزاد شد. مسیر اصلی Monolith (Gran-Hudson-Tompkins، ۱۹۶۳) دودکش تیرهٔ کمی چپ را گرفته. مسیر مدرن دیگر (Discovery، IV 5.13a، ۲۰۱۸) رخ بزرگ‌تر چپ‌تر را می‌رود. عکس: Maximilian Barlerin.</figcaption>
 </figure>
 <figure class="source-photo">
-<img src="https://aac-publications.s3.amazonaws.com/articles/aaj-13201217383-1779797980.jpg" alt="ماکسیمیلیان بارلرین روی طول کراکس 5.13- Children of the Sun" loading="lazy" decoding="async">
+<img src="/assets/news/aaj-13201217383-1779797980.jpg" alt="ماکسیمیلیان بارلرین روی طول کراکس 5.13- Children of the Sun" loading="lazy" decoding="async">
 <figcaption>ماکسیمیلیان بارلرین روی طول کراکس (5.13-) Children of the Sun روی The Monolith. طول را آخرین روز سال دوم تلاش‌ها آزاد کرد. عکس: Alton Richardson.</figcaption>
 </figure>
 <figure class="source-photo">
-<img src="https://aac-publications.s3.amazonaws.com/articles/aaj-13201217383-1779798045.jpeg" alt="بارلرین و تاناکا روی قلهٔ The Monolith بعد از اولین صعود ۲۰۲۲" loading="lazy" decoding="async">
+<img src="/assets/news/aaj-13201217383-1779798045.jpg" alt="بارلرین و تاناکا روی قلهٔ The Monolith بعد از اولین صعود ۲۰۲۲" loading="lazy" decoding="async">
 <figcaption>ماکسیمیلیان بارلرین و کیکو تاناکا روی قلهٔ The Monolith بعد از اولین صعود Children of the Sun (آن‌وقت ۱۹۸۸ نام داشت) در ۲۰۲۲. عکس: Maximilian Barlerin.</figcaption>
 </figure>

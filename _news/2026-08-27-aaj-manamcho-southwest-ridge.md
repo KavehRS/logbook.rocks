@@ -15,7 +15,7 @@ related:
   - title: هی لانگ، لیو یانگ و سونگ یوان‌چنگ اولین صعود Chomolhari III را از Spur شمالی گرفتند
     url: /news/2026-08-27-aaj-chomolhari-iii-north-spur/
 image:
-  path: https://aac-publications.s3.amazonaws.com/articles/aaj-13201217323-1760988454.jpg
+  path: /assets/news/aaj-13201217323-1760988454.jpg
   alt: Kajaqiao و Manamcho از شمال‌غرب روی درهٔ Manam
   caption: "Kajaqiao (چپ) و Manamcho از شمال‌غرب روی درهٔ Manam. مسیر اولین صعود Manamcho (Fowler-Ramsden، ۲۰۰۷) روبه‌دوربین است. مسیر ۲۰۲۴ رخ و یال جنوب‌غربی نزدیک خط افق راست است. عکس: Lai Xingzhu."
 ---
@@ -33,23 +33,23 @@ image:
 بعد از جمع ۱۴ طول به قله رسیدند و بی‌درنگ فرود را شروع کردند. ساعت ۲۱ به کمپ پایه رسیدند. ۲۱ شهریور (۱۱ سپتامبر) یخچال را تا جاده پایین آمدند و همان شب به لهاسا رسیدند. مسیر جدید ۷۰۰ متری را M5 AI2 درجه‌بندی کرده‌اند.
 
 <figure class="source-photo">
-<img src="https://aac-publications.s3.amazonaws.com/articles/aaj-13201217323-1760988417.jpg" alt="Manamcho با مسیر ۲۰۰۷ یال شمال‌غربی و مسیر ۲۰۲۴ رخ و یال جنوب‌غربی" loading="lazy" decoding="async">
+<img src="/assets/news/aaj-13201217323-1760988417.jpg" alt="Manamcho با مسیر ۲۰۰۷ یال شمال‌غربی و مسیر ۲۰۲۴ رخ و یال جنوب‌غربی" loading="lazy" decoding="async">
 <figcaption>Manamcho (۶۲۶۴ متر). (۱) مسیر اولین صعود از یال شمال‌غربی (Fowler-Ramsden، ۲۰۰۷). (۲) مسیر جدید رخ و یال جنوب‌غربی (Liu-Wang، ۲۰۲۴). عکس: Lai Xingzhu.</figcaption>
 </figure>
 <figure class="source-photo">
-<img src="https://aac-publications.s3.amazonaws.com/articles/aaj-13201217323-1760988507.jpg" alt="شروع مسیر ۲۰۲۴ سمت جنوب‌غربی Manamcho" loading="lazy" decoding="async">
+<img src="/assets/news/aaj-13201217323-1760988507.jpg" alt="شروع مسیر ۲۰۲۴ سمت جنوب‌غربی Manamcho" loading="lazy" decoding="async">
 <figcaption>صعود بخش ابتدایی مسیر ۲۰۲۴ سمت جنوب‌غربی Manamcho. عکس: Liu Junfu / Wang Shuai.</figcaption>
 </figure>
 <figure class="source-photo">
-<img src="https://aac-publications.s3.amazonaws.com/articles/aaj-13201217323-1760988541.jpg" alt="زمین تند برف‌پوش رخ جنوب‌غربی Manamcho" loading="lazy" decoding="async">
+<img src="/assets/news/aaj-13201217323-1760988541.jpg" alt="زمین تند برف‌پوش رخ جنوب‌غربی Manamcho" loading="lazy" decoding="async">
 <figcaption>زمین تند برف‌پوش رخ جنوب‌غربی Manamcho هنگام دومین صعود کوه. یخچال Manam و مسیر نزدیک‌شدن پایین است. عکس: Liu Junfu / Wang Shuai.</figcaption>
 </figure>
 <figure class="source-photo">
-<img src="https://aac-publications.s3.amazonaws.com/articles/aaj-13201217323-1760988569.jpg" alt="سنگ فشرده و ورگلاس یال جنوب‌غربی Manamcho" loading="lazy" decoding="async">
+<img src="/assets/news/aaj-13201217323-1760988569.jpg" alt="سنگ فشرده و ورگلاس یال جنوب‌غربی Manamcho" loading="lazy" decoding="async">
 <figcaption>سنگ فشرده و ورگلاس روی یال جنوب‌غربی Manamcho. عکس: Liu Junfu / Wang Shuai.</figcaption>
 </figure>
 <figure class="source-photo">
-<img src="https://aac-publications.s3.amazonaws.com/articles/aaj-13201217323-1760988602.jpg" alt="سنگ سخت یال جنوب‌غربی Manamcho" loading="lazy" decoding="async">
+<img src="/assets/news/aaj-13201217323-1760988602.jpg" alt="سنگ سخت یال جنوب‌غربی Manamcho" loading="lazy" decoding="async">
 <figcaption>سنگ سخت روی یال جنوب‌غربی Manamcho. عکس: Liu Junfu / Wang Shuai.</figcaption>
 </figure>
 

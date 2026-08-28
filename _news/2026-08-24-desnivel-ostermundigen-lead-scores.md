@@ -14,7 +14,7 @@ related:
   - title: طلای لید اوسترموندیگن برای پولس و مارتینس آلمندروس
     url: /news/2026-08-22-world-climbing-ostermundigen-lead/
 image:
-  path: https://www.desnivel.com/images/2026/08/ichi2-copia.jpg
+  path: /assets/news/desnivel-ichi2-copia.jpg
   alt: ایزیار مارتینس در سری اروپا اوسترموندیگن ۲۰۲۶
   caption: "ایزیار مارتینس در World Climbing Europe Series Ostermundigen ۲۰۲۶. عکس: FEDME."
 ---
@@ -26,11 +26,11 @@ image:
 مسابقه همان ۳۰ و ۳۱ مرداد (۲۱ و ۲۲ اوت ۲۰۲۶) بود. مرحلهٔ بعد را ۶ و ۷ شهریور (۲۸ و ۲۹ اوت) در لاوال فرانسه برای قهرمانی اروپا — لید، سرعت و پارا — نوشته.
 
 <figure class="source-photo">
-<img src="https://www.desnivel.com/images/2026/08/aina-vila-copia.jpg" alt="آینا ویلا در سری اروپا اوسترموندیگن ۲۰۲۶" loading="lazy" decoding="async">
+<img src="/assets/news/desnivel-aina-vila-copia.jpg" alt="آینا ویلا در سری اروپا اوسترموندیگن ۲۰۲۶" loading="lazy" decoding="async">
 <figcaption>آینا ویلا در World Climbing Europe Series Ostermundigen ۲۰۲۶. عکس: FEDME.</figcaption>
 </figure>
 <figure class="source-photo">
-<img src="https://www.desnivel.com/images/2026/08/ichi-y-aina-copia.jpg" alt="ایزیار مارتینس در سری اروپا اوسترموندیگن ۲۰۲۶" loading="lazy" decoding="async">
+<img src="/assets/news/desnivel-ichi-y-aina-copia.jpg" alt="ایزیار مارتینس در سری اروپا اوسترموندیگن ۲۰۲۶" loading="lazy" decoding="async">
 <figcaption>ایزیار مارتینس در World Climbing Europe Series Ostermundigen ۲۰۲۶. عکس: FEDME.</figcaption>
 </figure>
 

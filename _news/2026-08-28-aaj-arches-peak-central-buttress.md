@@ -16,7 +16,7 @@ related:
   - title: هنری بیزو و گابریل فاوا نقطهٔ Cédric and Sophie را بالای یخچال Bel Uluu گرفتند
     url: /news/2026-08-28-aaj-bel-uluu-cedric-sophie/
 image:
-  path: https://aac-publications.s3.amazonaws.com/articles/aaj-13201217378-1779548463.jpg
+  path: /assets/news/aaj-13201217378-1779548463.jpg
   alt: Central Buttress روی رخ شمالی Arches Peak
   caption: "Central Buttress (۱۶۰۰ فوت، III 5.7) روی Arches Peak، معروف به Little J-Berg به‌خاطر شباهت به Johannesburg Mountain، تقریباً خط افق چپ این عکس است. عکس: Jason Griffith."
 ---
@@ -30,10 +30,10 @@ image:
 تا جایی که می‌دانند فقط یک مسیر دیگر روی رخ شمالی ثبت شده: Plumline Buttress (Costie-Filley-Martenson-Small، ۱۹۷۷؛ AAJ ۱۹۷۸) که پشت‌بند شرقی‌ترین را می‌گیرد. (راجر یونگ فقید و پرکار ظاهراً رخ را تنها رفته، اما معلوم نیست از کجا.) برای کسانی که با راناوت متوسط روی زمین آسان‌تر راحت‌اند، Central Buttress (۱۶۰۰ فوت، III 5.7) را پیمایش آلپاین خوبی با دسترسی معقول توصیه کرده. جاه‌طلب‌ها ممکن است پشت‌بند تندتر و نازک‌تر درست غرب صعودشان را هدف بگیرند.
 
 <figure class="source-photo">
-<img src="https://aac-publications.s3.amazonaws.com/articles/aaj-13201217378-1779548409.jpg" alt="Central Buttress روی رخ شمالی Arches Peak" loading="lazy" decoding="async">
+<img src="/assets/news/aaj-13201217378-1779548409.jpg" alt="Central Buttress روی رخ شمالی Arches Peak" loading="lazy" decoding="async">
 <figcaption>Central Buttress (۱۶۰۰ فوت، III 5.7) روی رخ شمالی Arches Peak، معروف به Little J-Berg. عکس: Eric Wehrly.</figcaption>
 </figure>
 <figure class="source-photo">
-<img src="https://aac-publications.s3.amazonaws.com/articles/aaj-13201217378-1779548463.jpg" alt="Central Buttress روی Arches Peak از زاویهٔ دیگر" loading="lazy" decoding="async">
+<img src="/assets/news/aaj-13201217378-1779548463.jpg" alt="Central Buttress روی Arches Peak از زاویهٔ دیگر" loading="lazy" decoding="async">
 <figcaption>Central Buttress (۱۶۰۰ فوت، III 5.7) روی Arches Peak، معروف به Little J-Berg به‌خاطر شباهت به Johannesburg Mountain، تقریباً خط افق چپ این عکس است. عکس: Jason Griffith.</figcaption>
 </figure>
