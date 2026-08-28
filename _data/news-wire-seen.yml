@@ -92,6 +92,9 @@ items:
   - source: American Alpine Journal
     source_url: https://publications.americanalpineclub.org/articles/13201217385
     slug: 2026-08-28-aaj-citadel-babies-first-big-wall
+  - source: UIAA
+    source_url: https://www.theuiaa.org/uiaa-nma-august2026/
+    slug: 2026-08-28-uiaa-nma-august2026
 
 # Seen by the wire but not published. Skip on later runs.
 skipped:

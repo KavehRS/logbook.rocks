@@ -904,4 +904,17 @@ Prior `_news/` bodies not edited this slot. Sampled Desnivel Biacherahi and AAJ 
 
 See `_seo/daily-log.md` 2026-08-28 06:00 GMT.
 
+## 2026-08-28 ~14:20 UTC — owner off-slot UIAA (نامهٔ حمایت به NMA)
+
+Owner asked to translate and publish the new UIAA item immediately. Not a GMT slot. Did **not** rewind `last_run_utc` (`2026-08-28T07:40:00Z`). Did **not** dump AAJ remaining. Next AAJ pair remains Second Mendenhall Tower `13201217387` and Mt. Moffit Enthalpy Ridge `13201217388` for the 12:00 GMT 28 Aug slot.
+
+Source: `https://www.theuiaa.org/uiaa-nma-august2026/` (`pubDate` Fri, 28 Aug 2026 09:30:08 +0000). Featured photo `Nepal-NMA-Aug26-5.jpg`. Skipped logo and related thumbs (symposium preview, Altezza). No death counts in the letter; none invented.
+
+### Triple review — `2026-08-28-uiaa-nma-august2026`
+
+1. **Facts** — Peter Muir (President), André von Rotz (CEO); letter 28 August to Nepal Mountaineering Association; floods and landslides Nepal–Tibet border; loss of life, missing people, destruction of villages/homes/infrastructure; spiritual home of world mountaineering; condolences to NMA staff, membership, wider Nepali people; offer of practical support; continued partnership. PASS.
+2. **Language** — complete Persian of the intro + four letter paragraphs; names left Latin in parentheses; no machine-calque dump. PASS.
+3. **Policy** — no مترجم/نویسنده; no process notes; cover from source article URL; `source_url` in `_data/news-wire-seen.yml`; related to the existing Nepal symposium item. PASS.
+
+
 

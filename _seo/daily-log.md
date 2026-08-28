@@ -141,5 +141,10 @@ Owner follow-up left: Cloudflare Email Routing MX is present but routing is unco
 - This slot adds three unique news URLs (Desnivel Oury/Lenin; AAJ Bel Uluu; AAJ Arches Peak) with unique titles/descriptions, `lang=fa-IR`/`dir=rtl`, remote source photos. `/news/` already splits wire (newest first) from AAJ (`aaj_id` oldest first). Collection-driven `llms.txt` / sitemap / webmcp catalog pick up the new posts on build.
 - Logbook hub still has two H1s (pre-existing) — not churned. No logbook/news body rewrite for keywords. No template/CSS SEO edit.
 
+## 2026-08-28 off-slot UIAA letter SEO
+
+- Owner-requested UIAA NMA letter (`/news/2026-08-28-uiaa-nma-august2026/`). Unique title/description, `lang=fa-IR`/`dir=rtl`, remote source cover, collection-driven sitemap/`llms.txt`.
+- Not a GMT slot SEO rewrite. No template/CSS change. `last_run_utc` left at `2026-08-28T07:40:00Z`.
+
 
 
