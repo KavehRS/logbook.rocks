@@ -22,7 +22,7 @@ body_class: hub-wide
   <section class="news-hub-pane" aria-labelledby="news-hub-wire">
     <h2 id="news-hub-wire">اخبار جدید</h2>
     {% if wire_posts.size > 0 %}
-    <ul data-hub-list>
+    <ul data-hub-list data-hub-page-size="10" data-hub-page-key="w">
       {% for post in wire_posts %}
       {% include news-hub-item.html post=post %}
       {% endfor %}
@@ -35,7 +35,7 @@ body_class: hub-wide
     <h2 id="aaj-2026">ترجمه مقالات</h2>
     <p class="news-hub-note">American Alpine Journal ۲۰۲۶، از جدید به قدیم.</p>
     {% if aaj_posts.size > 0 %}
-    <ul data-hub-list>
+    <ul data-hub-list data-hub-page-size="10" data-hub-page-key="a">
       {% for post in aaj_posts %}
       {% include news-hub-item.html post=post %}
       {% endfor %}
