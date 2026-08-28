@@ -125,7 +125,7 @@ catalog = json.loads((build / "webmcp-catalog.json").read_text())
 hub = catalog.get("news", []) + catalog.get("articles", [])
 if not hub:
     sys.exit("webmcp catalog has no news or articles")
-newest = max(hub, key=lambda item: item["date"])
+newest = max(hub, key=lambda item: item.get("datetime") or item["date"])
 
 home = (build / "index.html").read_text()
 links = re.findall(r'href="(/(?:news|articles)/[^"]+)"', home)

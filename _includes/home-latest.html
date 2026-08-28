@@ -5,7 +5,7 @@ published most recently shows up. Collection-driven on purpose: never hardcode
 titles in index.md, and never hand-edit this list after a publish.
 {% endcomment %}
 {% assign latest_logbook = site.logbook | sort: 'date' | reverse %}
-{% assign hub_items = site.news %}
+{% assign hub_items = site.news | where_exp: "post", "post.layout != 'redirect'" %}
 {% if site.articles %}
   {% assign hub_items = hub_items | concat: site.articles %}
 {% endif %}
@@ -20,7 +20,7 @@ titles in index.md, and never hand-edit this list after a publish.
     </ul>
   </div>
   <div class="home-column">
-    <h2><a href="{{ '/news/' | relative_url }}">خبر کوهنوردی</a></h2>
+    <h2><a href="{{ '/news/' | relative_url }}">خبر کوهنوردی</a> · <a href="{{ '/articles/' | relative_url }}">مقالات</a></h2>
     {% if latest_hub.size == 0 %}
     <p>هنوز خبری منتشر نشده است.</p>
     {% else %}

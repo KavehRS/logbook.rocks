@@ -73,6 +73,9 @@ collections:
   news:
     output: true
     permalink: /news/:path/
+  articles:
+    output: true
+    permalink: /articles/:path/
 
 defaults:
   - scope:
@@ -91,6 +94,11 @@ defaults:
   - scope:
       path: ""
       type: news
+    values:
+      layout: post
+  - scope:
+      path: ""
+      type: articles
     values:
       layout: post
 

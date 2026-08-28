@@ -30,9 +30,10 @@ USAGE (agent-only — do not copy this comment block into published pages)
    unusually high quality, keep the untouched original in `assets/news/<slug>/_originals/` too —
    Jekyll skips `_`-prefixed folders, so it stays in git and out of the live site
 5) Related public UI: «اخبار مرتبط :» + flat list
-6) Hub `/news/` is two columns, both newest first (wire by date; AAJ by `aaj_id`). Homepage `/` is about
-   + four newest logbook teasers + five newest hub teasers (اخبار and مقالات merged by date), refreshed
-   automatically from `_includes/home-latest.html`; the climbing-news archive is `/news/` (title: خبر کوهنوردی).
+6) Hub `/news/` is a single wire list (newest first). AAJ notes live in `_articles/` and on `/articles/`.
+   Homepage `/` is about + four newest logbook teasers + five newest hub teasers (اخبار and مقالات merged
+   by date), refreshed automatically from `_includes/home-latest.html`; the climbing-news archive is
+   `/news/` (title: خبر کوهنوردی) and journal translations are `/articles/` (title: مقالات).
 7) Do not open with «این خبر را می‌آورم» / curator asides. Body = only the source, in Persian
    (complete translation of every narrative paragraph and fact — not a two-sentence stub, not
    «چکار کردی یا نکردی»). Optional link to an existing `/logbook/` report — do not clone a

@@ -22,11 +22,11 @@ Agent rule: `.cursor/rules/news-posts.mdc`
 2. Body = only the source, in Persian. Complete translation of every narrative paragraph and fact. «فقط متن رو خلاصه کنی» means only the source text — no agent process notes — not a two-sentence stub. Wire items: `.cursor/skills/news-wire/SKILL.md`. Do **not** invent events, dates, or people. Do not open with «این خبر را می‌آورم». Do not add a مترجم or نویسنده byline; news pages have none. Do not write what you did or didn’t do («عکسی کپی نکردم»).
 3. Optional link to an existing `/logbook/` report — never clone a full ascent report into news
 4. Photos: **always self-hosted**. Download the source article’s photos into `assets/news/<exact-url-slug>/` (one folder per news item, named like the post file stem), commit them, and point `image:` and every in-body figure at `/assets/news/<slug>/<file>`. Never ship a page that loads a photo from the source host. Publish the standardized copy (max 1600px, sane quality); when the source file is unusually high quality, keep the untouched original in `assets/news/<slug>/_originals/` too — Jekyll ignores `_`-prefixed folders, so it never goes live
-5. Hub `/news/` (title: خبر کوهنوردی): two columns on desktop, stacked on mobile; both newest first; ten items per column then pager. Related UI = only `خبرهای مرتبط :` + flat list
-6. Homepage `/` is about («درباره من») plus four newest logbook teasers and the five newest hub teasers (اخبار + مقالات merged by date) — refreshed on every publish by `_includes/home-latest.html`; world-news archive is `/news/`
+5. Hub `/news/` (title: خبر کوهنوردی): single wire list, newest first, ten items then pager. Related UI = only `خبرهای مرتبط :` + flat list. Journal notes live on `/articles/`.
+6. Homepage `/` is about («درباره من») plus four newest logbook teasers and the five newest hub teasers (اخبار + مقالات merged by date) — refreshed on every publish by `_includes/home-latest.html`; world-news archive is `/news/`; articles archive is `/articles/`
 7. Never publish agent notes in live HTML
 8. Reader-facing UI dates Jalali (`_includes/jalali-date.html`)
-9. خبر کوهنوردی agent (GMT 00/06/12/18): `.cursor/skills/news-wire/SKILL.md` — new items, two AAJ notes, re-check translations, whole-site SEO, publish
+9. خبر کوهنوردی agent (GMT 00/06/12/18): `.cursor/skills/news-wire/SKILL.md` — new wire items, only **new** AAJ 2026 listing items into `_articles/`, re-check translations, whole-site SEO, publish
 
 ## Uniqueness
 

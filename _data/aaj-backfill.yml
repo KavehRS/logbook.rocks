@@ -1,63 +1,57 @@
 # AAJ 2026 complete-translation queue.
-# Owner: publication year 2026 only (not 2025). Oldest remaining first.
-# Kickoff (done): one article — Sir Duk 13201217320 on 2026-08-26.
-# Every later GMT slot (00:00 / 06:00 / 12:00 / 18:00 UTC): publish the next TWO
-# remaining notes as complete Persian translations. If a slot was missed, still
-# publish that slot’s two when catching up (two per missed slot, queue order).
-# Do not skip missed slots. Do not dump the rest of remaining.
+# Owner: publication year 2026 only (not 2025).
+# The 2026 volume is published under _articles/ dated the journal street date
+# 2026-10-01 (10 Mehr 1405). After that dump, remaining holds only NEW 2026
+# listing items that appear after last_run_utc. Do not publish 2025.
 # New 2026 listing items append to the END of remaining.
 publication_year: 2026
-per_slot: 2
+journal_date: "2026-10-01"
 timezone: UTC
-slots_gmt: [0, 6, 12, 18]
-kickoff_count: 1
-next_slot_utc: "2026-08-28T12:00:00Z"
-last_publish_date: "2026-08-28"
-published_on_last_date: 4
+last_publish_date: "2026-10-01"
 remaining_count: 213
 next_ids:
   - "13201217387"  # Second Mendenhall Tower, First Winter Ascent
   - "13201217388"  # Mt. Moffit, Enthalpy Ridge (Northeast Ridge)
 published:
   - id: "13201217320"
-    slug: 2026-08-26-aaj-sir-duk-west-shoulder
-    date: "2026-08-26"
+    slug: 2026-10-01-aaj-sir-duk-west-shoulder
+    date: "2026-10-01"
   - id: "13201217321"
-    slug: 2026-08-27-aaj-chuchepo-northeast-face
-    date: "2026-08-27"
+    slug: 2026-10-01-aaj-chuchepo-northeast-face
+    date: "2026-10-01"
   - id: "13201217322"
-    slug: 2026-08-27-aaj-jiongmudazhi-northwest-face
-    date: "2026-08-27"
+    slug: 2026-10-01-aaj-jiongmudazhi-northwest-face
+    date: "2026-10-01"
   - id: "13201217323"
-    slug: 2026-08-27-aaj-manamcho-southwest-ridge
-    date: "2026-08-27"
+    slug: 2026-10-01-aaj-manamcho-southwest-ridge
+    date: "2026-10-01"
   - id: "13201217364"
-    slug: 2026-08-27-aaj-chomolhari-iii-north-spur
-    date: "2026-08-27"
+    slug: 2026-10-01-aaj-chomolhari-iii-north-spur
+    date: "2026-10-01"
   - id: "13201217365"
-    slug: 2026-08-28-aaj-bel-uluu-cedric-sophie
-    date: "2026-08-28"
+    slug: 2026-10-01-aaj-bel-uluu-cedric-sophie
+    date: "2026-10-01"
   - id: "13201217378"
-    slug: 2026-08-28-aaj-arches-peak-central-buttress
-    date: "2026-08-28"
+    slug: 2026-10-01-aaj-arches-peak-central-buttress
+    date: "2026-10-01"
   - id: "13201217379"
-    slug: 2026-08-27-aaj-dip-top-south-face
-    date: "2026-08-27"
+    slug: 2026-10-01-aaj-dip-top-south-face
+    date: "2026-10-01"
   - id: "13201217380"
-    slug: 2026-08-27-aaj-roberts-mountain-crowheart
-    date: "2026-08-27"
+    slug: 2026-10-01-aaj-roberts-mountain-crowheart
+    date: "2026-10-01"
   - id: "13201217381"
-    slug: 2026-08-27-aaj-hooker-living-stone
-    date: "2026-08-27"
+    slug: 2026-10-01-aaj-hooker-living-stone
+    date: "2026-10-01"
   - id: "13201217383"
-    slug: 2026-08-27-aaj-monolith-children-of-the-sun
-    date: "2026-08-27"
+    slug: 2026-10-01-aaj-monolith-children-of-the-sun
+    date: "2026-10-01"
   - id: "13201217384"
-    slug: 2026-08-28-aaj-batwing-southeast-face
-    date: "2026-08-28"
+    slug: 2026-10-01-aaj-batwing-southeast-face
+    date: "2026-10-01"
   - id: "13201217385"
-    slug: 2026-08-28-aaj-citadel-babies-first-big-wall
-    date: "2026-08-28"
+    slug: 2026-10-01-aaj-citadel-babies-first-big-wall
+    date: "2026-10-01"
 remaining:
   - id: "13201217387"
     url: https://publications.americanalpineclub.org/articles/13201217387
