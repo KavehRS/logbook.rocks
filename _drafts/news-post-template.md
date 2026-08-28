@@ -26,7 +26,9 @@ USAGE (agent-only — do not copy this comment block into published pages)
 4) Images: always self-hosted in `assets/news/YYYY-MM-DD-<slug>/` (one folder per news item, named
    like the post file stem). Download every source photo, commit it, and reference
    `/assets/news/<slug>/<file>` from `image:` and each in-body figure. Never point a published page
-   at the source host
+   at the source host. Publish the standardized copy (max 1600px, sane quality); when the source is
+   unusually high quality, keep the untouched original in `assets/news/<slug>/_originals/` too —
+   Jekyll skips `_`-prefixed folders, so it stays in git and out of the live site
 5) Related public UI: «اخبار مرتبط :» + flat list
 6) Hub `/news/` is two columns, both newest first (wire by date; AAJ by `aaj_id`). Homepage `/` is about + four latest teasers; the climbing-news archive is `/news/` (title: خبر کوهنوردی).
 7) Do not open with «این خبر را می‌آورم» / curator asides. Body = only the source, in Persian

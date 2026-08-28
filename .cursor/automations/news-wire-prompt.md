@@ -43,7 +43,7 @@ Fetch from only:
 
 Every source: complete Persian translation of the article (every narrative paragraph and fact), not a two-sentence stub, not an English paste. Body = only the source text. Do not write what you did or didn’t do.
 
-Skip URLs in `_data/news-wire-seen.yml` when looking for *new* items (job 3 still re-opens published URLs). Do not invent events, dates, names, grades, or live-event results without a source article. Download every source photo into `assets/news/<slug>/` (one folder per item, named like the post file stem), commit it, and reference the local copy — a published page must never load a photo from the source host. Do not publish verbatim English. Do not cover child-sexual-abuse stories.
+Skip URLs in `_data/news-wire-seen.yml` when looking for *new* items (job 3 still re-opens published URLs). Do not invent events, dates, names, grades, or live-event results without a source article. Download every source photo into `assets/news/<slug>/` (one folder per item, named like the post file stem), commit it, and reference the local copy — a published page must never load a photo from the source host. Publish a standardized copy (max 1600px, sane quality) and archive any unusually high-quality original in `assets/news/<slug>/_originals/`, which Jekyll never publishes. Do not publish verbatim English. Do not cover child-sexual-abuse stories.
 
 Always update `_data/news-wire-state.yml` with last_run_utc.
 
