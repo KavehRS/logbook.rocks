@@ -42,7 +42,21 @@ After a content change that should go live **before** GitHub billing is fixed:
 script/ship-live.sh --push --purge
 ```
 
-That script is the only supported way to update the live export. It builds to a temp destination (a leftover `jekyll serve` rewrites `_site/` underneath you), overlays the `published` worktree **without** `--delete`, and refuses to finish when the homepage teasers do not lead with the newest hub item. Copying files by hand is how `/`, `/news/`, the sitemap, and the machine catalogs drift behind the article that was just published. Purge jsDelivr separately only when CSS or images look stale (`https://purge.jsdelivr.net/gh/KavehRS/logbook.rocks@published/<path>`).
+That script is the only supported way to update the live export. It builds to a temp destination (a leftover `jekyll serve` rewrites `_site/` underneath you), overlays the `published` worktree **without** `--delete`, and refuses to finish when:
+
+- the branch is behind `origin/main` (see “Merge main before shipping” below),
+- the build contains wording listed in `.cursor/forbidden-phrases.txt`, or
+- the homepage teasers do not lead with the newest hub item.
+
+Copying files by hand is how `/`, `/news/`, the sitemap, and the machine catalogs drift behind the article that was just published. Purge jsDelivr separately only when CSS or images look stale (`https://purge.jsdelivr.net/gh/KavehRS/logbook.rocks@published/<path>`).
+
+### Merge main before shipping (required)
+
+The owner edits published pages directly on `main`. A `cursor/*` branch forked before those edits still carries the old text, so building from it **silently restores wording the owner removed** — that is exactly how the Kahar team line came back on 28 Aug 2026, three days after `main@c29bb8f` fixed it. Run `git merge origin/main` before every ship; `script/ship-live.sh` aborts if you forget.
+
+### Retracted wording never returns
+
+When the owner asks for text to be taken out for good, delete it **and** add a matching regex to `.cursor/forbidden-phrases.txt`. Every ship greps the built HTML against that list and aborts on a hit, so no later branch, revert, or template change can put it back. The list is excluded from the build.
 
 **Every publish refreshes the homepage.** `/` lists the four newest logbook reports plus the **five newest hub items, with اخبار and مقالات merged and sorted by date** — `_includes/home-latest.html` derives both lists from the collections, so never hardcode teasers in `index.md` and never hand-edit the built HTML.
 
