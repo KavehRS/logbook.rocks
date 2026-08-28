@@ -27,15 +27,32 @@ CF_ZONE_ID="${CF_ZONE_ID:-bb0257be09f261a3c9b40a5d7f55c586}"
 
 DO_PUSH=0
 DO_PURGE=0
+ALLOW_BEHIND_MAIN=0
 for arg in "$@"; do
   case "$arg" in
     --push) DO_PUSH=1 ;;
     --purge) DO_PURGE=1 ;;
+    --allow-behind-main) ALLOW_BEHIND_MAIN=1 ;;
     *) echo "unknown option: $arg" >&2; exit 2 ;;
   esac
 done
 
 cd "$REPO_ROOT"
+
+# Shipping from a branch that is behind main republishes whatever the owner
+# fixed there. That is how the Kahar team line came back after being removed.
+echo "==> checking this branch has everything from main"
+if git fetch -q origin main 2>/dev/null; then
+  BEHIND="$(git rev-list --count HEAD..origin/main)"
+  if [ "$BEHIND" != "0" ]; then
+    echo "This branch is missing $BEHIND commit(s) from origin/main:" >&2
+    git log --oneline HEAD..origin/main >&2
+    echo "Merge them first (git merge origin/main), or pass --allow-behind-main." >&2
+    [ "$ALLOW_BEHIND_MAIN" = "1" ] || exit 1
+  fi
+else
+  echo "    could not reach origin; skipping the main check" >&2
+fi
 
 if [ ! -d "$PUBLISHED_WORKTREE/.git" ] && [ ! -f "$PUBLISHED_WORKTREE/.git" ]; then
   cat >&2 <<EOF
@@ -57,6 +74,44 @@ if ! JEKYLL_ENV=production bundle exec jekyll build --destination "$BUILD_DIR" >
   exit 1
 fi
 rm -f "$BUILD_LOG"
+
+echo "==> checking no retracted wording is in the build"
+python3 - "$BUILD_DIR" "$REPO_ROOT/.cursor/forbidden-phrases.txt" <<'PY'
+import pathlib
+import re
+import sys
+
+build, patterns_file = pathlib.Path(sys.argv[1]), pathlib.Path(sys.argv[2])
+if not patterns_file.exists():
+    print("    no forbidden-phrases list; skipping")
+    raise SystemExit(0)
+
+patterns = [
+    line.strip()
+    for line in patterns_file.read_text().splitlines()
+    if line.strip() and not line.lstrip().startswith("#")
+]
+if not patterns:
+    print("    forbidden-phrases list is empty; skipping")
+    raise SystemExit(0)
+
+hits = []
+for page in build.rglob("*.html"):
+    text = page.read_text(errors="replace")
+    for pattern in patterns:
+        if re.search(pattern, text):
+            hits.append((page.relative_to(build), pattern))
+
+if hits:
+    for page, pattern in hits:
+        print(f"    RETRACTED TEXT in {page}: /{pattern}/", file=sys.stderr)
+    raise SystemExit(
+        "Refusing to ship. This wording was removed on purpose (see "
+        ".cursor/forbidden-phrases.txt). Fix the source file — and check whether this "
+        "branch is simply behind main."
+    )
+print(f"    clean against {len(patterns)} retracted pattern(s)")
+PY
 
 echo "==> checking the homepage lists the newest hub item"
 python3 - "$BUILD_DIR" <<'PY'
