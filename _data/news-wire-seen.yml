@@ -65,6 +65,15 @@ items:
   - source: American Alpine Journal
     source_url: https://publications.americanalpineclub.org/articles/13201217364
     slug: 2026-08-27-aaj-chomolhari-iii-north-spur
+  - source: Desnivel
+    source_url: https://www.desnivel.com/expediciones/daniel-y-miguel-oury-al-lenin-7-134-m-tras-aclimatar-con-inteligencia-artificial/
+    slug: 2026-08-28-desnivel-oury-lenin-ai-acclimatization
+  - source: American Alpine Journal
+    source_url: https://publications.americanalpineclub.org/articles/13201217365
+    slug: 2026-08-28-aaj-bel-uluu-cedric-sophie
+  - source: American Alpine Journal
+    source_url: https://publications.americanalpineclub.org/articles/13201217378
+    slug: 2026-08-28-aaj-arches-peak-central-buttress
 
 # Seen by the wire but not published. Skip on later runs.
 skipped:
@@ -86,3 +95,9 @@ skipped:
   - source: PlanetMountain
     source_url: https://www.planetmountain.com/en/news/alpinism/biacherahi-central-climbed-latok-massif-thomas-huber-miquel-mas-victor-sans.html
     reason: duplicate of the Desnivel Biacherahi Central / Wild Soul item
+  - source: Desnivel
+    source_url: https://www.desnivel.com/escalada-roca/rachel-pearce-repite-la-expuesta-indian-face-el-primer-e9-6c-de-gran-bretana/
+    reason: duplicate of the Climbing.com Rachel Pearce Indian Face item
+  - source: Desnivel
+    source_url: https://www.desnivel.com/escalada-roca/11-al-13-de-septiembre-2026-viii-encuentro-de-encordadas-en-trasobares/
+    reason: women's climbing meet announcement, no new climb or safety fact

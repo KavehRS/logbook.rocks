@@ -860,3 +860,36 @@ Fired 26 minutes after the completed 06:00 GMT slot. Not a scheduled GMT hour. D
 
 Window: `2026-08-27T06:05:00Z` → this check. Re-fetched UIAA, Climbing.com, Desnivel alpinismo/roca/competiciones, ExplorersWeb climbing, Alpinist, IFSC `/news`, Laval event page, PlanetMountain/UKC 403. No in-window item. Laval still has no athlete names or scores (event 28–30 Aug). No new `_news/` files. No `published` overlay. No new PR.
 
+## 2026-08-28 06:00 GMT — missed-slot catch-up (ran ~07:40 UTC)
+
+Owner asked why AAJ and other-site news were not moving, and why the six-hour cycle was not automatic. GitHub Actions news-wire workflow no-ops without `CURSOR_API_KEY`; Cursor Automation did not fire 12:00/18:00 27 Aug or 00:00/06:00 28 Aug. This run is the 06:00 GMT 28 Aug slot (missed; still two AAJ notes, full source catch-up since `last_run_utc`).
+
+Window: `2026-08-27T06:32:00Z` → `2026-08-28T07:40:00Z`.
+
+### Job 1 — sources 1–9
+
+- Desnivel expediciones: Daniel y Miguel Oury / Lenin + AI acclimatization (`2026-08-28T07:31:05Z`). Complete translation. PASS facts/language/policy.
+- Desnivel roca: Rachel Pearce Indian Face — duplicate of Climbing.com; skipped.
+- Desnivel roca: VIII Encordadas Trasobares meet — event listing, no new climb; skipped.
+- ExplorersWeb «Climber Stuck Hanging From Dolomites Spire» `2026-08-26T18:00:06Z` is before `last_run_utc`; not rewound.
+- UIAA, Climbing.com, Alpinist, ExWeb expeditions/8000ers, World Climbing/IFSC: no in-window unseen item. Latest IFSC news still Ostermundigen 24 Aug.
+- Laval Europe Championships 28–30 Aug: event page has no athlete names or scores. No invented results.
+- PlanetMountain / UKC HTML 403.
+- DAV Expedkader / press and CAI Lo Scarpone: no new expedition report in the window.
+
+### Job 2 — AAJ 2026 (two only)
+
+1. `13201217365` Bel Uluu / Cédric and Sophie — `_news/2026-08-28-aaj-bel-uluu-cedric-sophie.md` dated 2026-08-28 09:32 +0330 (first remaining, later timestamp). Facts: Henry Bizot / Gabriel Fava; 5–20 Aug 2025; Camp 2 4,420 m; 250 m east ice 45–60°; top 5,090 m D+; route The Six Sons, Daughters in Law, and Grandchildren; Totmyanin death on Pobeda. Photos from journal S3. PASS.
+2. `13201217378` Arches Peak Central Buttress — `_news/2026-08-28-aaj-arches-peak-central-buttress.md` dated 2026-08-28 09:30 +0330. Facts: Eric Wehrly / Rolf Larson; 3 Aug 2025; 1,600’ III 5.7; ten roped pitches; Plumline Buttress 1977. Photos Jason Griffith / Eric Wehrly. PASS.
+
+Remaining 219. Next pair: Dip Top Peak `13201217379`, Roberts Mountain `13201217380`. No catch-up dump of missed 12:00/18:00/00:00 slots.
+
+### Job 3 — re-check
+
+Prior `_news/` bodies not edited this slot. Sampled Desnivel Biacherahi and AAJ Chomolhari against previously fetched facts; no contradiction found. PlanetMountain Rogora still 403. Laval still no results.
+
+### Job 4 — SEO
+
+See `_seo/daily-log.md` 2026-08-28 06:00 GMT.
+
+

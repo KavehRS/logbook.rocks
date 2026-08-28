@@ -9,13 +9,13 @@ per_slot: 2
 timezone: UTC
 slots_gmt: [0, 6, 12, 18]
 kickoff_count: 1
-next_slot_utc: "2026-08-27T12:00:00Z"
-last_publish_date: "2026-08-27"
-published_on_last_date: 4
-remaining_count: 221
+next_slot_utc: "2026-08-28T12:00:00Z"
+last_publish_date: "2026-08-28"
+published_on_last_date: 2
+remaining_count: 219
 next_ids:
-  - "13201217365"  # Bel Uluu Valley, Cédric and Sophie (Point 5,090)
-  - "13201217378"  # Arches Peak, North Face, Central Buttress
+  - "13201217379"  # Dip Top Peak, South Face
+  - "13201217380"  # Roberts Mountain, Northeast Face, Crowheart
 published:
   - id: "13201217320"
     slug: 2026-08-26-aaj-sir-duk-west-shoulder
@@ -32,13 +32,13 @@ published:
   - id: "13201217364"
     slug: 2026-08-27-aaj-chomolhari-iii-north-spur
     date: "2026-08-27"
-remaining:
   - id: "13201217365"
-    url: https://publications.americanalpineclub.org/articles/13201217365
-    title: "Bel Uluu Valley, Cédric and Sophie (Point 5,090)"
+    slug: 2026-08-28-aaj-bel-uluu-cedric-sophie
+    date: "2026-08-28"
   - id: "13201217378"
-    url: https://publications.americanalpineclub.org/articles/13201217378
-    title: "Arches Peak, North Face, Central Buttress"
+    slug: 2026-08-28-aaj-arches-peak-central-buttress
+    date: "2026-08-28"
+remaining:
   - id: "13201217379"
     url: https://publications.americanalpineclub.org/articles/13201217379
     title: "Dip Top Peak, South Face"

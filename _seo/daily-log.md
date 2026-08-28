@@ -134,4 +134,12 @@ Owner follow-up left: Cloudflare Email Routing MX is present but routing is unco
 - This slot adds two unique news URLs (Manamcho, Chomolhari III) with remote AAJ covers, unique titles/descriptions, `lang=fa-IR`/`dir=rtl`. `llms.txt` / sitemap / webmcp catalog are collection-driven.
 - Logbook hub still has two H1s (pre-existing) — not churned. No logbook/news body rewrite for keywords. No template/CSS SEO edit.
 
+## 2026-08-28 06:00 GMT — news-wire slot SEO (job 4)
+
+- Sources consulted: Google Search Central SEO starter; no material change to crawl signals vs last slot.
+- Live origin still the GitHub Pages placeholder; audit uses `published` raw HTML plus this slot’s production build.
+- This slot adds three unique news URLs (Desnivel Oury/Lenin; AAJ Bel Uluu; AAJ Arches Peak) with unique titles/descriptions, `lang=fa-IR`/`dir=rtl`, remote source photos. `/news/` already splits wire (newest first) from AAJ (`aaj_id` oldest first). Collection-driven `llms.txt` / sitemap / webmcp catalog pick up the new posts on build.
+- Logbook hub still has two H1s (pre-existing) — not churned. No logbook/news body rewrite for keywords. No template/CSS SEO edit.
+
+
 
