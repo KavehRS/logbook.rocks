@@ -143,6 +143,129 @@
   padding: 0.35rem 0.75rem;
 }
 
+body.hub-wide {
+  max-width: 1080px;
+}
+
+.news-hub-split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem 2rem;
+  align-items: start;
+  width: 100%;
+}
+
+.news-hub-pane h2 {
+  font-size: 1.15rem;
+  line-height: 1.45;
+  margin: 0 0 0.4rem;
+}
+
+.news-hub-note {
+  margin: 0 0 0.85rem;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #777;
+}
+
+.news-hub-pane ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.news-hub-item {
+  margin: 0 0 0.9rem;
+  padding: 0 0 0.75rem;
+  list-style: none;
+  border-bottom: 1px solid #eee;
+}
+
+.news-hub-item:last-child {
+  margin-bottom: 0;
+}
+
+.news-hub-item > a {
+  display: inline-block;
+  font-size: 1.05rem;
+  font-weight: bold;
+  text-decoration: none;
+  line-height: 1.45;
+}
+
+.news-hub-item .meta {
+  margin: 0.3rem 0 0;
+  color: #777;
+  font-size: 0.85rem;
+}
+
+.news-hub-blurb {
+  margin: 0.35rem 0 0;
+  color: #555;
+  font-size: 0.9rem;
+  line-height: 1.55;
+}
+
+.news-hub-pane + .news-hub-pane {
+  border-inline-start: 1px solid #eee;
+  padding-inline-start: 1.5rem;
+}
+
+[dir="rtl"] .news-hub-split,
+[dir="rtl"] .news-hub-pane h2,
+[dir="rtl"] .news-hub-pane p,
+[dir="rtl"] .news-hub-item {
+  text-align: right;
+  text-align-last: right;
+}
+
+html[dir="rtl"] article .news-hub-pane p,
+html[dir="rtl"] article .news-hub-item,
+html[dir="rtl"] article .news-hub-blurb {
+  text-align: right;
+  text-align-last: right;
+}
+
+@media (prefers-color-scheme: dark) {
+  .news-hub-item,
+  .news-hub-pane + .news-hub-pane {
+    border-color: #1a3344;
+  }
+
+  .news-hub-note,
+  .news-hub-item .meta {
+    color: #8a8a8a;
+  }
+
+  .news-hub-blurb {
+    color: #9a9a9a;
+  }
+}
+
+@include media-query($on-palm) {
+  body.hub-wide {
+    max-width: $content-width;
+  }
+
+  .news-hub-split {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .news-hub-pane + .news-hub-pane {
+    border-inline-start: none;
+    padding-inline-start: 0;
+    border-top: 1px solid #eee;
+    padding-top: 1.25rem;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    .news-hub-pane + .news-hub-pane {
+      border-top-color: #1a3344;
+    }
+  }
+}
+
 .home-column p {
   margin: 0 0 0.75rem;
   font-size: 0.95rem;

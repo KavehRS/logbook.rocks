@@ -37,7 +37,7 @@ layout: compress
     </script>
 </head>
 
-<body>
+<body{% if page.body_class %} class="{{ page.body_class }}"{% endif %}>
     <header class="site-header" style="display: flex; justify-content: space-between; align-items: center; padding: 10px 20px;">
         <div>
             <p class="post-headline site-brand" style="margin: 0;">
