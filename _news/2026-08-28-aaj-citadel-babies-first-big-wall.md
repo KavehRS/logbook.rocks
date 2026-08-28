@@ -16,7 +16,7 @@ related:
   - title: ایلای استورم و روبز پریش Peak ۹٬۰۲۰ فوتی Batwing را در Hayes Range گرفتند
     url: /news/2026-08-28-aaj-batwing-southeast-face/
 image:
-  path: /assets/news/aaj-13201217385-1779893351.jpg
+  path: /assets/news/2026-08-28-aaj-citadel-babies-first-big-wall/aaj-13201217385-1779893351.jpg
   alt: پشت‌بند شرقی The Citadel با خط Babies’ First Big Wall
   caption: "پشت‌بند شرقی The Citadel با خط Babies’ First Big Wall (۶۰۰ متر، 5.10 A2). ونسان لاپوآنت و کامرون جاردل مسیر جدید را از ۱۲ تا ۱۶ ژوئن ۲۰۲۵ تا اتصال به مسیر پشت‌بند شرقی (Black-Embick-Graber-Long، ۱۹۷۶) رفتند. عکس: Cameron Jardell."
 ---
@@ -34,30 +34,30 @@ image:
 بعد از روزهای باران و باد، رخ غربی قلهٔ ماهواره‌ای شمال Vertex Peak را تلاش کردند و به‌خاطر باران مداوم دست کشیدند.
 
 <figure class="source-photo">
-<img src="/assets/news/aaj-13201217385-1779893279.jpg" alt="سمت شرق The Citadel بالای یخچال Shadows با چند مسیر" loading="lazy" decoding="async">
+<img src="/assets/news/2026-08-28-aaj-citadel-babies-first-big-wall/aaj-13201217385-1779893279.jpg" alt="سمت شرق The Citadel بالای یخچال Shadows با چند مسیر" loading="lazy" decoding="async">
 <figcaption>سمت شرق The Citadel بالای یخچال Shadows، خط تقریبی (۱) Hypa Zypa Couloir (۲۰۱۳)، (۲) Supa Dupa Couloir (۲۰۰۳)، (۳) Babies’ First Big Wall (۲۰۲۵)، (۴) Last Cry of the Butterfly (۲۰۰۳)، (۵) شروع Off the Wall Madness (۲۰۰۲) که وسط راه به East Buttress وصل شد، و (۶) East Buttress (۱۹۷۶). مسیر ۳ و ۵ روی پیش‌قله ایستادند؛ بقیه تا بلندترین نقطه ادامه دادند. عکس: Kris Szilas.</figcaption>
 </figure>
 <figure class="source-photo">
-<img src="/assets/news/aaj-13201217385-1779893351.jpg" alt="پشت‌بند شرقی The Citadel با خط Babies’ First Big Wall" loading="lazy" decoding="async">
+<img src="/assets/news/2026-08-28-aaj-citadel-babies-first-big-wall/aaj-13201217385-1779893351.jpg" alt="پشت‌بند شرقی The Citadel با خط Babies’ First Big Wall" loading="lazy" decoding="async">
 <figcaption>پشت‌بند شرقی The Citadel با خط Babies’ First Big Wall (۶۰۰ متر، 5.10 A2). ونسان لاپوآنت و کامرون جاردل مسیر جدید را از ۱۲ تا ۱۶ ژوئن ۲۰۲۵ تا اتصال به مسیر پشت‌بند شرقی (Black-Embick-Graber-Long، ۱۹۷۶) رفتند. عکس: Cameron Jardell.</figcaption>
 </figure>
 <figure class="source-photo">
-<img src="/assets/news/aaj-13201217385-1779893436.jpg" alt="یال جنوبی Avalanche Peak" loading="lazy" decoding="async">
+<img src="/assets/news/2026-08-28-aaj-citadel-babies-first-big-wall/aaj-13201217385-1779893436.jpg" alt="یال جنوبی Avalanche Peak" loading="lazy" decoding="async">
 <figcaption>یال جنوبی (Bauman-Lewis، ۱۹۸۴؛ AAJ ۱۹۸۵) Avalanche Peak دیوارهٔ سنگی مشخص است. عکس: Cameron Jardell.</figcaption>
 </figure>
 <figure class="source-photo">
-<img src="/assets/news/aaj-13201217385-1779893503.jpg" alt="ونسان لاپوآنت روی یال جنوبی Avalanche Peak" loading="lazy" decoding="async">
+<img src="/assets/news/2026-08-28-aaj-citadel-babies-first-big-wall/aaj-13201217385-1779893503.jpg" alt="ونسان لاپوآنت روی یال جنوبی Avalanche Peak" loading="lazy" decoding="async">
 <figcaption>ونسان لاپوآنت گزینه‌ها را روی یال جنوبی Avalanche Peak (Bauman-Lewis، ۱۹۸۴) می‌سنجد؛ بعد از گشودن مسیر دیوارهٔ جدید روی The Citadel با کامرون جاردل تکرارش کردند. عکس: Cameron Jardell.</figcaption>
 </figure>
 <figure class="source-photo">
-<img src="/assets/news/aaj-13201217385-1779893567.jpg" alt="نگاه به شمال روی یخچال Shadows از بالای The Citadel" loading="lazy" decoding="async">
+<img src="/assets/news/2026-08-28-aaj-citadel-babies-first-big-wall/aaj-13201217385-1779893567.jpg" alt="نگاه به شمال روی یخچال Shadows از بالای The Citadel" loading="lazy" decoding="async">
 <figcaption>نگاه به شمال روی یخچال Shadows از بالای The Citadel. عکس: Cameron Jardell.</figcaption>
 </figure>
 <figure class="source-photo">
-<img src="/assets/news/aaj-13201217385-1779893629.jpg" alt="ونسان لاپوآنت روی اسلب بالایی Babies’ First Big Wall" loading="lazy" decoding="async">
+<img src="/assets/news/2026-08-28-aaj-citadel-babies-first-big-wall/aaj-13201217385-1779893629.jpg" alt="ونسان لاپوآنت روی اسلب بالایی Babies’ First Big Wall" loading="lazy" decoding="async">
 <figcaption>ونسان لاپوآنت روی اسلب بالایی Babies’ First Big Wall، مسیر دیوارهٔ جدید پشت‌بند شرقی The Citadel در Kichatna. عکس: Cameron Jardell.</figcaption>
 </figure>
 <figure class="source-photo">
-<img src="/assets/news/aaj-13201217385-1779893677.jpg" alt="ونسان لاپوآنت فرود Babies’ First Big Wall" loading="lazy" decoding="async">
+<img src="/assets/news/2026-08-28-aaj-citadel-babies-first-big-wall/aaj-13201217385-1779893677.jpg" alt="ونسان لاپوآنت فرود Babies’ First Big Wall" loading="lazy" decoding="async">
 <figcaption>ونسان لاپوآنت فرود Babies’ First Big Wall روی پشت‌بند شرقی The Citadel. عکس: Cameron Jardell.</figcaption>
 </figure>

@@ -16,7 +16,7 @@ related:
   - title: ونسان لاپوآنت و کامرون جاردل Babies’ First Big Wall را روی The Citadel گشودند
     url: /news/2026-08-28-aaj-citadel-babies-first-big-wall/
 image:
-  path: /assets/news/aaj-13201217384-1779826364.jpg
+  path: /assets/news/2026-08-28-aaj-batwing-southeast-face/aaj-13201217384-1779826364.jpg
   alt: ایلای استورم روی یال قلهٔ Batwing
   caption: "ایلای استورم روی یال قلهٔ Batwing (Peak ۹۰۲۰ فوت)، بعد از صعود رخ جنوب‌شرقی. عکس: Robes Parrish."
 ---
@@ -44,34 +44,34 @@ image:
 سفر دومین صعود شناخته‌شدهٔ The Handicapped Ramp را به آن‌ها نداد، اما چند صعود خوب گرفتند و به تلاش در شرایط سخت در بخش کم‌بازدید Hayes Range افتخار می‌کنند.
 
 <figure class="source-photo">
-<img src="/assets/news/aaj-13201217384-1779825831.jpg" alt="ایلای استورم در نزدیک‌شدن به Point ۸۳۵۰ فوت" loading="lazy" decoding="async">
+<img src="/assets/news/2026-08-28-aaj-batwing-southeast-face/aaj-13201217384-1779825831.jpg" alt="ایلای استورم در نزدیک‌شدن به Point ۸۳۵۰ فوت" loading="lazy" decoding="async">
 <figcaption>ایلای استورم در نزدیک‌شدن به Point ۸۳۵۰ فوت. یک طول بالاتر دست کشیدند، چون راه امن فرود نبود. عکس: Robes Parrish.</figcaption>
 </figure>
 <figure class="source-photo">
-<img src="/assets/news/aaj-13201217384-1779826016.jpg" alt="ایلای استورم سرطناب تنها طول Point ۸۳۵۰ فوت" loading="lazy" decoding="async">
+<img src="/assets/news/2026-08-28-aaj-batwing-southeast-face/aaj-13201217384-1779826016.jpg" alt="ایلای استورم سرطناب تنها طول Point ۸۳۵۰ فوت" loading="lazy" decoding="async">
 <figcaption>ایلای استورم سرطناب اولین و تنها طولی که روی Point ۸۳۵۰ فوت رفتند پیش از دست کشیدن. عکس: Robes Parrish.</figcaption>
 </figure>
 <figure class="source-photo">
-<img src="/assets/news/aaj-13201217384-1779826093.jpg" alt="ایلای استورم فرود از بولارد Point ۸۳۵۰ فوت" loading="lazy" decoding="async">
+<img src="/assets/news/2026-08-28-aaj-batwing-southeast-face/aaj-13201217384-1779826093.jpg" alt="ایلای استورم فرود از بولارد Point ۸۳۵۰ فوت" loading="lazy" decoding="async">
 <figcaption>ایلای استورم بعد از دست کشیدن از Point ۸۳۵۰ فوت از بولارد فرود می‌آید. رخ شرقی Mt. Hess در دوردست میان ابر. عکس: Robes Parrish.</figcaption>
 </figure>
 <figure class="source-photo">
-<img src="/assets/news/aaj-13201217384-1779826155.jpg" alt="Point ۸۳۵۰ فوت از شاخهٔ شرقی یخچال Gillam" loading="lazy" decoding="async">
+<img src="/assets/news/2026-08-28-aaj-batwing-southeast-face/aaj-13201217384-1779826155.jpg" alt="Point ۸۳۵۰ فوت از شاخهٔ شرقی یخچال Gillam" loading="lazy" decoding="async">
 <figcaption>Point ۸۳۵۰ فوت (وسط، قلهٔ سنگی) از شاخهٔ شرقی یخچال Gillam. Point ۸۰۹۲ فوت قلهٔ برفی کمی راست است. عکس: Robes Parrish.</figcaption>
 </figure>
 <figure class="source-photo">
-<img src="/assets/news/aaj-13201217384-1779826246.jpg" alt="ایلای استورم اسکی به‌سوی Point ۸۳۵۰ فوت با رخ شرقی Hess" loading="lazy" decoding="async">
+<img src="/assets/news/2026-08-28-aaj-batwing-southeast-face/aaj-13201217384-1779826246.jpg" alt="ایلای استورم اسکی به‌سوی Point ۸۳۵۰ فوت با رخ شرقی Hess" loading="lazy" decoding="async">
 <figcaption>ایلای استورم اسکی به‌سوی Point ۸۳۵۰ فوت؛ رخ شرقی Mt. Hess در پس‌زمینه. عکس: Robes Parrish.</figcaption>
 </figure>
 <figure class="source-photo">
-<img src="/assets/news/aaj-13201217384-1779826308.jpg" alt="Batwing با مسیر مه ۲۰۲۵ روی رخ جنوب‌شرقی" loading="lazy" decoding="async">
+<img src="/assets/news/2026-08-28-aaj-batwing-southeast-face/aaj-13201217384-1779826308.jpg" alt="Batwing با مسیر مه ۲۰۲۵ روی رخ جنوب‌شرقی" loading="lazy" decoding="async">
 <figcaption>Batwing (Peak ۹۰۲۰ فوت) با مسیر اواخر مهٔ ۲۰۲۵: بالا از رخ جنوب‌شرقی، بعد غرب و جنوب روی یال تا فلات قله. عکس: Robes Parrish.</figcaption>
 </figure>
 <figure class="source-photo">
-<img src="/assets/news/aaj-13201217384-1779826364.jpg" alt="ایلای استورم روی یال قلهٔ Batwing" loading="lazy" decoding="async">
+<img src="/assets/news/2026-08-28-aaj-batwing-southeast-face/aaj-13201217384-1779826364.jpg" alt="ایلای استورم روی یال قلهٔ Batwing" loading="lazy" decoding="async">
 <figcaption>ایلای استورم روی یال قلهٔ Batwing (Peak ۹۰۲۰ فوت)، بعد از صعود رخ جنوب‌شرقی. عکس: Robes Parrish.</figcaption>
 </figure>
 <figure class="source-photo">
-<img src="/assets/news/aaj-13201217384-1779826473.jpg" alt="ایلای استورم اسکی شیب پایین Batwing" loading="lazy" decoding="async">
+<img src="/assets/news/2026-08-28-aaj-batwing-southeast-face/aaj-13201217384-1779826473.jpg" alt="ایلای استورم اسکی شیب پایین Batwing" loading="lazy" decoding="async">
 <figcaption>ایلای استورم اسکی شیب پایین Batwing. عکس: Robes Parrish.</figcaption>
 </figure>

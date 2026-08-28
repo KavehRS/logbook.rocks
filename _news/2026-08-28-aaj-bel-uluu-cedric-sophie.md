@@ -16,7 +16,7 @@ related:
   - title: رولف لارسون و اریک وهرلی Central Buttress را روی رخ شمالی Arches Peak گشودند
     url: /news/2026-08-28-aaj-arches-peak-central-buttress/
 image:
-  path: /assets/news/aaj-13201217365-1762607599.jpg
+  path: /assets/news/2026-08-28-aaj-bel-uluu-cedric-sophie/aaj-13201217365-1762607599.jpg
   alt: هنری بیزو روی Cédric and Sophie رو به تاجیکستان
   caption: "هنری بیزو روی Cédric and Sophie (نقطهٔ ۵۰۹۰ متر)، نگاه به غرب به تاجیکستان. قلهٔ بلند راست Korzhenevskaya (۷۱۰۵ متر) است، سومین قلهٔ بلند پامیر. عکس: Gabriel Fava."
 ---
@@ -36,26 +36,26 @@ image:
 آخر اکسپدیشن، وقتی به روستای Daroot Korgon رسید، خبر بسیار تلخ مرگ نیکولای توتمیانین را شنید که هنگام بیماری در ارتفاع روی پیک Pobeda افتاده بود. نوشته خیلی متأثر شد؛ از نیکولای و دو اکسپدیشنی که با هم داشتند خاطرهٔ خوب دارد: ۲۰۱۴ درهٔ Kichkesuu و ۲۰۱۹ Bel Uluu. تسلیتش را به خانواده و نزدیکان نیکولای فرستاده.
 
 <figure class="source-photo">
-<img src="/assets/news/aaj-13201217365-1762607541.jpg" alt="نگاه به غرب به‌سوی انتهای یخچال Bel Uluu و Peak ۵۴۰۲ متر" loading="lazy" decoding="async">
+<img src="/assets/news/2026-08-28-aaj-bel-uluu-cedric-sophie/aaj-13201217365-1762607541.jpg" alt="نگاه به غرب به‌سوی انتهای یخچال Bel Uluu و Peak ۵۴۰۲ متر" loading="lazy" decoding="async">
 <figcaption>نگاه به غرب به‌سوی انتهای یخچال Bel Uluu. قلهٔ بلند وسط Peak ۵۴۰۲ متر است. تیم ۲۰۲۵ شیب یخی را تا نقطهٔ پست یال راست Peak ۵۴۰۲ متر رفت. Cédric and Sophie (نقطهٔ ۵۰۹۰ متر) درست راست بالای یخ است. عکس: Henry Bizot.</figcaption>
 </figure>
 <figure class="source-photo">
-<img src="/assets/news/aaj-13201217365-1762607570.jpg" alt="صعود شیب یخی به‌سوی Cédric and Sophie" loading="lazy" decoding="async">
+<img src="/assets/news/2026-08-28-aaj-bel-uluu-cedric-sophie/aaj-13201217365-1762607570.jpg" alt="صعود شیب یخی به‌سوی Cédric and Sophie" loading="lazy" decoding="async">
 <figcaption>صعود شیب یخی به‌سوی Cédric and Sophie. عکس: Gabriel Fava.</figcaption>
 </figure>
 <figure class="source-photo">
-<img src="/assets/news/aaj-13201217365-1762607599.jpg" alt="هنری بیزو روی Cédric and Sophie رو به تاجیکستان" loading="lazy" decoding="async">
+<img src="/assets/news/2026-08-28-aaj-bel-uluu-cedric-sophie/aaj-13201217365-1762607599.jpg" alt="هنری بیزو روی Cédric and Sophie رو به تاجیکستان" loading="lazy" decoding="async">
 <figcaption>هنری بیزو روی Cédric and Sophie (نقطهٔ ۵۰۹۰ متر)، نگاه به غرب به تاجیکستان. قلهٔ بلند راست Korzhenevskaya (۷۱۰۵ متر) است، سومین قلهٔ بلند پامیر. عکس: Gabriel Fava.</figcaption>
 </figure>
 <figure class="source-photo">
-<img src="/assets/news/aaj-13201217365-1762607634.jpg" alt="گابریل فاوا روی یال نزدیک Cédric and Sophie" loading="lazy" decoding="async">
+<img src="/assets/news/2026-08-28-aaj-bel-uluu-cedric-sophie/aaj-13201217365-1762607634.jpg" alt="گابریل فاوا روی یال نزدیک Cédric and Sophie" loading="lazy" decoding="async">
 <figcaption>گابریل فاوا روی یال نزدیک Cédric and Sophie (نقطهٔ ۵۰۹۰ متر). نگاه شمال‌شرق به‌سوی Peak ۵۲۸۴ متر. عکس: Henry Bizot.</figcaption>
 </figure>
 <figure class="source-photo">
-<img src="/assets/news/aaj-13201217365-1762607667.jpg" alt="خط صعود شیب یخی رخ شرقی به Cédric and Sophie" loading="lazy" decoding="async">
+<img src="/assets/news/2026-08-28-aaj-bel-uluu-cedric-sophie/aaj-13201217365-1762607667.jpg" alt="خط صعود شیب یخی رخ شرقی به Cédric and Sophie" loading="lazy" decoding="async">
 <figcaption>خط صعود شیب یخی رو به شرق تا Cédric and Sophie (نقطهٔ ۵۰۹۰ متر)، بالای یخچال Bel Uluu. عکس: Henry Bizot.</figcaption>
 </figure>
 <figure class="source-photo">
-<img src="/assets/news/aaj-13201217365-1762607689.jpg" alt="هنری بیزو و گابریل فاوا در کمپ ۲ بعد از صعود" loading="lazy" decoding="async">
+<img src="/assets/news/2026-08-28-aaj-bel-uluu-cedric-sophie/aaj-13201217365-1762607689.jpg" alt="هنری بیزو و گابریل فاوا در کمپ ۲ بعد از صعود" loading="lazy" decoding="async">
 <figcaption>هنری بیزو (چپ) و گابریل فاوا در کمپ ۲ بعد از صعود Cédric and Sophie (نقطهٔ ۵۰۹۰ متر). عکس: Gabriel Fava.</figcaption>
 </figure>

@@ -11,7 +11,7 @@ tags: [world-climbing, سنگ‌نوردی, لید, رقابت]
 source: World Climbing
 source_url: https://www.ifsc-climbing.org/events/world-climbing-europe-series-ostermundigen-2026/
 image:
-  path: /assets/news/ifsc-lt6tuunpjtufakub0ewn3dx8uig6.jpg
+  path: /assets/news/2026-08-22-world-climbing-ostermundigen-lead/ifsc-lt6tuunpjtufakub0ewn3dx8uig6.jpg
   alt: ایزیار مارتینس آلمندروس
 ---
 

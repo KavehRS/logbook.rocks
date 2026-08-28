@@ -21,7 +21,7 @@ Agent rule: `.cursor/rules/news-posts.mdc`
 1. `_news/YYYY-MM-DD-<slug>.md` with `lang: fa-IR`, unique `description`, YAML `tags`
 2. Body = only the source, in Persian. Complete translation of every narrative paragraph and fact. «فقط متن رو خلاصه کنی» means only the source text — no agent process notes — not a two-sentence stub. Wire items: `.cursor/skills/news-wire/SKILL.md`. Do **not** invent events, dates, or people. Do not open with «این خبر را می‌آورم». Do not add a مترجم or نویسنده byline; news pages have none. Do not write what you did or didn’t do («عکسی کپی نکردم»).
 3. Optional link to an existing `/logbook/` report — never clone a full ascent report into news
-4. Photos: local files in `assets/news/<exact-url-slug>/` when they exist; otherwise `image:` and in-body figures from the source article’s own photo URLs
+4. Photos: **always self-hosted**. Download the source article’s photos into `assets/news/<exact-url-slug>/` (one folder per news item, named like the post file stem), commit them, and point `image:` and every in-body figure at `/assets/news/<slug>/<file>`. Never ship a page that loads a photo from the source host
 5. Hub `/news/` (title: خبر کوهنوردی): two columns on desktop, stacked on mobile; both newest first; ten items per column then pager. Related UI = only `خبرهای مرتبط :` + flat list
 6. Homepage `/` is about («درباره من») plus four latest teasers; world-news archive is `/news/`
 7. Never publish agent notes in live HTML

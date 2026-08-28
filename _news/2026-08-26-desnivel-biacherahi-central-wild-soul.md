@@ -11,7 +11,7 @@ tags: [desnivel, آلپینیسم, پاکستان, گشایش]
 source: Desnivel
 source_url: https://www.desnivel.com/alpinismo/thomas-huber-miquel-mas-y-victor-sans-primera-ascension-a-la-biacherahi-central-5700-m-karakorum/
 image:
-  path: /assets/news/desnivel-img-20260814-wa0021.jpg
+  path: /assets/news/2026-08-26-desnivel-biacherahi-central-wild-soul/desnivel-img-20260814-wa0021.jpg
   alt: گشایش Wild Soul در قراقروم
   caption: "گشایش «Wild Soul»، قراقروم. عکس: مجموعهٔ M.Mas / T.Huber / V.Sans."
 ---
@@ -21,75 +21,75 @@ image:
 منبع از زبان تیم نوشته در میانهٔ دیواره نشانه‌هایی از تلاش‌های قبلی دیده‌اند اما روی زمین مدرکی از رسیدن به قله نیافته‌اند و این را اولین صعود قلهٔ بکر دانسته‌اند.
 
 <figure class="source-photo">
-<img src="/assets/news/desnivel-1060220.jpg" alt="گشایش Wild Soul در قراقروم" loading="lazy" decoding="async">
+<img src="/assets/news/2026-08-26-desnivel-biacherahi-central-wild-soul/desnivel-1060220.jpg" alt="گشایش Wild Soul در قراقروم" loading="lazy" decoding="async">
 <figcaption>گشایش «Wild Soul»، قراقروم. عکس: مجموعهٔ M.Mas / T.Huber / V.Sans.</figcaption>
 </figure>
 <figure class="source-photo">
-<img src="/assets/news/desnivel-1060252.jpg" alt="گشایش Wild Soul در قراقروم" loading="lazy" decoding="async">
+<img src="/assets/news/2026-08-26-desnivel-biacherahi-central-wild-soul/desnivel-1060252.jpg" alt="گشایش Wild Soul در قراقروم" loading="lazy" decoding="async">
 <figcaption>گشایش «Wild Soul»، قراقروم. عکس: مجموعهٔ M.Mas / T.Huber / V.Sans.</figcaption>
 </figure>
 <figure class="source-photo">
-<img src="/assets/news/desnivel-1060266.jpg" alt="گشایش Wild Soul در قراقروم" loading="lazy" decoding="async">
+<img src="/assets/news/2026-08-26-desnivel-biacherahi-central-wild-soul/desnivel-1060266.jpg" alt="گشایش Wild Soul در قراقروم" loading="lazy" decoding="async">
 <figcaption>گشایش «Wild Soul»، قراقروم. عکس: مجموعهٔ M.Mas / T.Huber / V.Sans.</figcaption>
 </figure>
 <figure class="source-photo">
-<img src="/assets/news/desnivel-1060277.jpg" alt="گشایش Wild Soul در قراقروم" loading="lazy" decoding="async">
+<img src="/assets/news/2026-08-26-desnivel-biacherahi-central-wild-soul/desnivel-1060277.jpg" alt="گشایش Wild Soul در قراقروم" loading="lazy" decoding="async">
 <figcaption>گشایش «Wild Soul»، قراقروم. عکس: مجموعهٔ M.Mas / T.Huber / V.Sans.</figcaption>
 </figure>
 <figure class="source-photo">
-<img src="/assets/news/desnivel-img-20260824-wa0014.jpg" alt="گشایش Wild Soul در قراقروم" loading="lazy" decoding="async">
+<img src="/assets/news/2026-08-26-desnivel-biacherahi-central-wild-soul/desnivel-img-20260824-wa0014.jpg" alt="گشایش Wild Soul در قراقروم" loading="lazy" decoding="async">
 <figcaption>گشایش «Wild Soul»، قراقروم. عکس: مجموعهٔ M.Mas / T.Huber / V.Sans.</figcaption>
 </figure>
 <figure class="source-photo">
-<img src="/assets/news/desnivel-img-2924.jpg" alt="گشایش Wild Soul در قراقروم" loading="lazy" decoding="async">
+<img src="/assets/news/2026-08-26-desnivel-biacherahi-central-wild-soul/desnivel-img-2924.jpg" alt="گشایش Wild Soul در قراقروم" loading="lazy" decoding="async">
 <figcaption>گشایش «Wild Soul»، قراقروم. عکس: مجموعهٔ M.Mas / T.Huber / V.Sans.</figcaption>
 </figure>
 <figure class="source-photo">
-<img src="/assets/news/desnivel-dji-02841.jpg" alt="گشایش Wild Soul در قراقروم" loading="lazy" decoding="async">
+<img src="/assets/news/2026-08-26-desnivel-biacherahi-central-wild-soul/desnivel-dji-02841.jpg" alt="گشایش Wild Soul در قراقروم" loading="lazy" decoding="async">
 <figcaption>گشایش «Wild Soul»، قراقروم. عکس: مجموعهٔ M.Mas / T.Huber / V.Sans.</figcaption>
 </figure>
 <figure class="source-photo">
-<img src="/assets/news/desnivel-img-3080.jpg" alt="گشایش Wild Soul در قراقروم" loading="lazy" decoding="async">
+<img src="/assets/news/2026-08-26-desnivel-biacherahi-central-wild-soul/desnivel-img-3080.jpg" alt="گشایش Wild Soul در قراقروم" loading="lazy" decoding="async">
 <figcaption>گشایش «Wild Soul»، قراقروم. عکس: مجموعهٔ M.Mas / T.Huber / V.Sans.</figcaption>
 </figure>
 <figure class="source-photo">
-<img src="/assets/news/desnivel-img-3028.jpg" alt="گشایش Wild Soul در قراقروم" loading="lazy" decoding="async">
+<img src="/assets/news/2026-08-26-desnivel-biacherahi-central-wild-soul/desnivel-img-3028.jpg" alt="گشایش Wild Soul در قراقروم" loading="lazy" decoding="async">
 <figcaption>گشایش «Wild Soul»، قراقروم. عکس: مجموعهٔ M.Mas / T.Huber / V.Sans.</figcaption>
 </figure>
 <figure class="source-photo">
-<img src="/assets/news/desnivel-topo-wild-soul.jpg" alt="توپوی Wild Soul" loading="lazy" decoding="async">
+<img src="/assets/news/2026-08-26-desnivel-biacherahi-central-wild-soul/desnivel-topo-wild-soul.jpg" alt="توپوی Wild Soul" loading="lazy" decoding="async">
 <figcaption>توپوی «Wild Soul»، قراقروم. عکس: مجموعهٔ M.Mas / T.Huber / V.Sans.</figcaption>
 </figure>
 <figure class="source-photo">
-<img src="/assets/news/desnivel-dji-20260810045252-0003-d-1.jpg" alt="توپوی Wild Soul از هوا" loading="lazy" decoding="async">
+<img src="/assets/news/2026-08-26-desnivel-biacherahi-central-wild-soul/desnivel-dji-20260810045252-0003-d-1.jpg" alt="توپوی Wild Soul از هوا" loading="lazy" decoding="async">
 <figcaption>توپوی «Wild Soul»، قراقروم. عکس: مجموعهٔ M.Mas / T.Huber / V.Sans.</figcaption>
 </figure>
 <figure class="source-photo">
-<img src="/assets/news/desnivel-1060293.jpg" alt="گشایش Wild Soul در قراقروم" loading="lazy" decoding="async">
+<img src="/assets/news/2026-08-26-desnivel-biacherahi-central-wild-soul/desnivel-1060293.jpg" alt="گشایش Wild Soul در قراقروم" loading="lazy" decoding="async">
 <figcaption>گشایش «Wild Soul»، قراقروم. عکس: مجموعهٔ M.Mas / T.Huber / V.Sans.</figcaption>
 </figure>
 <figure class="source-photo">
-<img src="/assets/news/desnivel-1060304.jpg" alt="گشایش Wild Soul در قراقروم" loading="lazy" decoding="async">
+<img src="/assets/news/2026-08-26-desnivel-biacherahi-central-wild-soul/desnivel-1060304.jpg" alt="گشایش Wild Soul در قراقروم" loading="lazy" decoding="async">
 <figcaption>گشایش «Wild Soul»، قراقروم. عکس: مجموعهٔ M.Mas / T.Huber / V.Sans.</figcaption>
 </figure>
 <figure class="source-photo">
-<img src="/assets/news/desnivel-img-2870.jpg" alt="گشایش Wild Soul در قراقروم" loading="lazy" decoding="async">
+<img src="/assets/news/2026-08-26-desnivel-biacherahi-central-wild-soul/desnivel-img-2870.jpg" alt="گشایش Wild Soul در قراقروم" loading="lazy" decoding="async">
 <figcaption>گشایش «Wild Soul»، قراقروم. عکس: مجموعهٔ M.Mas / T.Huber / V.Sans.</figcaption>
 </figure>
 <figure class="source-photo">
-<img src="/assets/news/desnivel-img-2878.jpg" alt="گشایش Wild Soul در قراقروم" loading="lazy" decoding="async">
+<img src="/assets/news/2026-08-26-desnivel-biacherahi-central-wild-soul/desnivel-img-2878.jpg" alt="گشایش Wild Soul در قراقروم" loading="lazy" decoding="async">
 <figcaption>گشایش «Wild Soul»، قراقروم. عکس: مجموعهٔ M.Mas / T.Huber / V.Sans.</figcaption>
 </figure>
 <figure class="source-photo">
-<img src="/assets/news/desnivel-img-2993-720x440.jpg" alt="گشایش Wild Soul در قراقروم" loading="lazy" decoding="async">
+<img src="/assets/news/2026-08-26-desnivel-biacherahi-central-wild-soul/desnivel-img-2993-720x440.jpg" alt="گشایش Wild Soul در قراقروم" loading="lazy" decoding="async">
 <figcaption>گشایش «Wild Soul»، قراقروم. عکس: مجموعهٔ M.Mas / T.Huber / V.Sans.</figcaption>
 </figure>
 <figure class="source-photo">
-<img src="/assets/news/desnivel-img-20260824-wa0010.jpg" alt="گشایش Wild Soul در قراقروم" loading="lazy" decoding="async">
+<img src="/assets/news/2026-08-26-desnivel-biacherahi-central-wild-soul/desnivel-img-20260824-wa0010.jpg" alt="گشایش Wild Soul در قراقروم" loading="lazy" decoding="async">
 <figcaption>گشایش «Wild Soul»، قراقروم. عکس: مجموعهٔ M.Mas / T.Huber / V.Sans.</figcaption>
 </figure>
 <figure class="source-photo">
-<img src="/assets/news/desnivel-1060291.jpg" alt="گشایش Wild Soul در قراقروم" loading="lazy" decoding="async">
+<img src="/assets/news/2026-08-26-desnivel-biacherahi-central-wild-soul/desnivel-1060291.jpg" alt="گشایش Wild Soul در قراقروم" loading="lazy" decoding="async">
 <figcaption>گشایش «Wild Soul»، قراقروم. عکس: مجموعهٔ M.Mas / T.Huber / V.Sans.</figcaption>
 </figure>
 

@@ -16,7 +16,7 @@ related:
   - title: لیو جون‌فو و وانگ شوای دومین صعود Manamcho را از رخ و یال جنوب‌غربی گرفتند
     url: /news/2026-08-27-aaj-manamcho-southwest-ridge/
 image:
-  path: /assets/news/aaj-13201217364-1762447277.jpg
+  path: /assets/news/2026-08-27-aaj-chomolhari-iii-north-spur/aaj-13201217364-1762447277.jpg
   alt: نزدیک بالای بند سنگی دوم Spur شمالی Chomolhari III
   caption: "نزدیک بالای بند سنگی دوم Spur شمالی Chomolhari III. این پلهٔ پایانی را از برف تقریباً قائم سمت راست دور زدند. عکس: Zhang Chengxin."
 ---
@@ -40,27 +40,27 @@ image:
 روی یال مرزی به شرق، بین قلهٔ اصلی و Chomolhari III، Chomolhari II آمده (همان Tserimkang، ۶۹۷۲ متر). قلهٔ اصلی غربی صعود نشده؛ قلهٔ شرقی (حدود ۶۹۲۲ متر) را سال ۲۰۰۶ تیم اسلوونی از رخ شمال‌غربی صعود کرد و بعد دو مسیر جدید روی سمت شمالی Chomolhari ثبت کرد (AAJ ۲۰۰۷).
 
 <figure class="source-photo">
-<img src="/assets/news/aaj-13201217364-1762447006.jpg" alt="Chomolhari III در مرکز با Spur شمالی روبه‌دوربین" loading="lazy" decoding="async">
+<img src="/assets/news/2026-08-27-aaj-chomolhari-iii-north-spur/aaj-13201217364-1762447006.jpg" alt="Chomolhari III در مرکز با Spur شمالی روبه‌دوربین" loading="lazy" decoding="async">
 <figcaption>Chomolhari III (۶۷۰۶ متر) در مرکز تصویر، Spur شمالی روبه‌دوربین. راست، قلهٔ تیز یخی Chomolhari II؛ بازتر راست Chomolhari در ابر. چپ تصویر بخشی از Jitchu Drake است. عکس: Zhang Chengxin.</figcaption>
 </figure>
 <figure class="source-photo">
-<img src="/assets/news/aaj-13201217364-1762447078.jpg" alt="خط اولین صعود Spur شمالی Chomolhari III با بیواک‌ها" loading="lazy" decoding="async">
+<img src="/assets/news/2026-08-27-aaj-chomolhari-iii-north-spur/aaj-13201217364-1762447078.jpg" alt="خط اولین صعود Spur شمالی Chomolhari III با بیواک‌ها" loading="lazy" decoding="async">
 <figcaption>خط اولین صعود Chomolhari III (۶۷۰۶ متر) از Spur شمالی، با بیواک‌ها مشخص. عکس: Chomolhari Expedition.</figcaption>
 </figure>
 <figure class="source-photo">
-<img src="/assets/news/aaj-13201217364-1762447185.jpg" alt="اولین بیواک Spur شمالی؛ سنگ‌نوردان زیر برف روان" loading="lazy" decoding="async">
+<img src="/assets/news/2026-08-27-aaj-chomolhari-iii-north-spur/aaj-13201217364-1762447185.jpg" alt="اولین بیواک Spur شمالی؛ سنگ‌نوردان زیر برف روان" loading="lazy" decoding="async">
 <figcaption>اولین بیواک روی Spur شمالی Chomolhari III؛ سنگ‌نوردان را برف روان پوشانده. عکس: Chomolhari Expedition.</figcaption>
 </figure>
 <figure class="source-photo">
-<img src="/assets/news/aaj-13201217364-1762447235.jpg" alt="سنگ‌نوردی مخلوط سخت شروع بند سنگی دوم" loading="lazy" decoding="async">
+<img src="/assets/news/2026-08-27-aaj-chomolhari-iii-north-spur/aaj-13201217364-1762447235.jpg" alt="سنگ‌نوردی مخلوط سخت شروع بند سنگی دوم" loading="lazy" decoding="async">
 <figcaption>سنگ‌نوردی مخلوط سخت در شروع بند سنگی دوم Spur شمالی Chomolhari III. عکس: Chomolhari Expedition.</figcaption>
 </figure>
 <figure class="source-photo">
-<img src="/assets/news/aaj-13201217364-1762447302.jpg" alt="تراورس زیر کورنیس قلهٔ Chomolhari III" loading="lazy" decoding="async">
+<img src="/assets/news/2026-08-27-aaj-chomolhari-iii-north-spur/aaj-13201217364-1762447302.jpg" alt="تراورس زیر کورنیس قلهٔ Chomolhari III" loading="lazy" decoding="async">
 <figcaption>تراورس زیر کورنیس قلهٔ Chomolhari III. عکس: Zhang Chengxin.</figcaption>
 </figure>
 <figure class="source-photo">
-<img src="/assets/news/aaj-13201217364-1762447344.jpg" alt="قله‌های مرزی چین و بوتان از ساحل Ram Tso" loading="lazy" decoding="async">
+<img src="/assets/news/2026-08-27-aaj-chomolhari-iii-north-spur/aaj-13201217364-1762447344.jpg" alt="قله‌های مرزی چین و بوتان از ساحل Ram Tso" loading="lazy" decoding="async">
 <figcaption>از ساحل Ram Tso، ناگهان از فلات تبت: (A) Jitchu Drake (۶۷۹۳ متر)؛ (B) Chomolhari III (۶۷۰۶ متر) با Spur شمالی که ۲۰۲۵ برای اولین صعود قله صعود شد، روبه‌دوربین؛ (C) Chomolhari II (۶۹۷۲ متر)؛ (D) Chomolhari (۷۳۲۶ متر). یال شمال‌غربی ظریف Chomolhari که تند از قله راست پایین می‌آید سال ۲۰۰۶ صعود شد. عکس: Roger Payne.</figcaption>
 </figure>
 

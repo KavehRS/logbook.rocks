@@ -11,7 +11,7 @@ tags: [uiaa, ایمنی, تجهیزات, فراخوان]
 source: UIAA
 source_url: https://www.theuiaa.org/recall-of-simond-alpinism-vertika-quickdraws/
 image:
-  path: /assets/news/uiaa-simond-recall-0508226.jpg
+  path: /assets/news/2026-08-06-uiaa-simond-quickdraw-recall/uiaa-simond-recall-0508226.jpg
   alt: فراخوان کوییک‌دراهای Simond Alpinism و Vertika
 ---
 

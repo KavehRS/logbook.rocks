@@ -22,8 +22,11 @@ USAGE (agent-only — do not copy this comment block into published pages)
    date: YYYY-MM-DD (Gregorian for machines; UI shows Jalali)
    tags: [YAML array]
 3) Optional related: [{ title, url }] only to other news items when they exist
-   image: local file in assets/news/<slug>/ when it exists; otherwise the source article’s own photo URL
-4) Images: `assets/news/YYYY-MM-DD-<slug>/` when files exist; otherwise `image:` + in-body figures from the source photo URLs
+   image: always a local file under assets/news/<slug>/ — download the source photo first
+4) Images: always self-hosted in `assets/news/YYYY-MM-DD-<slug>/` (one folder per news item, named
+   like the post file stem). Download every source photo, commit it, and reference
+   `/assets/news/<slug>/<file>` from `image:` and each in-body figure. Never point a published page
+   at the source host
 5) Related public UI: «اخبار مرتبط :» + flat list
 6) Hub `/news/` is two columns, both newest first (wire by date; AAJ by `aaj_id`). Homepage `/` is about + four latest teasers; the climbing-news archive is `/news/` (title: خبر کوهنوردی).
 7) Do not open with «این خبر را می‌آورم» / curator asides. Body = only the source, in Persian

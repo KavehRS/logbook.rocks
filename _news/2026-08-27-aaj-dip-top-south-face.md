@@ -15,7 +15,7 @@ related:
   - title: لوئیس ادن و هیث رولند Crowheart را روی رخ شمال‌شرقی Roberts Mountain آزاد کردند
     url: /news/2026-08-27-aaj-roberts-mountain-crowheart/
 image:
-  path: /assets/news/aaj-13201217379-1779549132.jpg
+  path: /assets/news/2026-08-27-aaj-dip-top-south-face/aaj-13201217379-1779549132.jpg
   alt: مسیر South Face/Rib روی رخ جنوبی Dip Top Peak
   caption: "South Face/Rib Route (III 5.8) اولین مسیر ثبت‌شدهٔ رخ جنوبی Dip Top Peak در Alpine Lakes Wilderness است. عکس: Martin Bravenboer."
 ---
@@ -27,10 +27,10 @@ image:
 منبع South Face/Rib Route (III 5.8) را خطی پاداش‌دهنده برای کسانی دانسته که زیبایی خشک و عدم‌قطعیت رخ‌های دورافتاده‌تر کسکیدز را می‌خواهند.
 
 <figure class="source-photo">
-<img src="/assets/news/aaj-13201217379-1779549089.jpg" alt="رولف لارسون روی طول ابتدایی South Face/Rib با Mt. Daniel در پس‌زمینه" loading="lazy" decoding="async">
+<img src="/assets/news/2026-08-27-aaj-dip-top-south-face/aaj-13201217379-1779549089.jpg" alt="رولف لارسون روی طول ابتدایی South Face/Rib با Mt. Daniel در پس‌زمینه" loading="lazy" decoding="async">
 <figcaption>رولف لارسون طول ابتدایی South Face/Rib Route (III 5.8) را دنبال می‌کند؛ Mt. Daniel و Pea Soup Lake در پس‌زمینه. عکس: Eric Wehrly.</figcaption>
 </figure>
 <figure class="source-photo">
-<img src="/assets/news/aaj-13201217379-1779549132.jpg" alt="مسیر South Face/Rib روی رخ جنوبی Dip Top Peak" loading="lazy" decoding="async">
+<img src="/assets/news/2026-08-27-aaj-dip-top-south-face/aaj-13201217379-1779549132.jpg" alt="مسیر South Face/Rib روی رخ جنوبی Dip Top Peak" loading="lazy" decoding="async">
 <figcaption>South Face/Rib Route (III 5.8) اولین مسیر ثبت‌شدهٔ رخ جنوبی Dip Top Peak در Alpine Lakes Wilderness است. عکس: Martin Bravenboer.</figcaption>
 </figure>
