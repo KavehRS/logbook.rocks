@@ -882,7 +882,19 @@ Window: `2026-08-27T06:32:00Z` → `2026-08-28T07:40:00Z`.
 1. `13201217365` Bel Uluu / Cédric and Sophie — `_news/2026-08-28-aaj-bel-uluu-cedric-sophie.md` dated 2026-08-28 09:32 +0330 (first remaining, later timestamp). Facts: Henry Bizot / Gabriel Fava; 5–20 Aug 2025; Camp 2 4,420 m; 250 m east ice 45–60°; top 5,090 m D+; route The Six Sons, Daughters in Law, and Grandchildren; Totmyanin death on Pobeda. Photos from journal S3. PASS.
 2. `13201217378` Arches Peak Central Buttress — `_news/2026-08-28-aaj-arches-peak-central-buttress.md` dated 2026-08-28 09:30 +0330. Facts: Eric Wehrly / Rolf Larson; 3 Aug 2025; 1,600’ III 5.7; ten roped pitches; Plumline Buttress 1977. Photos Jason Griffith / Eric Wehrly. PASS.
 
-Remaining 219. Next pair: Dip Top Peak `13201217379`, Roberts Mountain `13201217380`. No catch-up dump of missed 12:00/18:00/00:00 slots.
+Remaining 219 after the 06:00 pair. Owner then said missed slots must still be published (journal order), not skipped because of the old “still two” default.
+
+## 2026-08-28 ~07:50 UTC — three missed AAJ pairs (owner catch-up)
+
+Published the six notes that belonged to 12:00 / 18:00 GMT 27 Aug and 00:00 GMT 28 Aug, in queue order. Dated with each missed slot’s Asia/Tehran datetime. Did **not** dump remaining.
+
+| Slot | Notes |
+|------|--------|
+| 12:00 GMT 27 Aug | `13201217379` Dip Top South Face; `13201217380` Roberts Mountain Crowheart |
+| 18:00 GMT 27 Aug | `13201217381` Hooker / The Living Stone; `13201217383` Monolith / Children of the Sun |
+| 00:00 GMT 28 Aug | `13201217384` Batwing southeast face; `13201217385` Citadel / Babies’ First Big Wall |
+
+Remaining 213. Next pair at 12:00 GMT 28 Aug: Second Mendenhall Tower `13201217387`, Mt. Moffit Enthalpy Ridge `13201217388`. Sources 1–9 unchanged (last_run_utc still `2026-08-28T07:40:00Z`).
 
 ### Job 3 — re-check
 
