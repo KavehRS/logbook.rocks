@@ -74,6 +74,24 @@ items:
   - source: American Alpine Journal
     source_url: https://publications.americanalpineclub.org/articles/13201217378
     slug: 2026-08-28-aaj-arches-peak-central-buttress
+  - source: American Alpine Journal
+    source_url: https://publications.americanalpineclub.org/articles/13201217379
+    slug: 2026-08-27-aaj-dip-top-south-face
+  - source: American Alpine Journal
+    source_url: https://publications.americanalpineclub.org/articles/13201217380
+    slug: 2026-08-27-aaj-roberts-mountain-crowheart
+  - source: American Alpine Journal
+    source_url: https://publications.americanalpineclub.org/articles/13201217381
+    slug: 2026-08-27-aaj-hooker-living-stone
+  - source: American Alpine Journal
+    source_url: https://publications.americanalpineclub.org/articles/13201217383
+    slug: 2026-08-27-aaj-monolith-children-of-the-sun
+  - source: American Alpine Journal
+    source_url: https://publications.americanalpineclub.org/articles/13201217384
+    slug: 2026-08-28-aaj-batwing-southeast-face
+  - source: American Alpine Journal
+    source_url: https://publications.americanalpineclub.org/articles/13201217385
+    slug: 2026-08-28-aaj-citadel-babies-first-big-wall
 
 # Seen by the wire but not published. Skip on later runs.
 skipped:
