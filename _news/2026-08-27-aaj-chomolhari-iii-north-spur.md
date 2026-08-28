@@ -7,10 +7,11 @@ description: >-
   AAJ ۲۰۲۶ از زبان هی لانگ: در ژوئیهٔ ۲۰۲۵ هی لانگ، لیو یانگ و سونگ
   یوان‌چنگ مسیر ۱۴۰۰ متری The Shining Wall (AI2 M5 برف ۷۰°) را روی Spur شمالی
   Chomolhari III گشودند.
-date: 2026-08-27 09:32:00 +0330
+date: 2026-08-27 09:30:00 +0330
 tags: [aaj, آلپینیسم, تبت, بوتان, هیمالیا]
 source: American Alpine Journal
 source_url: https://publications.americanalpineclub.org/articles/13201217364
+aaj_id: "13201217364"
 related:
   - title: لیو جون‌فو و وانگ شوای دومین صعود Manamcho را از رخ و یال جنوب‌غربی گرفتند
     url: /news/2026-08-27-aaj-manamcho-southwest-ridge/

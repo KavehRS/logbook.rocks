@@ -2,11 +2,16 @@
   'use strict';
 
   var form = document.querySelector('form.hub-filter');
-  var list = document.querySelector('[data-hub-list]');
-  if (!form || !list) return;
+  var lists = document.querySelectorAll('[data-hub-list]');
+  if (!form || !lists.length) return;
 
   var input = form.querySelector('#hub-q');
-  var items = list.querySelectorAll(':scope > li');
+  var items = [];
+  lists.forEach(function (list) {
+    list.querySelectorAll(':scope > li').forEach(function (item) {
+      items.push(item);
+    });
+  });
 
   function apply(query) {
     var q = (query || '').trim().toLowerCase();

@@ -6,10 +6,11 @@ dir_attr: rtl
 description: >-
   AAJ ۲۰۲۶ از زبان شیا ژونگمینگ: در سپتامبر ۲۰۲۴ تونگ های‌جون و وانگ
   یونگ‌پنگ Jiongmudazhi را از رخ شمال‌غربی (۸۰۰ متر، D+ M3 AI3 ۷۵°) صعود کردند.
-date: 2026-08-27 03:32:00 +0330
+date: 2026-08-27 03:30:00 +0330
 tags: [aaj, آلپینیسم, تبت, چین]
 source: American Alpine Journal
 source_url: https://publications.americanalpineclub.org/articles/13201217322
+aaj_id: "13201217322"
 related:
   - title: تونگ های‌جون و وانگ یونگ‌پنگ اولین صعود Chuchepo را از رخ شمال‌شرقی گرفتند
     url: /news/2026-08-27-aaj-chuchepo-northeast-face/

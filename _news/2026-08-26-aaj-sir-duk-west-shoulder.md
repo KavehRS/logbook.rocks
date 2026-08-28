@@ -11,6 +11,7 @@ date: 2026-08-26 19:30:00 +0330
 tags: [aaj, آلپینیسم, تبت, چین]
 source: American Alpine Journal
 source_url: https://publications.americanalpineclub.org/articles/13201217320
+aaj_id: "13201217320"
 image:
   path: https://aac-publications.s3.amazonaws.com/articles/aaj-13201217320-1760729454.jpg
   alt: Sir Duk از جنوب‌شرق؛ مسیرهای ۲۰۰۰ و ۲۰۲۴
