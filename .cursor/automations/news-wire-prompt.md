@@ -27,7 +27,7 @@ On each fire, do the work yourself. Follow `.cursor/skills/news-wire/SKILL.md` e
 2. Next two remaining AAJ 2026 notes per GMT slot from `_data/aaj-backfill.yml` (oldest first). If slots were missed, publish two for each missed slot. Never dump the whole remaining queue. No 2025.
 3. Re-check every live `_news/` translation against its `source_url`; fix errors and complete leftover short items.
 4. Whole-site SEO: `.cursor/skills/daily-seo-audit/SKILL.md` (same branch; log `_seo/daily-log.md`).
-5. `jekyll build`, PR, overlay changed HTML onto `published` without `--delete`, confirm the live export has the pages.
+5. PR, then `script/ship-live.sh --push --purge`. It builds, overlays `published` without `--delete`, and aborts unless the homepage teasers lead with the newest item. The homepage always refreshes: `/` shows the four newest logbook reports plus the five newest hub items with اخبار and مقالات merged by date.
 
 Fetch from only:
 - https://www.worldclimbing.com
@@ -47,7 +47,7 @@ Skip URLs in `_data/news-wire-seen.yml` when looking for *new* items (job 3 stil
 
 Always update `_data/news-wire-state.yml` with last_run_utc.
 
-If jobs 1–4 changed anything: branch `cursor/news-wire-<stamp>-4b4e`, `bundle exec jekyll build`, open PR, overlay `published` until the live export has the work.
+If jobs 1–4 changed anything: branch `cursor/news-wire-<stamp>-4b4e`, open PR, then `script/ship-live.sh --push --purge` until the live export has the work.
 If jobs 1–4 changed nothing: no PR; log the empty window plus the re-check and SEO pass; still update news-wire-state.yml.
 Never commit secrets.
 ```

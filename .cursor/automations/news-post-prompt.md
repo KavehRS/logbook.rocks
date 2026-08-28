@@ -43,6 +43,7 @@ Mission: create or update Persian اخبار in `_news/` as complete translation
 2. bundle exec jekyll build must succeed
 3. Confirm _drafts/ and .cursor/ are not published into _site/
 4. Open PR and merge to main after a clean verified build
+5. Ship the live export with script/ship-live.sh --push --purge. It refreshes the homepage too: / shows the four newest logbook reports plus the five newest hub items with اخبار and مقالات merged by date, and the script aborts if the homepage does not lead with the newest item.
 
 Never invent news. Never commit secrets.
 ```

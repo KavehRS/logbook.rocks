@@ -39,9 +39,12 @@ Until Actions can run, production is:
 After a content change that should go live **before** GitHub billing is fixed:
 
 ```bash
-bundle exec jekyll build
-# replace orphan branch `published` with `_site/`, push, then purge jsDelivr assets if CSS/images are stale
+script/ship-live.sh --push --purge
 ```
+
+That script is the only supported way to update the live export. It builds to a temp destination (a leftover `jekyll serve` rewrites `_site/` underneath you), overlays the `published` worktree **without** `--delete`, and refuses to finish when the homepage teasers do not lead with the newest hub item. Copying files by hand is how `/`, `/news/`, the sitemap, and the machine catalogs drift behind the article that was just published. Purge jsDelivr separately only when CSS or images look stale (`https://purge.jsdelivr.net/gh/KavehRS/logbook.rocks@published/<path>`).
+
+**Every publish refreshes the homepage.** `/` lists the four newest logbook reports plus the **five newest hub items, with اخبار and مقالات merged and sorted by date** — `_includes/home-latest.html` derives both lists from the collections, so never hardcode teasers in `index.md` and never hand-edit the built HTML.
 
 Do not remove the Zaraz HTML tool or the catch-all rewrite while Pages is still the placeholder. When `deploy-pages.yml` succeeds on `main`, GitHub Pages will serve `_site` directly — then delete the Zaraz bootstrap and the rewrite.
 
@@ -138,7 +141,7 @@ When asked for `اخبار` / a climbing news item / update to `_news/`:
 4. File: `_news/YYYY-MM-DD-<slug>.md` with zero-padded date, `lang: fa-IR`, YAML `tags` array, unique description.
 5. Images for news: **always self-hosted**. Download every photo the source article uses into `assets/news/<exact-url-slug>/` — one folder per news item, named exactly like the post file stem — commit it, and point `image:` plus every in-body `<figure>` at `/assets/news/<slug>/<file>`. Never leave a published page pointing at the source host: readers whose networks block S3, desnivel.com, or theuiaa.org would see empty frames. Standardize the published copy: cap width at 1600px and re-encode files stored at wasteful quality, but keep the original bytes whenever re-encoding would make the file larger. When a source photo really is stored at unusually high quality, **keep the untouched original too**, in `assets/news/<slug>/_originals/<file>`. Jekyll skips any directory whose basename starts with `_`, so the archive stays in git while only the standardized copy reaches `_site` and the live `published` branch — verify with `find _site -path '*_originals*'` returning nothing. Do not write what the agent did or didn’t do in the article body.
 6. Related UI stays `اخبار مرتبط :` + flat list. Hub `/news/` is two columns on PC and stacked on mobile; ten items each, then a pager.
-7. Homepage `/` is the about page («درباره من») plus four latest teasers from گزارش صعود and خبر کوهنوردی. Full reports live on `/logbook/`; climbing news on `/news/`.
+7. Homepage `/` is the about page («درباره من») plus the four newest گزارش صعود teasers and the **five newest hub teasers with اخبار and مقالات merged by date**. It updates on every publish through `_includes/home-latest.html`; do not hardcode or hand-edit that list. Full reports live on `/logbook/`; climbing news on `/news/`.
 8. For a Cursor Automation, paste `.cursor/automations/news-post-prompt.md` at https://cursor.com/automations/new
 9. Open a PR on `cursor/<descriptive-name>-4b4e`, verify `bundle exec jekyll build`.
 
