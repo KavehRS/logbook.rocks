@@ -12,7 +12,7 @@ body_class: hub-wide
 
 <h1>خبر کوهنوردی</h1>
 <p>خبرهایی که توی منابع معتبر بین‌المللی می‌بینم و می‌خوانم را ترجمه می‌کنم و در این بخش منتشر می‌کنم.</p>
-{% assign aaj_posts = site.news | where_exp: "post", "post.aaj_id" | sort: "aaj_id" %}
+{% assign aaj_posts = site.news | where_exp: "post", "post.aaj_id" | sort: "aaj_id" | reverse %}
 {% assign wire_posts = site.news | where_exp: "post", "post.aaj_id == nil" | sort: "date" | reverse %}
 {% if wire_posts.size == 0 and aaj_posts.size == 0 %}
 <p>هنوز خبری در این بخش منتشر نشده است.</p>
@@ -33,7 +33,7 @@ body_class: hub-wide
   </section>
   <section class="news-hub-pane" aria-labelledby="aaj-2026">
     <h2 id="aaj-2026">ترجمه مقالات</h2>
-    <p class="news-hub-note">American Alpine Journal ۲۰۲۶، به ترتیب جلد از قدیم به جدید.</p>
+    <p class="news-hub-note">American Alpine Journal ۲۰۲۶، از جدید به قدیم.</p>
     {% if aaj_posts.size > 0 %}
     <ul data-hub-list>
       {% for post in aaj_posts %}

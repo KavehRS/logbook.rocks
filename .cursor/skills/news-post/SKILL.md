@@ -22,7 +22,7 @@ Agent rule: `.cursor/rules/news-posts.mdc`
 2. Body = only the source, in Persian. Complete translation of every narrative paragraph and fact. «فقط متن رو خلاصه کنی» means only the source text — no agent process notes — not a two-sentence stub. Wire items: `.cursor/skills/news-wire/SKILL.md`. Do **not** invent events, dates, or people. Do not open with «این خبر را می‌آورم». Do not add a مترجم or نویسنده byline; news pages have none. Do not write what you did or didn’t do («عکسی کپی نکردم»).
 3. Optional link to an existing `/logbook/` report — never clone a full ascent report into news
 4. Photos: local files in `assets/news/<exact-url-slug>/` when they exist; otherwise `image:` and in-body figures from the source article’s own photo URLs
-5. Hub `/news/` (title: خبر کوهنوردی): wire news newest first; AAJ 2026 oldest `aaj_id` first. Related UI = only `خبرهای مرتبط :` + flat list
+5. Hub `/news/` (title: خبر کوهنوردی): two columns, both newest first (wire by date; AAJ by `aaj_id`). Related UI = only `خبرهای مرتبط :` + flat list
 6. Homepage `/` is about («درباره من») plus four latest teasers; world-news archive is `/news/`
 7. Never publish agent notes in live HTML
 8. Reader-facing UI dates Jalali (`_includes/jalali-date.html`)

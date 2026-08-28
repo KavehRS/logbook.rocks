@@ -73,7 +73,7 @@ Prefer RSS when it exists (`https://www.theuiaa.org/feed/`, `https://www.climbin
 - Link the original article in the body. Photos: local files in `assets/news/<slug>/` when they exist; otherwise set `image:` and in-body figures to the source article’s own photo URLs (`og:image`, article `<figure>`, article `<img>`). Translate captions. Skip ads, logos, placeholders, and related-story thumbs.
 - Front matter: `layout: post`, `lang: fa-IR`, `dir_attr: rtl`, unique `description`, Gregorian `date`, YAML `tags`, `source` and `source_url`.
 - File: `_news/YYYY-MM-DD-<slug>.md` using the article’s publication date (not “today”) when the source gives one. **Exception — AAJ 2026 backfill:** date with **this GMT slot’s** Asia/Tehran datetime so homepage teasers treat the new pair as latest (do not date by climb year or volume year). `/news/` does **not** use that date to order the AAJ archive.
-- AAJ notes also need `aaj_id:` (the queue id, quoted). Hub `/news/` is two columns: right اخبار جدید (wire, newest first), left ترجمه مقالات (AAJ 2026, oldest `aaj_id` first). Within a slot, give the **first** remaining note the later timestamp (+2 min) so newest-first teasers keep pair order.
+- AAJ notes also need `aaj_id:` (the queue id, quoted). Hub `/news/` is two columns: right اخبار جدید (wire, newest first), left ترجمه مقالات (AAJ 2026, newest `aaj_id` first). Within a slot, give the **first** remaining note the later timestamp (+2 min) so newest-first teasers keep pair order.
 - Set `image:` from a local file or from a source photo URL. No guessed dates, names, grades, or scores.
 
 ## AAJ 2026 backfill procedure (each GMT slot)
@@ -84,7 +84,7 @@ Prefer RSS when it exists (`https://www.theuiaa.org/feed/`, `https://www.climbin
 4. Move those two into `published`, drop them from `remaining`, set `remaining_count`, refresh `next_ids` and `next_slot_utc`. Append each `source_url` to `_data/news-wire-seen.yml`.
 5. Stop at two **per GMT slot**. If earlier slots since the last AAJ publish were missed, take two notes for **each** missed slot (queue order; date each pair with that slot’s Asia/Tehran datetime). Do not dump the rest of `remaining`. Do not publish publication year 2025. Do not re-publish retracted summary stubs.
 6. New 2026 listing items that appear after `last_run_utc` append to the **end** of `remaining` (they are newer). They are not inserted at the front and they do not add extra publishes in the same slot.
-7. Set `aaj_id` from the queue id. Date the first remaining of the pair **later** than the second (+2 min). `/news/` sorts this archive by `aaj_id` oldest-first; do not expect slot dates to put the new notes at the top of that list.
+7. Set `aaj_id` from the queue id. Date the first remaining of the pair **later** than the second (+2 min). `/news/` sorts the AAJ column by `aaj_id` newest-first.
 
 ## Skip
 
