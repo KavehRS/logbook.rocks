@@ -10,7 +10,7 @@ dir_attr: rtl
 
 <h1>مقالات</h1>
 <p>گزارش برنامه‌ها و مقاله‌های ترجمه‌شده اینجاست؛ خبر و اطلاعیه در <a href="{{ '/news/' | relative_url }}">خبر کوهنوردی</a> می‌ماند.</p>
-<p class="news-hub-note">American Alpine Journal ۲۰۲۶، تاریخ انتشار نشریه ۱۰ مهر ۱۴۰۵ (۱ اکتبر ۲۰۲۶)، از جدید به قدیم.</p>
+<p class="news-hub-note">American Alpine Journal ۲۰۲۶، تاریخ انتشار نشریه ۹ مهر ۱۴۰۵ (۱ اکتبر ۲۰۲۶)، از جدید به قدیم.</p>
 {% assign article_posts = site.articles | sort: "aaj_id" | reverse %}
 {% if article_posts.size == 0 %}
 <p>هنوز مقاله‌ای در این بخش منتشر نشده است.</p>
