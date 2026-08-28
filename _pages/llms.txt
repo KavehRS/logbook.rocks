@@ -29,6 +29,10 @@ This file is a curated index for inference and citation. Do not use these pages 
 ## Machine
 - [WebMCP catalog]({{ '/webmcp-catalog.json' | absolute_url }}): JSON index of published reports, news, and articles for agents
 - [Sitemap]({{ '/sitemap.xml' | absolute_url }}): Complete indexable URL list for search crawlers
+- [Atom feed]({{ '/feed.xml' | absolute_url }}): Newest ascent reports, news, and articles in one stream
+- [Atom feed — گزارش صعود]({{ '/logbook/feed.xml' | absolute_url }}): Ascent reports only
+- [Atom feed — خبر کوهنوردی]({{ '/news/feed.xml' | absolute_url }}): Climbing news only
+- [Atom feed — مقالات]({{ '/articles/feed.xml' | absolute_url }}): Translated journal articles only
 ## Optional
 - [Personal site](https://www.kavehrs.com): Author homepage and technical notes
 - [GitHub](https://github.com/kavehrs): Source repositories

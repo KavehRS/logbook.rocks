@@ -11,6 +11,17 @@
   {% else %}
     {% assign article_image_abs = article_image | absolute_url %}
   {% endif %}
+  {% comment %}
+  Dimensions come from _plugins/image_dimensions.rb, which measures the file at
+  build time. An ImageObject with a known size is eligible for image rich
+  results where a bare URL is not.
+  {% endcomment %}
+  {% assign article_image_dims = site.data.image_dims[article_image] %}
+  {% if article_image_dims %}
+    {% capture article_image_json %}{"@type": "ImageObject", "url": {{ article_image_abs | jsonify }}, "width": {{ article_image_dims.width }}, "height": {{ article_image_dims.height }}}{% endcapture %}
+  {% else %}
+    {% capture article_image_json %}{{ article_image_abs | jsonify }}{% endcapture %}
+  {% endif %}
 {% else %}
   {% assign article_image = nil %}
 {% endif %}
@@ -106,7 +117,7 @@
     "name": {{ site.author.name | jsonify }},
     "url": "{{ site.author.url }}"
   }{% if article_image %},
-  "image": {{ article_image_abs | jsonify }}{% endif %},
+  "image": {{ article_image_json }}{% endif %},
   "about": {
     "@type": "Mountain",
     "name": {{ peak.name | jsonify }}{% if peak.elevation_m %},
@@ -155,7 +166,7 @@
     "url": "{{ site.author.url }}"
   }{% if page.source_url %},
   "isBasedOn": {{ page.source_url | jsonify }}{% endif %}{% if article_image %},
-  "image": {{ article_image_abs | jsonify }}{% endif %}{% if page.tags %},
+  "image": {{ article_image_json }}{% endif %}{% if page.tags %},
   "keywords": {{ page.tags | join: ', ' | jsonify }}{% endif %}
 }
 </script>
@@ -185,7 +196,7 @@
     "name": {{ site.author.name | jsonify }},
     "url": "{{ site.author.url }}"
   }{% if article_image %},
-  "image": {{ article_image_abs | jsonify }}{% endif %}{% if page.tags %},
+  "image": {{ article_image_json }}{% endif %}{% if page.tags %},
   "keywords": {{ page.tags | join: ', ' | jsonify }}{% endif %}
 }
 </script>
