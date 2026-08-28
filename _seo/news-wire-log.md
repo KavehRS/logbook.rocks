@@ -916,5 +916,7 @@ Source: `https://www.theuiaa.org/uiaa-nma-august2026/` (`pubDate` Fri, 28 Aug 20
 2. **Language** — complete Persian of the intro + four letter paragraphs; names left Latin in parentheses; no machine-calque dump. PASS.
 3. **Policy** — no مترجم/نویسنده; no process notes; cover from source article URL; `source_url` in `_data/news-wire-seen.yml`; related to the existing Nepal symposium item. PASS.
 
+Follow-up: UIAA calls itself a federation (`International Climbing and Mountaineering Federation`, and «our federation» in the letter). Persian body now uses فدراسیون throughout; the earlier «رئیس اتحادیه» was inconsistent with «فدراسیون‌های عضو» in the same text.
+
 
 
