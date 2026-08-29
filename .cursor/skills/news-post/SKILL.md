@@ -19,7 +19,7 @@ Agent rule: `.cursor/rules/news-posts.mdc`
 ## Deliverables for a new news item
 
 1. `_news/YYYY-MM-DD-<slug>.md` with `lang: fa-IR`, unique `description`, YAML `tags`
-2. Short news prose. Do **not** invent events, dates, or people. Do not open with «این خبر را می‌آورم». Layout credits مترجم at the bottom of news pages.
+2. Short news prose. Do **not** invent events, dates, or people. Do not open with «این خبر را می‌آورم». Do not add a مترجم or نویسنده byline; news pages have none.
 3. Optional link to an existing `/logbook/` report — never clone a full ascent report into news
 4. Images in `assets/news/<exact-url-slug>/` only when real files exist
 5. Hub `/news/` chronological (title: اخبار جهان); related UI = only `اخبار مرتبط :` + flat list
