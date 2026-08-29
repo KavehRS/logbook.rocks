@@ -129,3 +129,9 @@ Source: https://www.ifsc-climbing.org/events/world-climbing-europe-series-osterm
 Window: 06:02:12–12:01:24 UTC (since `last_run_utc`, not a 1-hour cap). Fetched UIAA RSS (newest still 20 Aug symposium), Climbing.com RSS (newest still 19 Aug Pearce), World Climbing / IFSC `/news` (newest still 19 Aug Erik; no Ostermundigen news article), Ostermundigen event news index still empty of article slugs. PlanetMountain HTML 403; search listings have no 23 Aug 2026 news article (festival item is older; Rogora already published). Desnivel category RSS newest still 21 Aug. UKClimbing `/news/` 403; search newest dated items 19–20 Aug. Alpinist `/feed/` newest 19 Aug feature; `/newswire/` no August 2026 item.
 
 No source article published after 06:02 UTC. Ostermundigen winners already published from the 06:00 slot; still no scores or `/news/` recap — omitted extra invention. Nothing to review. Next GMT slot: 18:00.
+
+## 2026-08-23 18:00 GMT — scheduled slot (all unseen since previous run)
+
+Window: 12:01:24–18:01:22 UTC (since `last_run_utc`, not a 1-hour cap). Fetched UIAA RSS (newest still 20 Aug symposium), Climbing.com RSS (newest still 19 Aug Pearce), World Climbing / IFSC `/news` (newest still 19 Aug Erik; no Ostermundigen news article), Ostermundigen event news index still empty of article slugs; overview still Event Winners only (no scores). PlanetMountain HTML 403; search listings have no 23 Aug news article (Malé festival piece is older; Rogora already published). Desnivel category RSS newest still 21 Aug. UKClimbing `/news/` 403; search newest dated items 19–20 Aug. Alpinist `/feed/` newest 19 Aug feature; `/newswire/` no August 2026 item.
+
+No source article published after 12:01 UTC. Nothing to review. Next GMT slot: 00:00.
