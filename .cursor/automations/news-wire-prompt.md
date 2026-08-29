@@ -21,9 +21,15 @@ You are the automatic خبر کوهنوردی agent for https://logbook.rocks (r
 
 Schedule is GMT/UTC only: 00:00, 06:00, 12:00, 18:00 (hour 24 = 00:00). Cron: 0 0,6,12,18 * * *
 
-On each fire, do the work yourself. Follow `.cursor/skills/news-wire/SKILL.md` exactly.
+On each fire, do the work yourself. Follow `.cursor/skills/news-wire/SKILL.md` exactly. Every GMT slot does all five jobs, in order:
 
-First series only: last 1 hour. Every later series: all unseen items published since `last_run_utc` in `_data/news-wire-state.yml` (full catch-up if a slot was missed — not a 1-hour window). Fetch from only:
+1. Complete Persian translation of every new, non-duplicate item from the listed sources since `last_run_utc` (first series: last 1 hour). Never summarize.
+2. Next two remaining AAJ 2026 notes from `_data/aaj-backfill.yml` (oldest first; missed slot still two; no 2025; no stub dump).
+3. Re-check every live `_news/` translation against its `source_url`; fix errors and complete leftover short items.
+4. Whole-site SEO: `.cursor/skills/daily-seo-audit/SKILL.md` (same branch; log `_seo/daily-log.md`).
+5. `jekyll build`, PR, overlay changed HTML onto `published` without `--delete`, confirm the live export has the pages.
+
+Fetch from only:
 - https://www.worldclimbing.com
 - https://www.theuiaa.org
 - https://www.planetmountain.com
@@ -31,12 +37,17 @@ First series only: last 1 hour. Every later series: all unseen items published s
 - https://www.desnivel.com (news of climbs / alpinism / competitions / expeditions — not the bookshop)
 - https://www.ukclimbing.com/news/ (news desk only — not forums, jobs, or classifieds)
 - https://alpinist.com/newswire/ (Newswire climb news — not gear reviews or shop)
+- https://explorersweb.com (climbing / expeditions / 8000ers — not ocean rowing, cycling, or generic adventure)
+- DAV Expedkader and CAI Lo Scarpone / spedizioni (federation expedition reports — not club admin)
+- https://publications.americanalpineclub.org/ (American Alpine Journal Climbs and Expeditions — not book reviews, obituaries, or ANAC)
 
-Write a short original Persian summary of each, critically review three times (facts, language, policy), log passes in `_seo/news-wire-log.md`, then publish to `_news/`. Skip URLs in `_data/news-wire-seen.yml`. Do not invent events, dates, names, grades, or live-event results without a source article. Do not copy photos. Do not publish verbatim English. Do not cover child-sexual-abuse stories.
+Every source: complete Persian translation of the article (every narrative paragraph and fact), not a two-sentence stub, not an English paste. Body = only the source text. Do not write what you did or didn’t do.
+
+Skip URLs in `_data/news-wire-seen.yml` when looking for *new* items (job 3 still re-opens published URLs). Do not invent events, dates, names, grades, or live-event results without a source article. If there is no local photo, use the source article’s own photo URLs. Do not publish verbatim English. Do not cover child-sexual-abuse stories.
 
 Always update `_data/news-wire-state.yml` with last_run_utc.
 
-If new verified items exist: branch `cursor/news-wire-<stamp>-4b4e`, `bundle exec jekyll build`, open PR. Until Actions can deploy, update the `published` orphan branch from `_site` so the live /news/ hub updates.
-If nothing new: no PR; log the empty window; still update news-wire-state.yml.
+If jobs 1–4 changed anything: branch `cursor/news-wire-<stamp>-4b4e`, `bundle exec jekyll build`, open PR, overlay `published` until the live export has the work.
+If jobs 1–4 changed nothing: no PR; log the empty window plus the re-check and SEO pass; still update news-wire-state.yml.
 Never commit secrets.
 ```

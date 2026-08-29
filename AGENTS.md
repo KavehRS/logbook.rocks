@@ -33,7 +33,7 @@ Until Actions can run, production is:
 
 1. DNS (proxied): apex + `www` CNAME → `kavehrs.github.io`
 2. Cloudflare URL rewrite (`http_request_transform`): every path except `/cdn-cgi/` rewrites to origin `/` so GitHub returns 200 HTML
-3. Cloudflare Zaraz tool **Logbook Jekyll bootstrap** (`component: html`, `actionType: event`, trigger `Pageview`) fetches **HTML** from `https://raw.githubusercontent.com/KavehRS/logbook.rocks/published` + path (`/` → `/index.html`) and `document.write`s it. Keep in-site `<a href="/…">` on this domain; only rewrite asset URLs (`src`, CSS, favicons) onto `https://cdn.jsdelivr.net/gh/KavehRS/logbook.rocks@published`. jsDelivr’s `@published` branch alias can lag; do not fetch HTML from jsDelivr directory URLs (they are CDN listings, not `index.html`).
+3. Cloudflare Zaraz tool **Logbook Jekyll bootstrap** (`component: html`, `actionType: event`, trigger `Pageview`) fetches **HTML** from `https://raw.githubusercontent.com/KavehRS/logbook.rocks/published` + path (`/` → `/index.html`) and `document.write`s it. Keep in-site `<a href="/…">` on this domain; only rewrite asset URLs (`src`, CSS, favicons) onto `https://cdn.jsdelivr.net/gh/KavehRS/logbook.rocks@published`. **Never pin a jsDelivr commit SHA in Zaraz** — that freezes the live site on an old export. jsDelivr’s `@published` branch alias can lag; do not fetch HTML from jsDelivr directory URLs (they are CDN listings, not `index.html`).
 4. Orphan branch `published` is the built `_site` (includes `.nojekyll`)
 
 After a content change that should go live **before** GitHub billing is fixed:
@@ -136,7 +136,7 @@ When asked for `اخبار` / a climbing news item / update to `_news/`:
 2. Obey `.cursor/rules/news-posts.mdc`.
 3. Use `_drafts/news-post-template.md` (structure only — never publish placeholders).
 4. File: `_news/YYYY-MM-DD-<slug>.md` with zero-padded date, `lang: fa-IR`, YAML `tags` array, unique description.
-5. Images for news: `assets/news/<exact-url-slug>/`; comment `image:` out until files exist.
+5. Images for news: local files in `assets/news/<exact-url-slug>/` when they exist; otherwise `image:` and in-body figures use the source article’s own photo URLs. Do not write what the agent did or didn’t do in the article body.
 6. Related UI stays `اخبار مرتبط :` + flat list. Hub `/news/` chronological.
 7. Homepage `/` is the about page («درباره من») plus four latest teasers from گزارش صعود and خبر کوهنوردی. Full reports live on `/logbook/`; climbing news on `/news/`.
 8. For a Cursor Automation, paste `.cursor/automations/news-post-prompt.md` at https://cursor.com/automations/new
@@ -147,7 +147,7 @@ Related scheduled agents (mandatory after billing recharge; paused until then):
 - Weather refresh (4× daily Tehran, active reports only): `.cursor/automations/logbook-weather-update-prompt.md` + `.github/workflows/logbook-weather-agent.yml`
 - Daily SEO: `.cursor/automations/daily-seo-prompt.md` + `.github/workflows/daily-seo-agent.yml`
 - SEO + AI-source watch (every 45 minutes; technical crawl signals only, never rewrite published posts): `.cursor/automations/seo-ai-source-watch-prompt.md` + `.github/workflows/seo-ai-source-watch.yml`
-- خبر کوهنوردی agent (GMT 00:00 / 06:00 / 12:00 / 18:00; World Climbing, UIAA, PlanetMountain, Climbing.com, Desnivel, UKClimbing news, Alpinist Newswire → Persian `_news/` after three review passes): `.cursor/skills/news-wire/SKILL.md` + `.cursor/automations/news-wire-prompt.md` + `.github/workflows/news-wire-agent.yml`
+- خبر کوهنوردی agent (GMT 00:00 / 06:00 / 12:00 / 18:00 — each slot: new non-duplicate items from all listed sources as complete translations; next two AAJ 2026 queue notes; re-check live `_news/` translations; whole-site SEO; ship to live `published`): `.cursor/skills/news-wire/SKILL.md` + `.cursor/automations/news-wire-prompt.md` + `.github/workflows/news-wire-agent.yml`
 
 
 ## Daily SEO agent

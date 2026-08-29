@@ -1,6 +1,6 @@
 ---
 name: news-post
-description: Agent skill for Persian اخبار — short climbing news on logbook.rocks, distinct from گزارش صعود
+description: Agent skill for Persian اخبار — complete translation of climbing news on logbook.rocks, distinct from گزارش صعود
 ---
 
 # News post skill
@@ -19,15 +19,15 @@ Agent rule: `.cursor/rules/news-posts.mdc`
 ## Deliverables for a new news item
 
 1. `_news/YYYY-MM-DD-<slug>.md` with `lang: fa-IR`, unique `description`, YAML `tags`
-2. Short news prose. Do **not** invent events, dates, or people. Do not open with «این خبر را می‌آورم». Do not add a مترجم or نویسنده byline; news pages have none.
+2. Body = only the source, in Persian. Complete translation of every narrative paragraph and fact. «فقط متن رو خلاصه کنی» means only the source text — no agent process notes — not a two-sentence stub. Wire items: `.cursor/skills/news-wire/SKILL.md`. Do **not** invent events, dates, or people. Do not open with «این خبر را می‌آورم». Do not add a مترجم or نویسنده byline; news pages have none. Do not write what you did or didn’t do («عکسی کپی نکردم»).
 3. Optional link to an existing `/logbook/` report — never clone a full ascent report into news
-4. Images in `assets/news/<exact-url-slug>/` only when real files exist
+4. Photos: local files in `assets/news/<exact-url-slug>/` when they exist; otherwise `image:` and in-body figures from the source article’s own photo URLs
 5. Hub `/news/` chronological (title: خبر کوهنوردی); related UI = only `خبرهای مرتبط :` + flat list
 6. Homepage `/` is about («درباره من») plus four latest teasers; world-news archive is `/news/`
 7. Never publish agent notes in live HTML
 8. Reader-facing UI dates Jalali (`_includes/jalali-date.html`)
-9. خبر کوهنوردی agent (GMT 00/06/12/18): `.cursor/skills/news-wire/SKILL.md`
+9. خبر کوهنوردی agent (GMT 00/06/12/18): `.cursor/skills/news-wire/SKILL.md` — new items, two AAJ notes, re-check translations, whole-site SEO, publish
 
 ## Uniqueness
 
-News is a short announcement stream. Do not republish logbook prose. Do not keyword-stuff.
+News is the translated wire, not a logbook climb report. Do not republish logbook prose. Do not keyword-stuff.

@@ -10,7 +10,9 @@ date: 2026-08-06
 tags: [uiaa, ایمنی, تجهیزات, فراخوان]
 source: UIAA
 source_url: https://www.theuiaa.org/recall-of-simond-alpinism-vertika-quickdraws/
-# image:
+image:
+  path: https://www.theuiaa.org/wp-content/uploads/2026/08/uiaa-simond-recall-0508226.jpg
+  alt: فراخوان کوییک‌دراهای Simond Alpinism و Vertika
 ---
 
 UIAA در ۱۵ مرداد ۱۴۰۵ (۶ اوت ۲۰۲۶) نوشته Simond در پرچ گیت سیمی بعضی کوییک‌دراهای Alpinism و Vertika نقص مونتاژ پیدا کرده. به گفتهٔ همان خبر، این نقص «می‌تواند» باعث شکستن گیت سیمی شود و در سقوط خطر شکستن کارابین را ایجاد کند — نه این‌که حتماً بشکند.

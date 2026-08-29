@@ -5,7 +5,9 @@ description: Daily SEO audit and update workflow for logbook.rocks climb-report 
 
 # Daily SEO audit skill
 
-Run this every 24 hours (Cursor Automation or GitHub Action → Cloud Agent API).
+Run this every 24 hours (Cursor Automation or GitHub Action → Cloud Agent API), **and** as job 4 of every GMT news-wire slot (00/06/12/18) via `.cursor/skills/news-wire/SKILL.md`.
+
+When invoked from a news-wire slot: stay on that slot’s branch; do not open a second SEO-only PR; still write `_seo/daily-log.md`. The news-wire ship step publishes the SEO HTML.
 
 ## Mission
 

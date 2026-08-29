@@ -1,6 +1,6 @@
 # GMT 00:00, 06:00, 12:00, 18:00 (24:00 = 00:00): start a Cursor Cloud Agent
-# to translate + triple-review new items from World Climbing, UIAA,
-# PlanetMountain, Climbing.com, Desnivel, UKClimbing news, and Alpinist Newswire.
+# for the six-hour cycle: new source items, two AAJ notes, translation
+# re-check, whole-site SEO, live publish.
 #
 # Prefer native Cursor Automation: .cursor/automations/news-wire-prompt.md
 #
@@ -45,14 +45,14 @@ jobs:
 
           Follow `.cursor/skills/news-wire/SKILL.md` exactly.
 
-          Sources only: https://www.worldclimbing.com , https://www.theuiaa.org , https://www.planetmountain.com , https://www.climbing.com , https://www.desnivel.com , https://www.ukclimbing.com/news/ , https://alpinist.com/newswire/
+          Sources only: https://www.worldclimbing.com , https://www.theuiaa.org , https://www.planetmountain.com , https://www.climbing.com , https://www.desnivel.com , https://www.ukclimbing.com/news/ , https://alpinist.com/newswire/ , https://explorersweb.com (climbing/expeditions/8000ers) , DAV Expedkader + CAI Lo Scarpone expedition reports , https://publications.americanalpineclub.org/ (AAJ Climbs and Expeditions)
 
-          First series only: last 1 hour. Later series: all unseen items published since last_run_utc in `_data/news-wire-state.yml` (catch up the full gap; do not use a 1-hour window). Write short original Persian summaries, triple-review (facts / language / policy), log passes in `_seo/news-wire-log.md`, append URLs to `_data/news-wire-seen.yml`. Always update news-wire-state.yml.
+          Follow `.cursor/skills/news-wire/SKILL.md` exactly. Each GMT slot does all five jobs: (1) complete translation of every new non-duplicate item from all listed sources since last_run_utc; (2) next two AAJ 2026 queue notes; (3) re-check every live `_news/` translation against its source; (4) whole-site SEO via `.cursor/skills/daily-seo-audit/SKILL.md` on the same branch; (5) jekyll build, PR, overlay `published` until the live export has the work. Body = only the source text (no agent process notes). If there is no local photo, use the source article’s own photo URLs. Always update news-wire-state.yml.
 
-          Skip child-sexual-abuse stories, unverified facts, duplicates, and verbatim English pastes. No photos from those sites. Do not invent live-event results without a source article.
+          Skip child-sexual-abuse stories, unverified facts, duplicates, and verbatim English pastes. Do not invent live-event results without a source article.
 
-          If new verified items: branch `cursor/news-wire-{stamp}-4b4e`, `bundle exec jekyll build`, open PR; also refresh `published` while GitHub Actions cannot deploy Pages.
-          If nothing new: no PR; log the empty window; still update news-wire-state.yml.
+          If jobs 1–4 changed anything: branch `cursor/news-wire-{stamp}-4b4e`, `bundle exec jekyll build`, open PR; overlay `published` until the live export has the work.
+          If jobs 1–4 changed nothing: no PR; log the empty window plus the re-check and SEO pass; still update news-wire-state.yml.
           Never invent news. Never commit secrets.
           """
 
