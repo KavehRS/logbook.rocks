@@ -238,4 +238,18 @@ Source: https://www.climbing.com/news/rumney-close-call-wildfire-other-climbing-
 
 Next GMT slot: 06:00.
 
+## 2026-08-26 06:00 GMT — scheduled slot (all unseen since previous run)
+
+Window: 00:02:19–06:01:44 UTC (since `last_run_utc`, not a 1-hour cap). Fetched UIAA RSS (newest still 20 Aug symposium). Climbing.com RSS newest still Rumney 25 Aug 21:49 UTC (already published). World Climbing / IFSC `/news` newest still the 24 Aug Ostermundigen recap (already published). Desnivel `alpinismo`: new 26 Aug 06:00 UTC Biacherahi Central / Wild Soul. Other Desnivel categories unchanged (`escalada-roca` still Donec; `competiciones` still Ostermundigen after retry). PlanetMountain HTML 403; search has no new 26 Aug 2026 article. UKClimbing `/news/` 403; search newest dated 19 Aug. Alpinist `/feed/` newest 19 Aug Dean Potter feature; `/newswire/` listing still has no August 2026 item (top item remains Heavy is the Hand, April 2026). Guiyang youth still has no `/news/` article — omitted. Laval remains 28–30 Aug — no result.
+
+### 2026-08-26 Desnivel Biacherahi Central Wild Soul
+
+Source: https://www.desnivel.com/alpinismo/thomas-huber-miquel-mas-y-victor-sans-primera-ascension-a-la-biacherahi-central-5700-m-karakorum/
+
+1. Facts: Thomas Huber, Miquel Mas, Víctor Sans; first ascent claim of Biacherahi Central, 5700 m, Choktoi glacier, Latok massif, Karakoram, Pakistan. Route Wild Soul 600 m, 21 pitches, 7a, A2+. Dek: five intense days (1–4 August); body: five-day stable-weather window, five days of intensity, return to base inside that window. Advanced base ~5050 m. Mid-wall traces of earlier attempts; team says no evidence the summit was reached before, so they treat it as a virgin summit. Did not invent a summit calendar day beyond the dek’s 1–4 Aug. Did not copy team photos. Jalali 26 Aug = 4 Shahrivar; 1 Aug = 10 Mordad; 4 Aug = 13 Mordad.
+2. Language: short original Persian; place/route names Latin (Biacherahi Central, Wild Soul, Choktoi, Latok); توماس هوبر / میکل ماس / ویکتور سانس.
+3. Policy: no مترجم/نویسنده; no photo; source linked; unique description; not a child-sexual-abuse story. PASS.
+
+Next GMT slot: 12:00.
+
 
