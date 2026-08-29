@@ -79,3 +79,9 @@ No source article published after 18:00 UTC. Ostermundigen day-1 qualification a
 Window: 00:00:53–06:00:38 UTC (since `last_run_utc`, not a 1-hour cap). Fetched UIAA RSS (newest still 20 Aug symposium), Climbing.com RSS (newest still 19 Aug Pearce), World Climbing `/news` (newest still 19 Aug; Ostermundigen not on the listing), Ostermundigen event news/results indexes (only `/news/index`; no article slug, no athlete names), PlanetMountain HTML 403; search listings have no 21–22 Aug 2026 news article.
 
 No source article published after 00:00 UTC. Ostermundigen finals remain on the 22 Aug evening programme. Nothing to review. Next GMT slot: 12:00.
+
+## 2026-08-22 12:00 GMT — scheduled slot (all unseen since previous run)
+
+Window: 06:00:38–12:00:49 UTC (since `last_run_utc`, not a 1-hour cap). Fetched UIAA RSS (newest still 20 Aug symposium), Climbing.com RSS (newest still 19 Aug Pearce), World Climbing `/news` (newest still 19 Aug; Ostermundigen not on the listing), Ostermundigen event overview/news/results indexes (only `/news/index`; no article slug, no athlete names), PlanetMountain HTML 403; search listings have no 21–22 Aug 2026 news article.
+
+No source article published after 06:00 UTC. Ostermundigen finals remain on the 22 Aug evening programme (19:00 local). Nothing to review. Next GMT slot: 18:00.
