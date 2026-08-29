@@ -45,6 +45,16 @@ bundle exec jekyll build
 
 Do not remove the Zaraz HTML tool or the catch-all rewrite while Pages is still the placeholder. When `deploy-pages.yml` succeeds on `main`, GitHub Pages will serve `_site` directly — then delete the Zaraz bootstrap and the rewrite.
 
+### Iran / filtered networks
+
+Zaraz bootstrap runs **in the visitor’s browser** and fetches `raw.githubusercontent.com` plus `cdn.jsdelivr.net`. Those hosts are commonly blocked in Iran, so the tab stays on the loading line or «صفحه از روی این شبکه باز نشد». Cloudflare (`logbook.rocks`) is usually reachable; the break is the extra GitHub/jsDelivr request, not DNS.
+
+The durable fix is to make GitHub Pages itself serve the built `published` tree (branch `published`, folder `/`, legacy source — not GitHub Actions). Then Cloudflare’s proxy fetches GitHub **from the edge**, and Iranian visitors only talk to Cloudflare. After that switch: disable the catch-all rewrite-to-`/` and disable the Zaraz Logbook HTML tool. Keep orange-cloud DNS on `kavehrs.github.io`. Do **not** CNAME to `pages.dev` / `workers.dev` (1014 / 421).
+
+Free-plan Cloudflare cannot override Origin Host / Host header, and this zone token cannot deploy Workers or Snippets. Until Pages is on `published`, leave Zaraz on. Do not send `Link` preloads to jsDelivr or GitHub — they hang browsers on filtered networks.
+
+Snippet source for a later Worker/Snippet origin: `cloudflare/serve-published.js`.
+
 ## Install / verify
 
 ```bash
