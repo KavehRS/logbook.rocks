@@ -169,3 +169,25 @@ Source: https://www.desnivel.com/competiciones/dificultad-comp/dificultad-comp-i
 3. Policy: no مترجم/نویسنده; no photo; source linked; related to the earlier winners post; unique description. PASS.
 
 Next GMT slot: 18:00.
+
+## 2026-08-24 18:00 GMT — scheduled slot (all unseen since previous run)
+
+Window: 12:02:46–18:02:18 UTC (since `last_run_utc`, not a 1-hour cap). Fetched UIAA RSS (newest still 20 Aug symposium). Climbing.com RSS: new 24 Aug 16:01 UTC Mont Blanc rescue item. World Climbing / IFSC `/news`: new 24 Aug recap «Golds for Martínez Almendros and Poles in Ostermundigen». Desnivel newest still the two items published at 12:00. PlanetMountain HTML 403; search has no new 24 Aug article besides already-published Pearce/Rogora. UKClimbing `/news/` 403; search newest dated 19–20 Aug. Alpinist `/feed/` newest 19 Aug feature; `/newswire/` no August 2026 item.
+
+### 2026-08-24 Climbing.com Mont Blanc rescue denied
+
+Source: https://www.climbing.com/news/32-climbers-denied-helicopter-rescue-on-mont-blanc/
+
+1. Facts: mayor Jean-Marc Peillex, Saint-Gervais-les-Bains; Tête Rousse and Goûter huts closed 11 Aug for heat-induced rockfall on Goûter route; ≥32 climbers overnight at Goûter hut; 12 Aug they did not continue and asked a free helicopter rescue; denied; paid helicopters allowed. Conflicting reports on when warnings reached parties (Explorers Web / Alpin.De / AostaSera as the magazine names them). Batoux: guides cancelled, spaces resold to amateurs; he supports not billing the community. Did not invent a euro cost (none in the article). Did not copy the Getty photo. Jalali 11 Aug = 20 Mordad, 12 Aug = 21 Mordad, 24 Aug = 2 Shahrivar.
+2. Language: short original Persian; not a paste of the first-person English essay; hut/place names Latin.
+3. Policy: no مترجم/نویسنده; no photo; source linked; unique description; not a child-sexual-abuse story. PASS.
+
+### 2026-08-24 World Climbing Ostermundigen Lead recap
+
+Source: https://www.ifsc-climbing.org/events/world-climbing-europe-series-ostermundigen-2026/news/golds-for-martinez-almendros-and-poles-in-ostermundigen
+
+1. Facts: women’s 37+ Martínez Almendros (last in final after winning semi) / 35+ Deubler / 33 Bridgens; men’s Poles 45 (bronze in Žilina) / Etchar 39+ (ahead in semi) / Utelli 38 home bronze. Laval championship 28–30 Aug (Desnivel earlier wrote 28–29; official recap is 28–30). Leipzig Speed 3 Oct. Score notation 37+ (Desnivel wrote +37). Not treated as a duplicate of the Event Winners widget: this is the first World Climbing `/news/` article with official scores.
+2. Language: short original Persian; names as prior posts; scores in source notation.
+3. Policy: no مترجم/نویسنده; no photo; source linked; related to the winners widget and the Desnivel scores post; unique description. PASS.
+
+Next GMT slot: 00:00.
