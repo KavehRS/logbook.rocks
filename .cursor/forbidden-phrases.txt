@@ -1,0 +1,12 @@
+# Text the owner has removed and does not want republished.
+# One regex per line, matched against every built HTML page by script/ship-live.sh.
+# Blank lines and #-comments are ignored. This file is excluded from the build.
+#
+# Add an entry whenever the owner asks for wording to be taken out for good, so a
+# branch forked before the fix cannot quietly restore it.
+
+# Kahar peak report: the team line must not describe the three companions by
+# employer or nationality. Owner removed it in main@c29bb8f; a stale cursor/*
+# branch republished it on 28 Aug 2026.
+کارکنان خارجی
+نهادهای دیپلماتیک

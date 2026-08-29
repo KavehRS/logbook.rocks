@@ -1,2 +1,4 @@
-https://www.logbook.rocks/* https://logbook.rocks/:splat 301
+# Relative rules only — Workers static assets reject absolute URLs.
+# Send www → apex with a Cloudflare Redirect Rule / Pages custom-domain redirect, not here.
 /index.html /
+

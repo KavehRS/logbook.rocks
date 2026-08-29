@@ -1,0 +1,81 @@
+# GMT 00:00, 06:00, 12:00, 18:00 (24:00 = 00:00): start a Cursor Cloud Agent
+# for the six-hour cycle: new source items, two AAJ notes, translation
+# re-check, whole-site SEO, live publish.
+#
+# Prefer native Cursor Automation: .cursor/automations/news-wire-prompt.md
+#
+# Required repo secret:
+#   CURSOR_API_KEY — from https://cursor.com/settings (API keys)
+#
+# If the secret is missing, the workflow no-ops successfully so Actions stays green.
+
+name: International news wire Cloud Agent
+
+on:
+  schedule:
+    - cron: "0 0,6,12,18 * * *"
+  workflow_dispatch:
+
+jobs:
+  start-news-wire-agent:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Start Cursor Cloud Agent (news wire)
+        env:
+          CURSOR_API_KEY: ${{ secrets.CURSOR_API_KEY }}
+        run: |
+          set -euo pipefail
+          if [ -z "${CURSOR_API_KEY:-}" ]; then
+            echo "CURSOR_API_KEY secret not set — skip API trigger."
+            echo "Enable Cursor Automation: .cursor/automations/news-wire-prompt.md"
+            exit 0
+          fi
+
+          python3 <<'PY'
+          import json, os, urllib.request
+          from datetime import datetime, timezone, timedelta
+
+          tehran = timezone(timedelta(hours=3, minutes=30))
+          now = datetime.now(tehran)
+          stamp = now.strftime("%Y%m%d-%H%M")
+
+          prompt = f"""You are the automatic خبر کوهنوردی agent for https://logbook.rocks.
+
+          This run was auto-triggered at {now.isoformat()} (Asia/Tehran). GMT slots are 00:00, 06:00, 12:00, 18:00. Do the work yourself.
+
+          Follow `.cursor/skills/news-wire/SKILL.md` exactly.
+
+          Sources only: https://www.worldclimbing.com , https://www.theuiaa.org , https://www.planetmountain.com , https://www.climbing.com , https://www.desnivel.com , https://www.ukclimbing.com/news/ , https://alpinist.com/newswire/ , https://explorersweb.com (climbing/expeditions/8000ers) , DAV Expedkader + CAI Lo Scarpone expedition reports , https://publications.americanalpineclub.org/ (AAJ Climbs and Expeditions)
+
+          Follow `.cursor/skills/news-wire/SKILL.md` exactly. Each GMT slot does all five jobs: (1) complete translation of every new non-duplicate item from all listed sources since last_run_utc; (2) next two AAJ 2026 queue notes; (3) re-check every live `_news/` translation against its source; (4) whole-site SEO via `.cursor/skills/daily-seo-audit/SKILL.md` on the same branch; (5) jekyll build, PR, overlay `published` until the live export has the work. Body = only the source text (no agent process notes). If there is no local photo, use the source article’s own photo URLs. Always update news-wire-state.yml.
+
+          Skip child-sexual-abuse stories, unverified facts, duplicates, and verbatim English pastes. Do not invent live-event results without a source article.
+
+          If jobs 1–4 changed anything: branch `cursor/news-wire-{stamp}-4b4e`, `bundle exec jekyll build`, open PR; overlay `published` until the live export has the work.
+          If jobs 1–4 changed nothing: no PR; log the empty window plus the re-check and SEO pass; still update news-wire-state.yml.
+          Never invent news. Never commit secrets.
+          """
+
+          body = {
+              "name": f"Logbook news wire {stamp}",
+              "prompt": {"text": prompt},
+              "repos": [{
+                  "url": "https://github.com/KavehRS/logbook.rocks",
+                  "startingRef": "main",
+              }],
+              "autoCreatePR": True,
+              "skipReviewerRequest": True,
+          }
+          req = urllib.request.Request(
+              "https://api.cursor.com/v1/agents",
+              data=json.dumps(body).encode(),
+              headers={
+                  "Authorization": f"Bearer {os.environ['CURSOR_API_KEY']}",
+                  "Content-Type": "application/json",
+              },
+              method="POST",
+          )
+          with urllib.request.urlopen(req) as resp:
+              print(resp.read().decode())
+          print("News-wire cloud agent requested.")
+          PY
