@@ -1,11 +1,11 @@
 ---
 name: news-wire
-description: GMT 00/06/12/18 news-wire agent — fetch new climbing news from World Climbing, UIAA, PlanetMountain, and Climbing.com; Persian summary; triple-review; publish to _news/
+description: GMT 00/06/12/18 news-wire agent — fetch new climbing news from World Climbing, UIAA, PlanetMountain, Climbing.com, Desnivel, UKClimbing news, and Alpinist Newswire; Persian summary; triple-review; publish to _news/
 ---
 
 # International news wire agent (خبر کوهنوردی)
 
-Use when the GMT news-wire timer fires, or when the user asks to refresh خبر کوهنوردی from the four reference sites.
+Use when the GMT news-wire timer fires, or when the user asks to refresh خبر کوهنوردی from the listed reference sites.
 
 This **is** the automatic agent. Do the work yourself; do not wait for another prompt.
 
@@ -31,8 +31,11 @@ Combined: `0 0,6,12,18 * * *` (GitHub Actions and Cursor timer, UTC).
 2. https://www.theuiaa.org
 3. https://www.planetmountain.com
 4. https://www.climbing.com
+5. https://www.desnivel.com — climbs, alpinism, competitions, expeditions. Prefer category RSS: `/category/alpinismo/feed/`, `/category/escalada-roca/feed/`, `/category/competiciones/feed/`, `/category/expediciones/feed/`, `/category/escalada-hielo/feed/`, `/category/bulder/feed/`. Skip bookshop, cultura-only ads, and generic gear shopping.
+6. https://www.ukclimbing.com/news/ — **news desk only**. Do not fetch forums, jobs, classifieds, photo galleries, or gear listings. UKC has no public news RSS. If Cloudflare blocks HTML, use a search snippet only for facts visible on the article page; **omit** the rest.
+7. https://alpinist.com/newswire/ — Newswire climb/alpinism news. Site RSS `https://alpinist.com/feed/` is magazine-wide and often gear or features; do **not** treat Mountain Standards reviews, Escape Route lists, shop, or staff HR as wire news. A Newswire or feature with a new climb, federation, or safety fact may be published.
 
-Prefer RSS when it exists (`https://www.theuiaa.org/feed/`, `https://www.climbing.com/news/feed/`). World Climbing often links through to `ifsc-climbing.org`. If PlanetMountain is bot-blocked, use a search snippet only for facts that are visible on the article page; **omit** anything you cannot confirm.
+Prefer RSS when it exists (`https://www.theuiaa.org/feed/`, `https://www.climbing.com/news/feed/`, the Desnivel category feeds above, `https://alpinist.com/feed/` filtered as above). World Climbing often links through to `ifsc-climbing.org`. If PlanetMountain or UKClimbing is bot-blocked, use a search snippet only for facts that are visible on the article page; **omit** anything you cannot confirm.
 
 ## Always read first
 
@@ -45,7 +48,7 @@ Prefer RSS when it exists (`https://www.theuiaa.org/feed/`, `https://www.climbin
 
 ## What to publish
 
-- Short Persian **summary**, not a verbatim translation of the English/Italian article.
+- Short Persian **summary**, not a verbatim translation of the English, Italian, or Spanish article.
 - Do **not** open with curator asides such as «خبر را اینجا می‌آورم»، «خلاصه می‌کنم»، or «خودم آنجا نبودم». Start with the news.
 - News pages have no مترجم or نویسنده byline. Do not add either in the post body.
 - Publish **every** unseen item in the window that passes triple review (not one-per-source). Extra UIAA **equipment recalls** may ship in the same run (safety).
@@ -58,7 +61,7 @@ Prefer RSS when it exists (`https://www.theuiaa.org/feed/`, `https://www.climbin
 
 - Stories whose primary subject is child sexual abuse or exploitation
 - Items you cannot confirm from the source page
-- Duplicates of a story already published from another of the four sites (keep the earlier / closer-to-primary source)
+- Duplicates of a story already published from another of the listed sources (keep the earlier / closer-to-primary source)
 - Marketing listicles with no new climb/federation/safety fact
 - When skipping, append the URL under `skipped:` in `_data/news-wire-seen.yml` so later runs do not re-open it
 

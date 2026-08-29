@@ -1,4 +1,6 @@
 # URLs already published as Persian news summaries.
+# Sources: World Climbing, UIAA, PlanetMountain, Climbing.com, Desnivel,
+# UKClimbing /news/, Alpinist Newswire.
 # Agents must skip these. Append after a successful triple-review + commit.
 
 items:

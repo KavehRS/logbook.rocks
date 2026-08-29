@@ -28,6 +28,9 @@ First series only: last 1 hour. Every later series: all unseen items published s
 - https://www.theuiaa.org
 - https://www.planetmountain.com
 - https://www.climbing.com
+- https://www.desnivel.com (news of climbs / alpinism / competitions / expeditions — not the bookshop)
+- https://www.ukclimbing.com/news/ (news desk only — not forums, jobs, or classifieds)
+- https://alpinist.com/newswire/ (Newswire climb news — not gear reviews or shop)
 
 Write a short original Persian summary of each, critically review three times (facts, language, policy), log passes in `_seo/news-wire-log.md`, then publish to `_news/`. Skip URLs in `_data/news-wire-seen.yml`. Do not invent events, dates, names, grades, or live-event results without a source article. Do not copy photos. Do not publish verbatim English. Do not cover child-sexual-abuse stories.
 

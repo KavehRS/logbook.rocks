@@ -19,7 +19,7 @@ When the user asks for a news item (`اخبار` / خبر کوهنوردی), app
 8. Visible dates on the site are Jalali via `_includes/jalali-date.html`.
 9. Never invent events, dates, team members, or climb facts.
 10. Never publish agent/implementation notes into live HTML. News pages have no opening «این خبر را می‌آورم» line and no مترجم/نویسنده byline.
-11. International wire agent (GMT 00:00, 06:00, 12:00, 18:00): follow `.cursor/skills/news-wire/SKILL.md`. First series: last 1 hour. Later series: all unseen items since `last_run_utc`. Translate only from World Climbing, UIAA, PlanetMountain, and Climbing.com. Triple-review before publish. Skip URLs in `_data/news-wire-seen.yml`.
+11. International wire agent (GMT 00:00, 06:00, 12:00, 18:00): follow `.cursor/skills/news-wire/SKILL.md`. First series: last 1 hour. Later series: all unseen items since `last_run_utc`. Translate only from World Climbing, UIAA, PlanetMountain, Climbing.com, Desnivel, UKClimbing `/news/`, and Alpinist Newswire. Triple-review before publish. Skip URLs in `_data/news-wire-seen.yml`.
 
 ## Do not
 
