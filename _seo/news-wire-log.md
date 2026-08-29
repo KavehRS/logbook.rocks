@@ -191,3 +191,9 @@ Source: https://www.ifsc-climbing.org/events/world-climbing-europe-series-osterm
 3. Policy: no مترجم/نویسنده; no photo; source linked; related to the winners widget and the Desnivel scores post; unique description. PASS.
 
 Next GMT slot: 00:00.
+
+## 2026-08-25 00:00 GMT — scheduled slot (all unseen since previous run)
+
+Window: 18:02:18 UTC 24 Aug – 00:04:12 UTC 25 Aug (since `last_run_utc`, not a 1-hour cap). Fetched UIAA RSS (newest still 20 Aug symposium). Climbing.com RSS newest still Mont Blanc / Peillex (`pubDate` 16:01:06 +0000 24 Aug; already published). World Climbing / IFSC `/news` newest still the 24 Aug Ostermundigen recap (already published); Ostermundigen event `/news` index still has no extra slug. Desnivel: `escalada-roca` newest still Fly (11:57 UTC 24 Aug, already published); `competiciones` newest still Ostermundigen scores (08:29 UTC 24 Aug, already published); `alpinismo` newest still 21 Aug; `expediciones` newest still 1–2 Aug; `escalada-hielo` newest March 2026; `bulder` newest 24 Jul. PlanetMountain HTML 403; search has no 25 Aug 2026 article (Pearce interview is a duplicate of the 19 Aug Climbing.com item). UKClimbing `/news/` 403; search newest dated 19–20 Aug. Alpinist `/feed/` newest 19 Aug Dean Potter feature; `/newswire/` listing still has no August 2026 item (top item remains Heavy is the Hand, April 2026).
+
+No source article published after 18:02 UTC 24 Aug. Nothing to review. Next GMT slot: 06:00.
