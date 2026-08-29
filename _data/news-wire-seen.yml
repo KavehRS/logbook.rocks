@@ -46,6 +46,9 @@ items:
   - source: Desnivel
     source_url: https://www.desnivel.com/alpinismo/thomas-huber-miquel-mas-y-victor-sans-primera-ascension-a-la-biacherahi-central-5700-m-karakorum/
     slug: 2026-08-26-desnivel-biacherahi-central-wild-soul
+  - source: Desnivel
+    source_url: https://www.desnivel.com/alpinismo/fay-manners-y-roger-schaeli-abren-solar-eclipse-en-la-norte-del-eiger/
+    slug: 2026-08-25-desnivel-eiger-solar-eclipse
 
 # Seen by the wire but not published. Skip on later runs.
 skipped:
@@ -61,3 +64,6 @@ skipped:
   - source: Climbing.com
     source_url: https://www.climbing.com/news/first-ascent-climbing-gym-chicago-negligence-50-million-child-sexual-abuse-case/
     reason: policy skip
+  - source: UKClimbing
+    source_url: https://www.ukclimbing.com/news/2026/08/what_if_everything_were_possible_fay_manners_on_her_new_route_on_the_eigers_north_face-74202
+    reason: duplicate of the Desnivel Solar Eclipse Eiger item; HTML 403, no visible pubDate

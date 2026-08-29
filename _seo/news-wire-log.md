@@ -252,4 +252,18 @@ Source: https://www.desnivel.com/alpinismo/thomas-huber-miquel-mas-y-victor-sans
 
 Next GMT slot: 12:00.
 
+## 2026-08-26 12:00 GMT — scheduled slot (all unseen since previous run)
+
+Window: 06:01:44–12:02:20 UTC (since `last_run_utc`, not a 1-hour cap). Fetched UIAA RSS (newest still 20 Aug symposium). Climbing.com RSS newest still Rumney 25 Aug 21:49 UTC (already published). World Climbing / IFSC `/news` newest still the 24 Aug Ostermundigen recap (already published). Desnivel `alpinismo`: Solar Eclipse / Eiger now listed above Biacherahi; RSS `pubDate` Tue 25 Aug 13:42 UTC is before `last_run_utc`, but this URL was not in the 06:00 fetch (Biacherahi was then newest) so it surfaced in this slot — unpublished, treated as catch-up. Other Desnivel categories unchanged (`escalada-roca` still Donec; `competiciones` still Ostermundigen). `escalada-hielo` retry parsed, newest still March. `bulder` retry was a captcha interstitial. PlanetMountain HTML 403; search has no new 26 Aug 2026 article (Lara Neumeier End of Silence remains the undated/2025 page). UKClimbing `/news/` 403; search surfaced a Fay Manners Solar Eclipse first-person page without a visible date — skipped as duplicate of Desnivel. Alpinist `/feed/` newest 19 Aug Dean Potter feature; `/newswire/` listing still has no August 2026 item. Laval remains 28–30 Aug — no result. Guiyang still has no `/news/` article.
+
+### 2026-08-25 Desnivel Eiger Solar Eclipse
+
+Source: https://www.desnivel.com/alpinismo/fay-manners-y-roger-schaeli-abren-solar-eclipse-en-la-norte-del-eiger/
+
+1. Facts: Fay Manners (British), Roger Schaeli (Swiss); Solar Eclipse, Eiger north face; 900 m, 33 pitches; estimated ~7c/c+; almost all free except two aid pitches, full free left for next spring. 18 days total, 13 living on the wall. First four pitches two summers ago by Schaeli and Raphael Schmid; Schmid two days this summer then left; Oskar Gertsch hauling/fixed ropes. Last four short pitches follow Ghilini–Piola; rebolted with Piola’s consent; belays bolted, mix of trad and bolts. Schaeli: slightly more demanding than Odysse (1400 m, 8a+) for traverses/route-finding; pure technical grade Odysse higher; subjective until fully freed. Solar eclipse from the portaledge 12 Aug — route name. Did not use Bedford/UKC extras (summit 13 Aug, first British woman, 2027). Did not copy Coquoz/Thornton photos. Jalali 25 Aug = 3 Shahrivar; 12 Aug = 21 Mordad. Front-matter 17:12 +0330 matches 13:42 UTC so Jalali stays 3 Shahrivar and sorts between Donec and Rumney.
+2. Language: short original Persian; names Latin (Solar Eclipse, Eiger, Ghilini–Piola, Odysse); فی منرز / راجر شائلی.
+3. Policy: no مترجم/نویسنده; no photo; source linked; unique description; UKC duplicate skipped. PASS.
+
+Next GMT slot: 18:00.
+
 
