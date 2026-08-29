@@ -5,7 +5,9 @@ description: Daily SEO audit and update workflow for logbook.rocks climb-report 
 
 # Daily SEO audit skill
 
-Run this every 24 hours (Cursor Automation or GitHub Action → Cloud Agent API).
+Run this every 24 hours (Cursor Automation or GitHub Action → Cloud Agent API), **and** as job 4 of every GMT news-wire slot (00/06/12/18) via `.cursor/skills/news-wire/SKILL.md`.
+
+When invoked from a news-wire slot: stay on that slot’s branch; do not open a second SEO-only PR; still write `_seo/daily-log.md`. The news-wire ship step publishes the SEO HTML.
 
 ## Mission
 
@@ -17,9 +19,9 @@ Improve discoverability of Persian **گزارش برنامه صعود** content 
 
 Hub `/logbook/` is chronological. Related blocks must stay a flat `گزارش‌های مرتبط :` list (no agent blurbs / category subheads on the page). Reader-facing dates stay Jalali (`_includes/jalali-date.html`), not English Gregorian.
 
-Primary hub: `/logbook/` · News: `/news/` · Site: `https://logbook.rocks`
+Primary hub: `/logbook/` · News: `/news/` · Articles: `/articles/` · Site: `https://logbook.rocks`
 
-Every published post (logbook and news) should be crawlable, have unique title/description, correct `lang`/`dir`, valid canonical, and useful structured data. Ranking “#1 for everything” is not a switch — compound people-first reports + technical hygiene + owner actions (Search Console, Bing, DNS trust). Do not keyword-stuff.
+Every published post (logbook, news, and articles) should be crawlable, have unique title/description, correct `lang`/`dir`, valid canonical, and useful structured data. Ranking “#1 for everything” is not a switch — compound people-first reports + technical hygiene + owner actions (Search Console, Bing, DNS trust). Do not keyword-stuff.
 
 ## Step 0 — Fresh guidance
 
@@ -41,15 +43,16 @@ Inspect:
 1. `https://logbook.rocks/`
 2. `https://logbook.rocks/logbook/`
 3. `https://logbook.rocks/news/`
-4. `https://logbook.rocks/robots.txt`
-5. `https://logbook.rocks/sitemap.xml`
-6. Every indexed HTML URL in the sitemap (or build output if live fetch fails)
+4. `https://logbook.rocks/articles/`
+5. `https://logbook.rocks/robots.txt`
+6. `https://logbook.rocks/sitemap.xml`
+7. Every indexed HTML URL in the sitemap (or build output if live fetch fails)
 
 Record: title, meta description, canonical, `lang`/`dir`, H1 count, OG/Twitter tags, JSON-LD validity, obvious broken images/links.
 
 ## Step 2 — Repo audit checklist
 
-For each `_logbook/*.md`, `_news/*.md`, and key pages (`index.md`, `logbook.md`, `news.md`):
+For each `_logbook/*.md`, `_news/*.md`, `_articles/*.md`, and key pages (`index.md`, `logbook.md`, `news.md`, `articles.md`):
 
 - [ ] Unique `title` and `description` (≈120–160 chars for description when practical)
 - [ ] `lang` / `dir_attr` correct

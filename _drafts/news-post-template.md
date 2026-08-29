@@ -1,6 +1,6 @@
 ---
 # DRAFT TEMPLATE — not published
-# چهارچوب خبر کوتاه کوهنوردی
+# چهارچوب خبر کوهنوردی
 # هنگام ساخت خبر جدید: این سکشن‌ها را نگه دار، متن را از نو بنویس.
 layout: null
 title: "قالب خبر — درفت"
@@ -22,18 +22,28 @@ USAGE (agent-only — do not copy this comment block into published pages)
    date: YYYY-MM-DD (Gregorian for machines; UI shows Jalali)
    tags: [YAML array]
 3) Optional related: [{ title, url }] only to other news items when they exist
-   image: only a real photo for THIS item; comment out until the file exists
-4) Images: `assets/news/YYYY-MM-DD-<slug>/` matching `/news/YYYY-MM-DD-<slug>/`
+   image: always a local file under assets/news/<slug>/ — download the source photo first
+4) Images: always self-hosted in `assets/news/YYYY-MM-DD-<slug>/` (one folder per news item, named
+   like the post file stem). Download every source photo, commit it, and reference
+   `/assets/news/<slug>/<file>` from `image:` and each in-body figure. Never point a published page
+   at the source host. Publish the standardized copy (max 1600px, sane quality); when the source is
+   unusually high quality, keep the untouched original in `assets/news/<slug>/_originals/` too —
+   Jekyll skips `_`-prefixed folders, so it stays in git and out of the live site
 5) Related public UI: «اخبار مرتبط :» + flat list
-6) Hub `/news/` is chronological (newest first). Homepage always shows the اخبار column.
-7) Write as the author (من). Short: what happened, why it matters, optional link
-   to an existing `/logbook/` report — do not clone a climb report into news
+6) Hub `/news/` is a single wire list (newest first). AAJ notes live in `_articles/` and on `/articles/`.
+   Homepage `/` is about + four newest logbook teasers + five newest hub teasers (اخبار and مقالات merged
+   by date), refreshed automatically from `_includes/home-latest.html`; the climbing-news archive is
+   `/news/` (title: خبر کوهنوردی) and journal translations are `/articles/` (title: مقالات).
+7) Do not open with «این خبر را می‌آورم» / curator asides. Body = only the source, in Persian
+   (complete translation of every narrative paragraph and fact — not a two-sentence stub, not
+   «چکار کردی یا نکردی»). Optional link to an existing `/logbook/` report — do not clone a
+   climb report into news. Do not add a مترجم or نویسنده byline.
 8) Do not invent events, dates, or team names the user did not give
 9) Never paste this template prose unchanged into a published post
 -->
 
 {{یک پاراگراف: این خبر چیست و چرا الان نوشته شده}}
 
-{{جزئیات کوتاه — فقط واقعیت‌هایی که کاربر داده}}
+{{ترجمهٔ کامل منبع — هر بند روایی و هر واقعیت صعود/مسابقه/ایمنی}}
 
 <!-- optional: لینک به گزارش صعود موجود -->

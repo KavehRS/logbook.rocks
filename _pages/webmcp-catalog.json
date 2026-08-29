@@ -18,12 +18,26 @@ sitemap: false
     {%- endfor %}
   ],
   "news": [
-    {%- assign items = site.news | sort: "date" | reverse -%}
+    {%- assign items = site.news | where_exp: "post", "post.layout != 'redirect'" | sort: "date" | reverse -%}
     {%- for post in items %}
     {
       "title": {{ post.title | jsonify }},
       "url": {{ post.url | jsonify }},
       "date": {{ post.date | date: "%Y-%m-%d" | jsonify }},
+      "datetime": {{ post.date | date_to_xmlschema | jsonify }},
+      "description": {{ post.description | default: "" | jsonify }},
+      "tags": {{ post.tags | jsonify }}
+    }{%- unless forloop.last -%},{%- endunless -%}
+    {%- endfor %}
+  ],
+  "articles": [
+    {%- assign items = site.articles | sort: "aaj_id" | reverse -%}
+    {%- for post in items %}
+    {
+      "title": {{ post.title | jsonify }},
+      "url": {{ post.url | jsonify }},
+      "date": {{ post.date | date: "%Y-%m-%d" | jsonify }},
+      "datetime": {{ post.date | date_to_xmlschema | jsonify }},
       "description": {{ post.description | default: "" | jsonify }},
       "tags": {{ post.tags | jsonify }}
     }{%- unless forloop.last -%},{%- endunless -%}

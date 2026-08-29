@@ -6,6 +6,22 @@
 {% endif %}
 {% if page_img and page_img != empty and page_img != default_img %}
   {% assign article_image = page_img %}
+  {% if article_image contains '://' %}
+    {% assign article_image_abs = article_image %}
+  {% else %}
+    {% assign article_image_abs = article_image | absolute_url %}
+  {% endif %}
+  {% comment %}
+  Dimensions come from _plugins/image_dimensions.rb, which measures the file at
+  build time. An ImageObject with a known size is eligible for image rich
+  results where a bare URL is not.
+  {% endcomment %}
+  {% assign article_image_dims = site.data.image_dims[article_image] %}
+  {% if article_image_dims %}
+    {% capture article_image_json %}{"@type": "ImageObject", "url": {{ article_image_abs | jsonify }}, "width": {{ article_image_dims.width }}, "height": {{ article_image_dims.height }}}{% endcapture %}
+  {% else %}
+    {% capture article_image_json %}{{ article_image_abs | jsonify }}{% endcapture %}
+  {% endif %}
 {% else %}
   {% assign article_image = nil %}
 {% endif %}
@@ -14,12 +30,19 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "WebSite",
-  "name": {{ site.title | jsonify }},
+  "@type": "AboutPage",
+  "name": {{ page.title | jsonify }},
   "url": "{{ site.url }}{{ site.baseurl }}/",
   "inLanguage": "fa-IR",
-  "description": {{ site.description | strip_newlines | jsonify }},
-  "publisher": {
+  "description": {{ page.description | strip_newlines | jsonify }},
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": {{ site.title | jsonify }},
+    "url": "{{ site.url }}{{ site.baseurl }}/",
+    "inLanguage": "fa-IR",
+    "description": {{ site.description | strip_newlines | jsonify }}
+  },
+  "about": {
     "@type": "Person",
     "name": {{ site.author.name | jsonify }},
     "url": "{{ site.author.url }}",
@@ -29,7 +52,17 @@
 </script>
 {% endif %}
 
-{% if page.collection == 'logbook' or page.collection == 'news' %}
+{% if page.collection == 'logbook' or page.collection == 'news' or page.collection == 'articles' %}
+{% if page.collection == 'logbook' %}
+  {% assign crumb_name = 'گزارش صعود' %}
+  {% assign crumb_url = '/logbook/' | absolute_url %}
+{% elsif page.collection == 'articles' %}
+  {% assign crumb_name = 'مقالات' %}
+  {% assign crumb_url = '/articles/' | absolute_url %}
+{% else %}
+  {% assign crumb_name = 'خبر کوهنوردی' %}
+  {% assign crumb_url = '/news/' | absolute_url %}
+{% endif %}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -44,8 +77,8 @@
     {
       "@type": "ListItem",
       "position": 2,
-      "name": "{% if page.collection == 'logbook' %}گزارش صعود{% else %}اخبار{% endif %}",
-      "item": "{% if page.collection == 'logbook' %}{{ '/logbook/' | absolute_url }}{% else %}{{ '/news/' | absolute_url }}{% endif %}"
+      "name": {{ crumb_name | jsonify }},
+      "item": {{ crumb_url | jsonify }}
     },
     {
       "@type": "ListItem",
@@ -84,7 +117,7 @@
     "name": {{ site.author.name | jsonify }},
     "url": "{{ site.author.url }}"
   }{% if article_image %},
-  "image": {{ article_image | absolute_url | jsonify }}{% endif %},
+  "image": {{ article_image_json }}{% endif %},
   "about": {
     "@type": "Mountain",
     "name": {{ peak.name | jsonify }}{% if peak.elevation_m %},
@@ -103,6 +136,37 @@
       "name": {{ peak.region | jsonify }}
     }{% endif %}
   }{% if page.tags %},
+  "keywords": {{ page.tags | join: ', ' | jsonify }}{% endif %}
+}
+</script>
+{% endif %}
+
+{% if page.collection == 'articles' %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": {{ page.title | jsonify }},
+  "description": {{ page.description | default: page.excerpt | strip_html | truncate: 300 | jsonify }},
+  "inLanguage": {{ page.lang | default: site.lang | jsonify }},
+  "datePublished": {{ page.date | date_to_xmlschema | jsonify }},
+  "dateModified": {{ page.last_modified_at | default: page.date | date_to_xmlschema | jsonify }},
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "{{ page.url | absolute_url }}"
+  },
+  "author": {
+    "@type": "Person",
+    "name": {{ site.author.name | jsonify }},
+    "url": "{{ site.author.url }}"
+  },
+  "publisher": {
+    "@type": "Person",
+    "name": {{ site.author.name | jsonify }},
+    "url": "{{ site.author.url }}"
+  }{% if page.source_url %},
+  "isBasedOn": {{ page.source_url | jsonify }}{% endif %}{% if article_image %},
+  "image": {{ article_image_json }}{% endif %}{% if page.tags %},
   "keywords": {{ page.tags | join: ', ' | jsonify }}{% endif %}
 }
 </script>
@@ -132,7 +196,7 @@
     "name": {{ site.author.name | jsonify }},
     "url": "{{ site.author.url }}"
   }{% if article_image %},
-  "image": {{ article_image | absolute_url | jsonify }}{% endif %}{% if page.tags %},
+  "image": {{ article_image_json }}{% endif %}{% if page.tags %},
   "keywords": {{ page.tags | join: ', ' | jsonify }}{% endif %}
 }
 </script>
@@ -181,6 +245,7 @@
 </script>
 {% endif %}
 
+{% assign news_live = site.news | where_exp: "post", "post.layout != 'redirect'" %}
 {% if page.url == '/news/' %}
 <script type="application/ld+json">
 {
@@ -196,14 +261,51 @@
     "url": "{{ site.url }}{{ site.baseurl }}/"
   },
   "about": [
-    {"@type": "Thing", "name": "اخبار کوهنوردی"},
+    {"@type": "Thing", "name": "خبر کوهنوردی"},
     {"@type": "Thing", "name": "گزارش صعود"}
   ],
   "mainEntity": {
     "@type": "ItemList",
-    "numberOfItems": {{ site.news.size }},
+    "numberOfItems": {{ news_live.size }},
     "itemListElement": [
-      {% for post in site.news reversed %}
+      {% for post in news_live reversed %}
+      {
+        "@type": "ListItem",
+        "position": {{ forloop.index }},
+        "url": {{ post.url | absolute_url | jsonify }},
+        "name": {{ post.title | jsonify }}
+      }{% unless forloop.last %},{% endunless %}
+      {% endfor %}
+    ]
+  }
+}
+</script>
+{% endif %}
+
+{% if page.url == '/articles/' %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": {{ page.title | jsonify }},
+  "description": {{ page.description | jsonify }},
+  "url": "{{ page.url | absolute_url }}",
+  "inLanguage": "fa-IR",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": {{ site.title | jsonify }},
+    "url": "{{ site.url }}{{ site.baseurl }}/"
+  },
+  "about": [
+    {"@type": "Thing", "name": "مقالات کوهنوردی"},
+    {"@type": "Thing", "name": "American Alpine Journal"}
+  ],
+  "mainEntity": {
+    "@type": "ItemList",
+    "numberOfItems": {{ site.articles.size }},
+    "itemListElement": [
+      {% assign article_posts = site.articles | sort: "aaj_id" | reverse %}
+      {% for post in article_posts %}
       {
         "@type": "ListItem",
         "position": {{ forloop.index }},

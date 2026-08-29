@@ -3,10 +3,10 @@
 title: گزارش صعود
 tagline: "کاوه‌ رضائی‌شیراز"
 description: >-
-  گزارش برنامه‌های صعود کوهنوردی، سنگ‌نوردی و یخ‌نوردی و اخبار کوهستان
+  گزارش برنامه‌های صعود کوهنوردی، سنگ‌نوردی و یخ‌نوردی و خبر کوهنوردی
   کاوه‌ رضائی‌شیراز — منبع فارسی گزارش صعود.
   Kaveh RezaeiShiraz
-  Mountaineering logbook & climbing news
+  Mountaineering logbook & world climbing news
 
 lang: fa-IR
 locale: fa_IR
@@ -52,8 +52,8 @@ github: "kavehrs"
 highlighter: rouge
 markdown: kramdown
 
-# Tracker (Google Analytics 4 measurement ID)
-analytics: G-X4V1FLGZMH
+# Tracker (Google Analytics 4 web stream for logbook.rocks)
+analytics: G-6LWYK8X41J
 
 #optimization -> compress.html
 compress_html:
@@ -73,6 +73,9 @@ collections:
   news:
     output: true
     permalink: /news/:path/
+  articles:
+    output: true
+    permalink: /articles/:path/
 
 defaults:
   - scope:
@@ -91,6 +94,11 @@ defaults:
   - scope:
       path: ""
       type: news
+    values:
+      layout: post
+  - scope:
+      path: ""
+      type: articles
     values:
       layout: post
 
@@ -115,6 +123,7 @@ exclude:
   - .github
   - AGENTS.md
   - _seo
+  - script
   - wrangler.toml
 
 plugins:

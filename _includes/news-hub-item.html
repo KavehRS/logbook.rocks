@@ -1,0 +1,13 @@
+<li class="news-hub-item">
+  <a href="{{ include.post.url }}">{{ include.post.title }}</a>
+  {% if include.post.date %}
+  <p class="meta">
+    <time datetime="{{ include.post.date | date_to_xmlschema }}">{% include jalali-date.html date=include.post.date %}</time>
+  </p>
+  {% endif %}
+  {% if include.post.description %}
+  <p class="news-hub-blurb">{{ include.post.description }}</p>
+  {% elsif include.post.excerpt %}
+  <p class="news-hub-blurb">{{ include.post.excerpt | strip_html | truncatewords: 22 }}</p>
+  {% endif %}
+</li>
