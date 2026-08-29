@@ -2,20 +2,22 @@
 # Owner: publication year 2026 only (not 2025). Oldest remaining first.
 # Kickoff (done): one article — Sir Duk 13201217320 on 2026-08-26.
 # Every later GMT slot (00:00 / 06:00 / 12:00 / 18:00 UTC): publish the next TWO
-# remaining notes as complete Persian translations. Missed slot = still only two
-# (no catch-up dump). New 2026 listing items append to the END of remaining.
+# remaining notes as complete Persian translations. If a slot was missed, still
+# publish that slot’s two when catching up (two per missed slot, queue order).
+# Do not skip missed slots. Do not dump the rest of remaining.
+# New 2026 listing items append to the END of remaining.
 publication_year: 2026
 per_slot: 2
 timezone: UTC
 slots_gmt: [0, 6, 12, 18]
 kickoff_count: 1
-next_slot_utc: "2026-08-27T12:00:00Z"
-last_publish_date: "2026-08-27"
+next_slot_utc: "2026-08-28T12:00:00Z"
+last_publish_date: "2026-08-28"
 published_on_last_date: 4
-remaining_count: 221
+remaining_count: 213
 next_ids:
-  - "13201217365"  # Bel Uluu Valley, Cédric and Sophie (Point 5,090)
-  - "13201217378"  # Arches Peak, North Face, Central Buttress
+  - "13201217387"  # Second Mendenhall Tower, First Winter Ascent
+  - "13201217388"  # Mt. Moffit, Enthalpy Ridge (Northeast Ridge)
 published:
   - id: "13201217320"
     slug: 2026-08-26-aaj-sir-duk-west-shoulder
@@ -32,31 +34,31 @@ published:
   - id: "13201217364"
     slug: 2026-08-27-aaj-chomolhari-iii-north-spur
     date: "2026-08-27"
-remaining:
   - id: "13201217365"
-    url: https://publications.americanalpineclub.org/articles/13201217365
-    title: "Bel Uluu Valley, Cédric and Sophie (Point 5,090)"
+    slug: 2026-08-28-aaj-bel-uluu-cedric-sophie
+    date: "2026-08-28"
   - id: "13201217378"
-    url: https://publications.americanalpineclub.org/articles/13201217378
-    title: "Arches Peak, North Face, Central Buttress"
+    slug: 2026-08-28-aaj-arches-peak-central-buttress
+    date: "2026-08-28"
   - id: "13201217379"
-    url: https://publications.americanalpineclub.org/articles/13201217379
-    title: "Dip Top Peak, South Face"
+    slug: 2026-08-27-aaj-dip-top-south-face
+    date: "2026-08-27"
   - id: "13201217380"
-    url: https://publications.americanalpineclub.org/articles/13201217380
-    title: "Roberts Mountain, Northeast Face, Crowheart"
+    slug: 2026-08-27-aaj-roberts-mountain-crowheart
+    date: "2026-08-27"
   - id: "13201217381"
-    url: https://publications.americanalpineclub.org/articles/13201217381
-    title: "Mt. Hooker: Northwest Passage, First Free Ascent; The Living Stone, First Ascent"
+    slug: 2026-08-27-aaj-hooker-living-stone
+    date: "2026-08-27"
   - id: "13201217383"
-    url: https://publications.americanalpineclub.org/articles/13201217383
-    title: "The Monolith, Northeast Face, Children of the Sun"
+    slug: 2026-08-27-aaj-monolith-children-of-the-sun
+    date: "2026-08-27"
   - id: "13201217384"
-    url: https://publications.americanalpineclub.org/articles/13201217384
-    title: "The Batwing (Peak 9,020’), Southeast Face, and Other Climbs"
+    slug: 2026-08-28-aaj-batwing-southeast-face
+    date: "2026-08-28"
   - id: "13201217385"
-    url: https://publications.americanalpineclub.org/articles/13201217385
-    title: "The Citadel, East Buttress, Babies’ First Big Wall"
+    slug: 2026-08-28-aaj-citadel-babies-first-big-wall
+    date: "2026-08-28"
+remaining:
   - id: "13201217387"
     url: https://publications.americanalpineclub.org/articles/13201217387
     title: "Second Mendenhall Tower, First Winter Ascent"

@@ -24,7 +24,7 @@ Schedule is GMT/UTC only: 00:00, 06:00, 12:00, 18:00 (hour 24 = 00:00). Cron: 0 
 On each fire, do the work yourself. Follow `.cursor/skills/news-wire/SKILL.md` exactly. Every GMT slot does all five jobs, in order:
 
 1. Complete Persian translation of every new, non-duplicate item from the listed sources since `last_run_utc` (first series: last 1 hour). Never summarize.
-2. Next two remaining AAJ 2026 notes from `_data/aaj-backfill.yml` (oldest first; missed slot still two; no 2025; no stub dump).
+2. Next two remaining AAJ 2026 notes per GMT slot from `_data/aaj-backfill.yml` (oldest first). If slots were missed, publish two for each missed slot. Never dump the whole remaining queue. No 2025.
 3. Re-check every live `_news/` translation against its `source_url`; fix errors and complete leftover short items.
 4. Whole-site SEO: `.cursor/skills/daily-seo-audit/SKILL.md` (same branch; log `_seo/daily-log.md`).
 5. `jekyll build`, PR, overlay changed HTML onto `published` without `--delete`, confirm the live export has the pages.
