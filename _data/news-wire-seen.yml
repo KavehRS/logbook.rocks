@@ -22,6 +22,9 @@ items:
   - source: World Climbing
     source_url: https://www.ifsc-climbing.org/news/conversation-with-erik-noya-cardona
     slug: 2026-08-19-world-climbing-erik-noya-cardona
+  - source: World Climbing
+    source_url: https://www.ifsc-climbing.org/events/world-climbing-europe-series-ostermundigen-2026/
+    slug: 2026-08-22-world-climbing-ostermundigen-lead
 
 # Seen by the wire but not published. Skip on later runs.
 skipped:

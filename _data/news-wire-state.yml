@@ -2,8 +2,8 @@
 # First series: last 1 hour. Later series: all unseen items since last_run_utc.
 # Scheduled slots: 00:00, 06:00, 12:00, 18:00 GMT.
 
-last_run_utc: "2026-08-23T00:01:30Z"
+last_run_utc: "2026-08-23T06:02:12Z"
 last_run_kind: since-previous
-window_start_utc: "2026-08-22T18:00:51Z"
-published_count: 0
+window_start_utc: "2026-08-23T00:01:30Z"
+published_count: 1
 next_slots_gmt: [0, 6, 12, 18]
