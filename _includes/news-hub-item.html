@@ -1,0 +1,13 @@
+<li style="margin-bottom: 15px; list-style: none; border-bottom: 1px solid #eee; padding-bottom: 10px;">
+  <a href="{{ include.post.url }}" style="font-size: 1.2rem; font-weight: bold; text-decoration: none;">{{ include.post.title }}</a>
+  {% if include.post.date %}
+  <p class="meta" style="margin: 4px 0 0; color: #777; font-size: 0.9rem;">
+    <time datetime="{{ include.post.date | date_to_xmlschema }}">{% include jalali-date.html date=include.post.date %}</time>
+  </p>
+  {% endif %}
+  {% if include.post.description %}
+  <p style="margin: 5px 0 0; color: #555; font-size: 0.95rem;">{{ include.post.description }}</p>
+  {% elsif include.post.excerpt %}
+  <p style="margin: 5px 0 0; color: #555; font-size: 0.95rem;">{{ include.post.excerpt | strip_html | truncatewords: 22 }}</p>
+  {% endif %}
+</li>

@@ -6,10 +6,11 @@ dir_attr: rtl
 description: >-
   AAJ ۲۰۲۶ از زبان شیا ژونگمینگ: در سپتامبر ۲۰۲۴ لیو جون‌فو و وانگ شوای
   مسیر ۷۰۰ متری M5 AI2 را روی رخ و یال جنوب‌غربی Manamcho گشودند.
-date: 2026-08-27 09:30:00 +0330
+date: 2026-08-27 09:32:00 +0330
 tags: [aaj, آلپینیسم, تبت, چین]
 source: American Alpine Journal
 source_url: https://publications.americanalpineclub.org/articles/13201217323
+aaj_id: "13201217323"
 related:
   - title: هی لانگ، لیو یانگ و سونگ یوان‌چنگ اولین صعود Chomolhari III را از Spur شمالی گرفتند
     url: /news/2026-08-27-aaj-chomolhari-iii-north-spur/

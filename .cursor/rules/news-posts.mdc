@@ -14,7 +14,7 @@ When the user asks for a news item (`اخبار` / خبر کوهنوردی), app
 3. Body = only the source, in Persian. Complete translation of every narrative paragraph and fact. «فقط متن رو خلاصه کنی» means only the source text — no agent process notes — not a two-sentence stub. Optional link to an existing `/logbook/` report.
 4. Photos: if files exist in `assets/news/<exact-url-slug>/`, use those. Otherwise set `image:` and in-body figures to the source article’s own photo URLs (`og:image`, article `<figure>`, article `<img>`). Translate captions. Skip ads, logos, placeholders, and related-story thumbs. Do not comment `image:` out just because the file is not in this repo.
 5. Related public UI: only `اخبار مرتبط :` + flat list.
-6. Hub `/news/` is chronological (newest first).
+6. Hub `/news/` lists wire news newest first. AAJ 2026 notes are a separate list, oldest `aaj_id` first (journal order).
 7. Homepage `/` is about + four latest teasers from each hub. The climbing-news archive is `/news/` (title: خبر کوهنوردی).
 8. Visible dates on the site are Jalali via `_includes/jalali-date.html`.
 9. Never invent events, dates, team members, or climb facts.
