@@ -23,6 +23,28 @@ Platform skills live in `.cursor/skills/cloudflare/` and `.cursor/skills/wrangle
 
 Do not commit API tokens. Prefer MCP over pasting `CLOUDFLARE_API_TOKEN` into chat.
 
+## Live site (GitHub Actions billing lock)
+
+https://logbook.rocks must show the Jekyll 4 Persian blog (`گزارش صعود`, `/logbook/` hub, 22 reports), not GitHub’s empty Jekyll 3 placeholder titled `logbook.rocks`.
+
+GitHub Actions on the owner account is **billing-locked**, so `.github/workflows/deploy-pages.yml` never deploys. Pages is stuck on the CNAME-only snapshot (`60ffc1e`). Do **not** point DNS at `workers.dev` / jsDelivr / `pages.dev` (Cloudflare error 1014 or TLS 421).
+
+Until Actions can run, production is:
+
+1. DNS (proxied): apex + `www` CNAME → `kavehrs.github.io`
+2. Cloudflare URL rewrite (`http_request_transform`): every path except `/cdn-cgi/` rewrites to origin `/` so GitHub returns 200 HTML
+3. Cloudflare Zaraz tool **Logbook Jekyll bootstrap** (`component: html`, `actionType: event`, trigger `Pageview`) fetches `https://cdn.jsdelivr.net/gh/KavehRS/logbook.rocks@published` + path and `document.write`s it. Keep in-site `<a href="/…">` on this domain; only rewrite asset URLs (`src`, CSS, favicons) onto jsDelivr
+4. Orphan branch `published` is the built `_site` (includes `.nojekyll`)
+
+After a content change that should go live **before** GitHub billing is fixed:
+
+```bash
+bundle exec jekyll build
+# update branch `published` with the contents of `_site/`, push, then purge jsDelivr if the CDN is stale
+```
+
+Do not remove the Zaraz HTML tool or the catch-all rewrite while Pages is still the placeholder. When `deploy-pages.yml` succeeds on `main`, GitHub Pages will serve `_site` directly — then delete the Zaraz bootstrap and the rewrite.
+
 ## Install / verify
 
 ```bash
