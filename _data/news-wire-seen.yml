@@ -37,6 +37,9 @@ items:
   - source: World Climbing
     source_url: https://www.ifsc-climbing.org/events/world-climbing-europe-series-ostermundigen-2026/news/golds-for-martinez-almendros-and-poles-in-ostermundigen
     slug: 2026-08-24-world-climbing-ostermundigen-lead-recap
+  - source: Desnivel
+    source_url: https://www.desnivel.com/escalada-roca/xavi-sabater-primera-repeticion-en-libre-de-donec-perficiam-una-de-las-rutas-mas-duras-de-montrebei/
+    slug: 2026-08-25-desnivel-xavi-sabater-donec-perficiam
 
 # Seen by the wire but not published. Skip on later runs.
 skipped:
