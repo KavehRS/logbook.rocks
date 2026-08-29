@@ -3,8 +3,8 @@
 # sources, complete translation; (2) next two AAJ 2026 queue notes;
 # (3) re-check live _news/ translations; (4) whole-site SEO; (5) publish.
 
-last_run_utc: "2026-08-27T00:11:00Z"
+last_run_utc: "2026-08-27T06:32:00Z"
 last_run_kind: since-previous
-window_start_utc: "2026-08-26T18:01:42Z"
-published_count: 2
+window_start_utc: "2026-08-27T06:05:00Z"
+published_count: 0
 next_slots_gmt: [0, 6, 12, 18]
