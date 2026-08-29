@@ -13,10 +13,15 @@
 #   script/ship-live.sh --push          # also push to origin/published
 #   script/ship-live.sh --push --purge  # also purge Cloudflare (needs CLOUDFLARE_API_TOKEN)
 #
+# --push also submits the URLs this ship changed to IndexNow (Bing, Yandex,
+# Seznam), which is the only way new pages get picked up quickly while GitHub
+# Actions is billing-locked. Pass --no-indexnow to skip it.
+#
 # Env:
 #   PUBLISHED_WORKTREE  path to the `published` worktree (default /tmp/logbook-published)
 #   BUILD_DIR           build destination (default /tmp/logbook-prod-site)
 #   CF_ZONE_ID          Cloudflare zone for --purge (default the logbook.rocks zone)
+#   INDEXNOW_KEY        IndexNow key (default the key published at the site root)
 
 set -euo pipefail
 
@@ -28,10 +33,13 @@ CF_ZONE_ID="${CF_ZONE_ID:-bb0257be09f261a3c9b40a5d7f55c586}"
 DO_PUSH=0
 DO_PURGE=0
 ALLOW_BEHIND_MAIN=0
+DO_INDEXNOW=1
+INDEXNOW_KEY="${INDEXNOW_KEY:-c8e4f0a1b2d39567e8f1a0c4b7d6e529}"
 for arg in "$@"; do
   case "$arg" in
     --push) DO_PUSH=1 ;;
     --purge) DO_PURGE=1 ;;
+    --no-indexnow) DO_INDEXNOW=0 ;;
     --allow-behind-main) ALLOW_BEHIND_MAIN=1 ;;
     *) echo "unknown option: $arg" >&2; exit 2 ;;
   esac
@@ -125,7 +133,7 @@ catalog = json.loads((build / "webmcp-catalog.json").read_text())
 hub = catalog.get("news", []) + catalog.get("articles", [])
 if not hub:
     sys.exit("webmcp catalog has no news or articles")
-newest = max(hub, key=lambda item: item["date"])
+newest = max(hub, key=lambda item: item.get("datetime") or item["date"])
 
 home = (build / "index.html").read_text()
 links = re.findall(r'href="(/(?:news|articles)/[^"]+)"', home)
@@ -149,7 +157,8 @@ for dir in news articles logbook assets; do
   mkdir -p "$PUBLISHED_WORKTREE/$dir"
   cp -a "$BUILD_DIR/$dir/." "$PUBLISHED_WORKTREE/$dir/"
 done
-for file in index.html sitemap.xml llms.txt robots.txt webmcp-catalog.json 404.html; do
+for file in index.html sitemap.xml llms.txt robots.txt webmcp-catalog.json feed.xml 404.html \
+            c8e4f0a1b2d39567e8f1a0c4b7d6e529.txt; do
   [ -f "$BUILD_DIR/$file" ] || continue
   cp -a "$BUILD_DIR/$file" "$PUBLISHED_WORKTREE/$file"
 done
@@ -166,12 +175,68 @@ git diff --cached --stat | tail -20
 
 git commit -q -m "Refresh the live export: news, articles, homepage teasers, sitemap, catalogs."
 echo "==> committed $(git rev-parse --short HEAD)"
+SHIPPED_COMMIT="$(git rev-parse HEAD)"
 
 if [ "$DO_PUSH" = "1" ]; then
   echo "==> pushing to origin/published"
   git push origin HEAD:published
 else
   echo "==> not pushed (pass --push)"
+fi
+
+if [ "$DO_PUSH" = "1" ] && [ "$DO_INDEXNOW" = "1" ]; then
+  echo "==> submitting changed URLs to IndexNow"
+  # Only the pages this commit touched. Resubmitting the whole sitemap on every
+  # ship is what gets a key throttled.
+  SHIPPED_COMMIT="$SHIPPED_COMMIT" INDEXNOW_KEY="$INDEXNOW_KEY" python3 - <<'PY'
+import json
+import os
+import subprocess
+import urllib.error
+import urllib.request
+
+commit = os.environ["SHIPPED_COMMIT"]
+changed = subprocess.run(
+    ["git", "diff", "--name-only", f"{commit}^", commit],
+    capture_output=True,
+    text=True,
+    check=False,
+).stdout.split()
+
+urls = []
+for path in changed:
+    if path.endswith("index.html"):
+        directory = path[: -len("index.html")]
+        urls.append("https://logbook.rocks/" + directory)
+    elif path in ("sitemap.xml", "llms.txt", "feed.xml", "webmcp-catalog.json"):
+        urls.append("https://logbook.rocks/" + path)
+
+urls = sorted(set(urls))[:10000]
+if not urls:
+    print("    nothing indexable changed; skipping")
+    raise SystemExit(0)
+
+payload = {
+    "host": "logbook.rocks",
+    "key": os.environ["INDEXNOW_KEY"],
+    "keyLocation": f"https://logbook.rocks/{os.environ['INDEXNOW_KEY']}.txt",
+    "urlList": urls,
+}
+req = urllib.request.Request(
+    "https://api.indexnow.org/IndexNow",
+    data=json.dumps(payload).encode(),
+    headers={"Content-Type": "application/json; charset=utf-8"},
+    method="POST",
+)
+try:
+    with urllib.request.urlopen(req, timeout=40) as resp:
+        print(f"    submitted {len(urls)} URL(s), HTTP {resp.status}")
+except urllib.error.HTTPError as exc:
+    # A rejected submission must not fail a ship that already went live.
+    print(f"    IndexNow returned HTTP {exc.code}: {exc.read().decode(errors='replace')[:200]}")
+except Exception as exc:  # noqa: BLE001
+    print(f"    IndexNow submission failed: {exc}")
+PY
 fi
 
 if [ "$DO_PURGE" = "1" ]; then

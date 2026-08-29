@@ -22,9 +22,22 @@ layout: compress
     {% seo %}
     <link rel="describedby" href="{{ '/llms.txt' | absolute_url }}">
     <link rel="alternate" type="application/json" href="{{ '/webmcp-catalog.json' | absolute_url }}" title="WebMCP catalog">
+    <link rel="alternate" type="application/atom+xml" href="{{ '/feed.xml' | absolute_url }}" title="{{ site.title }}">
+    {% if page.url contains '/logbook/' %}
+    <link rel="alternate" type="application/atom+xml" href="{{ '/logbook/feed.xml' | absolute_url }}" title="{{ site.author.name }} — گزارش صعود">
+    {% elsif page.url contains '/articles/' %}
+    <link rel="alternate" type="application/atom+xml" href="{{ '/articles/feed.xml' | absolute_url }}" title="{{ site.author.name }} — مقالات">
+    {% elsif page.url contains '/news/' %}
+    <link rel="alternate" type="application/atom+xml" href="{{ '/news/feed.xml' | absolute_url }}" title="{{ site.author.name }} — خبر کوهنوردی">
+    {% endif %}
     {% include structured-data-logbook.html %}
     {% include favicon.html %}
 
+    {% comment %}
+    Live pages are assembled by Zaraz and pull every asset from jsDelivr, so the
+    image that decides LCP waits on a fresh connection unless we open it here.
+    {% endcomment %}
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
     <link rel="preconnect" href="https://use.fontawesome.com" crossorigin>
     <script type="text/javascript">
         (function() {

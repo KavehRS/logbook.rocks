@@ -1,700 +1,692 @@
 # AAJ 2026 complete-translation queue.
-# Owner: publication year 2026 only (not 2025). Oldest remaining first.
-# Kickoff (done): one article — Sir Duk 13201217320 on 2026-08-26.
-# Every later GMT slot (00:00 / 06:00 / 12:00 / 18:00 UTC): publish the next TWO
-# remaining notes as complete Persian translations. If a slot was missed, still
-# publish that slot’s two when catching up (two per missed slot, queue order).
-# Do not skip missed slots. Do not dump the rest of remaining.
+# Owner: publication year 2026 only (not 2025).
+# The 2026 volume is published under _articles/ dated the journal street date
+# 2026-10-01 (9 Mehr 1405 on this site's converter). After that dump, remaining
+# holds only NEW 2026 listing items that appear after last_run_utc. Do not publish 2025.
 # New 2026 listing items append to the END of remaining.
 publication_year: 2026
-per_slot: 2
+journal_date: "2026-10-01"
 timezone: UTC
-slots_gmt: [0, 6, 12, 18]
-kickoff_count: 1
-next_slot_utc: "2026-08-28T12:00:00Z"
-last_publish_date: "2026-08-28"
-published_on_last_date: 4
-remaining_count: 213
-next_ids:
-  - "13201217387"  # Second Mendenhall Tower, First Winter Ascent
-  - "13201217388"  # Mt. Moffit, Enthalpy Ridge (Northeast Ridge)
+last_publish_date: "2026-10-01"
+remaining_count: 0
+next_ids: []
 published:
   - id: "13201217320"
-    slug: 2026-08-26-aaj-sir-duk-west-shoulder
-    date: "2026-08-26"
+    slug: 2026-10-01-aaj-sir-duk-west-shoulder
+    date: "2026-10-01"
   - id: "13201217321"
-    slug: 2026-08-27-aaj-chuchepo-northeast-face
-    date: "2026-08-27"
+    slug: 2026-10-01-aaj-chuchepo-northeast-face
+    date: "2026-10-01"
   - id: "13201217322"
-    slug: 2026-08-27-aaj-jiongmudazhi-northwest-face
-    date: "2026-08-27"
+    slug: 2026-10-01-aaj-jiongmudazhi-northwest-face
+    date: "2026-10-01"
   - id: "13201217323"
-    slug: 2026-08-27-aaj-manamcho-southwest-ridge
-    date: "2026-08-27"
+    slug: 2026-10-01-aaj-manamcho-southwest-ridge
+    date: "2026-10-01"
   - id: "13201217364"
-    slug: 2026-08-27-aaj-chomolhari-iii-north-spur
-    date: "2026-08-27"
+    slug: 2026-10-01-aaj-chomolhari-iii-north-spur
+    date: "2026-10-01"
   - id: "13201217365"
-    slug: 2026-08-28-aaj-bel-uluu-cedric-sophie
-    date: "2026-08-28"
+    slug: 2026-10-01-aaj-bel-uluu-cedric-sophie
+    date: "2026-10-01"
   - id: "13201217378"
-    slug: 2026-08-28-aaj-arches-peak-central-buttress
-    date: "2026-08-28"
+    slug: 2026-10-01-aaj-arches-peak-central-buttress
+    date: "2026-10-01"
   - id: "13201217379"
-    slug: 2026-08-27-aaj-dip-top-south-face
-    date: "2026-08-27"
+    slug: 2026-10-01-aaj-dip-top-south-face
+    date: "2026-10-01"
   - id: "13201217380"
-    slug: 2026-08-27-aaj-roberts-mountain-crowheart
-    date: "2026-08-27"
+    slug: 2026-10-01-aaj-roberts-mountain-crowheart
+    date: "2026-10-01"
   - id: "13201217381"
-    slug: 2026-08-27-aaj-hooker-living-stone
-    date: "2026-08-27"
+    slug: 2026-10-01-aaj-hooker-living-stone
+    date: "2026-10-01"
   - id: "13201217383"
-    slug: 2026-08-27-aaj-monolith-children-of-the-sun
-    date: "2026-08-27"
+    slug: 2026-10-01-aaj-monolith-children-of-the-sun
+    date: "2026-10-01"
   - id: "13201217384"
-    slug: 2026-08-28-aaj-batwing-southeast-face
-    date: "2026-08-28"
+    slug: 2026-10-01-aaj-batwing-southeast-face
+    date: "2026-10-01"
   - id: "13201217385"
-    slug: 2026-08-28-aaj-citadel-babies-first-big-wall
-    date: "2026-08-28"
-remaining:
+    slug: 2026-10-01-aaj-citadel-babies-first-big-wall
+    date: "2026-10-01"
   - id: "13201217387"
-    url: https://publications.americanalpineclub.org/articles/13201217387
-    title: "Second Mendenhall Tower, First Winter Ascent"
+    slug: 2026-10-01-aaj-second-mendenhall-tower-first-winter-ascent
+    date: "2026-10-01"
   - id: "13201217388"
-    url: https://publications.americanalpineclub.org/articles/13201217388
-    title: "Mt. Moffit, Enthalpy Ridge (Northeast Ridge)"
+    slug: 2026-10-01-aaj-mt-moffit-enthalpy-ridge-northeast-ridge
+    date: "2026-10-01"
   - id: "13201217389"
-    url: https://publications.americanalpineclub.org/articles/13201217389
-    title: "Nenana Mountain, Ketamine Arête and No Guides Allowed"
+    slug: 2026-10-01-aaj-nenana-mountain-ketamine-arete-and-no-guides-allowed
+    date: "2026-10-01"
   - id: "13201217390"
-    url: https://publications.americanalpineclub.org/articles/13201217390
-    title: "Little Podju and McAlpine Peak, First Ascents"
+    slug: 2026-10-01-aaj-little-podju-and-mcalpine-peak-first-ascents
+    date: "2026-10-01"
   - id: "13201217391"
-    url: https://publications.americanalpineclub.org/articles/13201217391
-    title: "Peak A-112, North Ridge"
+    slug: 2026-10-01-aaj-peak-a-112-north-ridge
+    date: "2026-10-01"
   - id: "13201217392"
-    url: https://publications.americanalpineclub.org/articles/13201217392
-    title: "Mt. Pratt, First Recorded Ascent, via Northwest Glacier; Castle Mountain, North Face"
+    slug: 2026-10-01-aaj-mt-pratt-first-recorded-ascent-via-northwest-glacier
+    date: "2026-10-01"
   - id: "13201217393"
-    url: https://publications.americanalpineclub.org/articles/13201217393
-    title: "Mt. Providence, South Face, Journey Through the Castle of Providence"
+    slug: 2026-10-01-aaj-mt-providence-south-face-journey-through-the-castle
+    date: "2026-10-01"
   - id: "13201217394"
-    url: https://publications.americanalpineclub.org/articles/13201217394
-    title: "Begguya, North Buttress, French Connection Solo; Denali, Slovak Direct, Solo Ascent "
+    slug: 2026-10-01-aaj-begguya-north-buttress-french-connection-solo-denali-slovak
+    date: "2026-10-01"
   - id: "13201217395"
-    url: https://publications.americanalpineclub.org/articles/13201217395
-    title: "South Mile High Peak, East Face, Blood and Sand"
+    slug: 2026-10-01-aaj-south-mile-high-peak-east-face-blood-and
+    date: "2026-10-01"
   - id: "13201217396"
-    url: https://publications.americanalpineclub.org/articles/13201217396
-    title: "The Trickster, The Raven-Wolf Route"
+    slug: 2026-10-01-aaj-the-trickster-the-raven-wolf-route
+    date: "2026-10-01"
   - id: "13201217397"
-    url: https://publications.americanalpineclub.org/articles/13201217397
-    title: "The Tusk, Complete South Ridge"
+    slug: 2026-10-01-aaj-the-tusk-complete-south-ridge
+    date: "2026-10-01"
   - id: "13201217398"
-    url: https://publications.americanalpineclub.org/articles/13201217398
-    title: "Mosquito Pass Wall (Peak 2,911'), Unikkiga Aklunaaq\t"
+    slug: 2026-10-01-aaj-mosquito-pass-wall-peak-2-911-unikkiga-aklunaaq
+    date: "2026-10-01"
   - id: "13201217399"
-    url: https://publications.americanalpineclub.org/articles/13201217399
-    title: "The Diamond in Winter: Two Novel Ascents"
+    slug: 2026-10-01-aaj-the-diamond-in-winter-two-novel-ascents
+    date: "2026-10-01"
   - id: "13201217400"
-    url: https://publications.americanalpineclub.org/articles/13201217400
-    title: "Baby Helen's Dome, Ends of a Dream, and Various Huge Link-Ups"
+    slug: 2026-10-01-aaj-baby-helen-s-dome-ends-of-a-dream
+    date: "2026-10-01"
   - id: "13201217401"
-    url: https://publications.americanalpineclub.org/articles/13201217401
-    title: "Peak 5,710', First Ascent"
+    slug: 2026-10-01-aaj-peak-5-710-first-ascent
+    date: "2026-10-01"
   - id: "13201217402"
-    url: https://publications.americanalpineclub.org/articles/13201217402
-    title: "Seventy-Two 14ers in One Month by Foot and Bike"
+    slug: 2026-10-01-aaj-seventy-two-14ers-in-one-month-by-foot
+    date: "2026-10-01"
   - id: "13201217403"
-    url: https://publications.americanalpineclub.org/articles/13201217403
-    title: "Kabru, northwest face and north ridge"
+    slug: 2026-10-01-aaj-kabru-northwest-face-and-north-ridge
+    date: "2026-10-01"
   - id: "13201217404"
-    url: https://publications.americanalpineclub.org/articles/13201217404
-    title: "Kimshung, first ascent, via east couloir and south-southeast ridge"
+    slug: 2026-10-01-aaj-kimshung-first-ascent-via-east-couloir-and-south
+    date: "2026-10-01"
   - id: "13201217405"
-    url: https://publications.americanalpineclub.org/articles/13201217405
-    title: "Manaslu, South-Southwest Face, New Route"
+    slug: 2026-10-01-aaj-manaslu-south-southwest-face-new-route
+    date: "2026-10-01"
   - id: "13201217406"
-    url: https://publications.americanalpineclub.org/articles/13201217406
-    title: "Numbur, southeast face, Nepali Ice Spa"
+    slug: 2026-10-01-aaj-numbur-southeast-face-nepali-ice-spa
+    date: "2026-10-01"
   - id: "13201217407"
-    url: https://publications.americanalpineclub.org/articles/13201217407
-    title: "Sumna Himal, first ascent, via the north ridge, north face, and west ridge"
+    slug: 2026-10-01-aaj-sumna-himal-first-ascent-via-the-north-ridge
+    date: "2026-10-01"
   - id: "13201217408"
-    url: https://publications.americanalpineclub.org/articles/13201217408
-    title: "Nanga Parbat, Northwest Face, Nezabudka"
+    slug: 2026-10-01-aaj-nanga-parbat-northwest-face-nezabudka
+    date: "2026-10-01"
   - id: "13201217409"
-    url: https://publications.americanalpineclub.org/articles/13201217409
-    title: "Chumik Kangri, first ascent, via south face\t"
+    slug: 2026-10-01-aaj-chumik-kangri-first-ascent-via-south-face
+    date: "2026-10-01"
   - id: "13201217410"
-    url: https://publications.americanalpineclub.org/articles/13201217410
-    title: "Tirich Mir, West Face, Significant New Variation"
+    slug: 2026-10-01-aaj-tirich-mir-west-face-significant-new-variation
+    date: "2026-10-01"
   - id: "13201217411"
-    url: https://publications.americanalpineclub.org/articles/13201217411
-    title: "Sangar Tower, southwest face; Billee Kangri, northwest face"
+    slug: 2026-10-01-aaj-sangar-tower-southwest-face-billee-kangri-northwest-face
+    date: "2026-10-01"
   - id: "13201217412"
-    url: https://publications.americanalpineclub.org/articles/13201217412
-    title: "Hunza Peak, southeast face"
+    slug: 2026-10-01-aaj-hunza-peak-southeast-face
+    date: "2026-10-01"
   - id: "13201217413"
-    url: https://publications.americanalpineclub.org/articles/13201217413
-    title: "Hunza Peak, Historical Ascent of Southeast Face and Southwest Ridge"
+    slug: 2026-10-01-aaj-hunza-peak-historical-ascent-of-southeast-face-and
+    date: "2026-10-01"
   - id: "13201217414"
-    url: https://publications.americanalpineclub.org/articles/13201217414
-    title: "Eye Ri, first ascent, via northwest face and west ridge; Latok III, southeast ridge, attempt"
+    slug: 2026-10-01-aaj-eye-ri-first-ascent-via-northwest-face-and
+    date: "2026-10-01"
   - id: "13201217415"
-    url: https://publications.americanalpineclub.org/articles/13201217415
-    title: "Cerro El Brujo Sur, South Ridge"
+    slug: 2026-10-01-aaj-cerro-el-brujo-sur-south-ridge
+    date: "2026-10-01"
   - id: "13201217416"
-    url: https://publications.americanalpineclub.org/articles/13201217416
-    title: "Jurau A, Northeast Face, Kuntur"
+    slug: 2026-10-01-aaj-jurau-a-northeast-face-kuntur
+    date: "2026-10-01"
   - id: "13201217417"
-    url: https://publications.americanalpineclub.org/articles/13201217417
-    title: "Johannesburg Mountain, Northeast Face, Route 66"
+    slug: 2026-10-01-aaj-johannesburg-mountain-northeast-face-route-66
+    date: "2026-10-01"
   - id: "13201217418"
-    url: https://publications.americanalpineclub.org/articles/13201217418
-    title: "Lincoln Peak, X Couloir, First Complete Ski Descent"
+    slug: 2026-10-01-aaj-lincoln-peak-x-couloir-first-complete-ski-descent
+    date: "2026-10-01"
   - id: "13201217419"
-    url: https://publications.americanalpineclub.org/articles/13201217419
-    title: "Mt. Redoubt and Easy Mox, Winter Ascents"
+    slug: 2026-10-01-aaj-mt-redoubt-and-easy-mox-winter-ascents
+    date: "2026-10-01"
   - id: "13201217420"
-    url: https://publications.americanalpineclub.org/articles/13201217420
-    title: "Cherireen Sar, first ascent, via west ridge"
+    slug: 2026-10-01-aaj-cherireen-sar-first-ascent-via-west-ridge
+    date: "2026-10-01"
   - id: "13201217421"
-    url: https://publications.americanalpineclub.org/articles/13201217421
-    title: "Khurdopin Sar, First Ascent, Via South Couloir and North Ridge"
+    slug: 2026-10-01-aaj-khurdopin-sar-first-ascent-via-south-couloir-and
+    date: "2026-10-01"
   - id: "13201217422"
-    url: https://publications.americanalpineclub.org/articles/13201217422
-    title: "The Mushroom, Southeast Face, Mother of Exiles"
+    slug: 2026-10-01-aaj-the-mushroom-southeast-face-mother-of-exiles
+    date: "2026-10-01"
   - id: "13201217424"
-    url: https://publications.americanalpineclub.org/articles/13201217424
-    title: "Mt. Redoubt, North Ridge, Calcifer’s Ridge"
+    slug: 2026-10-01-aaj-mt-redoubt-north-ridge-calcifer-s-ridge
+    date: "2026-10-01"
   - id: "13201217425"
-    url: https://publications.americanalpineclub.org/articles/13201217425
-    title: "Whatcom Peak, Southwest Ridge, Imperfect Bypass"
+    slug: 2026-10-01-aaj-whatcom-peak-southwest-ridge-imperfect-bypass
+    date: "2026-10-01"
   - id: "13201217426"
-    url: https://publications.americanalpineclub.org/articles/13201217426
-    title: "Biarchedi I, Southwest Face and South Ridge, Attempt"
+    slug: 2026-10-01-aaj-biarchedi-i-southwest-face-and-south-ridge-attempt
+    date: "2026-10-01"
   - id: "13201217427"
-    url: https://publications.americanalpineclub.org/articles/13201217427
-    title: "Laila Peak, Southeast Face"
+    slug: 2026-10-01-aaj-laila-peak-southeast-face
+    date: "2026-10-01"
   - id: "13201217428"
-    url: https://publications.americanalpineclub.org/articles/13201217428
-    title: "North Peak, North Face, Two New Routes"
+    slug: 2026-10-01-aaj-north-peak-north-face-two-new-routes
+    date: "2026-10-01"
   - id: "13201217429"
-    url: https://publications.americanalpineclub.org/articles/13201217429
-    title: "El Capitan, Free Rider, One-Day Flash Ascent"
+    slug: 2026-10-01-aaj-el-capitan-free-rider-one-day-flash-ascent
+    date: "2026-10-01"
   - id: "13201217430"
-    url: https://publications.americanalpineclub.org/articles/13201217430
-    title: "Hidden Peak, Northwest and South Faces, Nearly to Summit, and Trident South Face Attempt"
+    slug: 2026-10-01-aaj-hidden-peak-northwest-and-south-faces-nearly-to
+    date: "2026-10-01"
   - id: "13201217431"
-    url: https://publications.americanalpineclub.org/articles/13201217431
-    title: "Hasho Peak II, east pillar and south-southeast ridge"
+    slug: 2026-10-01-aaj-hasho-peak-ii-east-pillar-and-south-southeast
+    date: "2026-10-01"
   - id: "13201217432"
-    url: https://publications.americanalpineclub.org/articles/13201217432
-    title: "Laila Peak, southeast face, Top-R-oute in the Rock"
+    slug: 2026-10-01-aaj-laila-peak-southeast-face-top-r-oute-in
+    date: "2026-10-01"
   - id: "13201217433"
-    url: https://publications.americanalpineclub.org/articles/13201217433
-    title: "Nanga Parbat, Schell Route, First Alpine-Style Ascent, and First Ski Descent from Summit"
+    slug: 2026-10-01-aaj-nanga-parbat-schell-route-first-alpine-style-ascent
+    date: "2026-10-01"
   - id: "13201217434"
-    url: https://publications.americanalpineclub.org/articles/13201217434
-    title: "Spantik, east ridge to just below summit "
+    slug: 2026-10-01-aaj-spantik-east-ridge-to-just-below-summit
+    date: "2026-10-01"
   - id: "13201217435"
-    url: https://publications.americanalpineclub.org/articles/13201217435
-    title: "Tumladen Sar, first ascent, via northwest face"
+    slug: 2026-10-01-aaj-tumladen-sar-first-ascent-via-northwest-face
+    date: "2026-10-01"
   - id: "13201217436"
-    url: https://publications.americanalpineclub.org/articles/13201217436
-    title: "Kasi Dalpha, Historical First Ascent"
+    slug: 2026-10-01-aaj-kasi-dalpha-historical-first-ascent
+    date: "2026-10-01"
   - id: "13201217437"
-    url: https://publications.americanalpineclub.org/articles/13201217437
-    title: "Kanjeralwa, Historical Ascent of South Top"
+    slug: 2026-10-01-aaj-kanjeralwa-historical-ascent-of-south-top
+    date: "2026-10-01"
   - id: "13201217438"
-    url: https://publications.americanalpineclub.org/articles/13201217438
-    title: "Chhuama I, first ascent, via east-northeast ridge from Chhuama II"
+    slug: 2026-10-01-aaj-chhuama-i-first-ascent-via-east-northeast-ridge
+    date: "2026-10-01"
   - id: "13201217439"
-    url: https://publications.americanalpineclub.org/articles/13201217439
-    title: "Chhuama III, first ascent of a southeasterly top, via the east face"
+    slug: 2026-10-01-aaj-chhuama-iii-first-ascent-of-a-southeasterly-top
+    date: "2026-10-01"
   - id: "13201217440"
-    url: https://publications.americanalpineclub.org/articles/13201217440
-    title: "Peak ca 6,280m, historical first ascent, via south face"
+    slug: 2026-10-01-aaj-peak-ca-6-280m-historical-first-ascent-via
+    date: "2026-10-01"
   - id: "13201217441"
-    url: https://publications.americanalpineclub.org/articles/13201217441
-    title: "Pharilapcha, southeast face, Stone(d) Yeti"
+    slug: 2026-10-01-aaj-pharilapcha-southeast-face-stone-d-yeti
+    date: "2026-10-01"
   - id: "13201217442"
-    url: https://publications.americanalpineclub.org/articles/13201217442
-    title: "Peak 6,420m, North-Northeast Ridge"
+    slug: 2026-10-01-aaj-peak-6-420m-north-northeast-ridge
+    date: "2026-10-01"
   - id: "13201217444"
-    url: https://publications.americanalpineclub.org/articles/13201217444
-    title: "Mt. Crocker, West Pillar, The Crockerdile Tooth"
+    slug: 2026-10-01-aaj-mt-crocker-west-pillar-the-crockerdile-tooth
+    date: "2026-10-01"
   - id: "13201217445"
-    url: https://publications.americanalpineclub.org/articles/13201217445
-    title: "Tehipite Dome, There and Back Again"
+    slug: 2026-10-01-aaj-tehipite-dome-there-and-back-again
+    date: "2026-10-01"
   - id: "13201217446"
-    url: https://publications.americanalpineclub.org/articles/13201217446
-    title: "Bijora Hiunchuli, first ascent, via northeast ridge"
+    slug: 2026-10-01-aaj-bijora-hiunchuli-first-ascent-via-northeast-ridge
+    date: "2026-10-01"
   - id: "13201217447"
-    url: https://publications.americanalpineclub.org/articles/13201217447
-    title: "Kwangde Nup, northwest face to west ridge, Slovo od Mladosti"
+    slug: 2026-10-01-aaj-kwangde-nup-northwest-face-to-west-ridge-slovo
+    date: "2026-10-01"
   - id: "13201217448"
-    url: https://publications.americanalpineclub.org/articles/13201217448
-    title: "Pathibhara Southeast, First Ascent, via Southwest Ridge"
+    slug: 2026-10-01-aaj-pathibhara-southeast-first-ascent-via-southwest-ridge
+    date: "2026-10-01"
   - id: "13201217449"
-    url: https://publications.americanalpineclub.org/articles/13201217449
-    title: "Sharphu VI, First Ascent, via East Flank"
+    slug: 2026-10-01-aaj-sharphu-vi-first-ascent-via-east-flank
+    date: "2026-10-01"
   - id: "13201217450"
-    url: https://publications.americanalpineclub.org/articles/13201217450
-    title: "Shershon, northwest face, new variation"
+    slug: 2026-10-01-aaj-shershon-northwest-face-new-variation
+    date: "2026-10-01"
   - id: "13201217451"
-    url: https://publications.americanalpineclub.org/articles/13201217451
-    title: "Changla Khang West, first ascent, via southwest ridge"
+    slug: 2026-10-01-aaj-changla-khang-west-first-ascent-via-southwest-ridge
+    date: "2026-10-01"
   - id: "13201217452"
-    url: https://publications.americanalpineclub.org/articles/13201217452
-    title: "Brahma Satli Central (Cathedral Dome), east flank and southeast ridge"
+    slug: 2026-10-01-aaj-brahma-satli-central-cathedral-dome-east-flank-and
+    date: "2026-10-01"
   - id: "13201217453"
-    url: https://publications.americanalpineclub.org/articles/13201217453
-    title: "Denyai Tokpo, Two Ascents and One Attempt"
+    slug: 2026-10-01-aaj-denyai-tokpo-two-ascents-and-one-attempt
+    date: "2026-10-01"
   - id: "13201217454"
-    url: https://publications.americanalpineclub.org/articles/13201217454
-    title: "Denyai Tokpo, Many First Ascents"
+    slug: 2026-10-01-aaj-denyai-tokpo-many-first-ascents
+    date: "2026-10-01"
   - id: "13201217455"
-    url: https://publications.americanalpineclub.org/articles/13201217455
-    title: "Rangtik Tokpo, Shawa Kangri, northwest face, Less is More"
+    slug: 2026-10-01-aaj-rangtik-tokpo-shawa-kangri-northwest-face-less-is
+    date: "2026-10-01"
   - id: "13201217456"
-    url: https://publications.americanalpineclub.org/articles/13201217456
-    title: "Stargyuk Valley, Two First Ascents"
+    slug: 2026-10-01-aaj-stargyuk-valley-two-first-ascents
+    date: "2026-10-01"
   - id: "13201217457"
-    url: https://publications.americanalpineclub.org/articles/13201217457
-    title: "Munocho Chhok, southeast face and northeast ridge, attempt"
+    slug: 2026-10-01-aaj-munocho-chhok-southeast-face-and-northeast-ridge-attempt
+    date: "2026-10-01"
   - id: "13201217458"
-    url: https://publications.americanalpineclub.org/articles/13201217458
-    title: "Peak 5,970m, Southeast Face and East Ridge"
+    slug: 2026-10-01-aaj-peak-5-970m-southeast-face-and-east-ridge
+    date: "2026-10-01"
   - id: "13201217459"
-    url: https://publications.americanalpineclub.org/articles/13201217459
-    title: "Lower Bara Shigri, Mapping Irrregularities"
+    slug: 2026-10-01-aaj-lower-bara-shigri-mapping-irrregularities
+    date: "2026-10-01"
   - id: "13201217460"
-    url: https://publications.americanalpineclub.org/articles/13201217460
-    title: "Duhangan Valley: Chupa Rustam and Temptation Tower"
+    slug: 2026-10-01-aaj-duhangan-valley-chupa-rustam-and-temptation-tower
+    date: "2026-10-01"
   - id: "13201217461"
-    url: https://publications.americanalpineclub.org/articles/13201217461
-    title: "Longs Peak, Wobbly Baknn Strips"
+    slug: 2026-10-01-aaj-longs-peak-wobbly-baknn-strips
+    date: "2026-10-01"
   - id: "13201217462"
-    url: https://publications.americanalpineclub.org/articles/13201217462
-    title: "Baspa Valley, Rakcham Plateau: Peak 5,400, northwest face; Ray Peak Fourth Pillar"
+    slug: 2026-10-01-aaj-baspa-valley-rakcham-plateau-peak-5-400-northwest
+    date: "2026-10-01"
   - id: "13201217463"
-    url: https://publications.americanalpineclub.org/articles/13201217463
-    title: "Ptarmigan Mountain, Towers 2 and 4, Southeast Faces"
+    slug: 2026-10-01-aaj-ptarmigan-mountain-towers-2-and-4-southeast-faces
+    date: "2026-10-01"
   - id: "13201217464"
-    url: https://publications.americanalpineclub.org/articles/13201217464
-    title: "Bhagirathi II, complete northeast ridge"
+    slug: 2026-10-01-aaj-bhagirathi-ii-complete-northeast-ridge
+    date: "2026-10-01"
   - id: "13201217465"
-    url: https://publications.americanalpineclub.org/articles/13201217465
-    title: "Giant’s Belly, Lightning and Chunder"
+    slug: 2026-10-01-aaj-giant-s-belly-lightning-and-chunder
+    date: "2026-10-01"
   - id: "13201217466"
-    url: https://publications.americanalpineclub.org/articles/13201217466
-    title: "West Harsil Horn, Alpine-style second ascent"
+    slug: 2026-10-01-aaj-west-harsil-horn-alpine-style-second-ascent
+    date: "2026-10-01"
   - id: "13201217467"
-    url: https://publications.americanalpineclub.org/articles/13201217467
-    title: "Iris Peak, southwest face, Karma"
+    slug: 2026-10-01-aaj-iris-peak-southwest-face-karma
+    date: "2026-10-01"
   - id: "13201217468"
-    url: https://publications.americanalpineclub.org/articles/13201217468
-    title: "Monto II, III, and IV"
+    slug: 2026-10-01-aaj-monto-ii-iii-and-iv
+    date: "2026-10-01"
   - id: "13201217469"
-    url: https://publications.americanalpineclub.org/articles/13201217469
-    title: " The Salamander, Baring Point, and Cataract Mountain, New Routes"
+    slug: 2026-10-01-aaj-the-salamander-baring-point-and-cataract-mountain-new
+    date: "2026-10-01"
   - id: "13201217470"
-    url: https://publications.americanalpineclub.org/articles/13201217470
-    title: "Wolf Mountain, Northeast Face, Petrified Songs"
+    slug: 2026-10-01-aaj-wolf-mountain-northeast-face-petrified-songs
+    date: "2026-10-01"
   - id: "13201217471"
-    url: https://publications.americanalpineclub.org/articles/13201217471
-    title: "Cirque of the Moon, Holding Out for a Hero and Other Routes "
+    slug: 2026-10-01-aaj-cirque-of-the-moon-holding-out-for-a
+    date: "2026-10-01"
   - id: "13201217472"
-    url: https://publications.americanalpineclub.org/articles/13201217472
-    title: "THE MOUTH, HIGH PLAINS HOEDOWN AND THE EAST FACE"
+    slug: 2026-10-01-aaj-the-mouth-high-plains-hoedown-and-the-east
+    date: "2026-10-01"
   - id: "13201217473"
-    url: https://publications.americanalpineclub.org/articles/13201217473
-    title: "The Grandstand, The Rainbow Bridge"
+    slug: 2026-10-01-aaj-the-grandstand-the-rainbow-bridge
+    date: "2026-10-01"
   - id: "13201217474"
-    url: https://publications.americanalpineclub.org/articles/13201217474
-    title: "Patterson Bluff, Wedding Wall/Altar, Tying the Knot"
+    slug: 2026-10-01-aaj-patterson-bluff-wedding-wall-altar-tying-the-knot
+    date: "2026-10-01"
   - id: "13201217475"
-    url: https://publications.americanalpineclub.org/articles/13201217475
-    title: "Mt. Crocker, North Pillar, Giselle’s Big Advencha"
+    slug: 2026-10-01-aaj-mt-crocker-north-pillar-giselle-s-big-advencha
+    date: "2026-10-01"
   - id: "13201217476"
-    url: https://publications.americanalpineclub.org/articles/13201217476
-    title: "Flatiron Butte, Two New Routes"
+    slug: 2026-10-01-aaj-flatiron-butte-two-new-routes
+    date: "2026-10-01"
   - id: "13201217477"
-    url: https://publications.americanalpineclub.org/articles/13201217477
-    title: "Livingston Island, Edinburgh Hill"
+    slug: 2026-10-01-aaj-livingston-island-edinburgh-hill
+    date: "2026-10-01"
   - id: "13201217478"
-    url: https://publications.americanalpineclub.org/articles/13201217478
-    title: "Chameleon Wall, Mercury Miners"
+    slug: 2026-10-01-aaj-chameleon-wall-mercury-miners
+    date: "2026-10-01"
   - id: "13201217479"
-    url: https://publications.americanalpineclub.org/articles/13201217479
-    title: "Nevado de Chañi, South Face, El Vuelo del Pichón"
+    slug: 2026-10-01-aaj-nevado-de-cha-i-south-face-el-vuelo
+    date: "2026-10-01"
   - id: "13201217480"
-    url: https://publications.americanalpineclub.org/articles/13201217480
-    title: "Cerro Hosco, First Ascent, via East Face"
+    slug: 2026-10-01-aaj-cerro-hosco-first-ascent-via-east-face
+    date: "2026-10-01"
   - id: "13201217481"
-    url: https://publications.americanalpineclub.org/articles/13201217481
-    title: "Cajón del Maipo, New Winter Routes"
+    slug: 2026-10-01-aaj-cajon-del-maipo-new-winter-routes
+    date: "2026-10-01"
   - id: "13201217482"
-    url: https://publications.americanalpineclub.org/articles/13201217482
-    title: "La Oreja, Vía de los Marpla"
+    slug: 2026-10-01-aaj-la-oreja-via-de-los-marpla
+    date: "2026-10-01"
   - id: "13201217483"
-    url: https://publications.americanalpineclub.org/articles/13201217483
-    title: "Central Tower of Paine, Paradigm Shift"
+    slug: 2026-10-01-aaj-central-tower-of-paine-paradigm-shift
+    date: "2026-10-01"
   - id: "13201217484"
-    url: https://publications.americanalpineclub.org/articles/13201217484
-    title: "El Chaltén Summary, 2025–2026"
+    slug: 2026-10-01-aaj-el-chalten-summary-2025-2026
+    date: "2026-10-01"
   - id: "13201217485"
-    url: https://publications.americanalpineclub.org/articles/13201217485
-    title: "Cerro Chaltén, East Pillar, First Free Ascent"
+    slug: 2026-10-01-aaj-cerro-chalten-east-pillar-first-free-ascent
+    date: "2026-10-01"
   - id: "13201217486"
-    url: https://publications.americanalpineclub.org/articles/13201217486
-    title: "Kaikiawila and Ngoku, First Ascents"
+    slug: 2026-10-01-aaj-kaikiawila-and-ngoku-first-ascents
+    date: "2026-10-01"
   - id: "13201217487"
-    url: https://publications.americanalpineclub.org/articles/13201217487
-    title: "Serra da Leba and Cumbira Segundo, New Routes"
+    slug: 2026-10-01-aaj-serra-da-leba-and-cumbira-segundo-new-routes
+    date: "2026-10-01"
   - id: "13201217488"
-    url: https://publications.americanalpineclub.org/articles/13201217488
-    title: "Mitsinjoarivo, East Face, Famadihana"
+    slug: 2026-10-01-aaj-mitsinjoarivo-east-face-famadihana
+    date: "2026-10-01"
   - id: "13201217489"
-    url: https://publications.americanalpineclub.org/articles/13201217489
-    title: "Karambony, Tsofa Dombo"
+    slug: 2026-10-01-aaj-karambony-tsofa-dombo
+    date: "2026-10-01"
   - id: "13201217490"
-    url: https://publications.americanalpineclub.org/articles/13201217490
-    title: "Cerro Steffen, West Face"
+    slug: 2026-10-01-aaj-cerro-steffen-west-face
+    date: "2026-10-01"
   - id: "13201217491"
-    url: https://publications.americanalpineclub.org/articles/13201217491
-    title: "Cerro Socavones, First Ascent, via West Face and Northwest Ridge"
+    slug: 2026-10-01-aaj-cerro-socavones-first-ascent-via-west-face-and
+    date: "2026-10-01"
   - id: "13201217493"
-    url: https://publications.americanalpineclub.org/articles/13201217493
-    title: "Pedra da Fortaleza, A Resistência, Free Ascent"
+    slug: 2026-10-01-aaj-pedra-da-fortaleza-a-resistencia-free-ascent
+    date: "2026-10-01"
   - id: "13201217494"
-    url: https://publications.americanalpineclub.org/articles/13201217494
-    title: "Pedra Riscada, East Face, Brasiliana"
+    slug: 2026-10-01-aaj-pedra-riscada-east-face-brasiliana
+    date: "2026-10-01"
   - id: "13201217497"
-    url: https://publications.americanalpineclub.org/articles/13201217497
-    title: "Pic Dondy, East Face, Regicide"
+    slug: 2026-10-01-aaj-pic-dondy-east-face-regicide
+    date: "2026-10-01"
   - id: "13201217498"
-    url: https://publications.americanalpineclub.org/articles/13201217498
-    title: "Pedra Riscada, Northwest Face, Folia do Divino"
+    slug: 2026-10-01-aaj-pedra-riscada-northwest-face-folia-do-divino
+    date: "2026-10-01"
   - id: "13201217500"
-    url: https://publications.americanalpineclub.org/articles/13201217500
-    title: "Aegir Peak, Aegir Sanction"
+    slug: 2026-10-01-aaj-aegir-peak-aegir-sanction
+    date: "2026-10-01"
   - id: "13201217501"
-    url: https://publications.americanalpineclub.org/articles/13201217501
-    title: "The Rimwall, On the Wings of Maybe"
+    slug: 2026-10-01-aaj-the-rimwall-on-the-wings-of-maybe
+    date: "2026-10-01"
   - id: "13201217502"
-    url: https://publications.americanalpineclub.org/articles/13201217502
-    title: "Four New Routes"
+    slug: 2026-10-01-aaj-four-new-routes
+    date: "2026-10-01"
   - id: "13201217503"
-    url: https://publications.americanalpineclub.org/articles/13201217503
-    title: "Mt. Chephren, East Face, Snafflehound Spine"
+    slug: 2026-10-01-aaj-mt-chephren-east-face-snafflehound-spine
+    date: "2026-10-01"
   - id: "13201217504"
-    url: https://publications.americanalpineclub.org/articles/13201217504
-    title: "Gilt Peak from the South, The Cedar Room"
+    slug: 2026-10-01-aaj-gilt-peak-from-the-south-the-cedar-room
+    date: "2026-10-01"
   - id: "13201217505"
-    url: https://publications.americanalpineclub.org/articles/13201217505
-    title: "Middle Huey Spire, L’oro dello Yukon"
+    slug: 2026-10-01-aaj-middle-huey-spire-l-oro-dello-yukon
+    date: "2026-10-01"
   - id: "13201217506"
-    url: https://publications.americanalpineclub.org/articles/13201217506
-    title: "The Rimwall, Iron Tears"
+    slug: 2026-10-01-aaj-the-rimwall-iron-tears
+    date: "2026-10-01"
   - id: "13201217507"
-    url: https://publications.americanalpineclub.org/articles/13201217507
-    title: "Mt. Robson, South Face, Ski Descent"
+    slug: 2026-10-01-aaj-mt-robson-south-face-ski-descent
+    date: "2026-10-01"
   - id: "13201217508"
-    url: https://publications.americanalpineclub.org/articles/13201217508
-    title: "Red Alert Wall, Time "
+    slug: 2026-10-01-aaj-red-alert-wall-time
+    date: "2026-10-01"
   - id: "13201217509"
-    url: https://publications.americanalpineclub.org/articles/13201217509
-    title: "Castle Mountain, Northwest Headwall, Confessions of a Choss Gobbler"
+    slug: 2026-10-01-aaj-castle-mountain-northwest-headwall-confessions-of-a-choss
+    date: "2026-10-01"
   - id: "13201217510"
-    url: https://publications.americanalpineclub.org/articles/13201217510
-    title: "Merriam Peak and Granite Park, Dr. Bear Love Free and Other Routes"
+    slug: 2026-10-01-aaj-merriam-peak-and-granite-park-dr-bear-love
+    date: "2026-10-01"
   - id: "13201217511"
-    url: https://publications.americanalpineclub.org/articles/13201217511
-    title: "Lake Basin, Hershey’s Kiss, Three New Routes"
+    slug: 2026-10-01-aaj-lake-basin-hershey-s-kiss-three-new-routes
+    date: "2026-10-01"
   - id: "13201217512"
-    url: https://publications.americanalpineclub.org/articles/13201217512
-    title: "Four Gables, Southeast Face, Shits and Glitters"
+    slug: 2026-10-01-aaj-four-gables-southeast-face-shits-and-glitters
+    date: "2026-10-01"
   - id: "13201217513"
-    url: https://publications.americanalpineclub.org/articles/13201217513
-    title: "The Candlestick, West Face"
+    slug: 2026-10-01-aaj-the-candlestick-west-face
+    date: "2026-10-01"
   - id: "13201217514"
-    url: https://publications.americanalpineclub.org/articles/13201217514
-    title: "Mt. Emerson, North Face, Lost and Found"
+    slug: 2026-10-01-aaj-mt-emerson-north-face-lost-and-found
+    date: "2026-10-01"
   - id: "13201217515"
-    url: https://publications.americanalpineclub.org/articles/13201217515
-    title: "Mt. Goode, East Face, The Goode, the Grateful, and the Ganja!"
+    slug: 2026-10-01-aaj-mt-goode-east-face-the-goode-the-grateful
+    date: "2026-10-01"
   - id: "13201217516"
-    url: https://publications.americanalpineclub.org/articles/13201217516
-    title: "Sermersoq Island, Glacier Peak, Le Sang du Cri"
+    slug: 2026-10-01-aaj-sermersoq-island-glacier-peak-le-sang-du-cri
+    date: "2026-10-01"
   - id: "13201217517"
-    url: https://publications.americanalpineclub.org/articles/13201217517
-    title: "Sermiligaaq Fjord, Various Routes"
+    slug: 2026-10-01-aaj-sermiligaaq-fjord-various-routes
+    date: "2026-10-01"
   - id: "13201217518"
-    url: https://publications.americanalpineclub.org/articles/13201217518
-    title: "Freya Peak, Northwest Face; Mini-Asgard, La Casa de las Diosas"
+    slug: 2026-10-01-aaj-freya-peak-northwest-face-mini-asgard-la-casa
+    date: "2026-10-01"
   - id: "13201217519"
-    url: https://publications.americanalpineclub.org/articles/13201217519
-    title: "Sikunga Mountain, West Face, Sikunga Express "
+    slug: 2026-10-01-aaj-sikunga-mountain-west-face-sikunga-express
+    date: "2026-10-01"
   - id: "13201217520"
-    url: https://publications.americanalpineclub.org/articles/13201217520
-    title: "Mont de l’Equerre, Les Chercheurs d’Or"
+    slug: 2026-10-01-aaj-mont-de-l-equerre-les-chercheurs-d-or
+    date: "2026-10-01"
   - id: "13201217521"
-    url: https://publications.americanalpineclub.org/articles/13201217521
-    title: "Mont de l’Equerre, La Pomme d’Adam"
+    slug: 2026-10-01-aaj-mont-de-l-equerre-la-pomme-d-adam
+    date: "2026-10-01"
   - id: "13201217522"
-    url: https://publications.americanalpineclub.org/articles/13201217522
-    title: "Eglinton Tower, Northwest Buttress, Lemnos in the Clouds"
+    slug: 2026-10-01-aaj-eglinton-tower-northwest-buttress-lemnos-in-the-clouds
+    date: "2026-10-01"
   - id: "13201217523"
-    url: https://publications.americanalpineclub.org/articles/13201217523
-    title: "Recent Mountaineering Developments in Parts of Tibet"
+    slug: 2026-10-01-aaj-recent-mountaineering-developments-in-parts-of-tibet
+    date: "2026-10-01"
   - id: "13201217524"
-    url: https://publications.americanalpineclub.org/articles/13201217524
-    title: "Karjiang, Second Ascent"
+    slug: 2026-10-01-aaj-karjiang-second-ascent
+    date: "2026-10-01"
   - id: "13201217525"
-    url: https://publications.americanalpineclub.org/articles/13201217525
-    title: "Nerutusôq Glacier and Fork Beard Glacier, Seven First Ascents"
+    slug: 2026-10-01-aaj-nerutusoq-glacier-and-fork-beard-glacier-seven-first
+    date: "2026-10-01"
   - id: "13201217526"
-    url: https://publications.americanalpineclub.org/articles/13201217526
-    title: "Genyen Range, Two First Ascents"
+    slug: 2026-10-01-aaj-genyen-range-two-first-ascents
+    date: "2026-10-01"
   - id: "13201217527"
-    url: https://publications.americanalpineclub.org/articles/13201217527
-    title: "Guoraka Ri, north top, north face"
+    slug: 2026-10-01-aaj-guoraka-ri-north-top-north-face
+    date: "2026-10-01"
   - id: "13201217528"
-    url: https://publications.americanalpineclub.org/articles/13201217528
-    title: "Kangmi Kangri, northwest ridge and northwest face"
+    slug: 2026-10-01-aaj-kangmi-kangri-northwest-ridge-and-northwest-face
+    date: "2026-10-01"
   - id: "13201217529"
-    url: https://publications.americanalpineclub.org/articles/13201217529
-    title: "Lotus Flower Mountain, north face"
+    slug: 2026-10-01-aaj-lotus-flower-mountain-north-face
+    date: "2026-10-01"
   - id: "13201217530"
-    url: https://publications.americanalpineclub.org/articles/13201217530
-    title: "Minya Konka, north spur and northeast ridge, ascent to highest point"
+    slug: 2026-10-01-aaj-minya-konka-north-spur-and-northeast-ridge-ascent
+    date: "2026-10-01"
   - id: "13201217531"
-    url: https://publications.americanalpineclub.org/articles/13201217531
-    title: "Nyanchen Tanglha East, Sendho, first ascent, via east face"
+    slug: 2026-10-01-aaj-nyanchen-tanglha-east-sendho-first-ascent-via-east
+    date: "2026-10-01"
   - id: "13201217532"
-    url: https://publications.americanalpineclub.org/articles/13201217532
-    title: "Siguniang, north ridge"
+    slug: 2026-10-01-aaj-siguniang-north-ridge
+    date: "2026-10-01"
   - id: "13201217533"
-    url: https://publications.americanalpineclub.org/articles/13201217533
-    title: "Xue Yue Feng, climbs from the west "
+    slug: 2026-10-01-aaj-xue-yue-feng-climbs-from-the-west
+    date: "2026-10-01"
   - id: "13201217534"
-    url: https://publications.americanalpineclub.org/articles/13201217534
-    title: "Lochari, north ridge; Rimuza, north face"
+    slug: 2026-10-01-aaj-lochari-north-ridge-rimuza-north-face
+    date: "2026-10-01"
   - id: "13201217535"
-    url: https://publications.americanalpineclub.org/articles/13201217535
-    title: "Ikamiut Fjord, Three New Routes "
+    slug: 2026-10-01-aaj-ikamiut-fjord-three-new-routes
+    date: "2026-10-01"
   - id: "13201217536"
-    url: https://publications.americanalpineclub.org/articles/13201217536
-    title: "Graahs Fjord and Skjoldungen, Various Ascents"
+    slug: 2026-10-01-aaj-graahs-fjord-and-skjoldungen-various-ascents
+    date: "2026-10-01"
   - id: "13201217537"
-    url: https://publications.americanalpineclub.org/articles/13201217537
-    title: "Ulamertorssuaq, Northwest Face, Big Kumura; Honey Buttress, Manuka"
+    slug: 2026-10-01-aaj-ulamertorssuaq-northwest-face-big-kumura-honey-buttress-manuka
+    date: "2026-10-01"
   - id: "13201217538"
-    url: https://publications.americanalpineclub.org/articles/13201217538
-    title: "Titan II, Southwest Face"
+    slug: 2026-10-01-aaj-titan-ii-southwest-face
+    date: "2026-10-01"
   - id: "13201217539"
-    url: https://publications.americanalpineclub.org/articles/13201217539
-    title: "Upernavik and Other Areas, Six Historical Ascents"
+    slug: 2026-10-01-aaj-upernavik-and-other-areas-six-historical-ascents
+    date: "2026-10-01"
   - id: "13201217541"
-    url: https://publications.americanalpineclub.org/articles/13201217541
-    title: "Demirkazik, North Face, Close to Heaven"
+    slug: 2026-10-01-aaj-demirkazik-north-face-close-to-heaven
+    date: "2026-10-01"
   - id: "13201217542"
-    url: https://publications.americanalpineclub.org/articles/13201217542
-    title: "Jebel Nassrani North, Land and Freedom"
+    slug: 2026-10-01-aaj-jebel-nassrani-north-land-and-freedom
+    date: "2026-10-01"
   - id: "13201217543"
-    url: https://publications.americanalpineclub.org/articles/13201217543
-    title: "Chegem Peak, Forostyan Route, All-Female Ascent"
+    slug: 2026-10-01-aaj-chegem-peak-forostyan-route-all-female-ascent
+    date: "2026-10-01"
   - id: "13201217544"
-    url: https://publications.americanalpineclub.org/articles/13201217544
-    title: "Ushba South, Myshlyaev Route, All-Women’s Ascent "
+    slug: 2026-10-01-aaj-ushba-south-myshlyaev-route-all-women-s-ascent
+    date: "2026-10-01"
   - id: "13201217545"
-    url: https://publications.americanalpineclub.org/articles/13201217545
-    title: "Gulba, Southwest Pillar, Pferderennen02"
+    slug: 2026-10-01-aaj-gulba-southwest-pillar-pferderennen02
+    date: "2026-10-01"
   - id: "13201217546"
-    url: https://publications.americanalpineclub.org/articles/13201217546
-    title: "Mizhirgi West, Southwest Buttress "
+    slug: 2026-10-01-aaj-mizhirgi-west-southwest-buttress
+    date: "2026-10-01"
   - id: "13201217547"
-    url: https://publications.americanalpineclub.org/articles/13201217547
-    title: "Shkhara, South Face, Winter attempt and new variation to south-southeast ridge"
+    slug: 2026-10-01-aaj-shkhara-south-face-winter-attempt-and-new-variation
+    date: "2026-10-01"
   - id: "13201217550"
-    url: https://publications.americanalpineclub.org/articles/13201217550
-    title: "Nevado Santa Cruz, South Face, Illegal"
+    slug: 2026-10-01-aaj-nevado-santa-cruz-south-face-illegal
+    date: "2026-10-01"
   - id: "13201217551"
-    url: https://publications.americanalpineclub.org/articles/13201217551
-    title: "Cerro Brechón, Northeast Ridge, Filo del Huemul"
+    slug: 2026-10-01-aaj-cerro-brechon-northeast-ridge-filo-del-huemul
+    date: "2026-10-01"
   - id: "13201217552"
-    url: https://publications.americanalpineclub.org/articles/13201217552
-    title: "Torres del Paine, 2025–2026 Summary"
+    slug: 2026-10-01-aaj-torres-del-paine-2025-2026-summary
+    date: "2026-10-01"
   - id: "13201217558"
-    url: https://publications.americanalpineclub.org/articles/13201217558
-    title: "Huandoy Este, Northeast Face, Sudor Peruano"
+    slug: 2026-10-01-aaj-huandoy-este-northeast-face-sudor-peruano
+    date: "2026-10-01"
   - id: "13201217559"
-    url: https://publications.americanalpineclub.org/articles/13201217559
-    title: "Urus Central, Southwest Face, Variation"
+    slug: 2026-10-01-aaj-urus-central-southwest-face-variation
+    date: "2026-10-01"
   - id: "13201217560"
-    url: https://publications.americanalpineclub.org/articles/13201217560
-    title: "Santa Cruz Chico, West Face"
+    slug: 2026-10-01-aaj-santa-cruz-chico-west-face
+    date: "2026-10-01"
   - id: "13201217561"
-    url: https://publications.americanalpineclub.org/articles/13201217561
-    title: "Urus Oeste, Vuelta Austral"
+    slug: 2026-10-01-aaj-urus-oeste-vuelta-austral
+    date: "2026-10-01"
   - id: "13201217562"
-    url: https://publications.americanalpineclub.org/articles/13201217562
-    title: "Urus Oeste Group, Mi Carnal and Suspiro del Quenual  "
+    slug: 2026-10-01-aaj-urus-oeste-group-mi-carnal-and-suspiro-del
+    date: "2026-10-01"
   - id: "13201217563"
-    url: https://publications.americanalpineclub.org/articles/13201217563
-    title: "Nevado Churup, Hacia Rutas Salvajes"
+    slug: 2026-10-01-aaj-nevado-churup-hacia-rutas-salvajes
+    date: "2026-10-01"
   - id: "13201217565"
-    url: https://publications.americanalpineclub.org/articles/13201217565
-    title: "Nevado Cashán Oeste, Northeast Face, Carlos Suarez "
+    slug: 2026-10-01-aaj-nevado-cashan-oeste-northeast-face-carlos-suarez
+    date: "2026-10-01"
   - id: "13201217566"
-    url: https://publications.americanalpineclub.org/articles/13201217566
-    title: "Nevado Yerupajá, East Face, Attempt; Jirishanca, Southeast Face, Kolibri"
+    slug: 2026-10-01-aaj-nevado-yerupaja-east-face-attempt-jirishanca-southeast-face
+    date: "2026-10-01"
   - id: "13201217567"
-    url: https://publications.americanalpineclub.org/articles/13201217567
-    title: "Nevado Mururaju, South Face, Con Mucha Lechuga "
+    slug: 2026-10-01-aaj-nevado-mururaju-south-face-con-mucha-lechuga
+    date: "2026-10-01"
   - id: "13201217568"
-    url: https://publications.americanalpineclub.org/articles/13201217568
-    title: "Nevado Palcaraju, South Face"
+    slug: 2026-10-01-aaj-nevado-palcaraju-south-face
+    date: "2026-10-01"
   - id: "13201217569"
-    url: https://publications.americanalpineclub.org/articles/13201217569
-    title: "Puscanturpa Este, Galdu Eta Irabazi"
+    slug: 2026-10-01-aaj-puscanturpa-este-galdu-eta-irabazi
+    date: "2026-10-01"
   - id: "13201217570"
-    url: https://publications.americanalpineclub.org/articles/13201217570
-    title: "Nevado Verdish-Ventanilla, Aychana"
+    slug: 2026-10-01-aaj-nevado-verdish-ventanilla-aychana
+    date: "2026-10-01"
   - id: "13201217571"
-    url: https://publications.americanalpineclub.org/articles/13201217571
-    title: "Machu Riti, South Face"
+    slug: 2026-10-01-aaj-machu-riti-south-face
+    date: "2026-10-01"
   - id: "13201217572"
-    url: https://publications.americanalpineclub.org/articles/13201217572
-    title: "Nevado Pumanota and Other Peaks"
+    slug: 2026-10-01-aaj-nevado-pumanota-and-other-peaks
+    date: "2026-10-01"
   - id: "13201217573"
-    url: https://publications.americanalpineclub.org/articles/13201217573
-    title: "Alpomish, Northwest Face"
+    slug: 2026-10-01-aaj-alpomish-northwest-face
+    date: "2026-10-01"
   - id: "13201217576"
-    url: https://publications.americanalpineclub.org/articles/13201217576
-    title: "Wall of Dykes, The Game of Forty"
+    slug: 2026-10-01-aaj-wall-of-dykes-the-game-of-forty
+    date: "2026-10-01"
   - id: "13201217577"
-    url: https://publications.americanalpineclub.org/articles/13201217577
-    title: "Djangart Range, Four Ascents "
+    slug: 2026-10-01-aaj-djangart-range-four-ascents
+    date: "2026-10-01"
   - id: "13201217578"
-    url: https://publications.americanalpineclub.org/articles/13201217578
-    title: "Chokko Zemleprohodtsev, Northeast Face"
+    slug: 2026-10-01-aaj-chokko-zemleprohodtsev-northeast-face
+    date: "2026-10-01"
   - id: "13201217579"
-    url: https://publications.americanalpineclub.org/articles/13201217579
-    title: "Dioskury Peak, North Face, Direct Route "
+    slug: 2026-10-01-aaj-dioskury-peak-north-face-direct-route
+    date: "2026-10-01"
   - id: "13201217580"
-    url: https://publications.americanalpineclub.org/articles/13201217580
-    title: "Nura Valley, Climbs and Attempts"
+    slug: 2026-10-01-aaj-nura-valley-climbs-and-attempts
+    date: "2026-10-01"
   - id: "13201217581"
-    url: https://publications.americanalpineclub.org/articles/13201217581
-    title: "Peak 4,300, Phillar of Experience"
+    slug: 2026-10-01-aaj-peak-4-300-phillar-of-experience
+    date: "2026-10-01"
   - id: "13201217582"
-    url: https://publications.americanalpineclub.org/articles/13201217582
-    title: "Svarog, North Face, New Route"
+    slug: 2026-10-01-aaj-svarog-north-face-new-route
+    date: "2026-10-01"
   - id: "13201217583"
-    url: https://publications.americanalpineclub.org/articles/13201217583
-    title: "Yellow Wall, East Face"
+    slug: 2026-10-01-aaj-yellow-wall-east-face
+    date: "2026-10-01"
   - id: "13201217584"
-    url: https://publications.americanalpineclub.org/articles/13201217584
-    title: "Breitinden, North Face, Rainborn"
+    slug: 2026-10-01-aaj-breitinden-north-face-rainborn
+    date: "2026-10-01"
   - id: "13201217585"
-    url: https://publications.americanalpineclub.org/articles/13201217585
-    title: "Breiflogtinden and Kråkhammartinden, New Routes"
+    slug: 2026-10-01-aaj-breiflogtinden-and-kr-khammartinden-new-routes
+    date: "2026-10-01"
   - id: "13201217586"
-    url: https://publications.americanalpineclub.org/articles/13201217586
-    title: "Atomfjella, Extended Ski Tour and Various Ascents"
+    slug: 2026-10-01-aaj-atomfjella-extended-ski-tour-and-various-ascents
+    date: "2026-10-01"
   - id: "13201217587"
-    url: https://publications.americanalpineclub.org/articles/13201217587
-    title: "Kvaløya Island, Tromma, En tare for Mikaelsso and Other Routes"
+    slug: 2026-10-01-aaj-kval-ya-island-tromma-en-tare-for-mikaelsso
+    date: "2026-10-01"
   - id: "13201217588"
-    url: https://publications.americanalpineclub.org/articles/13201217588
-    title: "Asatiani, East Face, Imnaishvili, and Archil Peak, First Ascent"
+    slug: 2026-10-01-aaj-asatiani-east-face-imnaishvili-and-archil-peak-first
+    date: "2026-10-01"
   - id: "13201217589"
-    url: https://publications.americanalpineclub.org/articles/13201217589
-    title: "Chaukhi Range, Second Traverse"
+    slug: 2026-10-01-aaj-chaukhi-range-second-traverse
+    date: "2026-10-01"
   - id: "13201217590"
-    url: https://publications.americanalpineclub.org/articles/13201217590
-    title: "Mt. Everest: Two Major Ski Descents"
+    slug: 2026-10-01-aaj-mt-everest-two-major-ski-descents
+    date: "2026-10-01"
   - id: "13201217592"
-    url: https://publications.americanalpineclub.org/articles/13201217592
-    title: "The Alps: New Routes on Forgotten Faces"
+    slug: 2026-10-01-aaj-the-alps-new-routes-on-forgotten-faces
+    date: "2026-10-01"
   - id: "13201217593"
-    url: https://publications.americanalpineclub.org/articles/13201217593
-    title: "Spang Nala Glacier to Mantang Glacier Traverse and Various Ascents"
+    slug: 2026-10-01-aaj-spang-nala-glacier-to-mantang-glacier-traverse-and
+    date: "2026-10-01"
   - id: "13201217594"
-    url: https://publications.americanalpineclub.org/articles/13201217594
-    title: "Barmal Glacier: A Forgotten Trek and Unclimbed Summits"
+    slug: 2026-10-01-aaj-barmal-glacier-a-forgotten-trek-and-unclimbed-summits
+    date: "2026-10-01"
   - id: "13201217595"
-    url: https://publications.americanalpineclub.org/articles/13201217595
-    title: "Satling Glacier, Brahmasar Attempt and Point Walkers, West Ridge"
+    slug: 2026-10-01-aaj-satling-glacier-brahmasar-attempt-and-point-walkers-west
+    date: "2026-10-01"
   - id: "13201217596"
-    url: https://publications.americanalpineclub.org/articles/13201217596
-    title: "Meru, West Face, Variations and Historical Notes"
+    slug: 2026-10-01-aaj-meru-west-face-variations-and-historical-notes
+    date: "2026-10-01"
   - id: "13201217598"
-    url: https://publications.americanalpineclub.org/articles/13201217598
-    title: "Mt. Beulah, Southeast Face, Particle Accelerator Couloir"
+    slug: 2026-10-01-aaj-mt-beulah-southeast-face-particle-accelerator-couloir
+    date: "2026-10-01"
   - id: "13201217599"
-    url: https://publications.americanalpineclub.org/articles/13201217599
-    title: "The Gunsight, Time"
+    slug: 2026-10-01-aaj-the-gunsight-time
+    date: "2026-10-01"
   - id: "13201217600"
-    url: https://publications.americanalpineclub.org/articles/13201217600
-    title: "Mt. Wilson, Aeolian Wall, Wind God Tower"
+    slug: 2026-10-01-aaj-mt-wilson-aeolian-wall-wind-god-tower
+    date: "2026-10-01"
   - id: "13201217601"
-    url: https://publications.americanalpineclub.org/articles/13201217601
-    title: "Mt. Wilson, Horseshoe Wall, Fin Baggin' Society"
+    slug: 2026-10-01-aaj-mt-wilson-horseshoe-wall-fin-baggin-society
+    date: "2026-10-01"
   - id: "13201217602"
-    url: https://publications.americanalpineclub.org/articles/13201217602
-    title: "Skalisty Range Limestone, Overview and Recent Ascents"
+    slug: 2026-10-01-aaj-skalisty-range-limestone-overview-and-recent-ascents
+    date: "2026-10-01"
   - id: "13201217603"
-    url: https://publications.americanalpineclub.org/articles/13201217603
-    title: "El Capitan, Cardiac Arrest, Solo First Ascent"
+    slug: 2026-10-01-aaj-el-capitan-cardiac-arrest-solo-first-ascent
+    date: "2026-10-01"
   - id: "13201217604"
-    url: https://publications.americanalpineclub.org/articles/13201217604
-    title: "Six New Wall Routes in Two Seasons"
+    slug: 2026-10-01-aaj-six-new-wall-routes-in-two-seasons
+    date: "2026-10-01"
   - id: "13201217605"
-    url: https://publications.americanalpineclub.org/articles/13201217605
-    title: "Keeler Needle, Stoned Ape Hypothesis"
+    slug: 2026-10-01-aaj-keeler-needle-stoned-ape-hypothesis
+    date: "2026-10-01"
   - id: "13201217606"
-    url: https://publications.americanalpineclub.org/articles/13201217606
-    title: "Mt. Le Conte, Iridescent Wall, Buns of Steel"
+    slug: 2026-10-01-aaj-mt-le-conte-iridescent-wall-buns-of-steel
+    date: "2026-10-01"
   - id: "13201217607"
-    url: https://publications.americanalpineclub.org/articles/13201217607
-    title: "Miter Basin, Six New Routes"
+    slug: 2026-10-01-aaj-miter-basin-six-new-routes
+    date: "2026-10-01"
   - id: "13201217608"
-    url: https://publications.americanalpineclub.org/articles/13201217608
-    title: "The Potato, Northwest Face, Baked and Loaded"
+    slug: 2026-10-01-aaj-the-potato-northwest-face-baked-and-loaded
+    date: "2026-10-01"
   - id: "13201217609"
-    url: https://publications.americanalpineclub.org/articles/13201217609
-    title: "Cobb Peak, South Ridge"
+    slug: 2026-10-01-aaj-cobb-peak-south-ridge
+    date: "2026-10-01"
   - id: "13201217610"
-    url: https://publications.americanalpineclub.org/articles/13201217610
-    title: "Jebel Um Ejil and Jebel Rum, Many New Routes"
+    slug: 2026-10-01-aaj-jebel-um-ejil-and-jebel-rum-many-new
+    date: "2026-10-01"
   - id: "13201217611"
-    url: https://publications.americanalpineclub.org/articles/13201217611
-    title: "Goat Mountain, East Face"
+    slug: 2026-10-01-aaj-goat-mountain-east-face
+    date: "2026-10-01"
   - id: "13201217612"
-    url: https://publications.americanalpineclub.org/articles/13201217612
-    title: "Litner Group, Many First Ascents"
+    slug: 2026-10-01-aaj-litner-group-many-first-ascents
+    date: "2026-10-01"
   - id: "13201217613"
-    url: https://publications.americanalpineclub.org/articles/13201217613
-    title: "Alpine Report 2025"
+    slug: 2026-10-01-aaj-alpine-report-2025
+    date: "2026-10-01"
   - id: "13201217614"
-    url: https://publications.americanalpineclub.org/articles/13201217614
-    title: "Mukatila, Jebel Nassrani South"
+    slug: 2026-10-01-aaj-mukatila-jebel-nassrani-south
+    date: "2026-10-01"
   - id: "13201217615"
-    url: https://publications.americanalpineclub.org/articles/13201217615
-    title: "Eleven New Routes in Oman"
+    slug: 2026-10-01-aaj-eleven-new-routes-in-oman
+    date: "2026-10-01"
   - id: "13201217616"
-    url: https://publications.americanalpineclub.org/articles/13201217616
-    title: "12 First Ascents in Saudi Arabia"
+    slug: 2026-10-01-aaj-12-first-ascents-in-saudi-arabia
+    date: "2026-10-01"
   - id: "13201217617"
-    url: https://publications.americanalpineclub.org/articles/13201217617
-    title: "Mt. Crosson Group Ski Traverse"
+    slug: 2026-10-01-aaj-mt-crosson-group-ski-traverse
+    date: "2026-10-01"
   - id: "13201217618"
-    url: https://publications.americanalpineclub.org/articles/13201217618
-    title: "Stutfield Peak East, East Ridge, No Fiesta, No Siesta"
+    slug: 2026-10-01-aaj-stutfield-peak-east-east-ridge-no-fiesta-no
+    date: "2026-10-01"
+remaining: []

@@ -25,7 +25,7 @@ Do not commit API tokens. Prefer MCP over pasting `CLOUDFLARE_API_TOKEN` into ch
 
 ## Live site (GitHub Actions billing lock)
 
-https://logbook.rocks must show the Jekyll 4 Persian blog (`خانه` about + teasers, `/logbook/`, `/news/` as خبر کوهنوردی), not GitHub’s empty Jekyll 3 placeholder titled `logbook.rocks`.
+https://logbook.rocks must show the Jekyll 4 Persian blog (`خانه` about + teasers, `/logbook/`, `/news/` as خبر کوهنوردی, `/articles/` as مقالات), not GitHub’s empty Jekyll 3 placeholder titled `logbook.rocks`.
 
 GitHub Actions on the owner account is **billing-locked**, so `.github/workflows/deploy-pages.yml` never deploys. Pages is stuck on the CNAME-only snapshot (`60ffc1e`). Do **not** point DNS at `workers.dev` / jsDelivr / `pages.dev` (Cloudflare error 1014 or TLS 421).
 
@@ -35,6 +35,8 @@ Until Actions can run, production is:
 2. Cloudflare URL rewrite (`http_request_transform`): every path except `/cdn-cgi/` rewrites to origin `/` so GitHub returns 200 HTML
 3. Cloudflare Zaraz tool **Logbook Jekyll bootstrap** (`component: html`, `actionType: event`, trigger `Pageview`) fetches **HTML** from `https://raw.githubusercontent.com/KavehRS/logbook.rocks/published` + path (`/` → `/index.html`) and `document.write`s it. Keep in-site `<a href="/…">` on this domain; only rewrite asset URLs (`src`, CSS, favicons) onto `https://cdn.jsdelivr.net/gh/KavehRS/logbook.rocks@published`. **Never pin a jsDelivr commit SHA in Zaraz** — that freezes the live site on an old export. jsDelivr’s `@published` branch alias can lag; do not fetch HTML from jsDelivr directory URLs (they are CDN listings, not `index.html`).
 4. Orphan branch `published` is the built `_site` (includes `.nojekyll`)
+5. Cloudflare redirect rules (`http_request_dynamic_redirect`) send the non-HTML SEO files to the same file on `published`. Zaraz rebuilds *pages* only, so without these `/robots.txt`, `/sitemap.xml`, `/llms.txt`, `/webmcp-catalog.json`, the Atom feeds and the IndexNow key all answer `200 text/html` with GitHub's placeholder. Manage them with `script/cloudflare/deploy-seo-files.py` (`--check` to list, `--revert` to remove). Adding a new machine-readable file at the site root means adding it to `PATHS` there too, or it will not be reachable.
+6. Cloudflare's **managed robots.txt** is deliberately **off**. It used to answer `/robots.txt` at the edge ahead of any rule, and it carries no `Sitemap:` directive. The repo's `robots.txt` is now the live one and holds the training-crawler block list itself — a new training crawler has to be added there by hand.
 
 After a content change that should go live **before** GitHub billing is fixed:
 
@@ -154,8 +156,8 @@ When asked for `اخبار` / a climbing news item / update to `_news/`:
 3. Use `_drafts/news-post-template.md` (structure only — never publish placeholders).
 4. File: `_news/YYYY-MM-DD-<slug>.md` with zero-padded date, `lang: fa-IR`, YAML `tags` array, unique description.
 5. Images for news: **always self-hosted**. Download every photo the source article uses into `assets/news/<exact-url-slug>/` — one folder per news item, named exactly like the post file stem — commit it, and point `image:` plus every in-body `<figure>` at `/assets/news/<slug>/<file>`. Never leave a published page pointing at the source host: readers whose networks block S3, desnivel.com, or theuiaa.org would see empty frames. Standardize the published copy: cap width at 1600px and re-encode files stored at wasteful quality, but keep the original bytes whenever re-encoding would make the file larger. When a source photo really is stored at unusually high quality, **keep the untouched original too**, in `assets/news/<slug>/_originals/<file>`. Jekyll skips any directory whose basename starts with `_`, so the archive stays in git while only the standardized copy reaches `_site` and the live `published` branch — verify with `find _site -path '*_originals*'` returning nothing. Do not write what the agent did or didn’t do in the article body.
-6. Related UI stays `اخبار مرتبط :` + flat list. Hub `/news/` is two columns on PC and stacked on mobile; ten items each, then a pager.
-7. Homepage `/` is the about page («درباره من») plus the four newest گزارش صعود teasers and the **five newest hub teasers with اخبار and مقالات merged by date**. It updates on every publish through `_includes/home-latest.html`; do not hardcode or hand-edit that list. Full reports live on `/logbook/`; climbing news on `/news/`.
+6. Related UI stays `اخبار مرتبط :` + flat list. Hub `/news/` is a single wire list, newest first, ten items then a pager. Journal translations live on `/articles/` with `مقالات مرتبط :`.
+7. Homepage `/` is the about page («درباره من») plus the four newest گزارش صعود teasers and the **five newest hub teasers with اخبار and مقالات merged by date**. It updates on every publish through `_includes/home-latest.html`; do not hardcode or hand-edit that list. Full reports live on `/logbook/`; climbing news on `/news/`; journal articles on `/articles/`.
 8. For a Cursor Automation, paste `.cursor/automations/news-post-prompt.md` at https://cursor.com/automations/new
 9. Open a PR on `cursor/<descriptive-name>-4b4e`, verify `bundle exec jekyll build`.
 
@@ -164,7 +166,7 @@ Related scheduled agents (mandatory after billing recharge; paused until then):
 - Weather refresh (4× daily Tehran, active reports only): `.cursor/automations/logbook-weather-update-prompt.md` + `.github/workflows/logbook-weather-agent.yml`
 - Daily SEO: `.cursor/automations/daily-seo-prompt.md` + `.github/workflows/daily-seo-agent.yml`
 - SEO + AI-source watch (every 45 minutes; technical crawl signals only, never rewrite published posts): `.cursor/automations/seo-ai-source-watch-prompt.md` + `.github/workflows/seo-ai-source-watch.yml`
-- خبر کوهنوردی agent (GMT 00:00 / 06:00 / 12:00 / 18:00 — each slot: new non-duplicate items from all listed sources as complete translations; next two AAJ 2026 queue notes; re-check live `_news/` translations; whole-site SEO; ship to live `published`): `.cursor/skills/news-wire/SKILL.md` + `.cursor/automations/news-wire-prompt.md` + `.github/workflows/news-wire-agent.yml`
+- خبر کوهنوردی agent (GMT 00:00 / 06:00 / 12:00 / 18:00 — each slot: new non-duplicate items from all listed sources as complete translations; only **new** AAJ 2026 listing items into `_articles/`; re-check live `_news/` and `_articles/` translations; whole-site SEO; ship to live `published`): `.cursor/skills/news-wire/SKILL.md` + `.cursor/automations/news-wire-prompt.md` + `.github/workflows/news-wire-agent.yml`
 
 
 ## Daily SEO agent
@@ -175,7 +177,7 @@ When running the scheduled SEO automation (or when asked to audit SEO):
 1. Follow `.cursor/skills/daily-seo-audit/SKILL.md` end-to-end.
 2. Obey `.cursor/rules/seo-daily-agent.mdc` and `.cursor/rules/logbook-reports.mdc`.
 3. Prefer high-confidence technical SEO and discoverability fixes over speculative copy rewrites.
-4. Audit every published `/logbook/` and `/news/` URL (unique title/description, canonical, structured data) — logbook first.
+4. Audit every published `/logbook/`, `/news/`, and `/articles/` URL (unique title/description, canonical, structured data) — logbook first.
 5. Never republish duplicate report prose for the same peak.
 6. Open a PR on `cursor/<descriptive-name>-4b4e`, verify `bundle exec jekyll build`, then merge to `main` when changes are safe and verified.
 

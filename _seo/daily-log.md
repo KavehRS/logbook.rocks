@@ -146,5 +146,46 @@ Owner follow-up left: Cloudflare Email Routing MX is present but routing is unco
 - Owner-requested UIAA NMA letter (`/news/2026-08-28-uiaa-nma-august2026/`). Unique title/description, `lang=fa-IR`/`dir=rtl`, remote source cover, collection-driven sitemap/`llms.txt`.
 - Not a GMT slot SEO rewrite. No template/CSS change. `last_run_utc` left at `2026-08-28T07:40:00Z`.
 
+## 2026-08-28 whole-site SEO sweep (owner request: maximum SEO, no content change)
+
+Audited the full production build after the AAJ dump: 283 HTML pages, 269 indexable.
+
+Already clean, left alone:
+
+- Titles and meta descriptions unique on every indexable page (0 duplicates across 269).
+- Canonical on every page; `lang=fa-IR` / `dir=rtl` everywhere; exactly one H1 per page (the old logbook-hub double H1 is gone).
+- JSON-LD parses on every page. `BreadcrumbList` + `Article`/`NewsArticle` on posts, `CollectionPage` + `ItemList` on all three hubs.
+- Zero broken internal links or missing/empty `alt` across 1,646 images.
+- Sitemap 269 URLs (227 articles / 23 logbook / 18 news / home); the 13 `/news/…-aaj-…` redirect stubs are `noindex` and excluded.
+- `robots.txt` Content-Signal + explicit allow for OAI-SearchBot / Claude-SearchBot / PerplexityBot / Googlebot / Bingbot.
+
+Changed (technical only — no published prose touched):
+
+1. **Image dimensions on every local `<img>`** — 1,644 of 1,646 tags had no `width`/`height`, so every photo caused layout shift. `_plugins/image_dimensions.rb` reads real dimensions from the file at build time (pure-Ruby JPEG/PNG/GIF/WebP header parse, cached) and stamps them into the rendered HTML. News and article bodies carry hand-written `<img>` tags, so this is the only way to fix all of them without editing 250+ published files. Added `height: auto` to the base `img` rule so the attributes stay a pure aspect-ratio hint.
+2. **`ImageObject` in JSON-LD** — page covers were bare URLs. They now carry width/height from the same measurement, which is what image rich results need. Also corrected jekyll-seo-tag's `"@type": "imageObject"` casing (schema.org type names are case-sensitive).
+3. **Atom feeds** — the site had none. `/feed.xml` (all sections, newest 50), `/logbook/feed.xml`, `/news/feed.xml`, `/articles/feed.xml`. Linked via `rel=alternate` in `<head>` (section feed added on section pages), listed in `llms.txt` and `robots.txt`. Summaries only, never full bodies.
+4. **IndexNow submission on ship** — `script/ship-live.sh --push` now posts the URLs that commit changed to `api.indexnow.org` (skip with `--no-indexnow`). It submits only changed URLs, never the whole sitemap. A rejected submission logs and does not fail a ship that already went live.
+5. **Ship script root files** — it never copied the IndexNow key file or the new feed, so the key could go stale and the feed would not reach `published`. Both are in the copy list now.
+6. **`preconnect` to `cdn.jsdelivr.net`** — live pages are assembled by Zaraz and every asset, including the LCP image, comes from jsDelivr, so the connection was opening cold.
+7. **`_headers`** — immutable one-year cache for `/assets/*` and correct `application/atom+xml` content type for the feeds.
+
+**Biggest find — the non-HTML files were never actually served.** On the live domain `/robots.txt`, `/sitemap.xml`, `/llms.txt`, `/webmcp-catalog.json` and the IndexNow key all answered `200 text/html` with GitHub's 2 KB placeholder page. The zone-wide rewrite sends every path to the origin root and Zaraz only rebuilds *pages*, so robots.txt was unparseable, the sitemap was undiscoverable, and IndexNow rejected submissions with `SiteVerificationNotCompleted`.
+
+Fixed with `script/cloudflare/deploy-seo-files.py`:
+
+- Nine Cloudflare redirect rules (302) send those paths to the same file on the `published` branch. Redirect rules evaluate against the original path, so they fire ahead of the rewrite — verified with a throwaway probe path before deploying. Target is raw.githubusercontent.com, not jsDelivr: jsDelivr labels XML correctly but caches a branch alias for hours, and a stale sitemap is worse than one labelled `text/plain`.
+- Cloudflare's **managed robots.txt** was answering `/robots.txt` at the edge ahead of any rule, and its file has **no `Sitemap:` directive** — that is how search engines find a sitemap without anyone submitting it. Turned it off and moved its training-crawler block list (Amazonbot, Applebot-Extended, Bytespider, CCBot, ClaudeBot, CloudflareBrowserRenderingCrawler, Google-Extended, GPTBot, meta-externalagent) into the repo's `robots.txt`, which also keeps `ai-input=yes` and the explicit allows for OAI-SearchBot / Claude-SearchBot / PerplexityBot. Trade-off: the block list no longer updates itself, so a new training crawler has to be added by hand. `--revert` hands it back to Cloudflare.
+- Edge compute would have been cleaner (a Snippet returning each file with its own content type) but the zone is Free plan and this repo's API token has neither Snippets nor Workers permission.
+
+Verified live: all nine files 200 `text/plain`, robots.txt is the repo's own with the Sitemap line, `/sitemap.xml` parses as XML with 269 URLs, and IndexNow now returns 202. Submitted all 269 URLs once — none had ever been submitted.
+
+Noted, deliberately not changed:
+
+- 217 article `<title>`s run past ~70 characters. They are the visible Persian headlines naming climbers, peak, and route; trimming them would be a content edit and Google rewrites overlong titles anyway.
+- No `srcset`/WebP derivatives. Live photos are already capped near 1080–1600px and generating variants would multiply the asset tree.
+- Pages themselves are still JS-dependent: `https://logbook.rocks/<anything>` returns the placeholder and Zaraz swaps in the real HTML. Googlebot renders JS, most other crawlers do not. Only unlocking GitHub Actions billing fixes that; nothing in this repo can.
+
+Sources: Google Search Central (SEO starter, sitemaps, structured data / image rich results, Core Web Vitals / CLS), Bing Webmaster Guidelines + IndexNow, schema.org `Article` / `ImageObject` / `CollectionPage`, RFC 4287 (Atom), llmstxt.org.
+
 
 

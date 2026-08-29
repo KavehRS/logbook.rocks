@@ -1,11 +1,13 @@
 ---
 layout: default
 ---
-{% if page.collection == 'logbook' or page.collection == 'news' %}
+{% if page.collection == 'logbook' or page.collection == 'news' or page.collection == 'articles' %}
 <nav class="crumbs" aria-label="مسیر صفحه" style="margin-bottom: 0.75rem;">
   <small>
     <a href="{{ '/' | relative_url }}">خانه</a>
-    · <a href="{% if page.collection == 'logbook' %}{{ '/logbook/' | relative_url }}{% else %}{{ '/news/' | relative_url }}{% endif %}">{% if page.collection == 'logbook' %}گزارش صعود{% else %}خبر کوهنوردی{% endif %}</a>
+    · {% if page.collection == 'logbook' %}<a href="{{ '/logbook/' | relative_url }}">گزارش صعود</a>
+    {% elsif page.collection == 'articles' %}<a href="{{ '/articles/' | relative_url }}">مقالات</a>
+    {% else %}<a href="{{ '/news/' | relative_url }}">خبر کوهنوردی</a>{% endif %}
   </small>
 </nav>
 {% endif %}
@@ -14,7 +16,7 @@ layout: default
 {% if page.date %}
 <p class="meta"><time datetime="{{ page.date | date_to_xmlschema }}"><small>{% include jalali-date.html date=page.date %}</small></time></p>
 {% endif %}
-{% unless page.collection == 'news' %}
+{% unless page.collection == 'news' or page.collection == 'articles' %}
 <p class="meta"><small>نویسنده: <a href="{{ '/' | relative_url }}">کاوه‌ رضائی‌شیراز</a></small></p>
 {% endunless %}
 {% assign default_img = site.logo | default: '/assets/images/logos/1/kavehrs.jpg' %}
