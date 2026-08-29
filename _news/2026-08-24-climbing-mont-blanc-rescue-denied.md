@@ -11,7 +11,7 @@ tags: [climbing.com, آلپ, مون‌بلان, ایمنی]
 source: Climbing.com
 source_url: https://www.climbing.com/news/32-climbers-denied-helicopter-rescue-on-mont-blanc/
 image:
-  path: https://cdn.climbing.com/wp-content/uploads/2026/08/mont-blanc-rescue-lead.png
+  path: /assets/news/2026-08-24-climbing-mont-blanc-rescue-denied/climbing-mont-blanc-rescue-lead.jpg
   alt: مون‌بلان هنگام غروب
 ---
 
@@ -20,7 +20,7 @@ image:
 منبع نوشته گزارش‌ها دربارهٔ زمان هشدار راهنماها و بستن پناهگاه با هم نمی‌خوانند. فیلیپ باتو راهنمای IFMGA به همان مجله گفته راهنماهای محلی رزرو را لغو کردند و جای خالی به آماتورها فروخته شد؛ از نظر او نپرداختن هزینهٔ نجات از جیب جامعه درست بوده، و اطلاع شرایط باید هنگام رزرو پناهگاه باشد.
 
 <figure class="source-photo">
-<img src="https://cdn.climbing.com/wp-content/uploads/2026/08/mont-blanc-rescue-1-scaled.png" alt="مسیر گوتر مون‌بلان و پناهگاه گوتر" loading="lazy" decoding="async">
+<img src="/assets/news/2026-08-24-climbing-mont-blanc-rescue-denied/climbing-mont-blanc-rescue-1-scaled.jpg" alt="مسیر گوتر مون‌بلان و پناهگاه گوتر" loading="lazy" decoding="async">
 <figcaption>مسیر گوتر مون‌بلان از فصلی پیش. عکس: Wikipedia / Creative Commons.</figcaption>
 </figure>
 

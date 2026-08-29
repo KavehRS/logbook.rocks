@@ -12,7 +12,7 @@ tags: [desnivel, اکسپدیشن, پامیر, لنین]
 source: Desnivel
 source_url: https://www.desnivel.com/expediciones/daniel-y-miguel-oury-al-lenin-7-134-m-tras-aclimatar-con-inteligencia-artificial/
 image:
-  path: https://www.desnivel.com/images/2026/08/miguel-cima-lenin.jpg
+  path: /assets/news/2026-08-28-desnivel-oury-lenin-ai-acclimatization/desnivel-miguel-cima-lenin.jpg
   alt: میگل اوری روی قلهٔ Lenin
   caption: "میگل روی قلهٔ Lenin. عکس: برادران اوری."
 ---
@@ -24,18 +24,18 @@ image:
 اکسپدیشن برادران اوری از ویور (Viver) در کاستیون را به‌خاطر یک تازگی مشخص دانسته: یکی از اولین اکسپدیشن‌های مستقل مستندی که تصمیم‌های بحرانی تطابق را یک سامانهٔ هوش مصنوعی زمان‌بندی کرده.
 
 <figure class="source-photo">
-<img src="https://www.desnivel.com/images/2026/08/miguel-cima-lenin.jpg" alt="میگل اوری روی قلهٔ Lenin" loading="lazy" decoding="async">
+<img src="/assets/news/2026-08-28-desnivel-oury-lenin-ai-acclimatization/desnivel-miguel-cima-lenin.jpg" alt="میگل اوری روی قلهٔ Lenin" loading="lazy" decoding="async">
 <figcaption>میگل روی قلهٔ Lenin. عکس: برادران اوری.</figcaption>
 </figure>
 
 در ماه‌های پیش و در خود صعود، دوقلوها پارامترهای زیست‌سنجی را دقیق پایش کردند: اشباع اکسیژن خون، نبض، تغییرپذیری ضربان قلب و شاخص‌های بازیابی، با ساعت هوشمند. این اندازه‌گیری‌ها هر شب انجام شد؛ هم در تمرین‌های قبلی داخل اتاقک نورموباریک، هم در چادرهای کمپ ارتفاع.
 
 <figure class="source-photo">
-<img src="https://www.desnivel.com/images/2026/08/seguimiento-vfc-y-ppm-nocturna-750x440.jpg" alt="پایش شبانهٔ تغییرپذیری ضربان قلب و نبض" loading="lazy" decoding="async">
+<img src="/assets/news/2026-08-28-desnivel-oury-lenin-ai-acclimatization/desnivel-seguimiento-vfc-y-ppm-nocturna-750x440.jpg" alt="پایش شبانهٔ تغییرپذیری ضربان قلب و نبض" loading="lazy" decoding="async">
 <figcaption>پایش تغییرپذیری ضربان قلب و نبض شبانه. منبع: برادران اوری.</figcaption>
 </figure>
 <figure class="source-photo">
-<img src="https://www.desnivel.com/images/2026/08/grafica-ascenso-lenin.jpg" alt="نمودار صعود Lenin" loading="lazy" decoding="async">
+<img src="/assets/news/2026-08-28-desnivel-oury-lenin-ai-acclimatization/desnivel-grafica-ascenso-lenin.jpg" alt="نمودار صعود Lenin" loading="lazy" decoding="async">
 <figcaption>نمودار صعود Lenin. منبع: برادران اوری.</figcaption>
 </figure>
 
@@ -44,7 +44,7 @@ image:
 بعد از تمام شدن تطابق، شنبه ۱۰ مرداد حمله به قله را شروع کردند. میگل از ۶۱۰۰ متر کمپ ۳ تا ۷۱۳۴ متر قله رفت و در هفت ساعت و نیم برگشت؛ از همهٔ کسانی که در مسیر دید جلو زد. میگل اوری گفته: «ماه‌ها هوش مصنوعی گفت کی بالا برویم، کی پایین بیاییم و کی استراحت کنیم. شنبه بدن فقط جواب داد.»
 
 <figure class="source-photo">
-<img src="https://www.desnivel.com/images/2026/08/pico-yukhin-5.130-m-aclimatacion.jpg" alt="تطابق روی Pico Yukhin" loading="lazy" decoding="async">
+<img src="/assets/news/2026-08-28-desnivel-oury-lenin-ai-acclimatization/desnivel-pico-yukhin-5.130-m-aclimatacion.jpg" alt="تطابق روی Pico Yukhin" loading="lazy" decoding="async">
 <figcaption>تطابق روی Pico Yukhin (۵۱۳۰ متر). عکس: برادران اوری.</figcaption>
 </figure>
 
@@ -55,7 +55,7 @@ image:
 منبع این تجربه را باز کردن بحث دانسته که چه سهمی از تصمیم را حاضریم در محیطی که اشتباه عواقب سنگین دارد به هوش مصنوعی بسپاریم.
 
 <figure class="source-photo">
-<img src="https://www.desnivel.com/images/2026/08/inicio-del-glaciar.jpg" alt="شروع یخچال نزدیک Lenin" loading="lazy" decoding="async">
+<img src="/assets/news/2026-08-28-desnivel-oury-lenin-ai-acclimatization/desnivel-inicio-del-glaciar.jpg" alt="شروع یخچال نزدیک Lenin" loading="lazy" decoding="async">
 <figcaption>شروع یخچال. عکس: برادران اوری.</figcaption>
 </figure>
 

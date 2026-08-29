@@ -3,3 +3,20 @@
   Referrer-Policy: strict-origin-when-cross-origin
   Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
   X-Frame-Options: SAMEORIGIN
+
+# Photo and stylesheet filenames change when their contents change, so a long
+# immutable cache costs nothing and keeps repeat visits off the network.
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/feed.xml
+  Content-Type: application/atom+xml; charset=utf-8
+
+/logbook/feed.xml
+  Content-Type: application/atom+xml; charset=utf-8
+
+/news/feed.xml
+  Content-Type: application/atom+xml; charset=utf-8
+
+/articles/feed.xml
+  Content-Type: application/atom+xml; charset=utf-8

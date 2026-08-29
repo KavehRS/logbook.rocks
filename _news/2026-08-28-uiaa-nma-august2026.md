@@ -14,7 +14,7 @@ related:
   - title: ثبت‌نام سومین سمپوزیوم ایمنی کوهستان UIAA در نپال باز شد
     url: /news/2026-08-20-uiaa-mountain-safety-symposium-nepal/
 image:
-  path: https://www.theuiaa.org/wp-content/uploads/2026/08/Nepal-NMA-Aug26-5.jpg
+  path: /assets/news/2026-08-28-uiaa-nma-august2026/uiaa-Nepal-NMA-Aug26-5.jpg
   alt: عکس همراه نامهٔ UIAA به انجمن کوهنوردی نپال
   width: 1200
   height: 800

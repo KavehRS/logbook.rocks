@@ -1,10 +1,15 @@
 {% comment %}
-Homepage teasers: four newest logbook reports and four newest world-news items.
-Do not hardcode titles in index.md — this include is the source of truth.
-Both columns always render (news may show an empty-state line).
+Homepage teasers: four newest logbook reports, then the five newest items from
+the news hub — اخبار and مقالات merged and sorted by date, so whichever section
+published most recently shows up. Collection-driven on purpose: never hardcode
+titles in index.md, and never hand-edit this list after a publish.
 {% endcomment %}
 {% assign latest_logbook = site.logbook | sort: 'date' | reverse %}
-{% assign latest_news = site.news | sort: 'date' | reverse %}
+{% assign hub_items = site.news | where_exp: "post", "post.layout != 'redirect'" %}
+{% if site.articles %}
+  {% assign hub_items = hub_items | concat: site.articles %}
+{% endif %}
+{% assign latest_hub = hub_items | sort: 'date' | reverse %}
 <div class="home-columns">
   <div class="home-column">
     <h2><a href="{{ '/logbook/' | relative_url }}">گزارش صعود</a></h2>
@@ -15,12 +20,12 @@ Both columns always render (news may show an empty-state line).
     </ul>
   </div>
   <div class="home-column">
-    <h2><a href="{{ '/news/' | relative_url }}">خبر کوهنوردی</a></h2>
-    {% if latest_news.size == 0 %}
+    <h2><a href="{{ '/news/' | relative_url }}">خبر کوهنوردی</a> · <a href="{{ '/articles/' | relative_url }}">مقالات</a></h2>
+    {% if latest_hub.size == 0 %}
     <p>هنوز خبری منتشر نشده است.</p>
     {% else %}
     <ul>
-      {% for post in latest_news limit: 4 %}
+      {% for post in latest_hub limit: 5 %}
       <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
       {% endfor %}
     </ul>

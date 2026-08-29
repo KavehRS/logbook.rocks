@@ -24,10 +24,10 @@ Schedule is GMT/UTC only: 00:00, 06:00, 12:00, 18:00 (hour 24 = 00:00). Cron: 0 
 On each fire, do the work yourself. Follow `.cursor/skills/news-wire/SKILL.md` exactly. Every GMT slot does all five jobs, in order:
 
 1. Complete Persian translation of every new, non-duplicate item from the listed sources since `last_run_utc` (first series: last 1 hour). Never summarize.
-2. Next two remaining AAJ 2026 notes per GMT slot from `_data/aaj-backfill.yml` (oldest first). If slots were missed, publish two for each missed slot. Never dump the whole remaining queue. No 2025.
-3. Re-check every live `_news/` translation against its `source_url`; fix errors and complete leftover short items.
+2. After the 2026 volume dump: only **new** publication-year-2026 AAJ listing items into `_articles/` (dated 1 Oct 2026). No 2025. No ANAC / book reviews / in memoriam.
+3. Re-check every live `_news/` and `_articles/` translation against its `source_url`; fix errors and complete leftover short items.
 4. Whole-site SEO: `.cursor/skills/daily-seo-audit/SKILL.md` (same branch; log `_seo/daily-log.md`).
-5. `jekyll build`, PR, overlay changed HTML onto `published` without `--delete`, confirm the live export has the pages.
+5. PR, then `script/ship-live.sh --push --purge`. It builds, overlays `published` without `--delete`, and aborts unless the homepage teasers lead with the newest item. The homepage always refreshes: `/` shows the four newest logbook reports plus the five newest hub items with اخبار and مقالات merged by date.
 
 Fetch from only:
 - https://www.worldclimbing.com
@@ -43,11 +43,11 @@ Fetch from only:
 
 Every source: complete Persian translation of the article (every narrative paragraph and fact), not a two-sentence stub, not an English paste. Body = only the source text. Do not write what you did or didn’t do.
 
-Skip URLs in `_data/news-wire-seen.yml` when looking for *new* items (job 3 still re-opens published URLs). Do not invent events, dates, names, grades, or live-event results without a source article. If there is no local photo, use the source article’s own photo URLs. Do not publish verbatim English. Do not cover child-sexual-abuse stories.
+Skip URLs in `_data/news-wire-seen.yml` when looking for *new* items (job 3 still re-opens published URLs). Do not invent events, dates, names, grades, or live-event results without a source article. Download every source photo into `assets/news/<slug>/` or `assets/articles/<slug>/` (one folder per item, named like the post file stem), commit it, and reference the local copy — a published page must never load a photo from the source host. Publish a standardized copy (max 1600px, sane quality) and archive any unusually high-quality original in `<slug>/_originals/`, which Jekyll never publishes. Do not publish verbatim English. Do not cover child-sexual-abuse stories.
 
 Always update `_data/news-wire-state.yml` with last_run_utc.
 
-If jobs 1–4 changed anything: branch `cursor/news-wire-<stamp>-4b4e`, `bundle exec jekyll build`, open PR, overlay `published` until the live export has the work.
+If jobs 1–4 changed anything: branch `cursor/news-wire-<stamp>-4b4e`, open PR, then `script/ship-live.sh --push --purge` until the live export has the work.
 If jobs 1–4 changed nothing: no PR; log the empty window plus the re-check and SEO pass; still update news-wire-state.yml.
 Never commit secrets.
 ```

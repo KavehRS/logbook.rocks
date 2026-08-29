@@ -46,8 +46,8 @@
   function allowedPath(path, catalog) {
     if (!path || typeof path !== 'string' || path.charAt(0) !== '/') return false;
     if (path.indexOf('//') !== -1 || path.indexOf('\\') !== -1) return false;
-    if (path === '/' || path === '/logbook/' || path === '/news/') return true;
-    var lists = (catalog.logbook || []).concat(catalog.news || []);
+    if (path === '/' || path === '/logbook/' || path === '/news/' || path === '/articles/') return true;
+    var lists = (catalog.logbook || []).concat(catalog.news || []).concat(catalog.articles || []);
     for (var i = 0; i < lists.length; i++) {
       if (lists[i].url === path) return true;
     }
@@ -61,11 +61,13 @@
       kind:
         location.pathname.indexOf('/logbook/') === 0
           ? 'ascent_report'
-          : location.pathname.indexOf('/news/') === 0
-            ? 'news'
-            : location.pathname === '/'
-              ? 'home'
-              : 'page'
+          : location.pathname.indexOf('/articles/') === 0
+            ? 'article'
+            : location.pathname.indexOf('/news/') === 0
+              ? 'news'
+              : location.pathname === '/'
+                ? 'home'
+                : 'page'
     };
   }
 
@@ -111,9 +113,25 @@
     });
 
     await ctx.registerTool({
+      name: 'list_articles',
+      description:
+        'List published journal translations (مقالات) on logbook.rocks. Optional query filters by title or description.',
+      inputSchema: {
+        type: 'object',
+        properties: {
+          query: { type: 'string', description: 'Optional search text in Persian or English' }
+        }
+      },
+      annotations: { readOnlyHint: true },
+      execute: async function (args) {
+        return JSON.stringify(filterItems(catalog.articles || [], args && args.query));
+      }
+    });
+
+    await ctx.registerTool({
       name: 'search_site',
       description:
-        'Search published ascent reports and news on logbook.rocks by title, description, tag, or category.',
+        'Search published ascent reports, news, and articles on logbook.rocks by title, description, tag, or category.',
       inputSchema: {
         type: 'object',
         properties: {
@@ -126,7 +144,8 @@
         var query = args && args.query;
         return JSON.stringify({
           logbook: filterItems(catalog.logbook || [], query),
-          news: filterItems(catalog.news || [], query)
+          news: filterItems(catalog.news || [], query),
+          articles: filterItems(catalog.articles || [], query)
         });
       }
     });
@@ -166,8 +185,25 @@
     });
 
     await ctx.registerTool({
+      name: 'get_article',
+      description: 'Return one published journal translation (مقاله) by its site path, such as /articles/2026-10-01-example/.',
+      inputSchema: {
+        type: 'object',
+        properties: {
+          path: { type: 'string', description: 'Catalog URL path beginning with /articles/' }
+        },
+        required: ['path']
+      },
+      annotations: { readOnlyHint: true },
+      execute: async function (args) {
+        var item = findByPath(catalog.articles || [], args && args.path);
+        return item ? JSON.stringify(item) : 'Not found: path is not a published article.';
+      }
+    });
+
+    await ctx.registerTool({
       name: 'get_current_page',
-      description: 'Return the current page path, title, and kind (home, ascent_report, news, or page).',
+      description: 'Return the current page path, title, and kind (home, ascent_report, news, article, or page).',
       inputSchema: { type: 'object', properties: {} },
       annotations: { readOnlyHint: true },
       execute: async function () {
@@ -178,13 +214,13 @@
     await ctx.registerTool({
       name: 'open_page',
       description:
-        'Open a same-site page: /, /logbook/, /news/, or a published report/news URL from the catalog.',
+        'Open a same-site page: /, /logbook/, /news/, /articles/, or a published report/news/article URL from the catalog.',
       inputSchema: {
         type: 'object',
         properties: {
           path: {
             type: 'string',
-            description: 'Site path such as /, /logbook/, /news/, or a catalog URL'
+            description: 'Site path such as /, /logbook/, /news/, /articles/, or a catalog URL'
           }
         },
         required: ['path']

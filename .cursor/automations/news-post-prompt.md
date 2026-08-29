@@ -33,7 +33,7 @@ Mission: create or update Persian اخبار in `_news/` as complete translation
 1. Confirm facts from the user only: what happened, Jalali date, optional link to an existing logbook report.
 2. Create `_news/YYYY-MM-DD-<slug>.md` with lang: fa-IR, dir_attr: rtl, unique description, date, tags.
 3. Write as the climber (من). Body = only the source, in Persian. Complete translation, not a two-sentence stub, not agent process notes. Optional link to `/logbook/<slug>/`.
-4. Photos: local files in assets/news/<exact-url-slug>/ when they exist; otherwise image: and in-body figures from the source article’s own photo URLs.
+4. Photos: always self-hosted. Download every source photo into assets/news/<exact-url-slug>/ (one folder per news item, named like the post file stem), commit it, and point image: and each in-body figure at /assets/news/<slug>/<file>. Never leave a published page loading a photo from the source host. Publish a standardized copy (max 1600px, sane quality); when the source is unusually high quality, keep the untouched original in assets/news/<slug>/_originals/ as well — Jekyll skips _-prefixed folders, so it stays in git and out of the live site.
 5. Hub /news/ is chronological. Related UI is ONLY «اخبار مرتبط :» + flat list.
 6. Reader-facing UI dates are Jalali via _includes/jalali-date.html.
 
@@ -43,6 +43,7 @@ Mission: create or update Persian اخبار in `_news/` as complete translation
 2. bundle exec jekyll build must succeed
 3. Confirm _drafts/ and .cursor/ are not published into _site/
 4. Open PR and merge to main after a clean verified build
+5. Ship the live export with script/ship-live.sh --push --purge. It refreshes the homepage too: / shows the four newest logbook reports plus the five newest hub items with اخبار and مقالات merged by date, and the script aborts if the homepage does not lead with the newest item.
 
 Never invent news. Never commit secrets.
 ```

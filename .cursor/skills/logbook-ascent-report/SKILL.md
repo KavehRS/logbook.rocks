@@ -43,9 +43,11 @@ Use `_drafts/samples/kahar-peak-report-framework-sample.md` only as structure �
 6. `assets/mount/logbook/<exact-url-slug>/` for all images
 7. Narrative outline → post-climb completion when user provides details. Program length from user only (Kahar = one-day ۱۶ مرداد ۱۴۰۵ unless changed).
 8. Hub `/logbook/` chronological; related UI = only `گزارش‌های مرتبط :` + flat list
-9. Homepage `/` is about («درباره من») plus four latest teasers. Archive is `/logbook/` (climbing news is `/news/`, title خبر کوهنوردی)
+9. Homepage `/` is about («درباره من») plus four newest logbook teasers and five newest hub teasers (اخبار + مقالات merged by date). Archive is `/logbook/` (climbing news is `/news/`, title خبر کوهنوردی)
 10. Never publish agent notes in live HTML
 11. Reader-facing UI dates Jalali (`_includes/jalali-date.html`)
+12. Team lines name the people the owner names; unnamed companions stay neutral («سه نفر همراه»). Never describe participants by employer, institution, or nationality
+13. `git merge origin/main` before shipping — the owner edits published reports there, and an older branch restores text they removed. Ship with `script/ship-live.sh --push --purge`, which also aborts on anything listed in `.cursor/forbidden-phrases.txt`
 
 ## Scheduled weather runs (automatic when billing enabled)
 

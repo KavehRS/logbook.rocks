@@ -11,7 +11,7 @@ tags: [desnivel, سنگ‌نوردی, اسپانیا, چندطوله]
 source: Desnivel
 source_url: https://www.desnivel.com/escalada-roca/xavi-sabater-primera-repeticion-en-libre-de-donec-perficiam-una-de-las-rutas-mas-duras-de-montrebei/
 image:
-  path: https://www.desnivel.com/images/2026/08/whatsapp-image-2026-08-20-at-19.36.29.jpeg
+  path: /assets/news/2026-08-25-desnivel-xavi-sabater-donec-perficiam/desnivel-whatsapp-image-2026-08-20-at-19.36.29.jpg
   alt: شاوی ساباتر در Donec Perficiam
   caption: "شاوی ساباتر در «Donec Perficiam». عکس: Jaime Merino."
 ---
@@ -21,23 +21,23 @@ image:
 Desnivel گشایش را از کارلس براسکو و ایساک کورتس بین ۲۰۱۲ و ۲۰۱۸ نوشته. برای سخت‌ترین طول (چهارم) ادو 8b+/c پیشنهاد کرده. ساباتر همان مسیر را از Mentre Hi Hagi Lum (8b+) سخت‌تر نمی‌داند و بحث درجه را به تکرارهای بعدی واگذار کرده.
 
 <figure class="source-photo">
-<img src="https://www.desnivel.com/images/2026/08/whatsapp-image-2026-08-20-at-19.35.24-7.jpeg" alt="در راه دومین صعود آزاد Donec Perficiam" loading="lazy" decoding="async">
+<img src="/assets/news/2026-08-25-desnivel-xavi-sabater-donec-perficiam/desnivel-whatsapp-image-2026-08-20-at-19.35.24-7.jpg" alt="در راه دومین صعود آزاد Donec Perficiam" loading="lazy" decoding="async">
 <figcaption>در راه دومین صعود «Donec Perficiam». عکس: Jaime Merino.</figcaption>
 </figure>
 <figure class="source-photo">
-<img src="https://www.desnivel.com/images/2026/08/whatsapp-image-2026-08-20-at-19.35.24-1.jpeg" alt="شاوی ساباتر در Donec Perficiam" loading="lazy" decoding="async">
+<img src="/assets/news/2026-08-25-desnivel-xavi-sabater-donec-perficiam/desnivel-whatsapp-image-2026-08-20-at-19.35.24-1.jpg" alt="شاوی ساباتر در Donec Perficiam" loading="lazy" decoding="async">
 <figcaption>شاوی ساباتر در «Donec Perficiam». عکس: Jaime Merino.</figcaption>
 </figure>
 <figure class="source-photo">
-<img src="https://www.desnivel.com/images/2026/08/whatsapp-image-2026-08-20-at-19.35.23-3.jpeg" alt="شاوی ساباتر در Donec Perficiam" loading="lazy" decoding="async">
+<img src="/assets/news/2026-08-25-desnivel-xavi-sabater-donec-perficiam/desnivel-whatsapp-image-2026-08-20-at-19.35.23-3.jpg" alt="شاوی ساباتر در Donec Perficiam" loading="lazy" decoding="async">
 <figcaption>شاوی ساباتر در «Donec Perficiam». عکس: Jaime Merino.</figcaption>
 </figure>
 <figure class="source-photo">
-<img src="https://www.desnivel.com/images/2026/08/whatsapp-image-2026-08-20-at-19.35.25-1.jpeg" alt="دومین صعود آزاد Donec Perficiam" loading="lazy" decoding="async">
+<img src="/assets/news/2026-08-25-desnivel-xavi-sabater-donec-perficiam/desnivel-whatsapp-image-2026-08-20-at-19.35.25-1.jpg" alt="دومین صعود آزاد Donec Perficiam" loading="lazy" decoding="async">
 <figcaption>هنگام دومین صعود آزاد «Donec Perficiam». عکس: Jaime Merino.</figcaption>
 </figure>
 <figure class="source-photo">
-<img src="https://www.desnivel.com/images/2026/08/whatsapp-image-2026-08-20-at-19.35.22.jpeg" alt="دومین صعود آزاد Donec Perficiam" loading="lazy" decoding="async">
+<img src="/assets/news/2026-08-25-desnivel-xavi-sabater-donec-perficiam/desnivel-whatsapp-image-2026-08-20-at-19.35.22.jpg" alt="دومین صعود آزاد Donec Perficiam" loading="lazy" decoding="async">
 <figcaption>دومین صعود آزاد «Donec Perficiam». عکس: Jaime Merino.</figcaption>
 </figure>
 

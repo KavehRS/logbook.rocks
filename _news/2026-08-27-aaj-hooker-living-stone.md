@@ -1,47 +1,7 @@
 ---
-layout: post
-title: جانی شافر و ویلسون کاتبرث Northwest Passage را آزاد کردند و The Living Stone را گشودند
-lang: fa-IR
-dir_attr: rtl
-description: >-
-  AAJ ۲۰۲۶ از زبان ویلسون کاتبرث: با جانی شافر مسیر Northwest Passage را آزاد
-  کردند و The Living Stone (۱۸۰۰ فوت، ۱۰ طول، 5.13 R) را روی رخ شمال‌شرقی
-  Mt. Hooker گشودند.
-date: 2026-08-27 21:32:00 +0330
-tags: [aaj, آلپینیسم, وایومینگ, ویند ریور]
-source: American Alpine Journal
-source_url: https://publications.americanalpineclub.org/articles/13201217381
-aaj_id: "13201217381"
-related:
-  - title: ماکسیمیلیان بارلرین Children of the Sun را روی رخ شمال‌شرقی The Monolith آزاد کرد
-    url: /news/2026-08-27-aaj-monolith-children-of-the-sun/
-image:
-  path: https://aac-publications.s3.amazonaws.com/articles/aaj-13201217381-1779654146.jpeg
-  alt: ویلسون کاتبرث سرطناب طول پنج The Living Stone
-  caption: "ویلسون کاتبرث سرطناب طول پنج The Living Stone روی رخ شمال‌شرقی Mt. Hooker. سه سفر عمیق به Wind River Range طول کشید تا مسیر ده‌طوله گشوده و آزاد شود. عکس: Leo Houlding."
+layout: redirect
+redirect_to: /articles/2026-10-01-aaj-hooker-living-stone/
+sitemap: false
+noindex: true
+title: انتقال
 ---
-
-جلد ۲۰۲۶ آمریکن آلپاین ژورنال از زبان ویلسون کاتبرث (Wilson Cutbirth) نوشته جانی شافر (Jonny Schaffer) و او هر دو وقت زیادی روی Mt. Hooker گذاشته‌اند؛ جانی بیشتر مسیر آزاد جدید می‌گشوده و او مسیرهای موجود دیواره را می‌رفته. سال ۲۰۲۴ یک سفر ۱۲روزه با دو هدف داشتند. اول آزاد کردن Northwest Passage (Hokanson-Spangler، گشوده با VI 5.9 A3 در ۱۹۹۸) که جانی سال قبل رویش وقت گذاشته بود. [مجله این مسیر ۱۲طوله را خط مستقیم رخ شمال‌غربی Hooker دانسته.] روز بعد از رسیدن، ۱۰ مرداد ۱۴۰۳ (۳۱ ژوئیهٔ ۲۰۲۴) تا نقطهٔ بالای قبلی جانی رفتند و ادامه دادند، بقیهٔ طول‌ها را آنسایت تا قله؛ بعد از نیمه‌شب تمام کردند. نیمهٔ پایین سخت بود، با چند طول پایدار در محدودهٔ 5.12+ تا 5.13-.
-
-بعد هدف دوم: خط آزاد احتمالی روی رخ شمال‌شرقی، چپ Gambling in the Winds (5.12+، Birdwell-Huey-Kennedy-Magro، آزادشده ۲۰۱۹). شکاف ناپیوسته، اسلب خالی سنگ یشمی Hooker، و سقف خیلی بزرگی که مایل به پایین نیمهٔ پایین دیواره را می‌برد، شانس گذر آزاد را کم می‌کرد. اما به‌اندازهٔ کافی وقت روی خواندن سنگ Hooker گذاشته بودند که ریسک بسته شدن را به پاداشش می‌ارزید.
-
-از ۱۲ تا ۲۱ مرداد (۲ تا ۱۱ اوت) مسیر را از زمین بالا کار کردند، بدون نردبان رکابی؛ هر حمایت را با ذهنیت آنسایت ترک کردند: شکاف و درز را دنبال کردند، جایی که می‌شد آزاد رفتند، و وقتی حمایت سوراخ‌دستی لازم شد از هوک آویزان شدند. دو طول بالاتر به طاقچهٔ حمایت زیر سقف رسیدند، پشت ۳۵ متر سنگ‌نوردی رخ تند. مسیری از پولک هلالی، دایک پیچ‌پیچ و چند chicken head به شکاف لای‌بک می‌رسید که هرچه به سقف نزدیک می‌شد تندتر قوس می‌گرفت.
-
-جانی راه افتاد، زمین تند با حمایت کم را آنسایت رفت، chicken head را با طناب حلقه کرد و از هوک سوراخ دستی زد تا به سقف مشخص برسد. چند بار سرطناب را عوض کردند، بتا درآوردند و جای بولت را فهمیدند، تا جانی لبهٔ سقف را با 5.13 سفت کشید و حمایت را درست بالای آن زد.
-
-امیدوار بودند، اما بیشتر دیواره هنوز بالای سر بود. طول جسور 5.10 را که Heart نامیدند رد کردند، بعد یک طول ماجراجوی کامل ۷۰ متری 5.12+ تا طاقچهٔ Der Minor. بالاتر دیواره خالی بود، با ویژگی قابل‌صعود کم در جهتی که می‌خواستند. چند گزینه را امتحان کردند و شکست خوردند، بعد به کرنر کوچک stem هودینی با دو بولت خیلی قدیمی متعهد شدند؛ فکر می‌کنند این‌ها از مسیر امدادی قدیمی Year of the Horse باشد (همان Northern Lights، VI 5.10 A3، Dunkak-Maus-Wadman، ۱۹۹۸). دو طول بلند ماجراجوی دیگر آن‌ها را به طاقچهٔ Der Major رساند، دو طول زیر قله.
-
-سال ۲۰۲۵ دو بار برگشتند. سفر اول چهار روز روی آزاد کردن باقی‌ماندهٔ طول‌های کراکس کار کردند و خط را تا دو طول پایانی به بالا بردند. سرانجام ۴ شهریور ۱۴۰۴ (۲۶ اوت ۲۰۲۵) برس و چکش را گذاشتند و کفش ارسال و رک سبک برداشتند. بعد از چند روز خیس، پنجرهٔ کوتاه هوا رسید. آزاد کردن کل مسیر یک‌نفس مثل کندن جلیقهٔ وزنه بود: آسان‌ترین روز کل فرآیند. The Living Stone (۱۸۰۰ فوت، ۱۰ طول، 5.13 R) را افزودنی آزاد خوبی به یکی از دیواره‌های دورافتادهٔ شاخص آمریکا دانسته.
-
-<figure class="source-photo">
-<img src="https://aac-publications.s3.amazonaws.com/articles/aaj-13201217381-1779654121.jpeg" alt="ویلسون کاتبرث روی سقف کراکس The Living Stone" loading="lazy" decoding="async">
-<figcaption>ویلسون کاتبرث از سقف کراکس The Living Stone روی Mt. Hooker بالا می‌کشد. عکس: Leo Houlding.</figcaption>
-</figure>
-<figure class="source-photo">
-<img src="https://aac-publications.s3.amazonaws.com/articles/aaj-13201217381-1779654146.jpeg" alt="ویلسون کاتبرث سرطناب طول پنج The Living Stone" loading="lazy" decoding="async">
-<figcaption>ویلسون کاتبرث سرطناب طول پنج The Living Stone روی رخ شمال‌شرقی Mt. Hooker. سه سفر عمیق به Wind River Range طول کشید تا مسیر ده‌طوله گشوده و آزاد شود. عکس: Leo Houlding.</figcaption>
-</figure>
-<figure class="source-photo">
-<img src="https://aac-publications.s3.amazonaws.com/articles/aaj-13201217381-1779654176.jpeg" alt="رخ شمال‌شرقی Mt. Hooker با The Living Stone و مسیرهای مجاور" loading="lazy" decoding="async">
-<figcaption>رخ شمال‌شرقی Mt. Hooker، مسیر جدید The Living Stone نسبت به دو مسیر تازهٔ The Optimist و Gambling in the Winds. مسیرهای دیگر نشان داده نشده. عکس: مجموعهٔ Wilson Cutbirth.</figcaption>
-</figure>

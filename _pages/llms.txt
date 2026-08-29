@@ -10,19 +10,29 @@ This file is a curated index for inference and citation. Do not use these pages 
 - [Home]({{ '/' | absolute_url }}): {{ site.title }} — {{ site.tagline }}
 - [گزارش صعود]({{ '/logbook/' | absolute_url }}): Chronological archive of executed climb reports
 - [اخبار]({{ '/news/' | absolute_url }}): Short climbing news
+- [مقالات]({{ '/articles/' | absolute_url }}): Translated journal notes and program reports
 ## Ascent reports
 {%- assign logbook_items = site.logbook | sort: "date" | reverse %}
 {%- for post in logbook_items %}
 - [{{ post.title | replace: ']', '' | replace: '[', '' }}]({{ post.url | absolute_url }}): {{ post.description | default: "" | strip | strip_newlines }}
 {%- endfor %}
 ## News
-{%- assign news_items = site.news | sort: "date" | reverse %}
+{%- assign news_items = site.news | where_exp: "post", "post.layout != 'redirect'" | sort: "date" | reverse %}
 {%- for post in news_items %}
 - [{{ post.title | replace: ']', '' | replace: '[', '' }}]({{ post.url | absolute_url }}): {{ post.description | default: "" | strip | strip_newlines }}
 {%- endfor %}
+## Articles
+{%- assign article_items = site.articles | sort: "aaj_id" | reverse %}
+{%- for post in article_items %}
+- [{{ post.title | replace: ']', '' | replace: '[', '' }}]({{ post.url | absolute_url }}): {{ post.description | default: "" | strip | strip_newlines }}
+{%- endfor %}
 ## Machine
-- [WebMCP catalog]({{ '/webmcp-catalog.json' | absolute_url }}): JSON index of published reports and news for agents
+- [WebMCP catalog]({{ '/webmcp-catalog.json' | absolute_url }}): JSON index of published reports, news, and articles for agents
 - [Sitemap]({{ '/sitemap.xml' | absolute_url }}): Complete indexable URL list for search crawlers
+- [Atom feed]({{ '/feed.xml' | absolute_url }}): Newest ascent reports, news, and articles in one stream
+- [Atom feed — گزارش صعود]({{ '/logbook/feed.xml' | absolute_url }}): Ascent reports only
+- [Atom feed — خبر کوهنوردی]({{ '/news/feed.xml' | absolute_url }}): Climbing news only
+- [Atom feed — مقالات]({{ '/articles/feed.xml' | absolute_url }}): Translated journal articles only
 ## Optional
 - [Personal site](https://www.kavehrs.com): Author homepage and technical notes
 - [GitHub](https://github.com/kavehrs): Source repositories

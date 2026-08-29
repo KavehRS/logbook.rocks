@@ -11,23 +11,23 @@ tags: [world-climbing, سنگ‌نوردی, سرعت, گفتگو]
 source: World Climbing
 source_url: https://www.ifsc-climbing.org/news/conversation-with-erik-noya-cardona
 image:
-  path: https://images.ifsc-climbing.org/ifsc/image/private/t_ratio1_1-size60-f_webp-c_fill/prd/jlx1uvrhqri884vuesup
+  path: /assets/news/2026-08-19-world-climbing-erik-noya-cardona/ifsc-jlx1uvrhqri884vuesup.webp
   alt: اریک نویا کاردونا
 ---
 
 World Climbing در ۲۸ مرداد ۱۴۰۵ (۱۹ اوت ۲۰۲۶) گفتگویی با اریک نویا کاردونا، سنگ‌نورد سرعت، منتشر کرد؛ با عنوان فرعی «شاید شادترین مرد مدار بین‌المللی». نویسندهٔ مجموعهٔ «Conversation with…» نوشته روش کارش همیشه یکی است: کسی را برای گفتگو پیدا می‌کند، حرف می‌زند، می‌نویسد، برای تأیید می‌فرستد و بعد می‌گذارد. این یکی از ریتم افتاد و خیلی طول کشید. متن گفتگو نزدیک به سال‌ها، نه ماه‌ها، روی لپ‌تاپش مانده بود و هر بار اریک را در مسابقه می‌دید عذاب وجدان می‌گرفت. نوشته اگر سنگ‌نوردی، به‌خصوص سرعت، دیده باشید آن اسپانیایی قدبلند و همیشه خندان را می‌شناسید؛ برای همین هم خواست این گفتگو را تمام کند و هم از اریک برای تأخیر عذر خواست.
 
 <figure class="source-photo">
-<img src="https://images.ifsc-climbing.org/ifsc/image/private/t_ratio3_2-size60-f_webp-c_fill/prd/btzzsw7rjwsvo9vhzxwv" alt="اریک نویا کاردونا" loading="lazy" decoding="async">
+<img src="/assets/news/2026-08-19-world-climbing-erik-noya-cardona/ifsc-btzzsw7rjwsvo9vhzxwv.jpg" alt="اریک نویا کاردونا" loading="lazy" decoding="async">
 </figure>
 <figure class="source-photo">
-<img src="https://images.ifsc-climbing.org/ifsc/image/private/t_ratio16_9-size60-f_webp-c_fill/prd/uy3cajhc8rrah3m4rsnq" alt="اریک نویا کاردونا" loading="lazy" decoding="async">
+<img src="/assets/news/2026-08-19-world-climbing-erik-noya-cardona/ifsc-uy3cajhc8rrah3m4rsnq.webp" alt="اریک نویا کاردونا" loading="lazy" decoding="async">
 </figure>
 <figure class="source-photo">
-<img src="https://images.ifsc-climbing.org/ifsc/image/private/t_ratio16_9-size60-f_webp-c_fill/prd/kwd96rrsrf90jh8ikumh" alt="اریک نویا کاردونا" loading="lazy" decoding="async">
+<img src="/assets/news/2026-08-19-world-climbing-erik-noya-cardona/ifsc-kwd96rrsrf90jh8ikumh.webp" alt="اریک نویا کاردونا" loading="lazy" decoding="async">
 </figure>
 <figure class="source-photo">
-<img src="https://images.ifsc-climbing.org/ifsc/image/private/t_ratio16_9-size60-f_webp-c_fill/prd/ovndte5fqzic4wskeqpk" alt="اریک نویا کاردونا" loading="lazy" decoding="async">
+<img src="/assets/news/2026-08-19-world-climbing-erik-noya-cardona/ifsc-ovndte5fqzic4wskeqpk.webp" alt="اریک نویا کاردونا" loading="lazy" decoding="async">
 </figure>
 
 اریک اسپانیایی است و ونزوئلایی هم هست. گفتگو از همین شروع می‌شود.

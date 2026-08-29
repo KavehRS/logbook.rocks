@@ -11,7 +11,7 @@ tags: [uiaa, ایمنی, نپال, کوهنوردی]
 source: UIAA
 source_url: https://www.theuiaa.org/registration-open-for-third-uiaa-mountain-safety-symposium/
 image:
-  path: https://www.theuiaa.org/wp-content/uploads/2026/08/MSS-2026-Preview-UIAA.jpg
+  path: /assets/news/2026-08-20-uiaa-mountain-safety-symposium-nepal/uiaa-MSS-2026-Preview-UIAA.jpg
   alt: سومین سمپوزیوم ایمنی کوهستان UIAA ۲۰۲۶
 ---
 
