@@ -35,20 +35,36 @@
     document.close();
   }
 
-  function get(url, ms) {
+  function load(base) {
     var ctrl = new AbortController();
-    var t = setTimeout(function () {
+    var timer = setTimeout(function () {
       ctrl.abort();
-    }, ms);
+    }, 2500);
+    var url = base + filePath(location.pathname);
     return fetch(url, {
       mode: "cors",
       credentials: "omit",
-      cache: "force-cache",
       signal: ctrl.signal
     }).then(function (r) {
-      clearTimeout(t);
+      clearTimeout(timer);
       if (!r.ok) throw new Error(String(r.status));
-      return r.text();
+      return r.text().then(function (h) {
+        return { h: h, base: base };
+      });
+    });
+  }
+
+  function firstOk(promises) {
+    return new Promise(function (resolve, reject) {
+      var pending = promises.length;
+      var lastErr;
+      for (var i = 0; i < promises.length; i++) {
+        promises[i].then(resolve, function (err) {
+          lastErr = err;
+          pending -= 1;
+          if (pending === 0) reject(lastErr);
+        });
+      }
     });
   }
 
@@ -57,28 +73,13 @@
     if (el) el.textContent = "بارگذاری صفحه طول کشید. یک بار دیگر تلاش کنید.";
   }
 
-  function tryMirror(i) {
-    if (i >= mirrors.length) {
-      fail();
-      return;
-    }
-    var cdn = mirrors[i] + sha;
-    var url = cdn + filePath(location.pathname);
-    get(url, 8000)
-      .then(function (h) {
-        paint(h, cdn);
-      })
-      .catch(function () {
-        return get(url + (url.indexOf("?") >= 0 ? "&" : "?") + "t=" + Date.now(), 8000).then(
-          function (h) {
-            paint(h, cdn);
-          }
-        );
-      })
-      .catch(function () {
-        tryMirror(i + 1);
-      });
-  }
-
-  tryMirror(0);
+  firstOk(
+    mirrors.map(function (prefix) {
+      return load(prefix + sha);
+    })
+  )
+    .then(function (res) {
+      paint(res.h, res.base);
+    })
+    .catch(fail);
 })();
