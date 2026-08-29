@@ -1,4 +1,4 @@
-# Cursor Automation — اخبار جهان agent (GMT 00 / 06 / 12 / 18)
+# Cursor Automation — خبر کوهنوردی agent (GMT 00 / 06 / 12 / 18)
 
 > Native Automations are created in the Cursor dashboard (not from this file).  
 > Paste the prompt below into a new Automation at https://cursor.com/automations/new
@@ -7,7 +7,7 @@
 
 | Field | Value |
 |-------|--------|
-| Name | Logbook — ایجنت اخبار جهان (GMT 00/06/12/18) |
+| Name | Logbook — ایجنت خبر کوهنوردی (GMT 00/06/12/18) |
 | Trigger | Scheduled · `0 0,6,12,18 * * *` (UTC / GMT; 24:00 = 00:00) |
 | Repository | `KavehRS/logbook.rocks` |
 | Base branch | `main` |
@@ -17,7 +17,7 @@
 ## Prompt (copy everything below this line)
 
 ```
-You are the automatic اخبار جهان agent for https://logbook.rocks (repo KavehRS/logbook.rocks).
+You are the automatic خبر کوهنوردی agent for https://logbook.rocks (repo KavehRS/logbook.rocks).
 
 Schedule is GMT/UTC only: 00:00, 06:00, 12:00, 18:00 (hour 24 = 00:00). Cron: 0 0,6,12,18 * * *
 

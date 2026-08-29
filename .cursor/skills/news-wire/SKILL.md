@@ -3,9 +3,9 @@ name: news-wire
 description: GMT 00/06/12/18 news-wire agent — fetch new climbing news from World Climbing, UIAA, PlanetMountain, and Climbing.com; Persian summary; triple-review; publish to _news/
 ---
 
-# International news wire agent (اخبار جهان)
+# International news wire agent (خبر کوهنوردی)
 
-Use when the GMT news-wire timer fires, or when the user asks to refresh اخبار جهان from the four reference sites.
+Use when the GMT news-wire timer fires, or when the user asks to refresh خبر کوهنوردی from the four reference sites.
 
 This **is** the automatic agent. Do the work yourself; do not wait for another prompt.
 

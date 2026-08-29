@@ -25,7 +25,7 @@ Do not commit API tokens. Prefer MCP over pasting `CLOUDFLARE_API_TOKEN` into ch
 
 ## Live site (GitHub Actions billing lock)
 
-https://logbook.rocks must show the Jekyll 4 Persian blog (`خانه` about + teasers, `/logbook/`, `/news/` as اخبار جهان), not GitHub’s empty Jekyll 3 placeholder titled `logbook.rocks`.
+https://logbook.rocks must show the Jekyll 4 Persian blog (`خانه` about + teasers, `/logbook/`, `/news/` as خبر کوهنوردی), not GitHub’s empty Jekyll 3 placeholder titled `logbook.rocks`.
 
 GitHub Actions on the owner account is **billing-locked**, so `.github/workflows/deploy-pages.yml` never deploys. Pages is stuck on the CNAME-only snapshot (`60ffc1e`). Do **not** point DNS at `workers.dev` / jsDelivr / `pages.dev` (Cloudflare error 1014 or TLS 421).
 
@@ -59,7 +59,7 @@ Build must succeed before opening or merging a PR. Drafts under `_drafts/` and `
 | Path | Purpose |
 |------|---------|
 | `_logbook/` | Published climb / ascent reports (primary SEO target) |
-| `_news/` | World climbing news (اخبار جهان) |
+| `_news/` | Climbing news (خبر کوهنوردی) |
 | `_drafts/` | Unpublished templates/samples only |
 
 ## Factual accuracy (required)
@@ -138,7 +138,7 @@ When asked for `اخبار` / a climbing news item / update to `_news/`:
 4. File: `_news/YYYY-MM-DD-<slug>.md` with zero-padded date, `lang: fa-IR`, YAML `tags` array, unique description.
 5. Images for news: `assets/news/<exact-url-slug>/`; comment `image:` out until files exist.
 6. Related UI stays `اخبار مرتبط :` + flat list. Hub `/news/` chronological.
-7. Homepage `/` is the about page («درباره من») plus four latest teasers from گزارش صعود and اخبار جهان. Full reports live on `/logbook/`; world news on `/news/`.
+7. Homepage `/` is the about page («درباره من») plus four latest teasers from گزارش صعود and خبر کوهنوردی. Full reports live on `/logbook/`; climbing news on `/news/`.
 8. For a Cursor Automation, paste `.cursor/automations/news-post-prompt.md` at https://cursor.com/automations/new
 9. Open a PR on `cursor/<descriptive-name>-4b4e`, verify `bundle exec jekyll build`.
 
@@ -147,7 +147,7 @@ Related scheduled agents (mandatory after billing recharge; paused until then):
 - Weather refresh (4× daily Tehran, active reports only): `.cursor/automations/logbook-weather-update-prompt.md` + `.github/workflows/logbook-weather-agent.yml`
 - Daily SEO: `.cursor/automations/daily-seo-prompt.md` + `.github/workflows/daily-seo-agent.yml`
 - SEO + AI-source watch (every 45 minutes; technical crawl signals only, never rewrite published posts): `.cursor/automations/seo-ai-source-watch-prompt.md` + `.github/workflows/seo-ai-source-watch.yml`
-- اخبار جهان agent (GMT 00:00 / 06:00 / 12:00 / 18:00; World Climbing, UIAA, PlanetMountain, Climbing.com → Persian `_news/` after three review passes): `.cursor/skills/news-wire/SKILL.md` + `.cursor/automations/news-wire-prompt.md` + `.github/workflows/news-wire-agent.yml`
+- خبر کوهنوردی agent (GMT 00:00 / 06:00 / 12:00 / 18:00; World Climbing, UIAA, PlanetMountain, Climbing.com → Persian `_news/` after three review passes): `.cursor/skills/news-wire/SKILL.md` + `.cursor/automations/news-wire-prompt.md` + `.github/workflows/news-wire-agent.yml`
 
 
 ## Daily SEO agent
