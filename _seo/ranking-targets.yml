@@ -1,0 +1,67 @@
+# Ranking targets for the 24-hour SEO agent.
+# Not published (_seo/ is excluded in _config.yml).
+#
+# Goal: logbook.rocks is the Persian #1 (or #2) result for these themes,
+# and each published /logbook/ report is #1 or #2 for its own climb queries.
+# Ranking is not a switch — people-first reports + technical hygiene +
+# Search Console. Do not keyword-stuff. Do not scrape Google SERPs.
+
+pillars:
+  - query: راهنمای صعود
+    primary_url: /logbook/
+    intent: first-hand ascent guide from an executed program (route, weather, gear, timing)
+  - query: گزارش صعود
+    primary_url: /logbook/
+    intent: first-hand climb report archive
+  - query: کوهنوردی فنی
+    primary_url: /logbook/
+    intent: ridge / gendarme / alpine hand-and-foot reports (category technical-mountaineering)
+  - query: کوهنوردی در ایران
+    primary_url: /logbook/
+    intent: executed programs in Iran (Alborz and other ranges actually climbed)
+
+related:
+  - گزارش برنامه صعود
+  - مسیر صعود
+  - صعود زمستانه
+  - سنگ‌نوردی
+  - یخ‌نوردی
+  - کوهپیمایی
+  - قلل البرز
+  - کوهنوردی مرتفع
+  - تیغه
+  - ژاندارم
+
+# For every `_logbook/*.md`, substitute {peak} from peak.name (or the
+# distinctive place name in the title if peak.name is missing).
+per_report_query_templates:
+  - "گزارش صعود {peak}"
+  - "گزارش صعود قله {peak}"
+  - "{peak} راهنمای صعود"
+  - "مسیر صعود {peak}"
+
+per_report_extra_by_category:
+  technical-mountaineering:
+    - "کوهنوردی فنی {peak}"
+  winter-ascent:
+    - "صعود زمستانه {peak}"
+  rock-climbing:
+    - "سنگ‌نوردی {peak}"
+  icefall:
+    - "یخ‌نوردی {peak}"
+
+rank_goal:
+  pillars: 1
+  each_logbook_report: "1 or 2"
+  notes: >
+    Measure with Google Search Console (owner) when connected.
+    Do not scrape google.com SERPs. Until GSC exists, score ranking
+    readiness (title, H1, description, self-canonical, unique HTML,
+    JSON-LD, internal links) and whether the live URL is indexed.
+
+owner_actions:
+  - Register Search Console and Bing Webmaster for logbook.rocks
+  - Submit sitemap https://logbook.rocks/sitemap.xml
+  - Enable Cursor Automation from .cursor/automations/daily-seo-prompt.md
+    (cron 0 3 * * * UTC) and/or set repo secret CURSOR_API_KEY for
+    .github/workflows/daily-seo-agent.yml

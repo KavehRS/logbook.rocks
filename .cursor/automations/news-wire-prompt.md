@@ -26,7 +26,7 @@ On each fire, do the work yourself. Follow `.cursor/skills/news-wire/SKILL.md` e
 1. Complete Persian translation of every new, non-duplicate item from the listed sources since `last_run_utc` (first series: last 1 hour). Never summarize.
 2. After the 2026 volume dump: only **new** publication-year-2026 AAJ listing items into `_articles/` (dated 1 Oct 2026). No 2025. No ANAC / book reviews / in memoriam.
 3. Re-check every live `_news/` and `_articles/` translation against its `source_url`; fix errors and complete leftover short items.
-4. Whole-site SEO: `.cursor/skills/daily-seo-audit/SKILL.md` (same branch; log `_seo/daily-log.md`).
+4. Whole-site SEO: `.cursor/skills/daily-seo-audit/SKILL.md` (same branch; log `_seo/daily-log.md` and `_seo/ranking-snapshot.md`).
 5. PR, then `script/ship-live.sh --push --purge`. It builds, overlays `published` without `--delete`, and aborts unless the homepage teasers lead with the newest item. The homepage always refreshes: `/` shows the four newest logbook reports plus the five newest hub items with اخبار and مقالات merged by date.
 
 Fetch from only:

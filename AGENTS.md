@@ -198,7 +198,7 @@ When asked for `اخبار` / a climbing news item / update to `_news/`:
 Related scheduled agents (mandatory after billing recharge; paused until then):
 
 - Weather refresh (4× daily Tehran, active reports only): `.cursor/automations/logbook-weather-update-prompt.md` + `.github/workflows/logbook-weather-agent.yml`
-- Daily SEO: `.cursor/automations/daily-seo-prompt.md` + `.github/workflows/daily-seo-agent.yml`
+- Daily SEO (every 24h): `.cursor/automations/daily-seo-prompt.md` + `.github/workflows/daily-seo-agent.yml` — rank #1 for راهنمای صعود / گزارش صعود / کوهنوردی فنی / کوهنوردی در ایران; each `/logbook/` report #1 or #2 for its peak queries (`_seo/ranking-targets.yml`)
 - SEO + AI-source watch (every 45 minutes; technical crawl signals only, never rewrite published posts): `.cursor/automations/seo-ai-source-watch-prompt.md` + `.github/workflows/seo-ai-source-watch.yml`
 - خبر کوهنوردی agent (GMT 00:00 / 06:00 / 12:00 / 18:00 — each slot: new non-duplicate items from all listed sources as complete translations; only **new** AAJ 2026 listing items into `_articles/`; re-check live `_news/` and `_articles/` translations; whole-site SEO; ship to live `published`): `.cursor/skills/news-wire/SKILL.md` + `.cursor/automations/news-wire-prompt.md` + `.github/workflows/news-wire-agent.yml`
 
@@ -206,24 +206,32 @@ Related scheduled agents (mandatory after billing recharge; paused until then):
 ## Daily SEO agent
 
 
-When running the scheduled SEO automation (or when asked to audit SEO):
+When running the scheduled 24-hour SEO automation (or when asked to audit SEO):
 
 1. Follow `.cursor/skills/daily-seo-audit/SKILL.md` end-to-end.
 2. Obey `.cursor/rules/seo-daily-agent.mdc` and `.cursor/rules/logbook-reports.mdc`.
-3. Prefer high-confidence technical SEO and discoverability fixes over speculative copy rewrites.
-4. Audit every published `/logbook/`, `/news/`, and `/articles/` URL (unique title/description, canonical, structured data) — logbook first.
-5. Never republish duplicate report prose for the same peak.
-6. Open a PR on `cursor/<descriptive-name>-4b4e`, verify `bundle exec jekyll build`, then merge to `main` when changes are safe and verified.
+3. Read `_seo/ranking-targets.yml`; update `_seo/ranking-snapshot.md`.
+4. Prefer high-confidence technical SEO and discoverability fixes over speculative copy rewrites.
+5. Audit every published `/logbook/`, `/news/`, and `/articles/` URL (unique title/description, canonical, unique live HTML, structured data) — logbook first.
+6. Never republish duplicate report prose for the same peak.
+7. Open a PR on `cursor/<descriptive-name>-4b4e`, verify `bundle exec jekyll build`, then merge to `main` when changes are safe and verified.
+
+Cursor Automation: paste `.cursor/automations/daily-seo-prompt.md` at https://cursor.com/automations/new (cron `0 3 * * *` UTC). Fallback: repo secret `CURSOR_API_KEY` for `.github/workflows/daily-seo-agent.yml`.
 
 ## Target ranking theme
 
-Become the authoritative Persian source (on **logbook.rocks**) for:
+**#1 in Google (Persian)** for these four queries, with hub `/logbook/`:
 
-- گزارش برنامه صعود کوهنوردی
-- گزارش صعود سنگ‌نوردی
-- گزارش صعود یخ‌نوردی / DryTooling
-- گزارش‌های قلل البرز و برنامه‌های آموزشی کوهستان
-- اخبار کوتاه کوهنوردی جهان مرتبط با همان برنامه‌ها
+- راهنمای صعود
+- گزارش صعود
+- کوهنوردی فنی
+- کوهنوردی در ایران
+
+**#1 or #2** for every published ascent report on that climb’s queries (`گزارش صعود {peak}`, `{peak} راهنمای صعود`, `مسیر صعود {peak}`, plus discipline extras in `_seo/ranking-targets.yml`).
+
+Related: گزارش برنامه صعود، صعود زمستانه، سنگ‌نوردی، یخ‌نوردی / DryTooling، کوهپیمایی، قلل البرز، کوهنوردی مرتفع، تیغه، ژاندارم.
+
+A report here is a first-hand راهنمای صعود from an executed program — not a generic tourism article. Do not invent climbs to chase those queries.
 
 ## Do not
 
