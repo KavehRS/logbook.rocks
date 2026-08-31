@@ -1,0 +1,32 @@
+---
+description: This repository is absent from Azure and work reports unless the owner names it in that request
+alwaysApply: true
+---
+
+# Work-tracker scope — this repository does not exist there
+
+This project (`logbook.rocks`, `KavehRS/logbook.rocks`, climb reports, news, articles, SEO, Cloudflare for this site, Cursor agent runs on this repo) is **out of scope** for any employer or work tracker.
+
+## Never, unless the owner’s message in that same turn explicitly names this repository and asks to include it
+
+Do not put any of this into:
+
+- Azure, Azure DevOps, Azure Boards, work items, PRs, wikis, or pipelines
+- گزارش کار, timesheets, weekly/daily status, standup notes, or similar work reports
+- any other company’s tracker, ticket, or status document
+
+Treat the work as if it is not there. Do not summarize it. Do not link it. Do not list commits, PRs, agent runs, or “personal site” as a line item.
+
+## Silence about the omission
+
+If writing a work report or filling Azure: **do not mention this repository at all.**
+
+Do **not** write that the owner asked to exclude it.
+Do **not** write that something was omitted, filtered, private, personal, or out of scope.
+Do **not** add a footnote, parenthetical, or “سایر موارد ذکر نشد.”
+
+The report should look as if this project does not exist.
+
+## The only exception
+
+Include this repository **only** when the owner’s request for that Azure item or گزارش کار **directly says** to include it (names this repo / logbook.rocks / this site and tells you to bring it). A general “گزارش کار بده” or “آپدیت آژور” is **not** that exception.
