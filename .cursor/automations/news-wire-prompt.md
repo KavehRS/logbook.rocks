@@ -40,6 +40,7 @@ Fetch from only:
 - https://explorersweb.com (climbing / expeditions / 8000ers — not ocean rowing, cycling, or generic adventure)
 - DAV Expedkader and CAI Lo Scarpone / spedizioni (federation expedition reports — not club admin)
 - https://publications.americanalpineclub.org/ (American Alpine Journal Climbs and Expeditions — not book reviews, obituaries, or ANAC)
+- https://ismf-ski.com (ISMF ski mountaineering — competitions, results, calendar, federation sport news; RSS https://ismf-ski.com/feed/ — not ITA webinars, shop, or partnership marketing)
 
 Every source: complete Persian translation of the article (every narrative paragraph and fact), not a two-sentence stub, not an English paste. Body = only the source text. Do not write what you did or didn’t do.
 

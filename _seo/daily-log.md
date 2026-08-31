@@ -209,5 +209,16 @@ Also found: host canonicalisation is correct (`www` → apex, http → https, `/
 
 Second-order, for after indexing works: page 1 for «قله کهار» is held by guide pages (espilat.com, naturemount.ir, mojekooh.com, berimkouh.com, decovel.com) answering "where is it, how hard, which route, how long". The logbook page is a single-day trip report — a different intent, and realistically a long-tail target («گزارش صعود قله کهار از کلوان», «قله کهار مرداد ۱۴۰۵») before the head term. No content change was made for this.
 
+## 2026-08-31 — news-wire catch-up (job 4 on news branch)
+
+Ran as job 4 of the ISMF + catch-up slot, not a separate SEO PR.
+
+Guidance skim: Google Search Central robots.txt intro + sitemap `Sitemap:` line in robots.txt (unchanged advice); robots meta `noindex` still requires the URL to be crawlable. Bing/IndexNow unchanged from last log. No markup change.
+
+Repo: eight new `_news/` URLs with unique titles/descriptions, `lang: fa-IR`, `dir_attr: rtl`, local `image.path`. ISMF added as wire source 11 (skill/automation/workflow only; `_seo/` unpublished). Did not rewrite `_logbook/` or prior news bodies. Live `robots.txt` still redirects to the `published` branch copy with Sitemap + training-crawler blocks.
+
+Noted: UKC news desk still CF-challenged (403). Catch-all rewrite / origin HTML was addressed in PR #51; ranking still depends on that staying off and on crawlers seeing per-path HTML.
+
+
 
 

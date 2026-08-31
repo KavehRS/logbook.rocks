@@ -1,7 +1,7 @@
 # URLs already published as Persian news translations.
 # Sources: World Climbing, UIAA, PlanetMountain, Climbing.com, Desnivel,
 # UKClimbing /news/, Alpinist Newswire, ExplorersWeb, DAV/CAI expeditions,
-# American Alpine Journal.
+# American Alpine Journal, ISMF (ismf-ski.com).
 # Agents must skip these. Append after a successful triple-review + commit.
 
 items:
@@ -734,6 +734,30 @@ items:
   - source: American Alpine Journal
     source_url: https://publications.americanalpineclub.org/articles/13201217618
     slug: 2026-10-01-aaj-stutfield-peak-east-east-ridge-no-fiesta-no
+  - source: ISMF
+    source_url: https://ismf-ski.com/agnieszka-solik-pol-building-the-foundations-of-womens-leadership-in-ski-mountaineering/
+    slug: 2026-08-31-ismf-agnieszka-solik-wish
+  - source: Climbing.com
+    source_url: https://www.climbing.com/news/multiple-wasp-stings-triggered-a-climbing-rescue-in-b-c/
+    slug: 2026-08-29-climbing-wasp-redoubt-rescue
+  - source: Desnivel
+    source_url: https://www.desnivel.com/alpinismo/soline-kentzel-primera-femenina-a-la-darbellay-8a-de-autoproteccion-en-el-petit-clocher-du-portalet/
+    slug: 2026-08-28-desnivel-soline-kentzel-darbellay
+  - source: Desnivel
+    source_url: https://www.desnivel.com/alpinismo/framed-la-pelicula-de-siebe-vanhee-en-la-voie-petit-del-capucin-en-solitario/
+    slug: 2026-08-28-desnivel-framed-siebe-vanhee-voie-petit
+  - source: World Climbing
+    source_url: https://www.ifsc-climbing.org/events/world-climbing-para-series-laval-2026/news/french-triple-gold-ends-day-one-in-laval
+    slug: 2026-08-29-world-climbing-para-laval-day-one
+  - source: World Climbing
+    source_url: https://www.ifsc-climbing.org/events/world-climbing-para-series-laval-2026/news/para-climbing-firsts-in-france
+    slug: 2026-08-30-world-climbing-para-laval-firsts
+  - source: Desnivel
+    source_url: https://www.desnivel.com/competiciones/dificultad-comp/dificultad-comp-inter/dificultad-comp-inter-2026/alberto-gines-campeon-de-europa-de-dificultad-en-laval/
+    slug: 2026-08-31-desnivel-gines-europe-lead-laval
+  - source: ExplorersWeb
+    source_url: https://explorersweb.com/piolets-dor-list-includes-8000ers-a-tribute-to-habeler-and-everest-debate/
+    slug: 2026-08-28-explorersweb-piolets-dor-habeler
 
 # Seen by the wire but not published. Skip on later runs.
 skipped:
@@ -761,3 +785,30 @@ skipped:
   - source: Desnivel
     source_url: https://www.desnivel.com/escalada-roca/11-al-13-de-septiembre-2026-viii-encuentro-de-encordadas-en-trasobares/
     reason: women's climbing meet announcement, no new climb or safety fact
+  - source: Desnivel
+    source_url: https://www.desnivel.com/escalada-roca/el-autodialogo-en-la-escalada-como-influye-en-el-rendimiento/
+    reason: training psychology listicle, no new climb/federation/safety fact
+  - source: Desnivel
+    source_url: https://www.desnivel.com/competiciones/triunfo-de-la-paraescalada-espanola-en-laval-14-medallas-entre-el-campeonato-europeo-y-la-world-climbing-para-series/
+    reason: duplicate of World Climbing Para Series Laval day-one and firsts articles
+  - source: PlanetMountain
+    source_url: https://www.planetmountain.com/en/news/alpinism/peter-habeler-receive-piolets-dor-carriere-lifetime-achievement-award-2026.html
+    reason: duplicate of ExplorersWeb Piolets d'Or Habeler / big-list item; HTML Cloudflare-blocked
+  - source: World Climbing
+    source_url: https://www.ifsc-climbing.org/news/european-lead-and-speed-champions-to-be-crowned-in-laval
+    reason: same-event preview superseded in this catch-up by Desnivel Laval Europe Lead results
+  - source: World Climbing
+    source_url: https://www.ifsc-climbing.org/events/world-climbing-para-series-laval-2026/news/para-climbing-journey-continues-in-laval
+    reason: same-event qualification colour superseded by IFSC day-one and firsts results in this window
+  - source: World Climbing
+    source_url: https://www.ifsc-climbing.org/events/world-climbing-para-series-laval-2026/news/barendrecht-previews-laval-the-level-has-become-incredibly-high
+    reason: same-event preview superseded by IFSC Para Series Laval results in this window
+  - source: ISMF
+    source_url: https://ismf-ski.com/ismf-national-members-strongly-support-major-governance-reforms/
+    reason: published 18 Aug 2026, before last_run_utc
+  - source: ISMF
+    source_url: https://ismf-ski.com/join-ita-monthly-webinar-on-26-08-youth-athletes-competing-at-major-events/
+    reason: ITA webinar invite; also before last_run_utc
+  - source: American Alpine Journal
+    source_url: https://publications.americanalpineclub.org/articles/13201217620
+    reason: listing item Alpine Connections / Kilian Jornet; Publication Year 2025, owner rule 2026 only

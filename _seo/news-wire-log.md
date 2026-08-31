@@ -918,5 +918,57 @@ Source: `https://www.theuiaa.org/uiaa-nma-august2026/` (`pubDate` Fri, 28 Aug 20
 
 Follow-up: UIAA calls itself a federation (`International Climbing and Mountaineering Federation`, and «our federation» in the letter). Persian body now uses فدراسیون throughout; the earlier «رئیس اتحادیه» was inconsistent with «فدراسیون‌های عضو» in the same text.
 
+## 2026-08-31 ~11:20 UTC — missed-slot catch-up + ISMF as source 11
+
+Owner asked to add official ISMF (https://ismf-ski.com/, RSS `https://ismf-ski.com/feed/`) to the wire, and to catch up news since `last_run_utc` `2026-08-28T07:40:00Z`. Branch `cursor/news-wire-20260831-1004-40aa`. Window: that stamp → `2026-08-31T11:20:00Z`. ISMF listed as source 11 in the skill, automation prompt, GitHub workflow, and seen.yml header. Catch-up wording now covers wire sources 1–9 and 11.
+
+### Job 1 — wire
+
+Published (complete translation, self-hosted photos):
+
+| slug | source | pub |
+|---|---|---|
+| `2026-08-31-ismf-agnieszka-solik-wish` | ISMF | 2026-08-31 07:36:46Z |
+| `2026-08-31-desnivel-gines-europe-lead-laval` | Desnivel | 2026-08-31 08:18:07Z |
+| `2026-08-30-world-climbing-para-laval-firsts` | World Climbing | 30 Aug 2026 |
+| `2026-08-29-climbing-wasp-redoubt-rescue` | Climbing.com | 2026-08-29 09:30:23Z |
+| `2026-08-29-world-climbing-para-laval-day-one` | World Climbing | 29 Aug 2026 |
+| `2026-08-28-desnivel-soline-kentzel-darbellay` | Desnivel | 2026-08-28 11:05:41Z |
+| `2026-08-28-desnivel-framed-siebe-vanhee-voie-petit` | Desnivel | 2026-08-28 08:54:54Z |
+| `2026-08-28-explorersweb-piolets-dor-habeler` | ExplorersWeb | 2026-08-28 12:00:12Z |
+
+Skipped (seen.yml): Desnivel autodialogo (no climb fact); Desnivel Spanish para 14 medals (duplicate of IFSC para day-one + firsts); PlanetMountain Habeler (duplicate of ExplorersWeb; CF-blocked); IFSC Europe preview, Barendrecht preview, para journey (same-event colour superseded in this catch-up by later results); ISMF governance 18 Aug and ITA webinar (before window / webinar invite); UIAA NMA already published. UKC `/news/` Cloudflare 403. PlanetMountain home lists Trango Loreggian/Ragazzo 28/08; no fetchable article URL and HTML 403 — omitted rather than invent. DAV press / Expedkader: no new expedition report in window. CAI Lo Scarpone 30 Aug Purja interview and 29 Aug hiking course are not federation expedition reports.
+
+### Triple review (each PASS)
+
+**ISMF Solik / WISH** — Facts: 21-month WISH, University of Hertfordshire, Olympic Solidarity, Polish NT coach, Laura + Solik as the two women coaches named, Milano Cortina 2026 qualification, FMM Spain, PZA. Language: complete Q&A. Policy: cover from ISMF page; no مترجم. PASS.
+
+**Climbing wasp** — Facts: 25 Aug, Redoubt Wall ~20 miles south of Vancouver, 33-year-old unnamed woman, 12–20 stings not 100, Lions Bay SAR / North Shore Rescue hoist, second party ~20 stings no systemic reaction. Language: complete. Policy: two article photos self-hosted (AVIF originals kept). PASS.
+
+**Kentzel Darbellay** — Facts: 13 Aug, first female, 8a/7c+ from below, ~45 m pitches, ~250 m, Petit Clocher 2985 m, Miquel + Peretti same day, history 1962/1989/2004/Oddo 2019. Policy: five article photos, related thumbs skipped. PASS.
+
+**Framed Vanhee** — Facts: June 2025, Voie Petit 450 m 8b Grand Capucin, first solo, 1.5 days, 15-minute FRAMED / Bernardo Giménez. Short source = short translation. PASS.
+
+**IFSC para day-one** — Facts: seven golds 29 Aug; Jarrige 52+ / 24th gold AL2; Keodara 45+ RP3; Boutel Menard 52 B3; Geisseler 33 AU3; Morningstar 48+ AU3 W; Capovilla 42 AU2 W; Roldán Bustos 38+ AL2 M; remaining finals 20:30 UTC+2 29 Aug. PASS.
+
+**IFSC para firsts** — Facts: Aguilar 38 B1 over Aita 33+; Bredice 51 W B1; Robinson time-separated B2 W tops; Leistner 54+ RP1; Ruiz all-USA RP1 podium; Purkart 41+ RP3 W; Gunsan 29–30 Oct, Fukuoka 5–6 Nov. Source typo «bonze» rendered برنز. PASS.
+
+**Desnivel Ginés** — Facts: 30 Aug Laval, men 40+ / 36 / 33+ (Ginés/Placci/Avezou), Ondra 33 fourth, semis 44+ vs 42+; women McNeice only top, Doumont 52, Rakovec 51+, Martínez 25+ 8th. Speed titles not in the source article — omitted. PASS.
+
+**ExplorersWeb Piolets** — Facts: 2025 big list country counts; Nezabudka Nanga / Manaslu SSW; jury names; Ultar Sar 7388 m; Everest ski debate; Habeler lifetime, ceremony 21–25 Oct Saint-Christophe-en-Oisans. Article photos self-hosted; map and two wides scaled to 1600. PASS.
+
+### Job 2 — AAJ
+
+Listing newest id `13201217620` Alpine Connections / Kilian Jornet: Climb Year 2024, **Publication Year 2025**. Owner rule: 2026 only. Not appended to `remaining`. `remaining_count` still 0. `13201217619` 404.
+
+### Job 3 — re-check
+
+All live `_news/*.md` with `source_url` still have one. AAJ stubs left in `_news/` are `layout: redirect` to `/articles/` (`noindex`) — not reopened. Re-fetched UIAA NMA 28 Aug letter (still matches published body). Sampled Climbing Mont Blanc rescue and Desnivel Biacherahi against previous facts; no edit. New items checked against source HTML/RSS before commit. PlanetMountain Rogora still 403. Full 226 `_articles/` bodies not re-fetched this slot (volume); newest listing item is the 2025 Jornet feature already skipped.
+
+### Job 4 — SEO
+
+See `_seo/daily-log.md` 2026-08-31 news-wire catch-up. No robots/sitemap markup change. New posts have unique title/description/`lang`/`dir`. Did not rewrite `_logbook/` or prior `_news/` bodies.
+
+
 
 
