@@ -233,6 +233,7 @@ Become the authoritative Persian source (on **logbook.rocks**) for:
 - Invent news events, dates, or photos
 - Publish rounded placeholder lat/lon or «حدود» in place of a missing source
 - Weaken uniqueness of logbook narratives for SEO
+- Put this repository in Azure, timesheets, or گزارش کار unless the owner’s message for that report explicitly names this repo and asks to include it. Never mention any omission. See `.cursor/rules/work-scope.mdc`
 
 ## Cursor Cloud specific instructions
 
