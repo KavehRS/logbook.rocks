@@ -45,7 +45,7 @@ jobs:
 
           Follow `.cursor/skills/news-wire/SKILL.md` exactly.
 
-          Sources only: https://www.worldclimbing.com , https://www.theuiaa.org , https://www.planetmountain.com , https://www.climbing.com , https://www.desnivel.com , https://www.ukclimbing.com/news/ , https://alpinist.com/newswire/ , https://explorersweb.com (climbing/expeditions/8000ers) , DAV Expedkader + CAI Lo Scarpone expedition reports , https://publications.americanalpineclub.org/ (AAJ Climbs and Expeditions)
+          Sources only: https://www.worldclimbing.com , https://www.theuiaa.org , https://www.planetmountain.com , https://www.climbing.com , https://www.desnivel.com , https://www.ukclimbing.com/news/ , https://alpinist.com/newswire/ , https://explorersweb.com (climbing/expeditions/8000ers) , DAV Expedkader + CAI Lo Scarpone expedition reports , https://publications.americanalpineclub.org/ (AAJ Climbs and Expeditions) , https://ismf-ski.com (ISMF ski mountaineering; RSS https://ismf-ski.com/feed/)
 
           Follow `.cursor/skills/news-wire/SKILL.md` exactly. Each GMT slot does all five jobs: (1) complete translation of every new non-duplicate item from all listed sources since last_run_utc; (2) next two AAJ 2026 queue notes; (3) re-check every live `_news/` translation against its source; (4) whole-site SEO via `.cursor/skills/daily-seo-audit/SKILL.md` on the same branch; (5) jekyll build, PR, overlay `published` until the live export has the work. Body = only the source text (no agent process notes). If there is no local photo, use the source article’s own photo URLs. Always update news-wire-state.yml.
 
