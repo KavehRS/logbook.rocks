@@ -26,7 +26,7 @@ Agent rule: `.cursor/rules/news-posts.mdc`
 6. Homepage `/` is about («درباره من») plus four newest logbook teasers and the five newest hub teasers (اخبار + مقالات merged by date) — refreshed on every publish by `_includes/home-latest.html`; world-news archive is `/news/`; articles archive is `/articles/`
 7. Never publish agent notes in live HTML
 8. Reader-facing UI dates Jalali (`_includes/jalali-date.html`)
-9. خبر کوهنوردی agent (GMT 00/06/12/18): `.cursor/skills/news-wire/SKILL.md` — new wire items, only **new** AAJ 2026 listing items into `_articles/`, re-check translations, whole-site SEO, publish
+9. خبر کوهنوردی agent (GMT 00/06/12/18): `.cursor/skills/news-wire/SKILL.md` — new wire items from listed sources including ISMF (https://ismf-ski.com), only **new** AAJ 2026 listing items into `_articles/`, re-check translations, whole-site SEO, publish
 
 ## Uniqueness
 
