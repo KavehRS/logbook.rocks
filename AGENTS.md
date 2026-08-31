@@ -23,13 +23,37 @@ Platform skills live in `.cursor/skills/cloudflare/` and `.cursor/skills/wrangle
 
 Do not commit API tokens. Prefer MCP over pasting `CLOUDFLARE_API_TOKEN` into chat.
 
-## Live site (GitHub Actions billing lock)
+## Live site
 
 https://logbook.rocks must show the Jekyll 4 Persian blog (`خانه` about + teasers, `/logbook/`, `/news/` as خبر کوهنوردی, `/articles/` as مقالات), not GitHub’s empty Jekyll 3 placeholder titled `logbook.rocks`.
 
-GitHub Actions on the owner account is **billing-locked**, so `.github/workflows/deploy-pages.yml` never deploys. Pages is stuck on the CNAME-only snapshot (`60ffc1e`). Do **not** point DNS at `workers.dev` / jsDelivr / `pages.dev` (Cloudflare error 1014 or TLS 421).
+### GitHub Pages serves the real site again — the rewrite must go
 
-Until Actions can run, production is:
+As of 31 Aug 2026 GitHub Pages is `status: built` from `main` (legacy build, not `deploy-pages.yml`, so the Actions billing lock does not apply) and serves **every path with its own HTML**. Confirmed by asking Pages directly, past Cloudflare:
+
+```bash
+curl --resolve logbook.rocks:80:185.199.110.153 http://logbook.rocks/logbook/2026-08-07-kahar-peak/
+# 200, <title>گزارش صعود قله کهار از کلوان …</title>, canonical to its own URL
+```
+
+The Cloudflare catch-all rewrite below is still active, so on the live domain **all ~269 URLs answer with the homepage HTML and `canonical: https://logbook.rocks/`**. That tells Google every report and article *is* the homepage, so none of them can be indexed and none can rank for anything — which is exactly what `site:logbook.rocks` showed.
+
+Fix (needs a `CLOUDFLARE_API_TOKEN` with zone rules write):
+
+```bash
+python3 script/cloudflare/serve-origin-html.py --check   # show rules + probe the origin
+python3 script/cloudflare/serve-origin-html.py           # remove rewrite + file redirects
+```
+
+It refuses to act unless the origin really returns the per-path page. Then, by hand in Dash → Zaraz → Tools, **disable “Logbook Jekyll bootstrap”**: with correct HTML arriving from the origin, that tool `document.write`s the page a second time. Afterwards purge the cache and re-check a deep URL and `/sitemap.xml`.
+
+The legacy Pages build ignores `_plugins/`, so image `width`/`height` (CLS) and the `ImageObject` casing fix are missing from live HTML even though `published` has them. Pointing Pages at the `published` branch instead of `main` (repo Settings → Pages → Deploy from a branch → `published` / root) makes the live files exactly what `script/ship-live.sh` builds and verifies. That is an owner action; `gh` here is read-only.
+
+Do **not** point DNS at `workers.dev` / jsDelivr / `pages.dev` (Cloudflare error 1014 or TLS 421).
+
+### The arrangement that is being retired
+
+While Pages served only a placeholder, production was:
 
 1. DNS (proxied): apex + `www` CNAME → `kavehrs.github.io`
 2. Cloudflare URL rewrite (`http_request_transform`): every path except `/cdn-cgi/` rewrites to origin `/` so GitHub returns 200 HTML
@@ -38,13 +62,13 @@ Until Actions can run, production is:
 5. Cloudflare redirect rules (`http_request_dynamic_redirect`) send the non-HTML SEO files to the same file on `published`. Zaraz rebuilds *pages* only, so without these `/robots.txt`, `/sitemap.xml`, `/llms.txt`, `/webmcp-catalog.json`, the Atom feeds and the IndexNow key all answer `200 text/html` with GitHub's placeholder. Manage them with `script/cloudflare/deploy-seo-files.py` (`--check` to list, `--revert` to remove). Adding a new machine-readable file at the site root means adding it to `PATHS` there too, or it will not be reachable.
 6. Cloudflare's **managed robots.txt** is deliberately **off**. It used to answer `/robots.txt` at the edge ahead of any rule, and it carries no `Sitemap:` directive. The repo's `robots.txt` is now the live one and holds the training-crawler block list itself — a new training crawler has to be added there by hand.
 
-After a content change that should go live **before** GitHub billing is fixed:
+### Shipping a content change
 
 ```bash
 script/ship-live.sh --push --purge
 ```
 
-That script is the only supported way to update the live export. It builds to a temp destination (a leftover `jekyll serve` rewrites `_site/` underneath you), overlays the `published` worktree **without** `--delete`, and refuses to finish when:
+Keep running this after every content change. `published` stays the verified export — it is what the Zaraz fallback reads, what the SEO-file redirects point at while they exist, and what Pages should be serving once its source is switched. That script is the only supported way to update the live export. It builds to a temp destination (a leftover `jekyll serve` rewrites `_site/` underneath you), overlays the `published` worktree **without** `--delete`, and refuses to finish when:
 
 - the branch is behind `origin/main` (see “Merge main before shipping” below),
 - the build contains wording listed in `.cursor/forbidden-phrases.txt`, or

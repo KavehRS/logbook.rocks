@@ -187,5 +187,27 @@ Noted, deliberately not changed:
 
 Sources: Google Search Central (SEO starter, sitemaps, structured data / image rich results, Core Web Vitals / CLS), Bing Webmaster Guidelines + IndexNow, schema.org `Article` / `ImageObject` / `CollectionPage`, RFC 4287 (Atom), llmstxt.org.
 
+## 2026-08-31 — why nothing ranks for «قله کهار»
+
+Owner asked why the site is not on page 1 for «قله کهار». It is not a ranking problem: **the pages are not indexable at all.**
+
+Every URL on the live domain returns the *homepage* HTML with `<link rel="canonical" href="https://logbook.rocks/">`:
+
+```
+https://logbook.rocks/logbook/2026-08-07-kahar-peak/   200  8869b  title=کاوه‌ رضائی‌شیراز | گزارش صعود   canonical=/
+https://logbook.rocks/articles/                        200  8869b  (identical)
+https://logbook.rocks/this-path-does-not-exist/        200  8869b  (identical)
+```
+
+A self-referencing canonical pointing elsewhere is the strongest possible "this page is a duplicate" signal, so Google drops all ~269 URLs into the homepage and indexes none of them. `site:logbook.rocks` returns nothing, and a search naming the domain surfaces only third-party pages that mention Kaveh's reports.
+
+Cause: the Cloudflare catch-all rewrite (`http_request_transform`, every path except `/cdn-cgi/` → `/`) from the placeholder era. **GitHub Pages now serves the real site**, `status: built` from `main`, legacy build — so the Actions billing lock is no longer what is blocking anything. Asked directly past Cloudflare (`--resolve logbook.rocks:80:185.199.110.153`), the origin returns per-path HTML with correct titles, self-canonicals, 404 on unknown paths, and working `sitemap.xml`, `robots.txt`, feeds, catalog, CSS, JS and photos. The Kahar report at origin: `<title>گزارش صعود قله کهار از کلوان — ۱۶ مرداد ۱۴۰۵</title>`, H1 the same, 31 occurrences of «کهار», unique description.
+
+Fix prepared in `script/cloudflare/serve-origin-html.py` (removes the rewrite and the now-redundant SEO-file redirects, after probing that the origin serves the page). It could not be run in this session: this cloud agent only has `CLOUDFLARE_ACCOUNT_ID`, not `CLOUDFLARE_API_TOKEN`. The Zaraz bootstrap tool must be disabled by hand at the same time.
+
+Also found: host canonicalisation is correct (`www` → apex, http → https, `/path` → `/path/`). The legacy Pages build ignores `_plugins/`, so live HTML lacks the image `width`/`height` and keeps the `imageObject` casing bug that `published` has fixed — one reason to point Pages at `published`.
+
+Second-order, for after indexing works: page 1 for «قله کهار» is held by guide pages (espilat.com, naturemount.ir, mojekooh.com, berimkouh.com, decovel.com) answering "where is it, how hard, which route, how long". The logbook page is a single-day trip report — a different intent, and realistically a long-tail target («گزارش صعود قله کهار از کلوان», «قله کهار مرداد ۱۴۰۵») before the head term. No content change was made for this.
+
 
 
