@@ -209,5 +209,18 @@ Also found: host canonicalisation is correct (`www` → apex, http → https, `/
 
 Second-order, for after indexing works: page 1 for «قله کهار» is held by guide pages (espilat.com, naturemount.ir, mojekooh.com, berimkouh.com, decovel.com) answering "where is it, how hard, which route, how long". The logbook page is a single-day trip report — a different intent, and realistically a long-tail target («گزارش صعود قله کهار از کلوان», «قله کهار مرداد ۱۴۰۵») before the head term. No content change was made for this.
 
+## 2026-08-31 — 24h ranking automation (four pillars)
+
+Owner: run SEO every 24 hours; every `/logbook/` report should be Google #1 or #2; site-wide themes are راهنمای صعود، گزارش صعود، کوهنوردی فنی، کوهنوردی در ایران.
+
+- Targets: `_seo/ranking-targets.yml` (unpublished)
+- Snapshot the daily agent rewrites: `_seo/ranking-snapshot.md`
+- Skill/rule/prompt/workflow: `.cursor/skills/daily-seo-audit/SKILL.md`, `.cursor/rules/seo-daily-agent.mdc`, `.cursor/automations/daily-seo-prompt.md` (cron `0 3 * * *` UTC), `.github/workflows/daily-seo-agent.yml`
+- Published: hub `/logbook/` and homepage copy, `_config.yml` description, `/llms.txt`, CollectionPage `about` — people-first, not stuffed titles on existing reports
+- Measure rank via Search Console when the owner connects it; do not scrape SERPs
+- Owner still must paste/enable the Cursor Automation at https://cursor.com/automations/new (native automations cannot be created from the repo)
+
+Sources: Google Search Central people-first + SEO starter; existing site crawl-uniqueness finding (PR #51).
+
 
 

@@ -31,9 +31,9 @@ jobs:
           python3 <<'PY'
           import json, os, urllib.request
 
-          prompt = """You are the daily SEO agent for https://logbook.rocks (repo KavehRS/logbook.rocks, branch main).
+          prompt = """You are the 24-hour SEO agent for https://logbook.rocks (repo KavehRS/logbook.rocks, branch main).
 
-          Mission: make this site the leading Persian authority for گزارش برنامه صعود کوهنوردی، سنگ‌نوردی و یخ‌نوردی across major search engines.
+          Goal: this site is Google #1 in Persian for راهنمای صعود, گزارش صعود, کوهنوردی فنی, and کوهنوردی در ایران; every published /logbook/ report is Google #1 or #2 for that climb’s queries. See _seo/ranking-targets.yml.
 
           Before changing anything:
           1. Read AGENTS.md
@@ -41,7 +41,7 @@ jobs:
           3. Obey .cursor/rules/seo-daily-agent.mdc and .cursor/rules/logbook-reports.mdc
           4. Refresh guidance from Google Search Central, Bing Webmaster Guidelines, and schema.org (latest public docs)
 
-          Then audit the live site + repo (every /logbook/ and /news/ URL), implement only evidence-based SEO improvements (logbook first, then news), append a short entry to _seo/daily-log.md, run `bundle exec jekyll build`, and confirm drafts/.cursor are unpublished.
+          Then audit the live site + repo (every /logbook/, /news/, /articles/ URL), confirm unique HTML per URL, review the four pillars and every report’s {peak} queries, update _seo/ranking-snapshot.md and _seo/daily-log.md, and implement only evidence-based SEO (logbook first). Do not keyword-stuff. Do not scrape Google SERPs.
 
           If you make verified high-confidence changes: open a PR on a cursor/*-4b4e branch and merge to main after a clean build.
           If nothing material needs changing: do not open a PR; leave a brief summary of what you checked.
@@ -49,7 +49,7 @@ jobs:
           Never invent climb facts, never duplicate report prose for the same peak, never keyword-stuff, never commit secrets."""
 
           body = {
-              "name": "Daily SEO — logbook.rocks",
+              "name": "Daily SEO — logbook.rocks rank #1",
               "prompt": {"text": prompt},
               "repos": [{
                   "url": "https://github.com/KavehRS/logbook.rocks",

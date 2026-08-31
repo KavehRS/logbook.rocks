@@ -48,6 +48,7 @@ Use `_drafts/samples/kahar-peak-report-framework-sample.md` only as structure �
 11. Reader-facing UI dates Jalali (`_includes/jalali-date.html`)
 12. Team lines name the people the owner names; unnamed companions stay neutral («سه نفر همراه»). Never describe participants by employer, institution, or nationality
 13. `git merge origin/main` before shipping — the owner edits published reports there, and an older branch restores text they removed. Ship with `script/ship-live.sh --push --purge`, which also aborts on anything listed in `.cursor/forbidden-phrases.txt`
+14. Ranking: title should name the peak and read as a گزارش صعود (or the true discipline: تیغه، سنگ، یخ). Do not stuff «راهنمای صعود / کوهنوردی فنی / کوهنوردی در ایران» into every title. Queries for the 24h SEO agent: `_seo/ranking-targets.yml`
 
 ## Scheduled weather runs (automatic when billing enabled)
 
