@@ -222,3 +222,11 @@ Noted: UKC news desk still CF-challenged (403). Catch-all rewrite / origin HTML 
 
 
 
+
+## 2026-09-20 — news-wire catch-up (job 4)
+
+Guidance skimmed: Google Search Central SEO starter (unique titles/descriptions, crawlable HTML, sitemap, no keyword stuffing). No markup change this slot.
+
+Repo: 56 new `_news/` URLs with unique titles/descriptions, `lang: fa-IR`, `dir_attr: rtl`, local `image.path`. Did not rewrite `_logbook/` or prior `_news/` / `_articles/` bodies. `robots.txt` / sitemap generators unchanged. `_seo/` and `.cursor/` stay unpublished.
+
+Live indexing still depends on Cloudflare serving origin HTML per path (PR #51 diagnosis), not on this copy.
