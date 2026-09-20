@@ -13,7 +13,7 @@ source_url: https://www.ifsc-climbing.org/events/world-climbing-series-chongqing
 related:
   - title: اولین طلای Omasa در چونگ‌کینگ؛ Hunt برگشت به صدر
     url: /news/2026-09-18-world-climbing-chongqing-omasa-hunt-gold/
-  - title: سری چونگ‌کینگ ۲۰۲۶: آمار و نکته‌ها
+  - title: "سری چونگ‌کینگ ۲۰۲۶: آمار و نکته‌ها"
     url: /news/2026-09-18-world-climbing-chongqing-facts-stats/
 image:
   path: /assets/news/2026-09-18-world-climbing-chongqing-hunt-zhao-qual/ifsc-ej15reebpxdag9rveqtb.jpg

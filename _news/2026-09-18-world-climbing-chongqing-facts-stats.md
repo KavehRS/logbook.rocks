@@ -1,6 +1,6 @@
 ---
 layout: post
-title: سری چونگ‌کینگ ۲۰۲۶: آمار و نکته‌ها
+title: "سری چونگ‌کینگ ۲۰۲۶: آمار و نکته‌ها"
 lang: fa-IR
 dir_attr: rtl
 description: >-
@@ -13,7 +13,7 @@ source_url: https://www.ifsc-climbing.org/events/world-climbing-series-chongqing
 related:
   - title: سرعت در چین به شمال می‌رود؛ چونگ‌کینگ
     url: /news/2026-09-17-world-climbing-chongqing-speed-preview/
-  - title: سری چونگ‌کینگ ۲۰۲۶: حرف ورزشکارها
+  - title: "سری چونگ‌کینگ ۲۰۲۶: حرف ورزشکارها"
     url: /news/2026-09-17-world-climbing-chongqing-athletes-said/
 image:
   path: /assets/news/2026-09-18-world-climbing-chongqing-facts-stats/ifsc-bq2xszo3wcxpcboemmrl.jpg

@@ -11,9 +11,9 @@ tags: [world-climbing, سنگ‌نوردی, سرعت, رقابت]
 source: World Climbing
 source_url: https://www.ifsc-climbing.org/events/world-climbing-series-chongqing-2026/news/speed-moves-north-in-china-to-chongqing
 related:
-  - title: سری چونگ‌کینگ ۲۰۲۶: آمار و نکته‌ها
+  - title: "سری چونگ‌کینگ ۲۰۲۶: آمار و نکته‌ها"
     url: /news/2026-09-18-world-climbing-chongqing-facts-stats/
-  - title: سری چونگ‌کینگ ۲۰۲۶: حرف ورزشکارها
+  - title: "سری چونگ‌کینگ ۲۰۲۶: حرف ورزشکارها"
     url: /news/2026-09-17-world-climbing-chongqing-athletes-said/
 image:
   path: /assets/news/2026-09-17-world-climbing-chongqing-speed-preview/ifsc-whr9uyifabze7wtac7tf.jpg
