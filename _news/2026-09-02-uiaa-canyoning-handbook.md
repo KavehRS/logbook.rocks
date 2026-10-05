@@ -39,14 +39,14 @@ UIAA در ۱۱ شهریور ۱۴۰۵ (۲ سپتامبر ۲۰۲۶) نوشته ب�
 
 UIAA از همهٔ نویسندگان برای تعهد و تخصص در انتشار این دفترچه تشکر کرده. سهم از اعضای این سازمان‌ها آمده:
 
-Associazione Italiana Canyoning  
-Canyoning Equipment 4 You (CE4Y)  
-CREPS Auvergne-Rhône-Alpes  
-Federation Internationale de Canyoning  
-اتحادیهٔ بین‌المللی راهنمایان کوهستان (IFMGA)  
-بنیاد پتزل  
-کمیسیون ایمنی UIAA  
-کمیسیون آموزش UIAA  
-دفتر UIAA
+- Associazione Italiana Canyoning
+- Canyoning Equipment 4 You (CE4Y)
+- CREPS Auvergne-Rhône-Alpes
+- Federation Internationale de Canyoning
+- اتحادیهٔ بین‌المللی راهنمایان کوهستان (IFMGA)
+- بنیاد پتزل
+- کمیسیون ایمنی UIAA
+- کمیسیون آموزش UIAA
+- دفتر UIAA
 
 دفترچهٔ دیجیتال از payhip.com/b/s6CNw خریده می‌شود. متن کامل را از [صفحهٔ خود UIAA](https://www.theuiaa.org/uiaa-and-petzl-foundation-release-new-canyoning-handbook) بخوانید.
