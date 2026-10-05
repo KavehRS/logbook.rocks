@@ -200,7 +200,13 @@ Related scheduled agents (mandatory after billing recharge; paused until then):
 - Weather refresh (4× daily Tehran, active reports only): `.cursor/automations/logbook-weather-update-prompt.md` + `.github/workflows/logbook-weather-agent.yml`
 - Daily SEO: `.cursor/automations/daily-seo-prompt.md` + `.github/workflows/daily-seo-agent.yml`
 - SEO + AI-source watch (every 45 minutes; technical crawl signals only, never rewrite published posts): `.cursor/automations/seo-ai-source-watch-prompt.md` + `.github/workflows/seo-ai-source-watch.yml`
-- خبر کوهنوردی agent (GMT 00:00 / 06:00 / 12:00 / 18:00 — each slot: new non-duplicate items from all listed sources as complete translations, including **ISMF** at https://ismf-ski.com ; only **new** AAJ 2026 listing items into `_articles/`; re-check live `_news/` and `_articles/` translations; whole-site SEO; ship to live `published`): `.cursor/skills/news-wire/SKILL.md` + `.cursor/automations/news-wire-prompt.md` + `.github/workflows/news-wire-agent.yml`
+
+**خبر کوهنوردی is manual-only by owner instruction (2026-09-20).** Check sources
+and run the news-wire workflow only after the owner explicitly asks. Do not
+enable a cron or Cursor Automation for it. Entry points:
+`.cursor/skills/news-wire/SKILL.md`,
+`.cursor/automations/news-wire-prompt.md`, and the manual
+`.github/workflows/news-wire-agent.yml`.
 
 
 ## Daily SEO agent

@@ -1,28 +1,23 @@
 ---
 name: news-wire
-description: GMT 00/06/12/18 cycle — new non-duplicate items from all listed sources (complete translation), next two AAJ 2026 queue notes, re-check published translations, whole-site SEO, then ship live
+description: Owner-requested news refresh — new non-duplicate items from all listed sources (complete translation), new AAJ 2026 notes, re-check published translations, whole-site SEO, then ship live
 ---
 
 # International news wire agent (خبر کوهنوردی)
 
-Use when the GMT news-wire timer fires, or when the user asks to refresh خبر کوهنوردی from the listed reference sites.
+Use only when the owner explicitly asks to check or refresh خبر کوهنوردی from the listed reference sites.
 
-This **is** the automatic agent. Do the work yourself; do not wait for another prompt.
+This is a manual, owner-requested agent. Do the work yourself after that request.
 
-## Schedule (GMT / UTC only)
+## Trigger
 
-| Slot | Cron |
-|------|------|
-| 00:00 GMT (ساعت ۲۴) | `0 0 * * *` |
-| 06:00 GMT | `0 6 * * *` |
-| 12:00 GMT | `0 12 * * *` |
-| 18:00 GMT | `0 18 * * *` |
+Manual only. The owner paused all automatic news checks on 2026-09-20. Do not
+create or enable a cron schedule or Cursor Automation unless the owner explicitly
+reverses that instruction.
 
-Combined: `0 0,6,12,18 * * *` (GitHub Actions and Cursor timer, UTC).
+## Each requested run (mandatory, in this order)
 
-## Each GMT slot (mandatory, in this order)
-
-Owner: this is the six-hour job. Do all five. Do not drop a step because the wire window was empty.
+Do all five. Do not drop a step because the wire window was empty.
 
 1. **New items from every listed source** — complete Persian translation of every unseen, non-duplicate article since `last_run_utc` (first series: last 1 hour). Never summarize.
 2. **AAJ 2026 queue** — after the 2026 volume dump, `_data/aaj-backfill.yml` `remaining` is empty. Job 2 is only **new** publication-year-2026 listing items that appeared after `last_run_utc`. Append them to `remaining`, then publish each as a complete Persian translation in `_articles/` dated the journal street date (`2026-10-01`). Photos go in `assets/articles/<slug>/`. Do not publish 2025. Do not dump ANAC, book reviews, or in memoriam.
@@ -31,7 +26,7 @@ Owner: this is the six-hour job. Do all five. Do not drop a step because the wir
 5. **Publish** — PR, then `script/ship-live.sh --push --purge`. Every publish also refreshes the homepage: `/` shows the four newest logbook reports plus the **five newest hub items with اخبار and مقالات merged by date**, so a new item in either section changes it. The script fails if the homepage does not lead with the newest item. The cycle is not done until the live export has the work.
 
 - **First series** (manual kickoff only): items published in the **last 1 hour**.
-- **Every later series** (scheduled GMT slots and manual tests after that kickoff): translate **all** unseen items published **since `last_run_utc`** in `_data/news-wire-state.yml`. If a slot was missed, catch up the full gap for wire sources 1–9 and 11 (ISMF) — do not cap at one hour and do not cap at six hours. For AAJ, after the 2026 dump: only **new** 2026 listing items since `last_run_utc` (append to `remaining`, then publish into `_articles/`). Do not rewind `last_run_utc`. Do not publish 2025.
+- **Every later requested run**: translate **all** unseen items published **since `last_run_utc`** in `_data/news-wire-state.yml`. Catch up the full gap for wire sources 1–9 and 11 (ISMF) — do not cap at one hour or six hours. For AAJ, after the 2026 dump: only **new** 2026 listing items since `last_run_utc` (append to `remaining`, then publish into `_articles/`). Do not rewind `last_run_utc`. Do not publish 2025.
 - Still skip URLs already listed in `_data/news-wire-seen.yml` (except when job 3 is re-checking a URL already published).
 - Window timestamps live in `_data/news-wire-state.yml`. Update `last_run_utc` after every run, even if the wire window was empty.
 
@@ -60,7 +55,7 @@ Prefer RSS when it exists (`https://www.theuiaa.org/feed/`, `https://www.climbin
 5. `_data/news-wire-seen.yml` — skip `items` and `skipped` URLs already listed (job 3 still re-opens published URLs to re-check)
 6. `_data/news-wire-state.yml` — previous run time
 7. `_data/aaj-backfill.yml` — AAJ 2026 complete-translation queue (live files in `_articles/`; after the dump, `remaining` holds only **new** 2026 listing items)
-8. `.cursor/skills/daily-seo-audit/SKILL.md` — whole-site SEO is job 4 of every GMT slot
+8. `.cursor/skills/daily-seo-audit/SKILL.md` — whole-site SEO is job 4 of every requested run
 
 ## What to publish
 
@@ -77,7 +72,7 @@ Prefer RSS when it exists (`https://www.theuiaa.org/feed/`, `https://www.climbin
 - AAJ notes also need `aaj_id:` (the queue id, quoted). Hub `/articles/` sorts by `aaj_id` newest-first. Hub `/news/` is wire-only. Homepage teasers merge اخبار and مقالات by date.
 - Set `image:` from a local file or from a source photo URL. No guessed dates, names, grades, or scores.
 
-## AAJ 2026 procedure (each GMT slot, after the volume dump)
+## AAJ 2026 procedure (each requested run, after the volume dump)
 
 1. Fetch the AAJ listing. Any **new** publication-year-2026 Climbs and Expeditions / feature item not already in `published` or `remaining` appends to the **end** of `remaining`.
 2. Publish each new remaining note as a complete Persian translation in `_articles/` dated `2026-10-01` (time from `aaj_id`). Download photos into `assets/articles/<slug>/`. No مترجم/نویسنده. No agent process notes in the body.
@@ -93,7 +88,7 @@ Prefer RSS when it exists (`https://www.theuiaa.org/feed/`, `https://www.climbin
 - Marketing listicles with no new climb/federation/safety fact
 - When skipping, append the URL under `skipped:` in `_data/news-wire-seen.yml` so later runs do not re-open it
 
-## Re-check previous translations (each GMT slot)
+## Re-check previous translations (each requested run)
 
 After new items and any new AAJ notes are drafted, open every file in `_news/` and `_articles/` that has a `source_url`. Fetch the source. Compare. Fix:
 
@@ -116,7 +111,7 @@ If any pass fails, fix or drop the item. Do not publish a failing draft.
 
 ## Ship
 
-1. Branch `cursor/news-wire-<YYYYMMDD-HHMM>-4b4e` on scheduled runs (this repo’s `cursor/*-4b4e` pattern)
+1. Branch `cursor/news-wire-<YYYYMMDD-HHMM>-4b4e` on requested runs (this repo’s `cursor/*-4b4e` pattern)
 2. `bundle exec jekyll build` — `_news/` pages in `_site/news/`; `_seo/` and `.cursor/` unpublished
 3. Open (or update) the PR whenever jobs 1–4 changed anything. A slot with no new wire items still PRs if job 2 shipped AAJ notes, job 3 fixed a translation, or job 4 changed SEO.
 4. Until GitHub Actions billing is unlocked, ship the live export with **`script/ship-live.sh --push --purge`**. It builds to a temp destination (a stray `jekyll serve` would clobber `_site/`), overlays `published` **without** `--delete`, and aborts if the homepage teasers do not lead with the newest hub item. Do not hand-copy files instead: that is how `/` teasers, `/news/`, the sitemap, and the machine catalogs end up stale while the new article itself looks fine. Zaraz already loads HTML from that `published` branch — **do not pin a jsDelivr SHA**. Confirm `https://raw.githubusercontent.com/KavehRS/logbook.rocks/published/...` has the pages (the branch alias caches for ~5 minutes; a commit-pinned URL shows the truth immediately). The cycle is unfinished if the live export is missing the work.
