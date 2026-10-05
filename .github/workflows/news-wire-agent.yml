@@ -1,8 +1,5 @@
-# GMT 00:00, 06:00, 12:00, 18:00 (24:00 = 00:00): start a Cursor Cloud Agent
-# for the six-hour cycle: new source items, two AAJ notes, translation
-# re-check, whole-site SEO, live publish.
-#
-# Prefer native Cursor Automation: .cursor/automations/news-wire-prompt.md
+# Manual-only news wire. The owner explicitly paused automatic checks on
+# 2026-09-20; run this workflow only when the owner asks for a news refresh.
 #
 # Required repo secret:
 #   CURSOR_API_KEY — from https://cursor.com/settings (API keys)
@@ -12,8 +9,6 @@
 name: International news wire Cloud Agent
 
 on:
-  schedule:
-    - cron: "0 0,6,12,18 * * *"
   workflow_dispatch:
 
 jobs:
@@ -39,9 +34,9 @@ jobs:
           now = datetime.now(tehran)
           stamp = now.strftime("%Y%m%d-%H%M")
 
-          prompt = f"""You are the automatic خبر کوهنوردی agent for https://logbook.rocks.
+          prompt = f"""You are the owner-requested خبر کوهنوردی agent for https://logbook.rocks.
 
-          This run was auto-triggered at {now.isoformat()} (Asia/Tehran). GMT slots are 00:00, 06:00, 12:00, 18:00. Do the work yourself.
+          This manual run was requested at {now.isoformat()} (Asia/Tehran). Do the work yourself.
 
           Follow `.cursor/skills/news-wire/SKILL.md` exactly.
 

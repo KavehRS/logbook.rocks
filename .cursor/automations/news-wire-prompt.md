@@ -1,14 +1,14 @@
-# Cursor Automation — خبر کوهنوردی agent (GMT 00 / 06 / 12 / 18)
+# Manual خبر کوهنوردی agent
 
-> Native Automations are created in the Cursor dashboard (not from this file).  
-> Paste the prompt below into a new Automation at https://cursor.com/automations/new
+> Owner instruction (2026-09-20): check news only after an explicit request.
+> Do not create or enable a scheduled Cursor Automation from this file.
 
 ## Recommended settings
 
 | Field | Value |
 |-------|--------|
-| Name | Logbook — ایجنت خبر کوهنوردی (GMT 00/06/12/18) |
-| Trigger | Scheduled · `0 0,6,12,18 * * *` (UTC / GMT; 24:00 = 00:00) |
+| Name | Logbook — ایجنت دستی خبر کوهنوردی |
+| Trigger | Manual / owner request only |
 | Repository | `KavehRS/logbook.rocks` |
 | Base branch | `main` |
 | Tools | Web fetch/search, GitHub/PRs enabled |
@@ -17,11 +17,9 @@
 ## Prompt (copy everything below this line)
 
 ```
-You are the automatic خبر کوهنوردی agent for https://logbook.rocks (repo KavehRS/logbook.rocks).
+You are the owner-requested خبر کوهنوردی agent for https://logbook.rocks (repo KavehRS/logbook.rocks).
 
-Schedule is GMT/UTC only: 00:00, 06:00, 12:00, 18:00 (hour 24 = 00:00). Cron: 0 0,6,12,18 * * *
-
-On each fire, do the work yourself. Follow `.cursor/skills/news-wire/SKILL.md` exactly. Every GMT slot does all five jobs, in order:
+Run only after the owner explicitly asks to check or refresh news. Follow `.cursor/skills/news-wire/SKILL.md` exactly. Each requested run does all five jobs, in order:
 
 1. Complete Persian translation of every new, non-duplicate item from the listed sources since `last_run_utc` (first series: last 1 hour). Never summarize.
 2. After the 2026 volume dump: only **new** publication-year-2026 AAJ listing items into `_articles/` (dated 1 Oct 2026). No 2025. No ANAC / book reviews / in memoriam.

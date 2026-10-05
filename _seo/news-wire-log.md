@@ -972,3 +972,33 @@ See `_seo/daily-log.md` 2026-08-31 news-wire catch-up. No robots/sitemap markup 
 
 
 
+
+## 2026-09-20 12:02 GMT — catch-up (all unseen since previous run)
+
+Window: `2026-08-31T11:20:00Z` → `2026-09-20T12:02:00Z`. Schedulers were paused; this is the full gap, not a one-hour cap.
+
+Fetched: UIAA RSS, Climbing.com RSS, Desnivel category RSS (roca, alpinismo, competiciones, expediciones, hielo, bulder), ISMF RSS, ExplorersWeb climbing/expeditions/8000ers RSS, World Climbing / IFSC `/news` + Chongqing/Koper/Guiyang/Imst event news, AAJ listing, DAV press, Alpinist Newswire, UKC `/news/` (Cloudflare challenge).
+
+### Job 1 — published (56)
+
+World Climbing Chongqing (8), Koper (6), Guiyang (10), Imst youth medallists (1). Desnivel rock/boulder/alpine/expedition/speed (19). Climbing.com (7). UIAA (4). ISMF UTMB (1).
+
+### Skipped (seen.yml)
+
+Climbing.com Maddison CSAM; ISMF internship / ITA webinar / September dates roundup; ExWeb Honnold weekend roundup; ExWeb Squamish drone (duplicate of Climbing.com exclusive); Desnivel flow-state training; Desnivel Koper/Imst/Guiyang recaps (IFSC primary); Koper where-to-watch; DAV Sep press (Bergfilm / Jahrbuch, not expedition reports). UKC `/news/` Cloudflare. PlanetMountain home Cloudflare-blocked. Alpinist Newswire listing stale (no Sep 2026 climb item confirmed). Ice Desnivel feed last item March 2026.
+
+### Triple review
+
+Facts: names/times/grades taken from source HTML or WP REST (Speed Laval Cloudflare 202 → `/wp-json/wp/v2/posts/170957`). Caucasus avalanche counts kept as Desnivel’s claim (11 dead / 6 injured / 6 missing / 33). Language: original Persian; athlete/route names Latin. Policy: photos self-hosted; no مترجم; no CSAM item. PASS for the 56 drafts.
+
+### Job 2 — AAJ
+
+Listing newest still Publication Year 2025 (Kilian Jornet Alpine Connections). No new publication-year-2026 Climbs and Expeditions item. `remaining_count` still 0.
+
+### Job 3 — re-check
+
+Did not re-fetch all 226 `_articles/` bodies this slot (volume). Sampled live `_news/2026-08-31-desnivel-gines-europe-lead-laval` and `_news/2026-08-31-ismf-agnieszka-solik-wish` front matter/`source_url` still match. New items checked against source before commit.
+
+### Job 4 — SEO
+
+See `_seo/daily-log.md` 2026-09-20 news-wire catch-up.
